@@ -39,7 +39,7 @@ jobs:
         mkdir solution
         pac solution export --name ${{ secrets.SOLUTION_NAME }} `
                             --path ./solution/${{ secrets.SOLUTION_NAME }}.zip `
-                            --managed false
+                            --managed false --include-dependencies
 
     - name: Unpack solution
       run: |
