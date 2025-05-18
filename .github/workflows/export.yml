@@ -36,7 +36,7 @@ jobs:
 
     - name: Export Solution
       run: |
-        mkdir solution
+        if (!(Test-Path "solution")) mkdir solution
         pac solution export --name ${{ secrets.SOLUTION_NAME }} `
                             --path ./solution/${{ secrets.SOLUTION_NAME }}.zip `
                             --managed false --include-dependencies
