@@ -6,7 +6,6 @@ on:
 permissions:
   contents: write
 
-
 jobs:
   export-solution:
     runs-on: windows-latest
@@ -18,45 +17,47 @@ jobs:
     - name: Set Node.js to v16 (to avoid pac CLI bug)
       uses: actions/setup-node@v3
       with:
-          node-version: 16
+        node-version: 16
           
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
-          dotnet-version: '6.x'
+        dotnet-version: '6.x'
           
     - name: Install Power Platform CLI
-      run: |
-        dotnet tool install --global Microsoft.PowerApps.CLI.Tool
-     
+      run: dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 
     - name: Authenticate with Power Platform
       run: |
-        pac auth create --applicationId ${{ secrets.POWERPLATFORM_CLIENT_ID}} --clientSecret ${{ secrets.POWERPLATFORM_CLIENT_SECRET }} --tenant ${{ secrets.POWERPLATFORM_TENANT_ID }} --url ${{ secrets.DEV_ENV_URL }}
-
+        pac auth create --applicationId ${{ secrets.POWERPLATFORM_CLIENT_ID }} `
+                        --clientSecret ${{ secrets.POWERPLATFORM_CLIENT_SECRET }} `
+                        --tenant ${{ secrets.POWERPLATFORM_TENANT_ID }} `
+                        --url ${{ secrets.DEV_ENV_URL }}
 
     - name: Export Solution
       run: |
         mkdir solution
-        pac solution export --name ${{ secrets.SOLUTION_NAME }} --path C:\Users\halishaik.AUCC\Solutions\${{ secrets.SOLUTION_NAME }}.zip --managed false
+        pac solution export --name ${{ secrets.SOLUTION_NAME }} `
+                            --path ./solution/${{ secrets.SOLUTION_NAME }}.zip `
+                            --managed false
 
     - name: Unpack solution
       run: |
-        pac solution unpack --zipfile C:\Users\halishaik.AUCC\Solutions\${{ secrets.SOLUTION_NAME }}.zip --folder C:\Users\halishaik.AUCC\Solutions\unpacked --allowDelete
+        pac solution unpack --zipfile ./solution/${{ secrets.SOLUTION_NAME }}.zip `
+                            --folder ./solution/unpacked `
+                            --allowDelete
 
     - name: List files after unpack
-      run: |
-        dir C:\Users\halishaik.AUCC\Solutions\unpacked
+      run: dir ./solution/unpacked
 
     - name: Commit unpacked solution files
       run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
         git add ./solution/unpacked
         git commit -m "Exported and unpacked solution: ${{ secrets.SOLUTION_NAME }}" || echo "No changes to commit"
 
     - name: Push changes
       run: |
-        git config user.name "github-actions"
-        git config user.email "github-actions@github.com"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/UniversitiesCanadaDev/ContractsAndPlatformSandbox.git
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
         git push origin main
-
