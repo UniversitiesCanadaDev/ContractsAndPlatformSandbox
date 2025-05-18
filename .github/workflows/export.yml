@@ -38,11 +38,11 @@ jobs:
     - name: Export Solution
       run: |
         mkdir solution
-        pac solution export --name ${{ secrets.SOLUTION_NAME }} --path ./solution/${{ secrets.SOLUTION_NAME }}.zip --managed false
+        pac solution export --name ${{ secrets.SOLUTION_NAME }} --path C:\Users\halishaik.AUCC\Solutions\${{ secrets.SOLUTION_NAME }}.zip --managed false
 
     - name: Unpack solution
       run: |
-        pac solution unpack --zipfile ./solution/${{ secrets.SOLUTION_NAME }}.zip --folder ./solution/unpacked --allowDelete
+        pac solution unpack --zipfile C:\Users\halishaik.AUCC\Solutions\${{ secrets.SOLUTION_NAME }}.zip --folder C:\Users\halishaik.AUCC\Solutions\unpacked --allowDelete
 
     - name: List files after unpack
       run: |
