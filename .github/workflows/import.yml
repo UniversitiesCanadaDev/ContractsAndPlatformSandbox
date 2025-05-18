@@ -1,0 +1,42 @@
+name: Import Power Platform Solution
+
+on:
+  workflow_dispatch:
+
+jobs:
+  import-solution:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set Node.js to v16 (to avoid pac CLI bug)
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+          
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+          dotnet-version: '6.x'
+          
+    - name: Install Power Platform CLI
+      run: |
+          dotnet tool install --global Microsoft.PowerApps.CLI.Tool
+
+    - name: Authenticate to Power Platform
+      run: |
+        pac auth create --kind SERVICEPRINCIPAL \
+          --url ${{ secrets.PROD_ENV_URL }} \
+          --applicationId ${{ secrets.POWER_PLATFORM_CLIENT_ID }} \
+          --clientSecret ${{ secrets.POWER_PLATFORM_CLIENT_SECRET }} \
+          --tenantId ${{ secrets.POWER_PLATFORM_TENANT_ID }}
+
+    - name: Pack solution
+      run: |
+        pac solution pack --folder ./solution/unpacked --zipfile ./solution/${{ secrets.SOLUTION_NAME }}.zip --packagetype Unmanaged
+
+    - name: Import solution
+      run: |
+        pac solution import --path ./solution/${{ secrets.SOLUTION_NAME }}.zip
