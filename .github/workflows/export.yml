@@ -2,6 +2,10 @@ name: Export Power Platform Solution
 
 on:
   workflow_dispatch:
+  
+permissions:
+  contents: write
+
 
 jobs:
   export-solution:
