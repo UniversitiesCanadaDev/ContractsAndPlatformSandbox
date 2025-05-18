@@ -25,10 +25,13 @@ jobs:
       run: |
           dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 
-    - name: Authenticate to Power Platform
+    - name: Authenticate with Power Platform
       run: |
-        pac auth create --url ${{ secrets.PROD_ENV_URL }} --applicationId ${{ secrets.POWER_PLATFORM_CLIENT_ID }} --clientSecret ${{ secrets.POWER_PLATFORM_CLIENT_SECRET }} --tenant ${{ secrets.POWER_PLATFORM_TENANT_ID }}
-
+        pac auth create --applicationId ${{ secrets.POWERPLATFORM_CLIENT_ID }} `
+                        --clientSecret ${{ secrets.POWERPLATFORM_CLIENT_SECRET }} `
+                        --tenant ${{ secrets.POWERPLATFORM_TENANT_ID }} `
+                        --url ${{ secrets.DEV_ENV_URL }}
+    
     - name: Pack solution
       run: |
         pac solution pack --folder ./solution/unpacked --zipfile ./solution/${{ secrets.SOLUTION_NAME }}.zip --packagetype Unmanaged
