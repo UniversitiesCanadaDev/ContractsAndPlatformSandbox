@@ -37,12 +37,21 @@ jobs:
 
     - name: Export Solution
       run: |
-        mkdir Solution
+        mkdir solution
         pac solution export --name ${{ secrets.SOLUTION_NAME }} --path ./solution/${{ secrets.SOLUTION_NAME }}.zip --managed false
 
     - name: Unpack solution
       run: |
         pac solution unpack --zipfile ./solution/${{ secrets.SOLUTION_NAME }}.zip --folder ./solution/unpacked --allowDelete
+
+    - name: List files after unpack
+      run: |
+        dir ./solution/unpacked
+
+    - name: Commit unpacked solution files
+      run: |
+        git add ./solution/unpacked
+        git commit -m "Exported and unpacked solution: ${{ secrets.SOLUTION_NAME }}" || echo "No changes to commit"
 
     - name: Push changes
       run: |
