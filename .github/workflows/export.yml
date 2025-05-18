@@ -46,7 +46,7 @@ jobs:
 
     - name: List files after unpack
       run: |
-        dir ./solution/unpacked
+        dir C:\Users\halishaik.AUCC\Solutions\unpacked
 
     - name: Commit unpacked solution files
       run: |
