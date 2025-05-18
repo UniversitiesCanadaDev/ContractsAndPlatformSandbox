@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{79605b46-2503-4bb5-9f45-d9f747c1ae61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_meetingeventparticipantid" name="result">
+          <cell name="new_participant" width="125" />
+          <cell name="a_a0f77f3a3edbeb11bacb0022483c549b.new_meetingstatus" width="100" disableSorting="1" />
+          <cell name="new_name" width="300" />
+          <cell name="new_typeofrecord" width="100" />
+          <cell name="a_a0f77f3a3edbeb11bacb0022483c549b.new_lobbyactivity" width="100" disableSorting="1" />
+          <cell name="new_startdate" width="150" />
+          <cell name="new_companyattimeofmeeting" width="300" />
+          <cell name="a_a0f77f3a3edbeb11bacb0022483c549b.new_schedulinglead" width="100" disableSorting="1" />
+          <cell name="a_a0f77f3a3edbeb11bacb0022483c549b.new_briefinglead" width="100" disableSorting="1" />
+          <cell name="a_a0f77f3a3edbeb11bacb0022483c549b.new_whichgroupownsthismeeting" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="new_meetingeventparticipant">
+          <attribute name="new_name" />
+          <order descending="true" attribute="new_startdate" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_typeofrecord" />
+          <attribute name="new_startdate" />
+          <attribute name="new_participant" />
+          <attribute name="new_companyattimeofmeeting" />
+          <link-entity alias="a_a0f77f3a3edbeb11bacb0022483c549b" name="new_interaction" from="new_interactionid" to="new_meetingoreventid" link-type="outer" visible="false">
+            <attribute name="new_whichgroupownsthismeeting" />
+            <attribute name="new_schedulinglead" />
+            <attribute name="new_meetingstatus" />
+            <attribute name="new_lobbyactivity" />
+            <attribute name="new_briefinglead" />
+          </link-entity>
+          <attribute name="new_meetingeventparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Meeting or Event Participants" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

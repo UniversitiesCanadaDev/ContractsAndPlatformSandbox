@@ -1,0 +1,1167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{43d966c7-bdcf-4573-9ea5-6878b358059d}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_9" id="{a14e9b8e-1e0e-4a45-e56e-a90ce28ead04}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_9_section_1" showlabel="false" showbar="false" locklevel="0" id="{0311a3e1-ec96-87d7-5a67-2b244b743670}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d06b2c77-3144-9523-e546-51728b3315e1}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Quarterly Reports" languagecode="1033" />
+                        </labels>
+                        <control id="new_querterlyreportsid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_querterlyreportsid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EB4D9A1-56DE-4756-8207-5C5DA92D8B02}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_6" id="{b45982e1-7353-ee65-0db3-0613db787d73}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="false" showbar="false" locklevel="0" id="{37ad50a0-2c57-eb07-6e2e-de07d928b91c}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{18a695db-7411-d956-9b6b-361eb3392e77}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Component" languagecode="1033" />
+                        </labels>
+                        <control id="new_component" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_component" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_7" id="{29b063b4-6170-d61e-c512-268ea50ee6b7}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Scholarships" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_3_section_13" showlabel="true" showbar="true" locklevel="0" id="{40b004d5-24a5-5b46-a37a-ce2691e45b3b}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Number of Scholarship(s)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3658b01e-48cc-8d40-0c10-37d850bd1164}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesbudget" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesbudget" disabled="false" />
+                      </cell>
+                      <cell id="{5d09ba9e-e33c-b726-5438-9d35be6c2338}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesprior" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesprior" disabled="false" />
+                      </cell>
+                      <cell id="{b06cdb01-1ca3-c30d-037b-6418446e40a9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesactual" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_3_section_14" showlabel="true" showbar="true" locklevel="0" id="{d02ae158-2e36-9b85-30a3-905b96617c54}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="# of Scholarship(s) Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{be3510e2-41dc-1d11-7b12-6d72d58eb91c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesf1" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesf1" disabled="false" />
+                      </cell>
+                      <cell id="{630e42aa-4616-6723-7957-1530dd23360b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesf2" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesf2" disabled="false" />
+                      </cell>
+                      <cell id="{22a02b94-b276-0068-23a1-8312294e899d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesf3" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesf3" disabled="false" />
+                      </cell>
+                      <cell id="{209957ed-e932-ec8c-998b-d0329cbe9ca4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesf4" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_3_section_15" showlabel="true" showbar="true" locklevel="0" id="{9bc5430c-ce6c-7599-4901-943684e9c3a1}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="# of Scholarship(s) Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c17b75e4-ae44-75a6-d0d1-675d8e4a8a3d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesfy1617" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{39384682-a823-c780-30e0-63d331a0ca44}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesfy1718" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{180b0e42-b7c5-749e-c45c-3171616d8aca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesaprdec" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesaprdec" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{b1221283-b6db-dc50-e18a-4ce0e348029d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="QES Contribution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_3_section_4" showlabel="true" showbar="true" locklevel="0" id="{05364e39-338d-014e-6322-ccc7942de265}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b9749671-44c7-ad07-184b-026bbebc9a7c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeabudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeabudget" disabled="false" />
+                      </cell>
+                      <cell id="{259dde4e-c6c1-2b5a-d28e-b0960e587c13}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaprior" disabled="false" />
+                      </cell>
+                      <cell id="{cb13cdc1-e1c0-56be-90c6-557e902772c0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_7" showlabel="true" showbar="true" locklevel="0" id="{270e813b-d811-098b-ad77-5de33cc8eab8}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b7441a40-2b1e-39e9-9b3b-cc42d4c76256}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelbudget" disabled="false" />
+                      </cell>
+                      <cell id="{4c06e498-8bca-c0ee-d25c-c0e65d21532e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelprior" disabled="false" />
+                      </cell>
+                      <cell id="{c72a1929-9014-b675-444e-31da8414bcd1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_10" showlabel="true" showbar="true" locklevel="0" id="{7b2633ab-2ad0-b8b3-a997-8c9adc524122}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{51cdea04-495a-aed1-7956-b63921db1e15}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetbudget" disabled="false" />
+                      </cell>
+                      <cell id="{9dd5ac9b-9716-3553-5d57-a8c79c3dbbc7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetprior" disabled="false" />
+                      </cell>
+                      <cell id="{0d25d484-d104-5bee-7277-1e568aad4340}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_3_section_6" showlabel="true" showbar="true" locklevel="0" id="{a9620663-5989-ba9a-65e5-20c2098bbb35}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c82b6aa3-a956-c258-787d-a18bdd8e155d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaf1" disabled="false" />
+                      </cell>
+                      <cell id="{7cdd8c36-7235-b687-3106-73ca78395da9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaf2" disabled="false" />
+                      </cell>
+                      <cell id="{9b3d4870-85da-8971-c513-ae73390e7a9a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaf3" disabled="false" />
+                      </cell>
+                      <cell id="{ca42a964-75e2-e13b-709d-3037501e3565}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_9" showlabel="true" showbar="true" locklevel="0" id="{741d1c42-00c6-5594-9486-0613c7cac691}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{559e06b2-5d27-8a16-445d-b23917bba476}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelf1" disabled="false" />
+                      </cell>
+                      <cell id="{30d9d007-45b9-b3d1-7d13-50a206b806be}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelf2" disabled="false" />
+                      </cell>
+                      <cell id="{11483104-e4a5-d390-ae24-eac777d377e3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelf3" disabled="false" />
+                      </cell>
+                      <cell id="{3056de4d-a72b-5e9a-e1c5-d3410045ee87}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_12" showlabel="true" showbar="true" locklevel="0" id="{d758ebae-06a4-d53c-bbd3-9b263231c914}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c69ba08b-ea14-b76a-01ab-2bc5ab328c64}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetf1" disabled="false" />
+                      </cell>
+                      <cell id="{d6ae7173-b47d-2189-8b03-70a52697e91d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetf2" disabled="false" />
+                      </cell>
+                      <cell id="{9ca64975-4b50-9699-265c-14b4a7295e40}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetf3" disabled="false" />
+                      </cell>
+                      <cell id="{822b1a06-c239-52a9-3d4a-1e588e23a918}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_3_section_5" showlabel="true" showbar="true" locklevel="0" id="{a555de38-4b32-ae7b-7a45-13b2eaabb02a}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{52528d97-26ca-88eb-4d85-1369a3d3c5a5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeafy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeafy1617" disabled="false" />
+                      </cell>
+                      <cell id="{aee41d10-d8a9-6718-91a9-1a73de84ecde}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeafy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeafy1718" disabled="false" />
+                      </cell>
+                      <cell id="{dc1923d2-0c51-6c7d-3b9d-0b093221c66b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeaaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qeaaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_8" showlabel="true" showbar="true" locklevel="0" id="{7599911b-37ce-7512-8d2a-5b6b9da65e68}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3ba87174-0b91-8002-b1c6-595eac8e0e18}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{1c917594-aa05-7004-98a9-1e8339b436d4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{bb938ec3-7197-a66a-d7b4-32b87c1c110d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qelaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qelaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_11" showlabel="true" showbar="true" locklevel="0" id="{5ce05c7e-7b22-319a-5d34-0bcad0262082}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0d875325-7508-9439-a585-6aa735e91c6b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{6ee3c7e0-55ed-3aa3-59c2-cb61e6c86639}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{a7427800-a6a3-89b1-0c08-742058dd72c0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qetaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qetaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_4" id="{237e40ed-80b7-e446-d8c1-7b195eebd324}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="University Contribution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_4_section_6" showlabel="true" showbar="true" locklevel="0" id="{63d9d545-54d5-2b32-8da6-7b25ed943be8}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{034c47ac-1710-b0c1-aeda-b8b49b1b9a32}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_uabudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uabudget" disabled="false" />
+                      </cell>
+                      <cell id="{b4a12e73-ece7-1e38-9451-3d055c969985}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaprior" disabled="false" />
+                      </cell>
+                      <cell id="{56d8bb6e-4ccb-8076-7568-95b254685dd2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_7" showlabel="true" showbar="true" locklevel="0" id="{e1ee3185-0a26-b060-932d-0229aec70adb}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8de329b0-c16c-312b-b4a5-3c953ce96a92}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulbudget" disabled="false" />
+                      </cell>
+                      <cell id="{4532e236-5ec5-456d-93c3-b827e6a02747}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulprior" disabled="false" />
+                      </cell>
+                      <cell id="{4c2b68e1-3e53-a5c8-aa05-78d8bda6ad65}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_10" showlabel="true" showbar="true" locklevel="0" id="{b4155574-e5cb-16d4-2cea-4b1976220a10}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{22a84dad-6962-26de-c934-4ea4c637e2b5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_utbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utbudget" disabled="false" />
+                      </cell>
+                      <cell id="{e2755a56-dc7d-dbd2-cec4-28e42c2b3dbe}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_utprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utprior" disabled="false" />
+                      </cell>
+                      <cell id="{81d7dc32-9ba2-5413-4d29-329a171aa406}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_utactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_4_section_4" showlabel="true" showbar="true" locklevel="0" id="{e78ac2e7-6e37-eb09-c89d-29cc4d2ee25d}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b2d4a2de-9a63-4a12-98aa-5737d80d40d4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaf1" disabled="false" />
+                      </cell>
+                      <cell id="{9d46cea0-0596-4be3-be41-9eac516e41b5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaf2" disabled="false" />
+                      </cell>
+                      <cell id="{9597553b-9888-44c5-06a4-ad8c77a1b926}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaf3" disabled="false" />
+                      </cell>
+                      <cell id="{ae09151c-7843-4059-d8c8-774dd4eb2c2c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_9" showlabel="true" showbar="true" locklevel="0" id="{88497335-c4c7-8070-0471-dec5ad7a0ec4}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{213d4a13-8e38-3c8e-413a-a2687600c66e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulf1" disabled="false" />
+                      </cell>
+                      <cell id="{2b4e4634-0d2e-c5c6-5e99-4840856b200c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="ULF2" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulf2" disabled="false" />
+                      </cell>
+                      <cell id="{56a9a4d2-eaa5-acb3-2cdb-3d00b697b737}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulf3" disabled="false" />
+                      </cell>
+                      <cell id="{d70d6c9b-ee85-56e0-e97a-611694638c24}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_12" showlabel="true" showbar="true" locklevel="0" id="{465a7573-2694-5cc1-2dc0-b9b8522ced3c}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3b352114-eae8-cd3a-dee1-476862209bcd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_utf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utf1" disabled="false" />
+                      </cell>
+                      <cell id="{3c8b2677-4314-6a30-6939-37523aa2c64c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_utf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utf2" disabled="false" />
+                      </cell>
+                      <cell id="{1d324938-093a-d2e0-927c-d6dde7a46be1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_utf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utf3" disabled="false" />
+                      </cell>
+                      <cell id="{c44b5119-8d43-4694-665b-1730d0e177ec}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_utf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_4_section_5" showlabel="true" showbar="true" locklevel="0" id="{360d6cd2-7768-31aa-06a7-ab6a481389b2}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{25e43574-eb12-a2c8-abd2-7595eae2437b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_uafy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uafy1617" disabled="false" />
+                      </cell>
+                      <cell id="{9a926dd3-7979-58e4-3690-8a901a3c80c3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_uafy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uafy1718" disabled="false" />
+                      </cell>
+                      <cell id="{00c0a790-ad99-45b2-a7a5-77460720aa83}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_uaaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uaaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_8" showlabel="true" showbar="true" locklevel="0" id="{05267577-381b-c4b9-d37c-6e960d6adcda}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c00c3208-8346-53b9-cd37-43d276eabc75}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{5ea8ea70-d701-e94a-a2ce-cb8b0271d589}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{d46e45c9-8e00-e469-12d5-07a9a0a3024d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_ulaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ulaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_11" showlabel="true" showbar="true" locklevel="0" id="{211808ab-5d28-482d-7682-6daec6b7947a}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2070146e-944e-ed97-5a15-95d5a45c0bbc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_utfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{40d087c8-e58c-38a2-33b4-8c003999ae80}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_utfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{0dcb0d15-a115-53c7-6c80-b36d0941e891}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_utaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_utaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{dd7819bd-edac-6d74-3062-54d08e2b3ee3}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Scholar Contribution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_5_section_5" showlabel="true" showbar="true" locklevel="0" id="{05d82198-2b75-54eb-4987-1e12b5315e55}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4dd19d5b-e2c3-358c-7570-e6079c431410}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_sabudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_sabudget" disabled="false" />
+                      </cell>
+                      <cell id="{2647e52b-b07d-021d-0786-d832ac9c7ab6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_saprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saprior" disabled="false" />
+                      </cell>
+                      <cell id="{b93a9725-5784-ddbc-1582-cb0596996ee3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_saactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_7" showlabel="true" showbar="true" locklevel="0" id="{8ee8e6cc-4540-1897-a43e-74115ada9487}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e939cd0e-8eeb-8e46-c28a-8459ba8c51cd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_slbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slbudget" disabled="false" />
+                      </cell>
+                      <cell id="{03129235-1bea-81b8-797a-794047616c21}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_slprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slprior" disabled="false" />
+                      </cell>
+                      <cell id="{13796594-584c-e195-8129-85709ed7243a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_slactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_10" showlabel="true" showbar="true" locklevel="0" id="{e9191045-5912-8e11-88c4-b0ce9e8b6137}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{10ae7734-6a7a-69ad-0245-815752c51216}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-18 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_stbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stbudget" disabled="false" />
+                      </cell>
+                      <cell id="{0d31cd1e-ab4d-99d0-9bcb-e26c50c6897c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prior Year(s) Actual" languagecode="1033" />
+                        </labels>
+                        <control id="new_stprior" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stprior" disabled="false" />
+                      </cell>
+                      <cell id="{5cc5392b-c41a-3bc4-1743-d217b4b52b7e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Actual this Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_stactual" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stactual" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_5_section_6" showlabel="true" showbar="true" locklevel="0" id="{1d05bd6d-823e-14e5-5950-1a0b8d6bc16c}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b827c4ab-e89a-a349-a611-d180050e805e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_saf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saf1" disabled="false" />
+                      </cell>
+                      <cell id="{2de4664d-a9d0-e9a5-8ea7-bd602edb0657}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_saf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saf2" disabled="false" />
+                      </cell>
+                      <cell id="{99ac2843-3b66-eaae-3c3a-2474c370b292}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_saf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saf3" disabled="false" />
+                      </cell>
+                      <cell id="{de6aaec0-87e6-3b5a-d0b6-4566157cd7ad}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_saf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_11" showlabel="true" showbar="true" locklevel="0" id="{b7d6b113-6b82-3b0d-c622-9e5e24952e7c}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0103c3ed-8949-2d76-3450-d65ce004e246}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_stf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stf1" disabled="false" />
+                      </cell>
+                      <cell id="{a18a8954-08a6-9457-8026-11e880807b15}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_stf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stf2" disabled="false" />
+                      </cell>
+                      <cell id="{eedda8c7-61e8-ca91-a67b-66c2e4361c39}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_stf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stf3" disabled="false" />
+                      </cell>
+                      <cell id="{3187c7b9-ad0a-67a2-822b-0ba272da7024}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_stf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_8" showlabel="true" showbar="true" locklevel="0" id="{202d2d31-3e3c-a42b-d6ca-44db5231697a}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9c195a2c-e2b2-3ead-67dc-c343a39d4c49}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Next Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_slf1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slf1" disabled="false" />
+                      </cell>
+                      <cell id="{6cd08d15-8887-8305-04bc-c1d2a11eb300}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="90-180 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_slf2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slf2" disabled="false" />
+                      </cell>
+                      <cell id="{ec21e1a4-2cb3-59bc-a8c1-0249a020603d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="181-271 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_slf3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slf3" disabled="false" />
+                      </cell>
+                      <cell id="{65c88026-8007-515b-713c-d5519c5c71ec}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="272-365 Days" languagecode="1033" />
+                        </labels>
+                        <control id="new_slf4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slf4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_5_section_4" showlabel="true" showbar="true" locklevel="0" id="{e38211ac-0b88-b259-289e-3ca74ea2e892}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Academic Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e1b108db-3043-684b-1311-5d1260e66913}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_safy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_safy1617" disabled="false" />
+                      </cell>
+                      <cell id="{75bcc644-b17d-414c-664d-466725166107}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_safy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_safy1718" disabled="false" />
+                      </cell>
+                      <cell id="{9901434a-15c1-7401-0627-0d7472e25ae4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_saaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_saaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_9" showlabel="true" showbar="true" locklevel="0" id="{d8d0675c-c6bb-5cb8-4a43-41e709c27261}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Living Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c72da32a-8ccb-824a-6305-1ccaec8e86c8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_slfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{2e7ad180-4440-4377-4773-10026241c157}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_slfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{ad22851e-67a5-26a2-705a-701b77c7a41a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_slaprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_slaprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_5_section_12" showlabel="true" showbar="true" locklevel="0" id="{ba306c4a-2be8-8542-3bc8-a87ca054343b}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Travel Expenses Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{57c56922-00c9-b26c-c973-a1049437c605}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_stfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{6bb36893-864e-642d-bb4a-398107001377}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_stfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_stfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{8ab92e43-69c5-3338-34e6-0e1847145ebc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_staprdec18" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_staprdec18" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{9589c2b6-8179-4515-a45a-758c7cc9940f}" IsUserDefined="1" name="{9589c2b6-8179-4515-a45a-758c7cc9940f}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{92f7abc0-ef4c-42ed-991f-839868c08215}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{24cdd2a0-3c18-8595-b622-6c81b7d103ec}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd953863-ef1b-404e-b60c-47d6a794edfd}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{e60e090c-d36d-4377-9e4c-dfd019baf4e9}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{e4b428db-47e8-4024-8922-8c3571a73d0f}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{411cb950-43af-466c-a2eb-f25846e951de}" columns="111">
+        <rows>
+          <row>
+            <cell id="{8e18806c-9c96-274a-964d-2795a835e700}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2b1c3982-8c6b-64c5-0948-a47d68818406}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Fiscal Year:" languagecode="1033" />
+              </labels>
+              <control id="header_new_fiscalyear" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_fiscalyear" disabled="false" />
+            </cell>
+            <cell id="{23b07db9-2614-ed96-a2cc-7edc1102dc3b}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Quarter:" languagecode="1033" />
+              </labels>
+              <control id="header_new_quarter" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarter" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_QEQuarterlyFormMainJS" libraryUniqueId="{15528491-75de-244d-1524-40393604a237}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_name">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_QEQuarterlyFormMainJS" handlerUniqueId="{20764a85-ee6a-4190-31e5-6e6aca4222a6}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="new_QEQuarterlyFormMainJS" handlerUniqueId="{7dba314a-c2c2-a50a-25a4-589a6767e732}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

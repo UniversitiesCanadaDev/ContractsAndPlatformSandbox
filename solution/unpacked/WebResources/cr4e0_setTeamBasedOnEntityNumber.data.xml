@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{0a91ea57-d0d8-ef11-8eea-0022483e2bef}</WebResourceId>
+  <Name>cr4e0_setTeamBasedOnEntityNumber</Name>
+  <DisplayName>setTeamBasedOnEntityNumber</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/cr4e0_setTeamBasedOnEntityNumber0A91EA57-D0D8-EF11-8EEA-0022483E2BEF</FileName>
+</WebResource>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="cr4e0.new.contact.UploadFile.Button.CustomAction" Location="Mscrm.HomepageGrid.contact.MainTab.Management.Controls._children" Sequence="23">
+      <CommandUIDefinition>
+        <Button Command="new.contact.UploadFile.Command" Id="new.contact.UploadFile.Button" LabelText="$LocLabels:new.contact.UploadFile.Button.LabelText" Sequence="23" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="new.contact.UploadFile.Command">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="cr4e0.contact.DisplayRule0.DisplayRule" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="pdfGenerate" Library="$webresource:new_/WebResources/UploadFiles.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="cr4e0.contact.DisplayRule0.DisplayRule">
+        <ValueRule Value="" InvertResult="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="new.contact.UploadFile.Button.LabelText">
+      <Titles>
+        <Title description="eMail Merge" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>cr4e0_ContractsandProposals</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <WelcomePageId>f3560680-bc5b-e511-9444-00155d03a501</WelcomePageId>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="1" schemaName="cr4e0_awardstypes" />
+    <AppModuleComponent type="1" schemaName="cr4e0_contractbusinessflow" />
+    <AppModuleComponent type="1" schemaName="cr4e0_proposal" />
+    <AppModuleComponent type="1" schemaName="cr4e0_proposalbusinessflow" />
+    <AppModuleComponent type="29" id="{ed97f333-6d8b-ed11-81ad-0022483c51f4}" />
+    <AppModuleComponent type="29" id="{c7333916-fb4a-ed11-bba2-0022483cb0d7}" />
+    <AppModuleComponent type="60" id="{7ed2b278-1882-ed11-81ad-0022483c5cdf}" />
+    <AppModuleComponent type="60" id="{f1fa8ea8-8c7d-ed11-81ad-0022483cb87c}" />
+    <AppModuleComponent type="60" id="{355601e7-0e7c-415a-9eeb-96eb92d2d74d}" />
+    <AppModuleComponent type="60" id="{9e649ad7-a002-4bd1-ad7c-ee0d5e4bf3f2}" />
+    <AppModuleComponent type="60" id="{0563ef4d-3688-4a37-ad19-f22ab6520f1c}" />
+    <AppModuleComponent type="62" schemaName="cr4e0_ContractsandProposals" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{8ca3c24a-15e8-ed11-a7c6-000d3ae9a19c}" />
+    <Role id="{70204b1c-16e8-ed11-a7c6-0022483c5263}" />
+    <Role id="{4b34b9e8-35fb-ed11-8f6e-0022483d89ba}" />
+    <Role id="{f4208bc5-d6cd-ef11-8ee9-002248ae0598}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+    <Role id="{d0740425-1c82-ed11-81ac-0022483cdce2}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Contracts and Proposals" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

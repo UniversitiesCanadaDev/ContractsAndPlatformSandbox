@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1a53b06c-c3e0-49f7-8334-39725b3ae9a8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{2c1193c6-ac19-4103-b4e3-6b123f0c8b89}" IsUserDefined="1" name="Campus events" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Campus events" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="{2c1193c6-ac19-4103-b4e3-6b123f0c8b89}_section_3" showlabel="false" showbar="false" locklevel="0" id="{84b27389-832e-82e1-e707-60b5c549a74e}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="200" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{689e5a93-7d5b-a18a-e056-bddda90b6d0e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                      <cell id="{98ae0391-95a2-189d-6562-ad8a65ae0d8a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2a5e4c1a-8bb8-1076-b01b-54b79c8290c6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Canada 150 Event" languagecode="1033" />
+                        </labels>
+                        <control id="new_canada150event" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_canada150event" disabled="false" />
+                      </cell>
+                      <cell id="{7b96a968-13a4-c488-502b-40b37107d942}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8bb6bdd8-68db-0dc7-b679-04b7e65325c1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_eventdate" disabled="false" />
+                      </cell>
+                      <cell id="{532d930d-b025-c66b-9680-d1569e2e4649}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cbdb8a10-3e6e-b4bd-1349-0e5dad8b8251}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event notes" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventnotes" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_eventnotes" disabled="false" />
+                      </cell>
+                      <cell id="{a7273e5c-3dec-e996-90c0-c0bc6be1927c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a050b287-04a0-ec31-ae77-5821b4a6dac2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Year (Legacy data)" languagecode="1033" />
+                        </labels>
+                        <control id="new_year" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_year" disabled="true" />
+                      </cell>
+                      <cell id="{08a5b710-5d00-0ae0-672b-777ae773b99d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

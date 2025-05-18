@@ -1,0 +1,8 @@
+function acknowledge(){
+    var status = Xrm.Page.getAttribute("statuscode").getValue();
+    if(status == 892080001){
+        Xrm.Page.getAttribute("statuscode").setValue(2);
+        Xrm.Page.getAttribute("statuscode").fireOnChange();
+        Xrm.Page.data.save();
+    }
+}

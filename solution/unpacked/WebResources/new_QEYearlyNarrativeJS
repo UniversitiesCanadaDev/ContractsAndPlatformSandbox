@@ -1,0 +1,4 @@
+function OnLoad() {
+Xrm.Page.getAttribute('new_name').setValue('QES Annual Narrative');
+}
+

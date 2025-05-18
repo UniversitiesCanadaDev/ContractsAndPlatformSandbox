@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2f7a8e34-e09f-4664-ac8e-5c03e87068eb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_accountseventsid">
+          <cell name="new_year" width="50" />
+          <cell name="new_eventname" width="200" />
+          <cell name="new_eventnotes" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_accountsevents">
+          <order attribute="new_eventname" descending="false" />
+          <attribute name="new_eventnotes" />
+          <attribute name="new_eventname" />
+          <attribute name="new_year" />
+          <attribute name="new_accountseventsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Campus Events Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

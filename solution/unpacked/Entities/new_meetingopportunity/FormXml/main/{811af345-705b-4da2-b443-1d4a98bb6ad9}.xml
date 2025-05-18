@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{811af345-705b-4da2-b443-1d4a98bb6ad9}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{3399e4b8-448b-4ab5-8440-9be5025a514d}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{adf3d04b-17de-4f94-9f88-4982ab15f13f}" name="{adf3d04b-17de-4f94-9f88-4982ab15f13f}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3430eeb6-6781-41f6-b451-11fcc129e9a9}">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ced37d6e-0d0e-09e3-ebc7-42bd12ace4be}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Meeting Contact" languagecode="1033" />
+                        </labels>
+                        <control id="new_primarymeetingcontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_primarymeetingcontact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7b440a0-434a-a83b-9ed1-d97045dd76d0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="UC Attendee" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucattendee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_ucattendee" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a3810d47-c3d4-4127-c861-9846c0d0cbd2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Required Attendees" languagecode="1033" />
+                        </labels>
+                        <control id="requiredattendees" classid="{CBFB742C-14E7-4a17-96BB-1A13F7F64AA2}" datafieldname="requiredattendees" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e861d53-7346-4778-98f1-6b2970af4454}">
+                        <labels>
+                          <label description="Regarding" languagecode="1033" />
+                        </labels>
+                        <control id="regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f842988f-f18d-448e-a94d-fbd68b4d396a}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{e9d50077-8481-4a36-8937-ad9e354228cf}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{61e55ad0-e943-4de0-ac3a-8be3fe779b8e}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{1499f2d0-5fb1-47a7-ab78-fd360b26a31e}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{1731ab62-5534-40f6-b8d4-90bd0f5a8651}">
+              <labels>
+                <label description="Priority" languagecode="1033" />
+              </labels>
+              <control id="header_prioritycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" />
+            </cell>
+            <cell id="{06f7e674-96e8-497b-a8a1-dd1833d4ac8d}">
+              <labels>
+                <label description="Due Date" languagecode="1033" />
+              </labels>
+              <control id="header_scheduledend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" />
+            </cell>
+            <cell id="{a7b72881-6626-401e-9eca-a4b9d045612b}">
+              <labels>
+                <label description="Activity Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{800da1fc-d2a9-47ce-a612-e81c2f9f820e}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

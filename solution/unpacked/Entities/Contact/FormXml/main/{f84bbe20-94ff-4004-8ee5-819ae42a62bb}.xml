@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f84bbe20-94ff-4004-8ee5-819ae42a62bb}</formid>
+    <IntroducedVersion>1.0.2109.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" shownavigationbar="true" maxWidth="1920" headerdensity="HighWithControls">
+      <footer id="{0ae970ec-d685-4063-8356-3c6e6d29ccfe}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a62649e6-07bb-4d18-909e-3587ac652417}" showlabel="false" labelid="{ffe83d9e-783c-405e-bef4-74e2eab5d468}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{26425913-6391-4cb2-aeb2-b711282416e1}" showlabel="false" labelid="{8f9c1c00-8554-4ad1-b48a-72fb1ea094db}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{6f9e16f3-d864-4545-919e-9b094a79f176}" showlabel="false" labelid="{6a1c3aaf-bdd5-46e9-b7c1-89b40fba6693}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="C2 Personal Information Address" languagecode="1033" />
+      <LocalizedName description="C2 Personal Information Address" languagecode="1036" />
+    </LocalizedNames>
+  </systemform>
+</forms>

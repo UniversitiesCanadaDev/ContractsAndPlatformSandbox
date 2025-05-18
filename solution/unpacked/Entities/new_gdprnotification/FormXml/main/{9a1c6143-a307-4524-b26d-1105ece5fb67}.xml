@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9a1c6143-a307-4524-b26d-1105ece5fb67}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_2" id="{492ab90a-4c28-5373-15e9-90b569ab2a09}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{33739c51-d0bd-647b-2e2e-6c20c870d4c5}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ed4d84e8-7428-cb32-c43b-6140412a96c4}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="new_country" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_country" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{9C82BA74-E354-4B30-8AD2-D0098D8DF745}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{6de3e046-44a5-a016-2a2a-609412a7552b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{0ed78c36-13d4-4319-d530-5309ae04a482}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a832e87a-39b4-90a9-32cc-c913a8945b49}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2bc5c580-de73-52bb-6e74-5ceaa77b6e20}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Date of DPA Notification" languagecode="1033" />
+                        </labels>
+                        <control id="new_dateofdpanotification" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_dateofdpanotification" disabled="false" />
+                      </cell>
+                      <cell id="{b2b12e99-5d3d-0e36-06be-4ba9b7317db5}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{6791d489-94ec-167b-4d02-a733214dcec2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{94088a9b-16d7-7a83-8a16-714839e9aa11}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{092798ae-d506-d68c-4eb0-4a73593ac863}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Name of DPA" languagecode="1033" />
+                        </labels>
+                        <control id="new_nameofdpa" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_nameofdpa" disabled="false" />
+                      </cell>
+                      <cell id="{9ee528ba-dd01-1464-d6a0-01d74099142c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{92a45160-7508-2099-0a8b-6c4b41520b0b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b298e9c7-7dda-d0bc-479c-4a76bed490e5}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{658269d1-3625-7c7a-3683-b4ed3eb87683}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Email of DPA" languagecode="1033" />
+                        </labels>
+                        <control id="new_emailofdpa" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="new_emailofdpa" disabled="false" />
+                      </cell>
+                      <cell id="{cb2131bd-d59c-9b8a-e558-78b52aaaa044}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{0bc97e85-4a55-5d1e-2b8a-112cc3287e44}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d6b81403-b32b-1cda-cdc3-b369c550b3c5}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a65d6cb-635d-a12e-701d-ec16c524e8e3}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="DPA Notification Upload" languagecode="1033" />
+                        </labels>
+                        <control id="new_dpanotificationupload" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_dpanotificationupload" disabled="false" />
+                      </cell>
+                      <cell id="{a9e31cde-66ca-1365-88d0-ee1da6021a93}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2e2a51d0-9b5e-db98-8e9e-3397c8951a3b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{dc85c051-cb65-2e3d-24e9-a6779685bd55}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showlabel="false" showbar="false" id="{cd5eee8d-cdf5-4079-bce2-4d2172669ea3}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="7" auto="false" id="{46facd1d-ddcc-4b60-b6c8-d2d17d6b0314}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{d62f79d5-f3f2-422b-a15e-847fe8396555}" IsUserDefined="1" name="{d62f79d5-f3f2-422b-a15e-847fe8396555}" locklevel="0" expanded="false" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{4a0eedb3-fb21-44ef-9956-47ce1a969548}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c1e3ee4c-b1e6-49b6-88ba-99d8416d581a}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{da450f68-071e-4722-8427-a3140438472a}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section name="{d62f79d5-f3f2-422b-a15e-847fe8396555}_section_2" showlabel="false" showbar="false" locklevel="0" id="{9db1910e-ad36-7e4c-6124-6a624539b304}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2b857c44-b94b-4902-b0cc-c544237328b8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{592bd37b-a213-d00b-8753-b4ee0471c82b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_scope3emissionsbeingmeasured" localizedName="Scope 3 Emissions Being Measured" description="For Climate Survey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Scope 3 Emissions Being Measured" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="For Climate Survey" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000000" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Currently measuring/Measurement is implemented" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000001" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Currently partially measuring/Partial measurement is in place" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Will be measured in the next year/Implementation is underway" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Considering measuring/planning" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Not measuring /No plans to measure" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

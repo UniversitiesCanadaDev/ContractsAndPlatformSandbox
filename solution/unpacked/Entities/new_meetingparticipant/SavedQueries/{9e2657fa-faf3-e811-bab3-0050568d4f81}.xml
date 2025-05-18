@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{9e2657fa-faf3-e811-bab3-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_meetingparticipantid">
+          <cell name="new_meetingcontact" width="200" />
+          <cell name="new_primarymeetingcontact" width="150" />
+          <cell name="a_a4f0ae7ef6f3e811bab30050568d4f81.parentcustomerid" width="300" disableSorting="1" />
+          <cell name="a_a4f0ae7ef6f3e811bab30050568d4f81.jobtitle" width="300" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_meetingparticipant">
+          <order attribute="new_primarymeetingcontact" descending="true" />
+          <order attribute="new_meetingcontact" descending="false" />
+          <attribute name="new_primarymeetingcontact" />
+          <attribute name="new_meetingcontact" />
+          <link-entity alias="a_a4f0ae7ef6f3e811bab30050568d4f81" name="contact" from="contactid" to="new_meetingcontact" link-type="outer" visible="false">
+            <attribute name="parentcustomerid" />
+            <attribute name="jobtitle" />
+          </link-entity>
+          <attribute name="new_meetingparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

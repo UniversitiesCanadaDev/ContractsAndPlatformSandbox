@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{96d4cb2c-639b-4a2c-b445-5833707f710c}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_2" id="{a264a1ab-49da-a36d-5a30-88395c67723d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Inventory Records" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{c009ccc3-c18b-c8ad-254c-bc2e0a686d74}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0b517936-589e-c019-1476-aa5b73e6cb34}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Fiscal Year" languagecode="1033" />
+                        </labels>
+                        <control id="new_fiscalyear" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_fiscalyear" disabled="false" />
+                      </cell>
+                      <cell id="{3127e0b0-bd03-d614-c528-17482a65baa9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{760c0eb7-8806-e238-40ee-8ce10e68521b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{19bb5678-15c6-6c9b-d589-6878c44c34ea}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_3" showlabel="false" showbar="false" locklevel="0" id="{5cba5094-0a43-1603-a138-837abcea43b1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ec860056-9b7e-8e20-594c-9e532d490096}" showlabel="false" colspan="1" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Inventory Records (Inventory Records)" languagecode="1033" />
+                        </labels>
+                        <control id="Inventory" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{82E6D2EA-090B-45E8-BE15-7C8F8925E317}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_inventoryyear_new_inventoryrecord</RelationshipName>
+                            <TargetEntityType>new_inventoryrecord</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{82E6D2EA-090B-45E8-BE15-7C8F8925E317}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId></VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>30</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{49d7b2c8-beb0-4983-9898-f5f3acef1416}" IsUserDefined="1" name="{49d7b2c8-beb0-4983-9898-f5f3acef1416}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c4aa3613-96ae-4489-ae5c-555ad96ad041}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d24e966e-9d49-4578-ac26-ae68b546078c}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{332a9d17-61e9-4786-a8ff-23c50eb53669}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e5e43a3-95ac-ab23-349d-794740d81aab}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="AccountInventoryYear" languagecode="1033" />
+                        </labels>
+                        <control id="new_accountinventoryyearid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_accountinventoryyearid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{55208ccb-bcaa-49b8-8166-e6ee3ccade26}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="3" auto="false" id="{32231a7a-5748-4143-a608-ed0fe096076a}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_CopyFiscalYearLookuptoName" libraryUniqueId="{bc16771e-e1b6-bb96-d863-e7e4c701ad10}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_fiscalyear">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_CopyFiscalYearLookuptoName" handlerUniqueId="{6326e18e-4216-b708-cc16-e5282138e065}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

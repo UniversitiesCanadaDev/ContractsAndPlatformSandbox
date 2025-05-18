@@ -1,0 +1,56 @@
+function showHide(){
+    var programTypeValue = Xrm.Page.getAttribute("cr4e0_iscontract").getValue();
+    if(programTypeValue == 860540000 || programTypeValue == 860540001){
+        var entityNameValue = Xrm.Page.getAttribute("cr4e0_entityname").getValue();
+if(entityNameValue != null){
+        if(entityNameValue == 860540023 || entityNameValue == 860540022 || entityNameValue == 860540004 || entityNameValue == 860540024 || entityNameValue == 860540026 || entityNameValue == 860540000 || entityNameValue == 860540032){
+            Xrm.Page.ui.tabs.get('Internal Review').setVisible(false);
+            Xrm.Page.ui.tabs.get('Internal Review SPC').setVisible(true);
+        }else{
+            Xrm.Page.ui.tabs.get('Internal Review').setVisible(true);
+            Xrm.Page.ui.tabs.get('Internal Review SPC').setVisible(false);
+        }
+}
+        Xrm.Page.getControl("cr4e0_typeofprogram").setVisible(true);
+        Xrm.Page.getControl("cr4e0_programvalue").setVisible(true);
+        Xrm.Page.getControl("cr4e0_partner").setVisible(true);
+        Xrm.Page.getControl("cr4e0_programcomplexity").setVisible(true);
+        Xrm.Page.getControl("cr4e0_adminfees").setVisible(true);
+        Xrm.Page.getControl("cr4e0_programsobjective").setVisible(true);
+        Xrm.Page.getControl("cr4e0_partnershipsupports").setVisible(true);
+        Xrm.Page.getControl("cr4e0_contractvalue").setVisible(false);
+        //Xrm.Page.ui.tabs.get("Info").sections.get("Selection Section").setVisible(true);
+    }else{
+                Xrm.Page.getControl("cr4e0_typeofprogram").setVisible(false);
+        Xrm.Page.getControl("cr4e0_programvalue").setVisible(false);
+        Xrm.Page.getControl("cr4e0_partner").setVisible(false);
+        Xrm.Page.getControl("cr4e0_programcomplexity").setVisible(false);
+        Xrm.Page.getControl("cr4e0_adminfees").setVisible(false);
+        Xrm.Page.getControl("cr4e0_programsobjective").setVisible(false);
+        Xrm.Page.getControl("cr4e0_partnershipsupports").setVisible(false);
+        Xrm.Page.getControl("cr4e0_contractvalue").setVisible(true);
+        //Xrm.Page.ui.tabs.get("Info").sections.get("Selection Section").setVisible(true);
+    }
+}
+
+function showHideTabs(executionContext){
+var formContext = executionContext.getFormContext();
+    var programTypeValue = Xrm.Page.getAttribute("cr4e0_iscontract").getValue();
+    var currentFormType = formContext.getAttribute("cr4e0_formtype").getValue();
+if(currentFormType === 860540001){
+    if(programTypeValue == 860540000 || programTypeValue == 860540001){
+        var entityNameValue = Xrm.Page.getAttribute("cr4e0_entityname").getValue();
+        if(entityNameValue == 860540023 || entityNameValue == 860540022 || entityNameValue == 860540004 || entityNameValue == 860540024 || entityNameValue == 860540026 || entityNameValue == 860540000 || entityNameValue == 860540032){
+            Xrm.Page.ui.tabs.get('Internal Review').setVisible(false);
+            Xrm.Page.ui.tabs.get('Internal Review SPC').setVisible(true);
+        }else{
+alert('Please select the correct entity number for Program Proposal/Contract.');
+            Xrm.Page.ui.tabs.get('Internal Review').setVisible(true);
+            Xrm.Page.ui.tabs.get('Internal Review SPC').setVisible(false);
+        }
+    }else{
+Xrm.Page.ui.tabs.get('Internal Review').setVisible(true);
+            Xrm.Page.ui.tabs.get('Internal Review SPC').setVisible(false);
+}
+}
+}

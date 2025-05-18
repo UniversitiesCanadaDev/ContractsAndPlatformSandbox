@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8b46c307-2bb3-4930-8742-b451ebaa84a8}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_partnerprogram" id="new_partnerprogramid">
+          <cell name="new_april" width="100" />
+          <cell name="new_october" width="100" />
+          <cell name="new_year" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_partnerprogram">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_year" descending="false" />
+          <attribute name="new_year" />
+          <attribute name="new_october" />
+          <attribute name="new_april" />
+          <attribute name="new_partnerprogramid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Partner Program Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

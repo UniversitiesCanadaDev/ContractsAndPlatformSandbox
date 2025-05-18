@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{dc29f8f3-ff75-4347-8409-24ef32214813}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_portalnewsid">
+          <cell name="cr4e0_title" width="100" />
+          <cell name="cr4e0_frenchtitle" width="100" />
+          <cell name="cr4e0_roles" width="100" />
+          <cell name="cr4e0_theme" width="100" />
+          <cell name="cr4e0_status" width="100" />
+          <cell name="cr4e0_emailed" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_portalnews">
+          <attribute name="cr4e0_portalnewsid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr4e0_title" />
+          <attribute name="cr4e0_frenchtitle" />
+          <attribute name="cr4e0_roles" />
+          <attribute name="cr4e0_emailed" />
+          <attribute name="cr4e0_status" />
+          <attribute name="cr4e0_theme" />
+          <order attribute="createdon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Portal News" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

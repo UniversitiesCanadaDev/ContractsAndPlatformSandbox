@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{5204934f-6542-e811-b873-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row id="new_contacttypeid" name="result">
+          <cell name="new_contacttype" width="300" />
+          <cell name="new_appointmentstartdate" width="100" />
+          <cell name="new_appointmentenddate" width="100" />
+          <cell name="new_jobtitle" width="300" />
+          <cell name="new_employer" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_contacttype">
+          <order attribute="new_appointmentstartdate" descending="true" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_employer" />
+          <attribute name="new_contacttype" />
+          <attribute name="new_appointmentstartdate" />
+          <attribute name="new_appointmentenddate" />
+          <attribute name="new_jobtitle" />
+          <attribute name="new_contacttypeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active for Contact Record" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

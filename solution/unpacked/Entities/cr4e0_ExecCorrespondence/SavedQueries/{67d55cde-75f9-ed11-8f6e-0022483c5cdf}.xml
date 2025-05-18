@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{67d55cde-75f9-ed11-8f6e-0022483c5cdf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" icon="1" preview="1">
+        <row name="result" id="activityid">
+          <cell name="subject" width="300" />
+          <cell name="to" width="204" />
+          <cell name="from" width="125" />
+          <cell name="univcan_replytoemail" width="136" />
+          <cell name="univcan_correspondencestatus" width="270" />
+          <cell name="createdon" width="132" />
+          <cell name="statecode" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr4e0_execcorrespondence">
+          <attribute name="subject" />
+          <attribute name="createdon" />
+          <attribute name="to" />
+          <attribute name="statecode" />
+          <attribute name="univcan_replytoemail" />
+          <attribute name="from" />
+          <attribute name="univcan_correspondencestatus" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="univcan_correspondencestatus" operator="ne" value="4" />
+            <condition attribute="univcan_unique" operator="eq" value="1" />
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.13</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Single Correspondence" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formerly Single Exec Correspondences" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

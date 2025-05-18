@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c8666142-4dba-eb11-8236-000d3a84e4d3}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" preview="1" icon="1">
+        <row name="result" id="activityid">
+          <cell name="requiredattendees" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="subject" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="regardingobjectid" width="100" />
+          <cell name="location" width="100" />
+          <cell name="scheduledstart" width="100" />
+          <cell name="scheduledend" width="100" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="appointment">
+          <attribute name="subject" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="new_meetingstatus" operator="eq" value="100000004" />
+          </filter>
+          <link-entity name="activityparty" from="activityid" to="activityid" alias="aa">
+            <filter type="and">
+              <condition attribute="partyid" operator="eq-userid" />
+              <condition attribute="participationtypemask" operator="in">
+                <value>7</value>
+                <value>9</value>
+                <value>5</value>
+                <value>6</value>
+              </condition>
+            </filter>
+          </link-entity>
+          <attribute name="requiredattendees" />
+          <attribute name="regardingobjectid" />
+          <attribute name="location" />
+          <attribute name="scheduledstart" />
+          <attribute name="scheduledend" />
+          <attribute name="createdon" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Requested Meetings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{23a234b4-807a-ee11-8179-0022483c554a}" Name="Lobby Activities required Message" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/LobbyActivitiesrequiredMessage-23A234B4-807A-EE11-8179-0022483C554A.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerFormId>{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}</ProcessTriggerFormId>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>Appointment</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Lobby Activities required Message" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
+  <labels>
+    <steplabels id="{842544af-a7e6-49c8-ba7c-e40a1d47e1b1}">
+      <label languagecode="1033" description="Please add DPOH Subjects before Saving Meeting!" />
+    </steplabels>
+  </labels>
+</Workflow>

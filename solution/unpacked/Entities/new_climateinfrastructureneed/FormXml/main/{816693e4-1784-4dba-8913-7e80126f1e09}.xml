@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{816693e4-1784-4dba-8913-7e80126f1e09}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_2" id="{e84de328-29b8-92a8-ce03-43d4d9cd229d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Infrastructure" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{a18b17e7-34e4-179e-35e7-985ab7c902e6}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2801ed24-20ed-47e6-81fe-594b1e20fe8a}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Project Infrastructure Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" uniqueid="{1beeb76b-727c-6041-edd3-a452bbce8bdd}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7edc6a1d-91e7-859d-3bc8-a44de598536d}" showlabel="true" locklevel="0" rowspan="5" colspan="2">
+                        <labels>
+                          <label description="Project Description" languagecode="1033" />
+                        </labels>
+                        <control id="new_projectdescription" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_projectdescription" disabled="false" uniqueid="{98a3d28c-b495-c352-2db3-c93548e0d828}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{e468d08c-5b4c-79c2-cb7a-bc42b487440e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approximate Project Cost:" languagecode="1033" />
+                        </labels>
+                        <control id="new_approximateprojectcost" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_approximateprojectcost" disabled="false" />
+                      </cell>
+                      <cell id="{56883e5d-648e-c412-c16d-ed001b135852}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Incentive Funding or Prov/Fed Grants Expected" languagecode="1033" />
+                        </labels>
+                        <control id="new_incentivefundingorprovfedgrantsexpected" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_incentivefundingorprovfedgrantsexpected" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_2" showlabel="true" showbar="false" locklevel="0" id="{e4c449d3-1394-e17c-782b-acd3db9d7164}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Project category (please select all that apply):" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{780e32d2-7d71-b67a-8558-04d619b92328}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="New construction" languagecode="1033" />
+                        </labels>
+                        <control id="new_newconstructioncategory" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_newconstructioncategory" disabled="false" uniqueid="{eeced65b-5339-95ac-b829-57dddb07c1d8}" />
+                      </cell>
+                      <cell id="{067798c5-ac2e-cb15-7780-d5add18e003e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Expansion of existing facilities" languagecode="1033" />
+                        </labels>
+                        <control id="new_expansionofexistingfacilitiescategory" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_expansionofexistingfacilitiescategory" disabled="false" uniqueid="{58a4bdb2-609d-3a83-2d93-90607d7965a4}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b919d37-43cd-28e2-7c61-03d81e6264c6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Renovations / upgrades of existing facilities" languagecode="1033" />
+                        </labels>
+                        <control id="new_renovationsupgradesexistingfacilitiescat" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_renovationsupgradesexistingfacilitiescat" disabled="false" uniqueid="{95918712-b2d1-078e-6d81-34830593aeac}" />
+                      </cell>
+                      <cell id="{9a23184b-c142-d856-4254-51a12605493e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5a3808d9-7927-5ae6-c8ad-6e9c40785e87}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Other Category" languagecode="1033" />
+                        </labels>
+                        <control id="new_othercategory" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_othercategory" disabled="false" uniqueid="{4be6123e-9d03-a900-4d67-2ae16b41d810}" />
+                      </cell>
+                      <cell id="{dc914b73-3771-5289-204b-115d015ab9eb}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{adb72d9a-66d4-0774-0419-8c8270687a3d}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Other category Specified" languagecode="1033" />
+                        </labels>
+                        <control id="new_othercategoryspecified" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_othercategoryspecified" disabled="false" uniqueid="{1d53c19b-a939-6de1-5121-6ed2ccd3e00d}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_3" showlabel="true" showbar="false" locklevel="0" id="{6831380e-6c00-01c6-6d99-2b732e028ecc}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Please provide additional details regarding the sustainability and climate-related aspects of the project (select all that apply):" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{acd3a251-b825-7a4b-01de-4c4ead59007a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Energy reduction and energy efficiency" languagecode="1033" />
+                        </labels>
+                        <control id="new_energyreductionandenergyefficiency" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_energyreductionandenergyefficiency" disabled="false" uniqueid="{0d8ac174-c4d2-3e83-9a92-bc6a5c976226}" />
+                      </cell>
+                      <cell id="{e9b6a0a5-1dc8-be4a-2988-831ed09c501a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clean energy solutions" languagecode="1033" />
+                        </labels>
+                        <control id="new_cleanenergysolutions" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_cleanenergysolutions" disabled="false" uniqueid="{330cb725-d6ee-9c03-2a70-b066c320b964}" />
+                      </cell>
+                      <cell id="{dc202662-1106-e240-559e-c718add90102}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Innovation and technology enabled projects" languagecode="1033" />
+                        </labels>
+                        <control id="new_innovationandtechnologyenabledprojects" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="new_innovationandtechnologyenabledprojects" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ce50300a-78e5-6e9d-ac4c-2b0dd18966c8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Green construction" languagecode="1033" />
+                        </labels>
+                        <control id="new_greenconstruction" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_greenconstruction" disabled="false" uniqueid="{635202b4-cd45-5340-e217-738b0c789923}" />
+                      </cell>
+                      <cell id="{3414d39e-633b-4c8b-865b-e4145a194d19}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Green infrastructure initiative" languagecode="1033" />
+                        </labels>
+                        <control id="new_greeninfrastructureinitiative" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_greeninfrastructureinitiative" disabled="false" uniqueid="{da2378b6-a476-a7c4-e39c-cb52c937c02e}" />
+                      </cell>
+                      <cell id="{a682b552-dd7a-b236-65cc-8533e10e7987}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0a7b7927-7ae3-2e84-44bd-10875bd9068c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Other Aspect of Project" languagecode="1033" />
+                        </labels>
+                        <control id="new_otheraspectofproject" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_otheraspectofproject" disabled="false" uniqueid="{0e8cada3-41b5-b9ca-6680-071a3a5eeb83}" />
+                      </cell>
+                      <cell id="{3c30502c-2690-bcba-175d-599563e520da}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ac337dcc-d1dd-1322-c5ee-4d893c1d1741}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8da97239-6689-7831-a681-1282edd182bd}" showlabel="true" locklevel="0" colspan="3">
+                        <labels>
+                          <label description="Other Aspect of Project Specified" languagecode="1033" />
+                        </labels>
+                        <control id="new_otheraspectofprojectspecified" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_otheraspectofprojectspecified" disabled="false" uniqueid="{82bb5ca0-8338-7ab8-9205-dd8c156c794e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12a40425-ca53-76e8-6ae2-73b8c951b093}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b0508cab-238e-8931-1914-35d983ae2589}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{0a90594e-dc81-3edb-eda1-991901d71213}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14850a84-a3d8-2d7b-d297-8ac20804d70b}" showlabel="true" locklevel="0" colspan="3">
+                        <labels>
+                          <label description="Anticipated annual emissions reductions in Tonnes" languagecode="1033" />
+                        </labels>
+                        <control id="new_anticipatedannualemissionsreductionsinton" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_anticipatedannualemissionsreductionsinton" disabled="false" uniqueid="{7d973db2-9240-bd67-05e0-d13b65cd3d6d}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a8bb62b9-7732-a783-d078-ec83a97029b6}" showlabel="true" locklevel="0" colspan="3">
+                        <labels>
+                          <label description="Anticipated energy use reductions" languagecode="1033" />
+                        </labels>
+                        <control id="new_anticipatedenergyusereductions" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_anticipatedenergyusereductions" disabled="false" uniqueid="{b08663e2-6702-9b05-e786-7e12ea367c5e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ac31619-a055-be69-8567-0eb514a06794}" showlabel="true" locklevel="0" colspan="3">
+                        <labels>
+                          <label description="Anticipated financial savings from project" languagecode="1033" />
+                        </labels>
+                        <control id="new_anticipatedfinancialsavings" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_anticipatedfinancialsavings" disabled="false" uniqueid="{b79ebc1d-bbce-5d27-84b9-61d9a6b66e47}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ca8d144-0a0a-9535-22db-2390cca7b290}" showlabel="true" locklevel="0" colspan="3" rowspan="2">
+                        <labels>
+                          <label description="Other metrics" languagecode="1033" />
+                        </labels>
+                        <control id="new_othermetrics" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_othermetrics" disabled="false" uniqueid="{29bec2d1-aaa8-bedc-930d-8be4e0098dd7}" />
+                      </cell>
+                    </row>
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{cdb7176b-c9f5-4042-8afa-30880af28a17}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{66247c7e-dca3-4409-b749-db6507138581}" name="{66247c7e-dca3-4409-b749-db6507138581}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3566ada6-4556-810d-3d01-d78ee17deea1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Climate Infrastructure Related Survey" languagecode="1033" />
+                        </labels>
+                        <control id="new_climateinfrastructureid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_climateinfrastructureid" disabled="false" uniqueid="{91676729-b38c-862a-43e5-9896647e6c09}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{262cb7c1-46ef-4178-9301-bb17877ed2ec}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{642ba4a0-e022-4ec5-93c5-aa45912578f2}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="5" auto="false" id="{e1648487-1122-46aa-905e-c00190006ab7}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                          <label description="Texte de la remarque" languagecode="1036" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{05d33127-1817-57eb-414a-ae99e817e5aa}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Notes</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>10</UClientRecordPerPage>
+                            <UClientEnableWhatsNewFilter>false</UClientEnableWhatsNewFilter>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

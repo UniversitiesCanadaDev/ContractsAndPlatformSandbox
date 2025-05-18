@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{1a920e68-f015-e511-b417-0050568d4f81}</WebResourceId>
+  <Name>new_UniversityLinksNewName</Name>
+  <DisplayName>University Links New Name</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_UniversityLinksNewName1A920E68-F015-E511-B417-0050568D4F81</FileName>
+</WebResource>

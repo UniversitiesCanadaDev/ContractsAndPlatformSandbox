@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{f74794d3-268a-49b3-8f69-75e2e5445875}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_mp_interestsid">
+          <cell name="new_description" width="300" disableSorting="1" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_mp_interests">
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="new_description" />
+          <attribute name="new_mp_interestsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive MP_Interests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

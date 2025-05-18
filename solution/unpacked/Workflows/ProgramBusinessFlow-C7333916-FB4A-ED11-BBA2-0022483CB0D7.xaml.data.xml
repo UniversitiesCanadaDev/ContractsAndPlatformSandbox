@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{c7333916-fb4a-ed11-bba2-0022483cb0d7}" Name="Program Business Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ProgramBusinessFlow-C7333916-FB4A-ED11-BBA2-0022483CB0D7.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>1</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>cr4e0_proposalbusinessflow</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>cr4e0_Proposal</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Program Business Flow" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{13822ec1-770d-4eab-bebd-e9b7dcb32462}">
+      <label languagecode="1033" description="Draft" />
+    </steplabels>
+    <steplabels id="{c3fc2164-71af-4b08-9c18-7f3f83c0b986}">
+      <label languagecode="1033" description="Project Status" />
+    </steplabels>
+    <steplabels id="{0c601e7b-3f3e-426c-aa50-375fc3f45302}">
+      <label languagecode="1033" description="Internal Approval" />
+    </steplabels>
+    <steplabels id="{918f9638-eb8f-4955-81ae-774dcac638d0}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{da2936f5-bab2-454d-a34a-67fb353187ef}">
+      <label languagecode="1033" description="Send email notification for internal approval" />
+    </steplabels>
+    <steplabels id="{ea09f095-bbbb-4dff-ba98-c8ab636f2af7}">
+      <label languagecode="1033" description="Send To Client/Vendor" />
+    </steplabels>
+    <steplabels id="{9ef39d12-bd54-4542-aff4-0f672223ec25}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{346965b1-97f6-4841-b616-0415de76d6e5}">
+      <label languagecode="1033" description="Sign-Off" />
+    </steplabels>
+    <steplabels id="{bb103467-173a-4adc-b050-f32bbfbd4985}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{f152bad0-19f9-4615-b16b-e965bc4ff5c1}">
+      <label languagecode="1033" description="Send email notification for approval" />
+    </steplabels>
+    <steplabels id="{9a344b06-24de-4f60-8d44-35a7bdfe6981}">
+      <label languagecode="1033" description="Executed" />
+    </steplabels>
+    <steplabels id="{c4de3fbc-3035-41e1-a820-32b97736adf8}">
+      <label languagecode="1033" description="Contract" />
+    </steplabels>
+    <steplabels id="{78fdc168-9d51-4379-a415-ae116a5cb765}">
+      <label languagecode="1033" description="Project Type" />
+    </steplabels>
+  </labels>
+</Workflow>

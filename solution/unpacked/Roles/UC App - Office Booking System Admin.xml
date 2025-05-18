@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{b4528d73-9da3-ec11-b3fe-0022483db739}" name="UC App - Office Booking System Admin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendnew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvAppendnew_Desks" level="Global" />
+    <RolePrivilege name="prvAppendTonew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvAppendTonew_Desks" level="Global" />
+    <RolePrivilege name="prvAssignnew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvAssignnew_Desks" level="Global" />
+    <RolePrivilege name="prvCreatenew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvCreatenew_Desks" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletenew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvDeletenew_Desks" level="Global" />
+    <RolePrivilege name="prvReadnew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvReadnew_Desks" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvSharenew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvSharenew_Desks" level="Global" />
+    <RolePrivilege name="prvWritenew_DeskReservations" level="Global" />
+    <RolePrivilege name="prvWritenew_Desks" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

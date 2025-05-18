@@ -1,0 +1,3 @@
+function CopyMeetingStatus() {
+  Xrm.Page.getAttribute('new_meetingstatusheader').setValue(Xrm.Page.getAttribute('new_meetingstatus').getText());
+}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{24473b17-f276-4707-b4d1-b849fd880a89}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_qeprojectcontactid">
+          <cell name="new_name" width="300" />
+          <cell name="createdon" width="125" />
+          <cell name="a_5cb0e031e6c1e411b4170050568d4f81.new_qesprojecttype" width="100" disableSorting="1" />
+          <cell name="a_5cb0e031e6c1e411b4170050568d4f81.new_filenamesid" width="125" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qeprojectcontact">
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <link-entity alias="a_5cb0e031e6c1e411b4170050568d4f81" name="new_project" from="new_projectid" to="new_projectcontactsid" link-type="outer" visible="false">
+            <attribute name="new_qesprojecttype" />
+            <attribute name="new_filenamesid" />
+          </link-entity>
+          <attribute name="new_qeprojectcontactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive QES Project Contacts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

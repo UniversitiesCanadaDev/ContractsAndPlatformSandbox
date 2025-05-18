@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{4890a548-d47c-ee11-8179-000d3af36bac}</WebResourceId>
+  <Name>new_setDPOHSubjectsasrequired</Name>
+  <DisplayName>Set DPOH Required</DisplayName>
+  <Description>When Lobby Activity  = Yes</Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_setDPOHSubjectsasrequired4890A548-D47C-EE11-8179-000D3AF36BAC</FileName>
+</WebResource>

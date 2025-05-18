@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_globalqesquestionresponse" localizedName="Global QES Quest Resp Agreement" description="Multiple use for same option set for questionnaire response." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Global QES Quest Resp Agreement" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Multiple use for same option set for questionnaire response." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="5" IsHidden="0">
+      <labels>
+        <label description="Strongly agree" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Strongly agree" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="4" IsHidden="0">
+      <labels>
+        <label description="Agree" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Agree" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="3" IsHidden="0">
+      <labels>
+        <label description="Neutral" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Neutral" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="2" IsHidden="0">
+      <labels>
+        <label description="Disagree" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Disagree" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="1" IsHidden="0">
+      <labels>
+        <label description="Strongly disagree" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Strongly disagree" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="0" IsHidden="0">
+      <labels>
+        <label description="Not applicable" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Not applicable" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ce16ea55-5e10-e911-bab3-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_meetingparticipantid">
+          <cell name="new_name" width="300" />
+          <cell name="a_12fb7230f7f3e811bab30050568d4f81.new_meetingdate" width="150" disableSorting="1" />
+          <cell name="new_primarymeetingcontact" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_meetingparticipant">
+          <attribute name="new_primarymeetingcontact" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="new_meetinglookup" from="new_meetinglookupid" to="new_meetingparticipantsid" visible="false" link-type="outer" alias="a_12fb7230f7f3e811bab30050568d4f81">
+            <attribute name="new_meetingdate" />
+          </link-entity>
+          <attribute name="new_meetingparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Meeting Contact for Contact Entity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

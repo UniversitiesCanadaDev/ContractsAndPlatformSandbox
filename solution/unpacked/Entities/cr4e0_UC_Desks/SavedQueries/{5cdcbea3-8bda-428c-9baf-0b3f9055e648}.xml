@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5cdcbea3-8bda-428c-9baf-0b3f9055e648}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_ucdesks" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_uc_desksid">
+          <cell name="cr4e0_ucdesks" width="300" />
+          <cell name="cr4e0_title" width="100" />
+          <cell name="cr4e0_type" width="100" />
+          <cell name="cr4e0_active" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_uc_desks">
+          <attribute name="cr4e0_uc_desksid" />
+          <attribute name="cr4e0_ucdesks" />
+          <attribute name="createdon" />
+          <order attribute="cr4e0_ucdesks" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr4e0_title" />
+          <attribute name="cr4e0_type" />
+          <attribute name="cr4e0_active" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active UC_Desks" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

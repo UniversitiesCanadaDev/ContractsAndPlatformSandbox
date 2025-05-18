@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4c1a2088-e738-ec11-8c64-000d3a8ead20}</formid>
+    <IntroducedVersion>1.0.2110.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <footer id="{4a8fabaf-b44d-4aff-86af-419fdd3bd8ce}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2a825361-26cb-4a7b-8137-addfe9b88e5f}" showlabel="false" labelid="{931b89cc-20e7-4765-a72b-986e8452b497}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{214f3621-2eaa-4a5e-ba6b-ebac3b8987b1}" showlabel="false" labelid="{5a480ece-30b7-4a12-a9ec-38d2e5dcb79c}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{f5ec2e71-a8f6-4c53-befd-d5b28b3ed834}" showlabel="false" labelid="{c8f2ca18-e40f-43ab-ba88-3add67d96f10}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="BAM C1 Simple Specialties" languagecode="1033" />
+      <LocalizedName description="BAM C1 Simple Specialties" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="C1 User can select their specialties. This adds a reference to a &quot;Service&quot; record in the &quot;Specialties&quot; field in &quot;Contacts&quot; table." languagecode="1033" />
+      <Description description="L’utilisateur C1 peut sélectionner ses spécialités. Cela ajoute une référence à un enregistrement « Service » dans le champ « Spécialités » de la table « Contacts »." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

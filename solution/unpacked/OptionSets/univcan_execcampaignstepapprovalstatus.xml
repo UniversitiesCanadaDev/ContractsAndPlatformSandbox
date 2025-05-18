@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="univcan_execcampaignstepapprovalstatus" localizedName="Exec Campaign - Step Approval Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.12</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Exec Campaign - Step Approval Status" languagecode="1033" />
+  </displaynames>
+  <options>
+    <option value="708740003" IsHidden="0">
+      <labels>
+        <label description="Approval Requested" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="708740000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Approved" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="708740001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Revisions needed" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="708740002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Approve with revisions" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="708740004" IsHidden="0">
+      <labels>
+        <label description="Not started" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

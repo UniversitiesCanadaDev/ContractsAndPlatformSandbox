@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{80a1d09b-088e-4687-a001-3fe01263a012}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_meeting" id="new_meetingid">
+          <cell name="new_contact_new_meetingid" width="150" />
+          <cell name="new_meetingdate" width="150" />
+          <cell name="new_name" width="300" />
+          <cell name="new_outcome" width="100" disableSorting="1" />
+          <cell name="new_followup" width="100" disableSorting="1" />
+          <cell name="new_attendance" width="100" disableSorting="1" />
+          <cell name="new_location" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_meeting">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_outcome" />
+          <attribute name="new_meetingdate" />
+          <attribute name="new_location" />
+          <attribute name="new_followup" />
+          <attribute name="new_attendance" />
+          <attribute name="new_contact_new_meetingid" />
+          <attribute name="new_meetingid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

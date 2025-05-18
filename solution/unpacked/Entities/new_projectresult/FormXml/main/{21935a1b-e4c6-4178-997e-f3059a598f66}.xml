@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{21935a1b-e4c6-4178-997e-f3059a598f66}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_7" id="{4597618d-73ee-5dd0-ab41-d223edca4518}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Intermediate Outcome - Increased knowledge &amp; skills through academic &amp; professional experiencies of young leaders from the Commowealth." languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_7_section_1" showlabel="true" showbar="true" locklevel="0" id="{2c70e218-02aa-084c-86e6-4355063bac62}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Increased number of students from Commowealth countries receiving Master's &amp; doctorate degrees from Canadian universities." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{71c5d203-17e1-9569-b1c5-bbd9c3cec56d}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity1" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity1" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity1" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a3695287-8968-9650-4254-1532957dae9c}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity2" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity2" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d202de1c-9042-04b8-974a-29461443611e}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 3" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity3" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity3" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a56de10-60d9-2bc6-4597-04959d0cb5ad}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 4" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity4" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity4" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38a7d049-b901-d6ea-9c9c-62e9e9ba1674}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 5" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity5" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity5" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_7_section_2" showlabel="true" showbar="true" locklevel="0" id="{826490d7-1cb1-a234-9a8c-cb5cb4bcb1e0}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Enhanced leadership &amp; professional skills among scholars &amp; interns . ....................................................................................." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3778ccb0-9a56-1330-9eea-85c1aac98d30}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 6" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity6" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity6" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3244c213-6855-92cb-751b-ac7b1e76b258}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 7" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity7" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity7" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79d95b2e-5d08-ee82-9175-a2c524940091}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 8" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity8" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity8" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9541668-899c-b4a9-431b-62a038dc85c2}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 9" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity9" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity9" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8eea932c-da38-d3c5-1b3e-282ab5e202cb}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 10" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity10" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity10" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_6" id="{e5d582c3-b959-b9e9-9da0-74c918986921}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Intermediate Outcome - Enhanced networking between Canadians &amp; fellow citizens of the Commomwealth" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="true" showbar="true" locklevel="0" id="{36e188b3-44c0-a06b-a37e-d82b6e0c2ed6}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Increased engagement between scholars &amp; interns from different Commonwealth countries." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cbd39507-a6aa-6e1c-2c20-888243c44ede}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 11" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity11" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity11" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{673b3947-4596-5556-21ae-536cca1b7377}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 12" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity12" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity12" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{52727d89-b60c-da4d-b562-be984176729a}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 13" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity13" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity13" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d325603b-48c0-c51c-7c99-cdca065b2977}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 14" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity14" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity14" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46691e5e-7bd0-12a9-8c14-698970634b22}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 15" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity15" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity15" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_6_section_2" showlabel="true" showbar="true" locklevel="0" id="{790b0e70-846c-c73a-314c-b1d611857ecc}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Ehanced network of program alumni &amp; current scholars &amp; interns." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b77ae04d-c8b2-ea20-175a-d1d197ebd098}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 16" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity16" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity16" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05ae38ca-dce7-ec92-a648-9da24e9be566}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 17" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity17" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity17" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{933e38bb-3e72-7ec7-db90-196828028da5}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 18" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity18" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity18" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4ea0332-d0c9-4c9b-5d01-3d8883ad3893}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 19" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity19" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity19" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17761ad1-1340-7032-e87c-9bc0dba737be}" showlabel="false" locklevel="0" auto="false">
+                        <labels>
+                          <label description="Activity 20" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity20" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity20" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_8" id="{0050de09-511b-2430-926c-ce2683467c0a}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Intermediate Outcome - Increased contribution to local &amp; global communities by young leaders in Canada &amp; the Commowealth." languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_8_section_1" showlabel="true" showbar="true" locklevel="0" id="{9d75728a-6ea7-13d8-06d0-34e937747e75}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Increased engagement with Canadian community organizations by scholars &amp; interns." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c1112209-87a2-5b2d-d4ca-618a8d908aa8}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 21" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity21" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity21" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{878ad0c5-decd-ea17-4c68-a7401a90d703}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 22" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity22" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity22" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{939071ec-8997-36ab-59ac-29ed6600d8be}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 23" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity23" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity23" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e2a6e4b2-0b0a-a4be-6777-9e7d64d17c05}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 24" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity24" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity24" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3669417-226a-35a0-757a-04363e48e4ec}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 25" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity25" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity25" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_8_section_2" showlabel="true" showbar="true" locklevel="0" id="{4da0673b-0a89-9470-c6b3-98476820dd09}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Strengthened capacity of Commonwealth partner organisations to address their priorities." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{20558445-102b-6555-5e63-3d411a92930c}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 26" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity26" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity26" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9bb8a294-01b3-25de-aca2-176c19b2baa0}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 27" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity27" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity27" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a443a3c5-c809-06ec-b768-ba523982a8cb}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 28" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity28" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity28" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{56156bd6-8c15-5412-b197-031bb3a2ee68}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 29" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity29" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity29" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55329a81-6627-799a-28c9-2be84edc4253}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activity 30" languagecode="1033" />
+                        </labels>
+                        <control id="new_activity30" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activity30" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{8b01fe01-480f-48ab-b0a2-1ccfd8fb6cf6}" IsUserDefined="1" locklevel="0" showlabel="true" name="{8b01fe01-480f-48ab-b0a2-1ccfd8fb6cf6}" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{9d03d690-9545-45d6-9c41-fd3a6d5c8f52}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bb0217b4-19f8-48a2-b8fd-76e4b5f84068}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{341ce758-79a2-48fe-ab2b-42180dc09572}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{4226a684-56e2-4cc6-8aab-399035b3e7da}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{5a8594b8-1264-4856-8069-9324518be4c7}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

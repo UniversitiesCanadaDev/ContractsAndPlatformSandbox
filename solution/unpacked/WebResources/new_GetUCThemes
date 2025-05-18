@@ -1,0 +1,3 @@
+function CopyThemes() {
+  Xrm.Page.getAttribute('new_fieldforucthemes').setValue(Xrm.Page.getAttribute('new_ucthemes').getText());
+}

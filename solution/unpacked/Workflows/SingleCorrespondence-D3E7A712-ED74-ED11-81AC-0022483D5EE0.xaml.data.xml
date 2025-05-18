@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{d3e7a712-ed74-ed11-81ac-0022483d5ee0}" Name="Single Correspondence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SingleCorrespondence-D3E7A712-ED74-ED11-81AC-0022483D5EE0.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>univcan_singlecorrespondence</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.13</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>cr4e0_ExecCorrespondence</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Single Correspondence" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{d39b4677-e3eb-40d1-a619-b71820b75abd}">
+      <label languagecode="1033" description="Start" />
+    </steplabels>
+    <steplabels id="{1c77c4bd-88e4-4598-afbf-198887084a0d}">
+      <label languagecode="1033" description="Subject" />
+    </steplabels>
+    <steplabels id="{311fe138-1168-4795-a81c-ba53cfe2a54b}">
+      <label languagecode="1033" description="To" />
+    </steplabels>
+    <steplabels id="{4d72c534-4e76-4fde-be90-07e5f3ed012d}">
+      <label languagecode="1033" description="From" />
+    </steplabels>
+    <steplabels id="{3fba1270-ecdc-48f3-9fab-752071059f97}">
+      <label languagecode="1033" description="Create Pdf" />
+    </steplabels>
+    <steplabels id="{4960c669-f95e-4716-b844-978cbd16764d}">
+      <label languagecode="1033" description="Create PDF" />
+    </steplabels>
+    <steplabels id="{c9e52805-5edf-419a-a937-0021dbea3b84}">
+      <label languagecode="1033" description="Send" />
+    </steplabels>
+    <steplabels id="{a30184b0-2d9b-4650-a9e4-51bb6c0eb30e}">
+      <label languagecode="1033" description="Send Correspondence!" />
+    </steplabels>
+    <steplabels id="{9236cb5c-658c-40d2-b160-9d9307e43a52}">
+      <label languagecode="1033" description="Completed" />
+    </steplabels>
+    <steplabels id="{f7a7a3bf-aa5d-40f0-9d8d-b28abe1ea503}">
+      <label languagecode="1033" description="Correspondence Status" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers />
+</Workflow>

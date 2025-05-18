@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{cf28595d-10cd-ef11-8ee9-6045bd5d8feb}</WebResourceId>
+  <Name>cr4e0_viewfilteringbasedonteam</Name>
+  <DisplayName>viewfilteringbasedonteam</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/cr4e0_viewfilteringbasedonteamCF28595D-10CD-EF11-8EE9-6045BD5D8FEB</FileName>
+</WebResource>

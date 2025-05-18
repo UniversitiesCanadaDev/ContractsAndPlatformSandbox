@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_globalqesfinancialreportingstatus" localizedName="Global QES FInancial Reporting Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Global QES FInancial Reporting Status" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000001" IsHidden="0">
+      <labels>
+        <label description="0 - No action taken" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000000" IsHidden="0">
+      <labels>
+        <label description="1 - Email reminder sent (2 wks prior to deadline)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" IsHidden="0">
+      <labels>
+        <label description="2 - Late report email reminder sent (1 day past deadline)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" IsHidden="0">
+      <labels>
+        <label description="10 – Received" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000005" IsHidden="0">
+      <labels>
+        <label description="20 – PO reviewed" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000018" IsHidden="0">
+      <labels>
+        <label description="25 – Red – (MAJOR ISSUES)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000021" IsHidden="0">
+      <labels>
+        <label description="27 – Save discussions to J" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000023" IsHidden="0">
+      <labels>
+        <label description="30 – Yellow – Emailed requesting revision" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000026" IsHidden="0">
+      <labels>
+        <label description="35 – Save email / notes to J" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000008" IsHidden="0">
+      <labels>
+        <label description="40 – Revised report received" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" IsHidden="0">
+      <labels>
+        <label description="41 - Revised report - PO reviewed + FO reviewed" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000013" IsHidden="0">
+      <labels>
+        <label description="50 – Approved prepare advance request for CFC" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000014" IsHidden="0">
+      <labels>
+        <label description="60 – Receive cheque and letter from CFC" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000015" IsHidden="0">
+      <labels>
+        <label description="61 – Scan cheque, saved to J and emailed to FO" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000028" IsHidden="0">
+      <labels>
+        <label description="65 - Emailed university re cheque in the mail" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000031" IsHidden="0">
+      <labels>
+        <label description="100 - Courier cheque to university" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000055" IsHidden="0">
+      <labels>
+        <label description="299 – Save final documents to J" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000022" IsHidden="0">
+      <labels>
+        <label description="400 - Complete" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

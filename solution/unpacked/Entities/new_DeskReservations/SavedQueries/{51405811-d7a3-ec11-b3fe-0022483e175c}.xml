@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{51405811-d7a3-ec11-b3fe-0022483e175c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_deskreservationsid">
+          <cell name="new_reservedby" width="184" />
+          <cell name="new_checkedin" width="100" />
+          <cell name="new_reserveddesk" width="134" />
+          <cell name="new_checkoutfrom" width="154" />
+          <cell name="new_checkoutto" width="288" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="new_deskreservations">
+          <attribute name="new_deskreservationsid" />
+          <attribute name="new_checkedin" />
+          <attribute name="new_reserveddesk" />
+          <attribute name="new_checkoutto" />
+          <attribute name="new_checkoutfrom" />
+          <attribute name="new_reservedby" />
+          <filter type="and">
+            <condition attribute="new_checkoutfrom" operator="yesterday" />
+          </filter>
+          <order attribute="new_checkoutfrom" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Yesterday's Reservations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

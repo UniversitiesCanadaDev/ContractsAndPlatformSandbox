@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{764240dd-c436-459d-9beb-dc68ce32300f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_awardstypesid">
+          <cell name="cr4e0_name" width="300" />
+          <cell name="cr4e0_amountperyear" width="100" />
+          <cell name="cr4e0_numberofawards" width="100" />
+          <cell name="cr4e0_numberofyears" width="100" />
+          <cell name="cr4e0_totalamount" width="100" />
+          <cell name="cr4e0_applicationfee" width="100" />
+          <cell name="cr4e0_renewalfee" width="100" />
+          <cell name="cr4e0_paymentdisbursement" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_awardstypes">
+          <attribute name="cr4e0_awardstypesid" />
+          <attribute name="cr4e0_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="cr4e0_name" descending="false" />
+          <attribute name="cr4e0_amountperyear" />
+          <attribute name="cr4e0_numberofawards" />
+          <attribute name="cr4e0_numberofyears" />
+          <attribute name="cr4e0_totalamount" />
+          <attribute name="cr4e0_applicationfee" />
+          <attribute name="cr4e0_paymentdisbursement" />
+          <attribute name="cr4e0_renewalfee" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Awards Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

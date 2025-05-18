@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6a3ea7f1-f2fd-43b1-9392-66f23c92f50a}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_projectpartner" id="new_projectpartnerid">
+          <cell name="new_name" width="300" />
+          <cell name="new_country" width="150" />
+          <cell name="new_contactname" width="200" />
+          <cell name="new_email" width="200" />
+          <cell name="new_telephone" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_projectpartner">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_country" />
+          <attribute name="new_name" />
+          <attribute name="new_telephone" />
+          <attribute name="new_email" />
+          <attribute name="new_contactname" />
+          <attribute name="new_projectpartnerid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Project Partner Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

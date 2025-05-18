@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{357dce70-27e8-4b8c-9c3a-2774075673ad}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_roles" id="new_rolesid">
+          <cell name="new_name" width="300" />
+          <cell name="new_nameid" width="200" />
+          <cell name="new_roleenddate" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_roles">
+          <attribute name="new_rolesid" />
+          <attribute name="new_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_roleenddate" />
+          <attribute name="new_nameid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Roles Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

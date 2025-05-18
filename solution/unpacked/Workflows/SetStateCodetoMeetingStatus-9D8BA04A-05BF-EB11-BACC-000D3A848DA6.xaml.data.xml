@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{9d8ba04a-05bf-eb11-bacc-000d3a848da6}" Name="Set State Code to Meeting Status" Description="When Meeting Status = Completed, set Statecode &amp; Meeting Status Header fields, to Completed. The Meeting Status is a picklist on the Meeting form." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SetStateCodetoMeetingStatus-9D8BA04A-05BF-EB11-BACC-000D3A848DA6.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerFormId>{549a8aa3-c349-4ab9-8bac-4873fa9a7a5c}</ProcessTriggerFormId>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>Appointment</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Set State Code to Meeting Status" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="When Meeting Status = Completed, set Statecode &amp; Meeting Status Header fields, to Completed. The Meeting Status is a picklist on the Meeting form." />
+  </Descriptions>
+</Workflow>

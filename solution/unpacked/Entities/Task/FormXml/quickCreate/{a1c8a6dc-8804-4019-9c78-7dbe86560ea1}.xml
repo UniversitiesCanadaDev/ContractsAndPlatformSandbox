@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a1c8a6dc-8804-4019-9c78-7dbe86560ea1}</formid>
+    <IntroducedVersion>9.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="false" hasmargin="false">
+      <tabs>
+        <tab name="createtask" verticallayout="true" id="{C0134778-AB51-40B0-BE85-CD3F1163DC66}" IsUserDefined="0" locklevel="0" expanded="true" showlabel="false" ordinalvalue="0">
+          <columns>
+            <column width="33%" id="0">
+              <sections>
+                <section name="task" showlabel="false" showbar="false" locklevel="0" id="{9F244862-47BB-4FD7-8740-FFABA14E607A}" IsUserDefined="0" layout="varheight" labelwidth="115" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{f3d6698a-924b-45ca-8304-ae0247b3c3f9}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Owner" languagecode="1033" solutionaction="Added" />
+                          <label description="Propriétaire" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{7c6954d1-ec90-9178-dde2-13cb22903b68}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="1">
+              <sections>
+                <section name="task_2" showlabel="false" showbar="false" locklevel="0" id="{9F244862-47BB-4FD7-8740-FFABA14E608A}" IsUserDefined="0" layout="varheight" labelwidth="115" celllabelposition="Left" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" id="{3AC8F567-C41C-402F-8ECF-DD4F72C85ECB}" visible="false" ordinalvalue="10001" solutionaction="Modified">
+                        <control id="regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="false" uniqueid="{cb0894e4-784c-1b6e-a55c-9c86c6949182}" solutionaction="Modified">
+                          <parameters>
+                            <DisableMru solutionaction="Added">false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="2">
+              <sections>
+                <section name="task_3" showlabel="false" showbar="false" locklevel="0" id="{9F244862-47BB-4FD7-8740-FFABA14E609A}" IsUserDefined="0" layout="varheight" labelwidth="115" celllabelposition="Left" columns="1" celllabelalignment="Left" visible="false" ordinalvalue="0" solutionaction="Modified">
+                  <labels>
+                    <label description="Section 3" languagecode="1033" solutionaction="Added" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="true" id="{0d010380-cc98-4803-bb2e-67c6954dc9a6}" ordinalvalue="10000" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{B2DD0089-4428-48EB-BA64-D7ABC66B1E14}" showlabel="true" locklevel="0" ordinalvalue="10001" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{36e7dddc-8860-01ad-e15b-e4d06281e527}" showlabel="true" locklevel="0" ordinalvalue="10000" solutionaction="Added">
+                        <labels>
+                          <label description="UC Committee" languagecode="1033" />
+                        </labels>
+                        <control id="new_uccommittee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_uccommittee" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{513851ed-c39b-0498-6535-02a8ccaeee07}" showlabel="true" locklevel="0" ordinalvalue="10001" solutionaction="Added">
+                        <labels>
+                          <label description="UC Program" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_ucprogram" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions solutionaction="Added" />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Task quick create form." languagecode="1033" />
+      <LocalizedName description="Formulaire de création rapide de tâche." languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Task quick create form." languagecode="1033" />
+      <Description description="Task quick create form." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

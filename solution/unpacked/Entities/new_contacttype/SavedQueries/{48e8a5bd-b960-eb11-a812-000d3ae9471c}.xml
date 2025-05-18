@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{48e8a5bd-b960-eb11-a812-000d3ae9471c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_contacttypeid">
+          <cell name="new_contactnameid" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_contacttype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_jobtitle" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_appointmentstartdate" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_appointmentenddate" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_contacttype">
+          <order attribute="new_contactnameid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="and">
+              <condition attribute="new_contacttype" operator="ne" value="100000013" />
+              <filter type="or">
+                <condition attribute="new_appointmentenddate" operator="today" />
+                <condition attribute="new_appointmentenddate" operator="next-x-years" value="30" />
+                <condition attribute="new_appointmentenddate" operator="null" />
+              </filter>
+            </filter>
+          </filter>
+          <attribute name="new_contactnameid" />
+          <attribute name="new_appointmentstartdate" />
+          <attribute name="new_jobtitle" />
+          <attribute name="new_appointmentenddate" />
+          <attribute name="new_contacttype" />
+          <attribute name="new_contacttypeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+  </savedquery>
+</savedqueries>

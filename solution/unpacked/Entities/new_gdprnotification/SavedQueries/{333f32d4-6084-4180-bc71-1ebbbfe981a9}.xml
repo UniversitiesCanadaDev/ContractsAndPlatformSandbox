@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{333f32d4-6084-4180-bc71-1ebbbfe981a9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_gdprnotificationid">
+          <cell name="new_country" width="125" />
+          <cell name="new_dateofdpanotification" width="150" />
+          <cell name="new_nameofdpa" width="125" />
+          <cell name="new_emailofdpa" width="150" />
+          <cell name="new_dpanotificationupload" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_gdprnotification">
+          <order attribute="new_country" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_nameofdpa" />
+          <attribute name="new_emailofdpa" />
+          <attribute name="new_dpanotificationupload" />
+          <attribute name="new_dateofdpanotification" />
+          <attribute name="new_country" />
+          <attribute name="new_gdprnotificationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active GDPR Notifications" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

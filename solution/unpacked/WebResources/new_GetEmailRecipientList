@@ -1,0 +1,24 @@
+function getPartyList() {
+
+var partyRequired = Xrm.Page.getAttribute('requiredattendees');
+
+var attendees = partyRequired.getValue();
+
+var attendeestring = '';
+
+for (var indxAttendees = 0; indxAttendees < attendees.length; indxAttendees++) {
+
+	attendeestring += attendees[indxAttendees].name + ', ';
+
+/* // User
+	if (attendees[indxAttendees].type == 8) {
+		alert(“Attendee is User; Id -” + attendees[indxAttendees].id + ” Name -” + attendees[indxAttendees].name);
+	}
+// Contact
+	if (attendees[indxAttendees].type == 2) {
+		alert(“Attendee is Contact; Id -” + attendees[indxAttendees].id + ” Name -” + attendees[indxAttendees].name);
+	} */
+
+}
+  Xrm.Page.getAttribute('new_fieldforemailrecipients').setValue(attendeestring);
+}

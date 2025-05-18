@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f5b9d4c1-8c72-4736-adf4-1b3984abd4c8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab name="tab_4" id="{1051e9ad-d649-3ded-50e1-30c446920eaa}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_4_section_3" showlabel="false" showbar="false" locklevel="0" id="{e94ee56b-e052-4a70-17cd-522e2453c362}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f021a747-95b6-4662-83fd-8039c158b755}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" uniqueid="{12436109-b9e1-685b-11a4-35c642922289}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5cbb38ae-35c0-d0d7-cb1d-d17c48bb9900}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Program Type" languagecode="1033" />
+                        </labels>
+                        <control id="new_programtype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_programtype" disabled="false" uniqueid="{a6960504-c228-9387-8052-540ac5a129b5}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{58036D39-9664-44FE-8732-7D9574464FC8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{8e0d662e-420d-6664-2e47-c598a8b3a556}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="J2K Program Number" languagecode="1033" />
+                        </labels>
+                        <control id="new_j2kprogramnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_j2kprogramnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d859a64-2655-db45-1720-095596b88b72}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="# of Awards" languagecode="1033" />
+                        </labels>
+                        <control id="new_numberofawards" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_numberofawards" disabled="false" uniqueid="{0beb1907-6344-c640-b2ea-baa7cd021500}" />
+                      </cell>
+                      <cell id="{1b5ee8b0-1471-e27c-dc34-61d2737c2c37}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Value" languagecode="1033" />
+                        </labels>
+                        <control id="new_value" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_value" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{354b976b-b737-8b00-7b20-e81ed4eb2d74}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="University" languagecode="1033" />
+                        </labels>
+                        <control id="new_university" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_university" disabled="false" uniqueid="{cd76eb27-0964-b1dd-7dcc-7dda457d3037}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{BDBB88F2-F440-E511-92EE-0050568D4F81}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3294e45e-7795-6065-c465-4513e8dd217a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary External Contact" languagecode="1033" />
+                        </labels>
+                        <control id="new_primaryexternalcontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_primaryexternalcontact" disabled="false" uniqueid="{bb1073ad-c3d3-360c-47d8-3474a40d3960}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{00000000-0000-0000-00AA-000010001004}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{86095a37-0e7c-e56a-56ab-5633b26b31a4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Secondary External Contact" languagecode="1033" />
+                        </labels>
+                        <control id="new_secondaryexternalcontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_secondaryexternalcontact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a2dc4858-4e70-a500-2d58-5688de5d1a7e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="External Coordinator" languagecode="1033" />
+                        </labels>
+                        <control id="new_externalcoordinator1" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_externalcoordinator1" disabled="false" />
+                      </cell>
+                      <cell id="{89134ec1-9224-ee69-74ba-03070cd9146d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="External Coordinator" languagecode="1033" />
+                        </labels>
+                        <control id="new_externalcoordinator2" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_externalcoordinator2" disabled="false" uniqueid="{613caea6-e39c-7671-0678-1a40e58c3b09}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{60b10545-48b8-d580-b268-8cbcd052b599}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_startdate" disabled="false" />
+                      </cell>
+                      <cell id="{43d0379d-35ee-8d4e-a4a0-5521dbc2a8e1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2082019-6bbb-3079-359e-0a150b63ede1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="UC Primary Contact" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucprimarycontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_ucprimarycontact" disabled="false" uniqueid="{370cb9a0-9e91-263e-23e0-c15c3e8e9594}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2EBF515-8F3A-ED11-9DB0-0022483C5336}</DefaultViewId>
+                            <AvailableViewIds>{A2EBF515-8F3A-ED11-9DB0-0022483C5336}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{e89a2e79-a688-6945-4cab-5ac5900ae038}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58d12ba8-971c-17b7-704b-01e9c36ed8b3}" showlabel="true" locklevel="0" colspan="2" rowspan="14">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="new_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_description" disabled="false" uniqueid="{d38a3534-e1ea-b6e1-9c72-387c66038a7b}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_4" showlabel="false" showbar="false" locklevel="0" id="{e6b11161-ebc2-2e69-c2a4-04146bce8214}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Funder" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3a9edc7e-e4c6-da18-2ac0-de6999d446de}" showlabel="true" colspan="2" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Funder(s)" languagecode="1033" />
+                          <label description="Comptes" languagecode="1036" />
+                        </labels>
+                        <control id="Funder" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{0717456c-e73c-1e14-1c38-7a619e989ec5}">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001002}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_ucprogram_account_funder</RelationshipName>
+                            <TargetEntityType>account</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001002}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{74A622C0-5193-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_4_section_2" showlabel="false" showbar="false" locklevel="0" id="{9b17b7a6-be75-897b-9406-64c258083ace}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{be8ada10-425b-a817-c2cc-3d67b0e02b04}" showlabel="true" colspan="1" auto="false" rowspan="5">
+                        <labels>
+                          <label description="UC Committees" languagecode="1033" />
+                          <label description="Comptes" languagecode="1036" />
+                        </labels>
+                        <control id="Committee" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{75394a1d-5998-71de-5234-09b0b0dc7a41}">
+                          <parameters>
+                            <ViewId>{21BA8CDD-DF76-EB11-A812-000D3AF3F9FD}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_ucprogram_new_advisorygroupname</RelationshipName>
+                            <TargetEntityType>new_advisorygroupname</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{66A0B971-7BC0-48DC-8AB6-431C268BE281},{21BA8CDD-DF76-EB11-A812-000D3AF3F9FD}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>2</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_4_section_4" showlabel="false" showbar="false" locklevel="0" id="{91b43595-cc6a-7557-9864-5e17359cc1d3}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a3651633-d7e8-9894-956b-9c14daba9bb7}" showlabel="true" colspan="1" auto="false" rowspan="8">
+                        <labels>
+                          <label description="External Partners" languagecode="1033" />
+                          <label description="Comptes" languagecode="1036" />
+                        </labels>
+                        <control id="PartnerLookup" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{58ce0aed-8634-d883-133a-4670d6c78755}">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001002}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_ucprogram_account</RelationshipName>
+                            <TargetEntityType>account</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{74A622C0-5193-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_4_section_5" showlabel="false" showbar="false" locklevel="0" id="{5733842e-756a-73a8-99dc-b26b420a0988}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4497e742-4eab-9823-3122-e04118a01c01}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="UC Themes" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucthemes" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="new_ucthemes" disabled="false" uniqueid="{48ecc163-8995-70a1-bc0c-79c8b0d974e1}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cb3ce50b-4456-6593-2140-3c73cc7775be}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="UC Project ID" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucprojectid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_ucprojectid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Meetings_Tab" id="{08a9e02e-b047-066b-695e-15306d40e7c0}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Meetings &amp; Activities" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{86c1c88d-36ac-71c9-249e-a044a9856236}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{51567d63-1b97-1bcc-998e-65ae8620ced5}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Meetings" languagecode="1033" />
+                          <label description="Comptes" languagecode="1036" />
+                        </labels>
+                        <control id="Meeting_UC_Program_IAN" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{8c183424-e601-4e84-7893-9e65b146c734}">
+                          <parameters>
+                            <ViewId>{720E27D2-40A1-EB11-B1AC-000D3AE8BAC7}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_ucprogram_appointment_UCProgram</RelationshipName>
+                            <TargetEntityType>appointment</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{5B5F75F6-B585-4212-952A-B4CBB64E2627},{606EEA12-0C33-47D3-96E1-BA1529EE8205},{720E27D2-40A1-EB11-B1AC-000D3AE8BAC7}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{1BC0FF08-CB08-45D6-8FD4-E49E6B49FE91}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{1e4cd99c-07a6-a26b-ea73-15726331b742}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Tasks" languagecode="1033" />
+                          <label description="Comptes" languagecode="1036" />
+                        </labels>
+                        <control id="Task" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{F0C204E1-DFA2-EB11-B1AC-000D3AE8BAC7}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_ucprogram_task_UCProgram</RelationshipName>
+                            <TargetEntityType>task</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{6CF285AA-EB20-4277-925A-3E9735411FF0},{F0C204E1-DFA2-EB11-B1AC-000D3AE8BAC7}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{172d6660-44d4-e32d-e03a-83a451a18a40}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Email Messages" languagecode="1033" />
+                          <label description="Comptes" languagecode="1036" />
+                        </labels>
+                        <control id="Email" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{8AF83570-88A3-EB11-B1AC-000D3AE8B98C}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_ucprogram_email_UCProgram</RelationshipName>
+                            <TargetEntityType>email</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{7AFF64B0-5B8C-4AD7-89F8-976777EEE178},{8AF83570-88A3-EB11-B1AC-000D3AE8B98C}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{1EC1872A-23DE-4294-9D7F-1B76272A5FD5}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{1fb1db54-ab4a-47d9-9f23-82718234d7c2}" IsUserDefined="1" name="{1fb1db54-ab4a-47d9-9f23-82718234d7c2}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="{1fb1db54-ab4a-47d9-9f23-82718234d7c2}_section_2" showlabel="false" showbar="false" locklevel="0" id="{0dda3e27-7e1b-82c6-1b7b-376d5cbcee68}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ff9f9b12-9545-4788-acce-afef61d588ce}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{392e66d2-adca-5ee2-5c4b-5183c37a80d7}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{84e24d73-129c-4761-894b-6e5742d1d8b3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="J2K ID" languagecode="1033" />
+                        </labels>
+                        <control id="new_j2kid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_j2kid" disabled="false" />
+                      </cell>
+                      <cell id="{080c8aeb-dc01-a684-2a96-02052e789480}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="J2K Update Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_j2kupdatedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_j2kupdatedate" disabled="false" uniqueid="{5b30e3b2-460c-4d74-1153-92cc52d3944b}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{1fb1db54-ab4a-47d9-9f23-82718234d7c2}_section_3" showlabel="false" showbar="false" locklevel="0" id="{6e2dad72-1321-362b-c87e-2a1090189c0a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Fields for Reporting" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b3da3b59-10e9-9a0b-4d77-2ce83e6b2a00}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Field for UC Themes" languagecode="1033" />
+                        </labels>
+                        <control id="new_fieldforucthemes" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_fieldforucthemes" disabled="false" uniqueid="{56ab7176-0683-15bd-c56a-bee27eb6c742}" />
+                      </cell>
+                      <cell id="{d09ab598-83ce-9194-c9ce-e6a271ac2249}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="new_GetUCThemes" libraryUniqueId="{93ae7cb0-952e-5a6b-d212-d13a77587799}" />
+      </formLibraries>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

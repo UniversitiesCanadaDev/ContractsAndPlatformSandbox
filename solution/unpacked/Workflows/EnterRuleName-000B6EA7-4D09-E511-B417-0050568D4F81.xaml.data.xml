@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{000b6ea7-4d09-e511-b417-0050568d4f81}" Name="Enter Rule Name" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/EnterRuleName-000B6EA7-4D09-E511-B417-0050568D4F81.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>new_qesreporting</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Enter Rule Name" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{e4577e2e-5684-44b7-2e22-7a13ce0e0466}">
+      <label languagecode="1033" description="Test error message" />
+    </steplabels>
+  </labels>
+</Workflow>

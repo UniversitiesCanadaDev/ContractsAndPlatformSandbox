@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{baced815-4f1e-e911-84bc-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row id="new_eventparticipantid" name="result">
+          <cell name="new_name" width="300" />
+          <cell name="new_startdate" width="125" />
+          <cell name="new_inviteresponse" width="150" />
+          <cell name="new_attendance" width="125" />
+          <cell name="new_participation" width="125" />
+          <cell name="new_typeofinvite" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_eventparticipant">
+          <attribute name="new_typeofinvite" />
+          <attribute name="new_startdate" />
+          <attribute name="new_participation" />
+          <attribute name="new_inviteresponse" />
+          <attribute name="new_attendance" />
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_eventparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Event Participants for Contact Entity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

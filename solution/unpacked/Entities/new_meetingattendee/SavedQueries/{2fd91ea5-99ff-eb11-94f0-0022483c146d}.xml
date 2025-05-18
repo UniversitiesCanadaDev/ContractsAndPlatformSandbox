@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2fd91ea5-99ff-eb11-94f0-0022483c146d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_meetingattendeeid">
+          <cell name="a_a80cf6b2fceaeb11bacb0022483c43a0.new_meetingstatus" width="100" disableSorting="1" />
+          <cell name="a_a80cf6b2fceaeb11bacb0022483c43a0.subject" width="200" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_a80cf6b2fceaeb11bacb0022483c43a0.scheduledstart" width="100" disableSorting="1" />
+          <cell name="a_a80cf6b2fceaeb11bacb0022483c43a0.ownerid" width="100" disableSorting="1" />
+          <cell name="a_a80cf6b2fceaeb11bacb0022483c43a0.new_owningteam" width="100" disableSorting="1" />
+          <cell name="a_a80cf6b2fceaeb11bacb0022483c43a0.new_briefinglead" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_meetingattendee">
+          <link-entity alias="a_a80cf6b2fceaeb11bacb0022483c43a0" name="appointment" from="activityid" to="new_meetingattendeerelationshipid" link-type="outer" visible="false">
+            <attribute name="subject" />
+            <attribute name="scheduledstart" />
+            <attribute name="new_owningteam" />
+            <attribute name="ownerid" />
+            <attribute name="new_briefinglead" />
+            <attribute name="new_meetingstatus" />
+          </link-entity>
+          <attribute name="new_meetingattendeeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Requested Meetings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

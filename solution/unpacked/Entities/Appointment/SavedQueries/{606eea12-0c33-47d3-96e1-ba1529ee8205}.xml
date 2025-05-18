@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{606eea12-0c33-47d3-96e1-ba1529ee8205}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" preview="1" icon="1">
+        <row name="result" id="activityid">
+          <cell name="scheduledstart" width="100" />
+          <cell name="new_meetingwith" width="100" />
+          <cell name="subject" width="250" />
+          <cell name="requiredattendees" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="ownerid" width="100" />
+          <cell name="new_briefinglead" width="100" />
+          <cell name="new_briefingnotelink" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_lobbyactivity" width="100" />
+          <cell name="instancetypecode" width="100" ishidden="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="appointment">
+          <attribute name="subject" />
+          <attribute name="scheduledstart" />
+          <attribute name="instancetypecode" />
+          <attribute name="requiredattendees" />
+          <attribute name="new_briefinglead" />
+          <attribute name="new_briefingnotelink" />
+          <attribute name="new_lobbyactivity" />
+          <order attribute="scheduledstart" descending="false" />
+          <filter type="and">
+            <filter type="and">
+              <condition attribute="new_meetingstatus" operator="in">
+                <value>100000001</value>
+                <value>100000003</value>
+                <value>100000004</value>
+              </condition>
+              <filter type="or">
+                <condition attribute="scheduledstart" operator="next-x-years" value="3" />
+                <condition attribute="scheduledstart" operator="yesterday" />
+              </filter>
+            </filter>
+          </filter>
+          <link-entity name="activityparty" from="activityid" to="activityid" alias="aa">
+            <filter type="and">
+              <condition attribute="partyid" operator="eq-userid" />
+              <condition attribute="participationtypemask" operator="in">
+                <value>7</value>
+                <value>9</value>
+                <value>5</value>
+                <value>6</value>
+              </condition>
+            </filter>
+          </link-entity>
+          <attribute name="new_meetingwith" />
+          <attribute name="ownerid" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My Upcoming Meetings" languagecode="1033" />
+      <LocalizedName description="Mes rendez-vous" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Displays Appointments the current user own, that are in the future as well the previous day. Formerly My Appointments" languagecode="1033" />
+      <Description description="Affiche les rendez-vous de l'utilisateur actuel." languagecode="1036" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

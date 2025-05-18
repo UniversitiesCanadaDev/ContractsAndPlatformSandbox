@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3fc8faeb-f06f-4a19-8d74-65916dd9593e}</savedqueryid>
+    <layoutxml>
+      <grid name="cr4e0_execcorrespondences" jump="subject" select="1" icon="1" preview="1">
+        <row name="cr4e0_execcorrespondence" id="activityid">
+          <cell name="to" width="300" />
+          <cell name="univcan_recipient" width="264" />
+          <cell name="statuscode" width="100" />
+          <cell name="statecode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_execcorrespondence">
+          <filter type="and">
+            <condition attribute="statecode" operator="in">
+              <value>0</value>
+              <value>3</value>
+            </condition>
+          </filter>
+          <attribute name="to" />
+          <attribute name="statuscode" />
+          <attribute name="univcan_recipient" />
+          <attribute name="statecode" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Correspondence Associated View" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formerly Exec Correspondence Associated View" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

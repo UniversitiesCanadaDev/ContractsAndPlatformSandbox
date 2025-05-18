@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0d8fe832-bb0e-4f1f-a71e-73fbedf9e3ea}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_inventoryrecord" id="new_inventoryrecordid">
+          <cell name="new_name" width="300" />
+          <cell name="new_april" width="100" />
+          <cell name="new_may" width="100" />
+          <cell name="new_june" width="100" />
+          <cell name="new_july" width="100" />
+          <cell name="new_august" width="100" />
+          <cell name="new_september" width="100" />
+          <cell name="new_october" width="100" />
+          <cell name="new_november" width="100" />
+          <cell name="new_december" width="100" />
+          <cell name="new_january" width="100" />
+          <cell name="new_february" width="100" />
+          <cell name="new_march" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_inventoryrecord">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_october" />
+          <attribute name="new_november" />
+          <attribute name="new_may" />
+          <attribute name="new_march" />
+          <attribute name="new_june" />
+          <attribute name="new_july" />
+          <attribute name="new_january" />
+          <attribute name="new_february" />
+          <attribute name="new_december" />
+          <attribute name="new_august" />
+          <attribute name="new_april" />
+          <attribute name="new_september" />
+          <attribute name="new_inventoryrecordid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inventory Record Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

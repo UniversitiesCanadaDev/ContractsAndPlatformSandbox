@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d75f7c0f-40a6-460b-9c47-6bc444f32f58}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ab837e72-79de-4dd2-a42e-ca1fa59242f1}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{269ae9ca-f47b-4d7a-83bc-ad45d18fe2f8}">
+          <labels>
+            <label description="Setup" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{472138e9-8ce4-b559-eed3-630a268e0f1d}" name="StageStep3_section1" labelid="{193c9c7d-71de-4c22-b341-c72387caa624}">
+                  <labels>
+                    <label description="Setup" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fefb4f1b-a7ec-4dfa-aa53-791cd1015034}" showlabel="true" visible="true" labelid="{f78dfd92-7d95-4cf0-a346-ad0866ea395b}">
+                        <labels>
+                          <label description="Upload Letter " languagecode="1033" />
+                        </labels>
+                        <control id="Step_6:665802ac-56f7-ec11-82e4-002248ae4c40_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_6" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4504dffb-24ac-4825-874e-fe48159abd2e}" showlabel="true" visible="true" labelid="{012b543b-2027-4d23-a1bb-6fa5cc48f817}">
+                        <labels>
+                          <label description="Enter a Campaign Name" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:cr4e0_name" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr4e0_name" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58916656-f6e7-4e05-b472-1c57416642ae}" showlabel="true" visible="true" labelid="{a0a5300e-62ea-4a19-acac-ab93ff8206dc}">
+                        <labels>
+                          <label description="Enter a Campaign Name" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:cr4e0_name" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="cr4e0_name" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{43872c9f-85bc-4a4d-abf6-db8f8d33575a}" showlabel="true" visible="true" labelid="{d35327cb-4a1c-4743-8381-f7ebc0431ca2}">
+                        <labels>
+                          <label description="Segment" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:cr4e0_segment" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="cr4e0_segment" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c183f4cd-b282-4ba6-af8a-a38c1b3eab2d}" showlabel="true" visible="true" labelid="{b0eb9010-9e75-4489-b38e-125e66bd55ab}">
+                        <labels>
+                          <label description="Letter Date" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_letterdate" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="univcan_letterdate" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38b5124b-f7de-4bb4-8654-64533a7fa4b0}" showlabel="true" visible="true" labelid="{bbfcb503-0302-409d-b04f-381f486d20b9}">
+                        <labels>
+                          <label description="Letter Address Block" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_letteraddressbloc" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="univcan_letteraddressbloc" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a8b87b8-ed4d-4ab9-bf95-a7c177e880f3}" showlabel="true" visible="true" labelid="{04576998-0d6a-40b9-b78b-759bd71f3c78}">
+                        <labels>
+                          <label description="Set From Email Address" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_fromuser" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="univcan_fromuser" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6f737e2b-78b1-4323-af12-b203e900e472}" showlabel="true" visible="true" labelid="{8405560e-7bb3-4df5-9a2a-df3673e678d2}">
+                        <labels>
+                          <label description="Set Reply To Email Address" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_replyto" classid="{ada2203e-b4cd-49be-9ddf-234642b43b52}" datafieldname="univcan_replyto" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{534b3ce6-c3dc-45fe-86b6-13477802026f}" showlabel="true" visible="true" labelid="{b705921d-0126-4dfe-9a72-bfedd30d5ddb}">
+                        <labels>
+                          <label description="Set Email Subject" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_emailsubject" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="univcan_emailsubject" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80cdc7b1-a23a-4d7f-b30f-fa4e352f8512}" showlabel="true" visible="true" labelid="{22da463c-a1f9-4280-90f8-c6064bc9091a}">
+                        <labels>
+                          <label description="Email Body" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_emailbody" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="univcan_emailbody" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{fc7c1f29-0971-4bd7-9b5b-06cf830876e0}" name="StageStep26" locklevel="0" expanded="true" visible="false" labelid="{c08c89d5-9536-4aa9-a266-d6bc2b322324}">
+          <labels>
+            <label description="Run Merge" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{b98fd349-ed45-f63b-4479-64f6e783ed32}" name="StageStep26_section1" labelid="{ef30616a-b7bc-4f2d-a04a-188a6c364823}">
+                  <labels>
+                    <label description="Run Merge" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8564eb43-1449-4c8e-93e6-c7ee2f545875}" showlabel="true" visible="true" labelid="{b76a9d13-0a91-4a92-9d47-6397053c8797}">
+                        <labels>
+                          <label description="Create Correspondences" languagecode="1033" />
+                        </labels>
+                        <control id="Step_29:b911ce97-30b9-ec11-983f-0022483db20e_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_29" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{f1c9a129-b225-413f-a4de-764b94600369}" name="StageStep31" locklevel="0" expanded="true" visible="false" labelid="{aaf41a62-3072-4f6e-9f7b-fc6d6d6380c0}">
+          <labels>
+            <label description="Create Pdfs" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{8b78ca1b-0770-48a3-eb0e-5b15785afd77}" name="StageStep31_section1" labelid="{0442270d-938e-427f-94b0-e450ee491d09}">
+                  <labels>
+                    <label description="Create Pdfs" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2353fa57-61bb-4683-a78c-361a1597eb02}" showlabel="true" visible="true" labelid="{b38fe602-fb69-408b-88fa-bf4a3339c8cc}">
+                        <labels>
+                          <label description="Generate PDF Attachments" languagecode="1033" />
+                        </labels>
+                        <control id="Step_34:89db5f5a-592e-ed11-9db0-0022483c5336_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_34" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{d6dbb0c7-e541-4f17-bf55-9de01b548d98}" name="StageStep36" locklevel="0" expanded="true" visible="false" labelid="{5e2cde19-ba7d-4eb2-8775-29db39cd2eb1}">
+          <labels>
+            <label description="Send !" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{94fb8575-86a9-2a79-abe8-83fe3e8064ee}" name="StageStep36_section1" labelid="{85d22b2b-a348-43af-8aa0-a5da0cc58e91}">
+                  <labels>
+                    <label description="Send !" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b5bdb678-2535-4177-a372-e57cd1e94207}" showlabel="true" visible="true" labelid="{7e712bbb-89a2-494a-b0fc-5f3b6e09ad75}">
+                        <labels>
+                          <label description="Send Correspondences" languagecode="1033" />
+                        </labels>
+                        <control id="Step_39:6bc89161-4539-ed11-9db0-0022483c554a_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_39" isrequired="true" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{4e2b2ccd-0541-4622-b919-1a723ea8393a}" name="StageStep41" locklevel="0" expanded="true" visible="false" labelid="{a6f6a96f-c7eb-45f9-9808-9ae153e5102b}">
+          <labels>
+            <label description="Completed" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{dedcf0bb-e0e4-cfba-1dca-003ee870a569}" name="StageStep41_section1" labelid="{c0136955-88ea-4640-b040-6702a7b841fe}">
+                  <labels>
+                    <label description="Completed" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{70f4651f-cc31-46cd-a264-e2c865a872ec}" showlabel="true" visible="true" labelid="{57aeb2f9-dff9-4148-96fa-3442c23d422e}">
+                        <labels>
+                          <label description="Campaign Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcampaign_univcan_execcamapi:univcan_campaignstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="univcan_campaignstatus" disabled="false" relationship="bpf_cr4e0_execcampaign_univcan_execcamapi" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

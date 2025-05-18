@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6de22720-11c8-481c-b69e-37daf6b5c275}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_copierstatsid">
+          <cell name="new_name" width="200" />
+          <cell name="new_location" width="125" />
+          <cell name="new_copiertype" width="150" />
+          <cell name="new_copystatsbyyearid" width="125" />
+          <cell name="new_serial" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_copierstats">
+          <attribute name="new_name" />
+          <order attribute="new_copystatsbyyearid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_location" />
+          <attribute name="new_copiertype" />
+          <attribute name="new_copystatsbyyearid" />
+          <attribute name="new_serial" />
+          <attribute name="new_copierstatsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Copier Stats" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

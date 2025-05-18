@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{196babe1-f71f-4804-bfaf-11a18311d290}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_dpohsubjectlookupid" name="result">
+          <cell name="new_dpohsubjectlookup" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="new_dpohsubjectlookup">
+          <order descending="false" attribute="new_dpohsubjectlookup" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_dpohsubjectlookup" />
+          <attribute name="new_dpohsubjectlookupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active DPOH Subjects Lookup" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

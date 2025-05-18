@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{bc6572e0-b4c8-4838-89fa-705d9dd2f6d2}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab name="tab_2" id="{38c0604c-d2c3-3845-63b1-9ab77ad4ad25}" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{735960ad-d14c-a96b-5958-9997d45eb26b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{37ac91c8-a669-0d49-61e0-e17cc44bb0c7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Security Incident" languagecode="1033" />
+                        </labels>
+                        <control id="new_securityincident" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_securityincident" disabled="false" uniqueid="{4aead18e-c75c-3b66-a238-1c9242bb7d22}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebe11ae1-9267-0d90-a284-24db1db23528}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{50a4cdcd-97a8-c20c-17c2-301a0d7990a1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="System Affected" languagecode="1033" />
+                        </labels>
+                        <control id="new_system" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_system" disabled="false" uniqueid="{8bc6b640-0606-3913-4339-759a87e80a7e}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{ED8C950F-FC66-451A-9E29-9A6F469EF70B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{a77e0dc1-5e2e-4290-9557-1e2d2e538051}" IsUserDefined="1" name="{a77e0dc1-5e2e-4290-9557-1e2d2e538051}" locklevel="0" expanded="false" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{1856c9bb-ff46-4cff-8cd2-3df42fbecd1b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{eb7d1dab-c7b4-45f9-86d3-24714b7bb7f5}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{597f68a3-0e84-497d-9c45-704f339b1f41}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{1478c005-b7ca-46cb-8c91-caa481a7dd91}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="3" auto="false" id="{db5dcfff-5061-400e-acb7-361aa295dc21}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{a821a279-8c65-43b4-1c49-4618c078a5ac}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Notes</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>10</UClientRecordPerPage>
+                            <UClientEnableWhatsNewFilter>false</UClientEnableWhatsNewFilter>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="new_SetNew_name" libraryUniqueId="{8762435c-6d1d-12d6-5449-d5793a21a9c6}" />
+        <Library name="new_SetNewName2" libraryUniqueId="{e31e8784-6db7-89a0-8154-e562a9baac91}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_system">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_SetNew_name" handlerUniqueId="{b052ae47-9288-1649-e333-7ad3cec8c54c}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_name">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_SetNew_name" handlerUniqueId="{e2595c4c-e312-969a-bbe4-6e4b29ad273c}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_securityincident">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_SetNewName2" handlerUniqueId="{dc86007a-0e76-257e-88c6-967ae9a8a722}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

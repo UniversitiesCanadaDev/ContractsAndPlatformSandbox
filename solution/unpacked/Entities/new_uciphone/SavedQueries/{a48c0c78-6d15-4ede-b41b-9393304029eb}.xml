@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a48c0c78-6d15-4ede-b41b-9393304029eb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_uciphoneid">
+          <cell name="new_staffmemberid" width="100" />
+          <cell name="new_model" width="100" />
+          <cell name="new_cellnumber" width="100" />
+          <cell name="new_imei" width="100" />
+          <cell name="new_simnumber" width="115" />
+          <cell name="new_dateoflatesthardware" width="178" />
+          <cell name="new_rogerscontractenddate" width="188" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_uciphone">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_staffmemberid" />
+          <attribute name="new_cellnumber" />
+          <attribute name="new_uciphoneid" />
+          <attribute name="new_model" />
+          <attribute name="new_simnumber" />
+          <attribute name="new_imei" />
+          <attribute name="new_dateoflatesthardware" />
+          <attribute name="new_rogerscontractenddate" />
+          <order attribute="new_staffmemberid" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active UC iPhone" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

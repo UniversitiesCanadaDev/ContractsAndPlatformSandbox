@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{6946d837-5862-eb11-a812-000d3ae94651}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_studentawardsofficeid">
+          <cell name="new_studentawardsofficer" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_awardsofficephone" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_awardsofficeemail" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_studentawardsoffice">
+          <order attribute="new_studentawardsofficer" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_studentawardsofficer" />
+          <attribute name="new_awardsofficephone" />
+          <attribute name="new_awardsofficeemail" />
+          <attribute name="new_studentawardsofficeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Student Awards Office for Account" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

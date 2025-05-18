@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1190c09c-c79d-4442-a54b-d8372b5ec694}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_2" id="{7c5c4ba5-a957-40b8-3281-114621552a31}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Project" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{1b73c503-5a0b-e741-2046-22204c95853a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e34ab605-2718-4d10-8dc4-37f349f87295}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12cebb3a-1849-bb04-2ca8-6ca32d0e3e76}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Approximate Value" languagecode="1033" />
+                        </labels>
+                        <control id="new_approximatevalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_approximatevalue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b99b5822-1b09-2ce6-462d-85b8a088e071}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Countries" languagecode="1033" />
+                        </labels>
+                        <control id="new_countries" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_countries" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{e11ba97c-de2e-740a-3692-4e3a422aa379}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{757d0281-4ab2-3ee1-3892-c5588bb29837}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start date" languagecode="1033" />
+                        </labels>
+                        <control id="new_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_startdate" disabled="false" />
+                      </cell>
+                      <cell id="{9e3dcaa8-0839-b45d-1314-8137e2e7923e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End date" languagecode="1033" />
+                        </labels>
+                        <control id="new_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_3" showlabel="true" showbar="true" locklevel="0" id="{1530ec31-38cb-717a-5d9e-a87a66a25411}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Partners" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b863e842-9493-3752-3e2a-7957be64b14a}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Project Experience Partner" languagecode="1033" />
+                        </labels>
+                        <control id="new_projectexperiencepartners" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_projectexperiencepartners" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_4" showlabel="true" showbar="true" locklevel="0" id="{b05a845b-741a-0d87-226b-966d875265bd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Narrative Description of Initiative" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c166b432-a3c1-c254-756e-1700690232c1}" showlabel="false" locklevel="0" rowspan="10">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="new_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_5" showlabel="true" showbar="true" locklevel="0" id="{06b27da4-7027-90e1-06ce-d9d156006ba2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Results" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ee2e12ae-2040-88e2-dd87-ac335433c2ce}" showlabel="false" locklevel="0" rowspan="10">
+                        <labels>
+                          <label description="Results" languagecode="1033" />
+                        </labels>
+                        <control id="new_results" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_results" disabled="false" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_6" showlabel="true" showbar="true" locklevel="0" id="{54a351cb-ecd5-942b-e509-6067ec36c677}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Lessons learned and best pratices employed" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0bcb2b48-bb2b-2a9e-b0d2-6893a231ed94}" showlabel="false" locklevel="0" rowspan="10">
+                        <labels>
+                          <label description="Lessons Learned" languagecode="1033" />
+                        </labels>
+                        <control id="new_lessonslearned" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_lessonslearned" disabled="false" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{bcdbabf3-7f02-4cd5-a17a-6065966428f8}" IsUserDefined="1" name="{bcdbabf3-7f02-4cd5-a17a-6065966428f8}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{8d819792-c9ff-4d71-bebe-ec31adeaebcb}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{07442329-e779-42a8-a691-889e0a42695f}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

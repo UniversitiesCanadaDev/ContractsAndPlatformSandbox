@@ -1,0 +1,47 @@
+function OnLoad() {
+//var firstname = Xrm.Page.getAttribute("new_firstname").getValue();
+//var lastname = Xrm.Page.getAttribute("new_lastname").getValue();
+//var fullname;
+//fullname = firstname + " " + lastname;
+//alert(fullname);
+//Xrm.Page.getAttribute("new_name").setValue(fullname);
+
+Xrm.Page.getAttribute("new_name").setValue("QEScholar");
+
+//NEW July07
+// Hide QES or QES-AS tabs based on QES project type
+ var test;
+
+// if (new_qesprojecttype !=null){
+//alert("Checking option Set");
+
+ test = Xrm.Page.getAttribute("new_qesprojecttype").getSelectedOption().value;
+
+ if(test == 100000000)
+ {
+ // alert("QES");
+ Xrm.Page.ui.tabs.get("tab_19").setVisible(false);
+ Xrm.Page.ui.tabs.get("tab_20").setVisible(false);
+ Xrm.Page.ui.tabs.get("tab_21").setVisible(false);
+ }
+
+ if(test == 100000001)
+ {
+ // alert("QES-AS");
+ Xrm.Page.ui.tabs.get("tab_8").setVisible(false);
+ //Xrm.Page.ui.tabs.get("tab_18").setVisible(false);
+ }
+//}
+}
+
+function OnSave() {
+var firstname = Xrm.Page.getAttribute("new_firstname").getValue();
+var lastname = Xrm.Page.getAttribute("new_lastname").getValue();
+var fullname;
+fullname = firstname + " " + lastname;
+//alert(fullname);
+Xrm.Page.getAttribute("new_name").setValue(fullname);
+
+//Xrm.Page.getAttribute("new_name").setValue("QEScholar");
+}
+

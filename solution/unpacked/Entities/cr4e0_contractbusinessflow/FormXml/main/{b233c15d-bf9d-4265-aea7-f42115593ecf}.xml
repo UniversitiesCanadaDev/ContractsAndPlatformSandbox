@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b233c15d-bf9d-4265-aea7-f42115593ecf}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{42b77ecf-d83d-4118-8c0b-a32b4983da32}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{ad306f6e-33be-4ad5-afca-7f1b49221bde}">
+          <labels>
+            <label description="Draft" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{a1df6350-a9d1-79dd-a1bc-b99d23f629f5}" name="StageStep3_section1" labelid="{bfa4f7f5-76d1-4208-abb1-fbc95600080c}">
+                  <labels>
+                    <label description="Draft" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{06d9456a-09ba-4b3d-92c3-8e87c409f12a}" showlabel="true" visible="true" labelid="{0fc4bce0-605f-42b5-8ff4-e7bb6e42a818}">
+                        <labels>
+                          <label description="Project Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_proposal_cr4e0_contractbusinessflow:cr4e0_projectstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr4e0_projectstatus" disabled="false" relationship="bpf_cr4e0_proposal_cr4e0_contractbusinessflow" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{8760dde0-dc19-4aa4-9578-38acfdb5bfe3}" name="StageStep7" locklevel="0" expanded="true" visible="false" labelid="{ce791d8b-2264-4669-b60f-7193fd2a526c}">
+          <labels>
+            <label description="Internal Approval" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{f3b51bc0-6968-3f34-664b-8f86c712d6d0}" name="StageStep7_section1" labelid="{5309f6b5-7cca-46ab-8b5f-4bac34c55dd5}">
+                  <labels>
+                    <label description="Internal Approval" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bfa2e6b2-a5f4-4f12-89c0-61c3e87f7c1e}" showlabel="true" visible="true" labelid="{99a9574c-c7a3-43be-9f0d-ab567f493d68}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_proposal_cr4e0_contractbusinessflow:cr4e0_projectstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr4e0_projectstatus" disabled="false" relationship="bpf_cr4e0_proposal_cr4e0_contractbusinessflow" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e2b854e5-3007-48d2-a8bb-323c7baa6976}" showlabel="true" visible="true" labelid="{7c14eac9-e2d2-4ccf-997a-d68ad655bc44}">
+                        <labels>
+                          <label description="Send email notification for internal approval" languagecode="1033" />
+                        </labels>
+                        <control id="Step_12:b6482507-4ab2-ef11-b8e8-6045bd5d8feb_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_12" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{968eda0a-ce34-4d4f-9a8e-d5dd13b06b21}" name="StageStep14" locklevel="0" expanded="true" visible="false" labelid="{e27d288c-e30c-421e-95ad-015c424b11e3}">
+          <labels>
+            <label description="Send To Client/Vendor" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{b43daf95-c50f-9e7f-8526-c2a68c59684e}" name="StageStep14_section1" labelid="{6ca382ad-8f7e-49ac-a483-0fb03c04d681}">
+                  <labels>
+                    <label description="Send To Client/Vendor" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5a829d37-8c0f-43ae-9388-8e91c31328c4}" showlabel="true" visible="true" labelid="{286fc41d-680a-4736-b349-47628deecb7d}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_proposal_cr4e0_contractbusinessflow:cr4e0_projectstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr4e0_projectstatus" disabled="false" relationship="bpf_cr4e0_proposal_cr4e0_contractbusinessflow" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{3bcb26cf-efb5-4b38-a530-4262fc312d5e}" name="StageStep18" locklevel="0" expanded="true" visible="false" labelid="{0cc737fe-2a19-4e20-bee2-f421e64b8dc3}">
+          <labels>
+            <label description="Sign-Off" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{fb756bb3-093a-6ed1-c929-a14aa737a452}" name="StageStep18_section1" labelid="{5414e0a3-1f28-4ee2-9830-419a7a7a6587}">
+                  <labels>
+                    <label description="Sign-Off" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f116d887-be79-44a5-aeea-8053256cc1a6}" showlabel="true" visible="true" labelid="{c49e0457-5334-4c40-ba94-59a07b2cdb30}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_proposal_cr4e0_contractbusinessflow:cr4e0_projectstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr4e0_projectstatus" disabled="false" relationship="bpf_cr4e0_proposal_cr4e0_contractbusinessflow" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9b81401-ad3e-41a8-8fa5-640328000aad}" showlabel="true" visible="true" labelid="{2436236f-b2ce-4396-9e69-09d1e37ee685}">
+                        <labels>
+                          <label description="New Step" languagecode="1033" />
+                        </labels>
+                        <control id="Step_23:106f85d5-c54b-ed11-bba2-0022483c5061_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_23" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{412eb8c7-3a53-48f5-95bf-5f665554aafb}" name="StageStep25" locklevel="0" expanded="true" visible="false" labelid="{0d036e31-ad16-4112-a7f8-d4003d85ece5}">
+          <labels>
+            <label description="Executed" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{3b1e67a1-116f-7e34-f913-e2d1b316daac}" name="StageStep25_section1" labelid="{782c2dbf-61fc-456b-8684-77e36a0758f6}">
+                  <labels>
+                    <label description="Executed" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e2dbce87-e5a7-4b2a-a2e2-4c46d8f912b2}" showlabel="true" visible="true" labelid="{013f1858-239c-4c26-bf4b-1e8c0adeff9a}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_proposal_cr4e0_contractbusinessflow:cr4e0_projectstatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="cr4e0_projectstatus" disabled="false" relationship="bpf_cr4e0_proposal_cr4e0_contractbusinessflow" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

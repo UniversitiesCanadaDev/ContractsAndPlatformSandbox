@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8277a19b-3f1c-4373-9497-899655b44217}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{527ed253-84be-bb75-7ab4-d32c516a1ec8}" name="tab_2" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{29cc9be7-5b14-4d58-631a-9664ba0a05ae}" name="tab_2_section_3" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3797aa58-a6cc-4cbb-dc30-6ba818b535a6}" locklevel="0" showlabel="true" colspan="2">
+                        <labels>
+                          <label description="DPOH Subject" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_dpohsubjectlookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_dpohsubjectlookup">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{91E0F910-7B69-46B9-905C-72CFAD65DCF8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{a796d2e9-9975-4dee-3233-1c1586c94480}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{4b235dd5-387d-364d-81de-684ea515de10}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{a5e69aa1-8c23-4fa7-8fc2-dfc53478f81e}" name="{a5e69aa1-8c23-4fa7-8fc2-dfc53478f81e}" IsUserDefined="1" locklevel="0" showlabel="true" verticallayout="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="67%">
+              <sections>
+                <section id="{83fc10ec-16cf-4285-a09b-e3aafadc981c}" IsUserDefined="0" showlabel="false" showbar="false" name="{83fc10ec-16cf-4285-a09b-e3aafadc981c}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9d5d5da9-d6c5-4f58-ace1-995047640311}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5b9fb408-1f05-472b-8374-8e67424d6168}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{853bddb4-1e28-e0d7-37a4-bb2c00ecdee8}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="DPOH Subject Lookup Interactive" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_dpohsubjectinteractionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_dpohsubjectinteractionid">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{F12163B2-2E42-481D-970D-D8DB443D4C8F}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{608651ba-80a2-bdb0-07e1-8c75d31734e9}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="DPOH Subject Lookup Meeting" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_dpohsubjectid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_dpohsubjectid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{8401cb83-d35f-4977-9041-c724632db0ce}" height="auto" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f674ca1e-ff41-414c-85b8-4501e963ba48}" locklevel="0" showlabel="false" rowspan="3" auto="false">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{96830635-468d-4c05-b998-b68d0f82b69e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_2" id="{c8499993-b960-d3ac-47e9-777672a12535}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Data" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{cdb9482d-462b-373d-8b99-e3d602e2cbd2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae9b78b5-b404-dd48-3ab8-d9b1bc3424d9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Organization" languagecode="1033" />
+                        </labels>
+                        <control id="new_organization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_organization" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e27ac1a-012b-5ed0-238a-18c0a4ad7c2c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Scope" languagecode="1033" />
+                        </labels>
+                        <control id="new_scope" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_scope" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{de25e94b-3d35-2615-4b60-1de88102b56d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Size" languagecode="1033" />
+                        </labels>
+                        <control id="new_size" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_size" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dbe6273b-db98-189b-1ee3-40214356d82a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Region" languagecode="1033" />
+                        </labels>
+                        <control id="new_region" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_region" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{68b084ca-ad32-4aad-b3a3-036b2613df55}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{409d2433-02a4-408d-a9c9-0066d693df15}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{940fb460-7bb8-4a84-a5ba-23a3903dae07}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4094a6e-c9be-4e5a-8558-54df20f0430a}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

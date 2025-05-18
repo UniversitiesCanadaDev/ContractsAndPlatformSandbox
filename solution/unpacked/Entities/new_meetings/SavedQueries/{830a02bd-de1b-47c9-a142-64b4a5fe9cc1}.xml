@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{830a02bd-de1b-47c9-a142-64b4a5fe9cc1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_meetingsid">
+          <cell name="new_name" width="300" />
+          <cell name="new_contactid" width="125" />
+          <cell name="new_primarymeetingtarget" width="125" />
+          <cell name="new_meetingdate" width="150" />
+          <cell name="a_f26fcac97d18e711aa170050568d4f81.new_location" width="150" disableSorting="1" />
+          <cell name="a_f26fcac97d18e711aa170050568d4f81.new_lobbyactivity" width="100" disableSorting="1" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_meetings">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity alias="a_f26fcac97d18e711aa170050568d4f81" name="new_meetinglookup" from="new_meetinglookupid" to="new_meetingslookup" link-type="outer" visible="false">
+            <attribute name="new_location" />
+            <attribute name="new_lobbyactivity" />
+          </link-entity>
+          <order attribute="new_primarymeetingtarget" descending="false" />
+          <attribute name="new_primarymeetingtarget" />
+          <attribute name="new_contactid" />
+          <attribute name="new_name" />
+          <attribute name="new_meetingdate" />
+          <attribute name="createdby" />
+          <attribute name="new_meetingsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Meetings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

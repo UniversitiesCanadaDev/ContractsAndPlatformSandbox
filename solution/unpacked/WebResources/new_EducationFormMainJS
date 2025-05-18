@@ -1,0 +1,4 @@
+function OnChange() {
+Xrm.Page.getAttribute('new_name').setValue(Xrm.Page.getAttribute('new_institiutionid').getValue()[0].name);
+}
+

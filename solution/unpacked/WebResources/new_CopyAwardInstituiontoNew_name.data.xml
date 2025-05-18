@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{cca271d5-3a36-ea11-80c6-0050569a785d}</WebResourceId>
+  <Name>new_CopyAwardInstituiontoNew_name</Name>
+  <DisplayName>Copy Award Instituion Name to New_name</DisplayName>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_CopyAwardInstituiontoNew_nameCCA271D5-3A36-EA11-80C6-0050569A785D</FileName>
+</WebResource>

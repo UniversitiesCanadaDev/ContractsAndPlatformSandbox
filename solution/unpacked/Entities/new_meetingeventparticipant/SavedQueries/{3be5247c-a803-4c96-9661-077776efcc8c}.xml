@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{3be5247c-a803-4c96-9661-077776efcc8c}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row id="new_meetingeventparticipantid" name="new_meetingeventparticipant">
+          <cell name="new_participant" width="150" />
+          <cell name="a_76d969364eade91180c30050569a785d.parentcustomerid" width="200" disableSorting="1" />
+          <cell name="new_startdate" width="150" />
+          <cell name="a_ce35f8ce73ade91180c30050569a785d.new_meetingstatus" width="125" disableSorting="1" />
+          <cell name="new_primarymeetingcontact" width="100" />
+          <cell name="new_typeofrecord" width="100" />
+          <cell name="new_name" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_meetingeventparticipant">
+          <attribute name="new_name" />
+          <order attribute="new_startdate" descending="true" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_startdate" />
+          <link-entity name="new_interaction" visible="false" link-type="outer" to="new_meetingoreventid" from="new_interactionid" alias="a_ce35f8ce73ade91180c30050569a785d">
+            <attribute name="new_meetingstatus" />
+          </link-entity>
+          <attribute name="new_primarymeetingcontact" />
+          <attribute name="new_typeofrecord" />
+          <attribute name="new_participant" />
+          <link-entity name="contact" visible="false" link-type="outer" to="new_participant" from="contactid" alias="a_76d969364eade91180c30050569a785d">
+            <attribute name="parentcustomerid" />
+          </link-entity>
+          <attribute name="new_meetingeventparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting or Event Participant Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

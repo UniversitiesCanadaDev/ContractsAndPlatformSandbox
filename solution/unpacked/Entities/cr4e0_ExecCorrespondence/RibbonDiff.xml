@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="cr4e0.univcan.cr4e0_execcorrespondence.Button2.Button.CustomAction" Location="Mscrm.HomepageGrid.cr4e0_execcorrespondence.MainTab.Management.Controls._children" Sequence="5">
+      <CommandUIDefinition>
+        <Button Id="univcan.cr4e0_execcorrespondence.Button2.Button" LabelText="$LocLabels:univcan.cr4e0_execcorrespondence.Button2.Button.LabelText" Sequence="5" TemplateAlias="o6" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cr4e0.univcan.cr4e0_execcorrespondence.Button4.Button.CustomAction" Location="Mscrm.SubGrid.cr4e0_execcorrespondence.MainTab.Management.Controls._children" Sequence="1">
+      <CommandUIDefinition>
+        <Button Id="univcan.cr4e0_execcorrespondence.Button4.Button" LabelText="$LocLabels:univcan.cr4e0_execcorrespondence.Button4.Button.LabelText" Sequence="1" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="cr4e0.univcan.cr4e0_execcorrespondence.Button5.Button.CustomAction" Location="Mscrm.Form.cr4e0_execcorrespondence.MainTab.Save.Controls._children" Sequence="1">
+      <CommandUIDefinition>
+        <Button Id="univcan.cr4e0_execcorrespondence.Button5.Button" LabelText="$LocLabels:univcan.cr4e0_execcorrespondence.Button5.Button.LabelText" Sequence="1" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.cr4e0_execcorrespondence.AddToQueue.Hide" Location="Mscrm.Form.cr4e0_execcorrespondence.AddToQueue" />
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.cr4e0_execcorrespondence.Convert.Case.Hide" Location="Mscrm.Form.cr4e0_execcorrespondence.Convert.Case" />
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.cr4e0_execcorrespondence.Convert.Opportunity.Hide" Location="Mscrm.Form.cr4e0_execcorrespondence.Convert.Opportunity" />
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.cr4e0_execcorrespondence.PromoteToResponse.Hide" Location="Mscrm.Form.cr4e0_execcorrespondence.PromoteToResponse" />
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.cr4e0_execcorrespondence.QueueItemDetail.Hide" Location="Mscrm.Form.cr4e0_execcorrespondence.QueueItemDetail" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="univcan.cr4e0_execcorrespondence.Button2.Button.LabelText">
+      <Titles>
+        <Title description="Button 2 test" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="univcan.cr4e0_execcorrespondence.Button4.Button.LabelText">
+      <Titles>
+        <Title description="Button 4" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="univcan.cr4e0_execcorrespondence.Button5.Button.LabelText">
+      <Titles>
+        <Title description="Button 5" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

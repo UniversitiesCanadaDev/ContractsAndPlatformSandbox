@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_howlongmeasuringemissions" localizedName="How Long Measuring Emissions" description="For Climate Survey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="How Long Measuring Emissions" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="For Climate Survey" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000000" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Less than 6 months" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000001" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="6-11 months" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="1-2 years" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="3-5 years" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="6-10 years" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000005" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="More than 10 years" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

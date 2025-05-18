@@ -1,0 +1,85 @@
+function executeWorkflow(entityId, workflowId) {
+    entityId = formatGuid(entityId);
+    workflowId = formatGuid(workflowId);
+
+    const req = {
+        entity: {
+            id: workflowId,
+            entityType: "workflow"
+        },
+        EntityId: {
+            guid: entityId
+        },
+        getMetadata() {
+            return {
+                boundParameter: "entity",
+                parameterTypes: {
+                    entity: {
+                        typeName: "Microsoft.Dynamics.CRM.workflow",
+                        structuralProperty: 5 // Entity Type
+                    },
+                    EntityId: {
+                        typeName: "Edm.Guid",
+                        structuralProperty: 1 // Primitive Type
+                    }
+                },
+                operationType: 0,
+                operationName: "ExecuteWorkflow"
+            }
+        }
+    };
+    return Xrm.WebApi.execute(req);
+}
+
+async function executeWorkflowWithNotification(formContext, entityId, workflowId, processName) {
+    const confirmStrings = {
+        title: `Submit PIA`,
+        text: `Clicking OK will submit this form for review. If confirmed, the process will run in the background and you will be notified about the progress.`
+    };
+    const success = await Xrm.Navigation.openConfirmDialog(confirmStrings);
+    if (!success.confirmed) {
+        return;
+    }
+
+    const response = await executeWorkflow(entityId, workflowId);
+    const result = await response.json();
+
+    const startNotificationId = new Date().valueOf().toString();
+    formContext.ui.setFormNotification(`The "${processName}" process has been started.`, "INFO", startNotificationId);
+
+    const workflowResult = await waitForAsyncOperation(result.asyncoperationid, 60000);
+    formContext.ui.clearFormNotification(startNotificationId);
+
+    let notificationLevel = "";
+    let notificationMessage = "";
+    switch (workflowResult) {
+        case 0:
+            notificationMessage = `The "${processName}" process succeeded.`;
+            notificationLevel = "INFO";
+            break;
+        case 1:
+            const asyncOperation = await Xrm.WebApi.retrieveRecord(
+                "asyncoperation",
+                result.asyncoperationid,
+                "?$select=friendlymessage"
+            );
+            notificationMessage = `The "${processName}" process failed: ${asyncOperation.friendlymessage}`;
+            notificationLevel = "ERROR";
+            break;
+        case 2:
+            notificationMessage = `The "${processName}" process takes longer than expected. Please check the background processes.`;
+            notificationLevel = "WARNING";
+            break;
+    }
+
+    const notificationId = new Date().valueOf().toString();
+    formContext.ui.setFormNotification(notificationMessage, notificationLevel, notificationId);
+    await sleep(2000);
+    Xrm.Page.data.refresh();
+    await sleep(30000);
+    formContext.ui.clearFormNotification(notificationId);
+}
+
+function formatGuid(guid) {
+    return guid.replace(/\{|\}/g, "");
+}

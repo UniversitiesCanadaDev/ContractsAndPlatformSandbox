@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{5c28d327-a59b-e611-b5a6-0050568d4f81}" Name="Hide QES-AS Specific Fields" Description="Hide QES-AS specific items when partner is QES. Not Required for QES-AS partners" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/HideQES-ASSpecificFields-5C28D327-A59B-E611-B5A6-0050568D4F81.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerFormId>{5ca79c64-813c-4d88-9f77-ab98059ef699}</ProcessTriggerFormId>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>new_projectpartner</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Hide QES-AS Specific Fields" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Hide QES-AS specific items when partner is QES. Not Required for QES-AS partners" />
+  </Descriptions>
+</Workflow>

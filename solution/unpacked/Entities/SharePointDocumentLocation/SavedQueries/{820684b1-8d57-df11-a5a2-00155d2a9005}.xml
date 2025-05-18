@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{820684b1-8d57-df11-a5a2-00155d2a9005}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row name="result" id="sharepointdocumentlocationid">
+          <cell name="name" width="150" />
+          <cell name="regardingobjectid" width="150" />
+          <cell name="absoluteurl" width="240" />
+          <cell name="parentsiteorlocation" width="140" />
+          <cell name="relativeurl" width="160" />
+          <cell name="createdon" width="100" />
+          <cell name="a_08713684be94438ca483210252e4923c.cr4e0_execcampaign" width="258" />
+          <cell name="a_08713684be94438ca483210252e4923c.to" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="sharepointdocumentlocation">
+          <attribute name="relativeurl" />
+          <attribute name="regardingobjectid" />
+          <attribute name="parentsiteorlocation" />
+          <attribute name="absoluteurl" />
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="locationtype" operator="eq" value="0" />
+            <condition attribute="servicetype" operator="eq" value="0" />
+          </filter>
+          <attribute name="sharepointdocumentlocationid" />
+          <attribute name="createdon" />
+          <link-entity alias="a_08713684be94438ca483210252e4923c" name="cr4e0_execcorrespondence" to="regardingobjectid" from="activityid" link-type="outer" visible="false">
+            <attribute name="cr4e0_execcampaign" />
+            <attribute name="to" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Document Locations" languagecode="1033" />
+      <LocalizedName description="Emplacements de documents actifs" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

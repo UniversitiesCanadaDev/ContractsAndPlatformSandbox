@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d0479533-05a4-4bd3-affc-5767379a344d}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" icon="1" preview="1">
+        <row name="result" id="activityid">
+          <cell name="scheduledstart" width="100" />
+          <cell name="subject" width="250" />
+          <cell name="requiredattendees" width="100" disableSorting="1" />
+          <cell name="new_briefinglead" width="100" />
+          <cell name="new_briefingnotelink" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical">
+        <entity name="appointment">
+          <attribute name="subject" />
+          <order attribute="scheduledstart" descending="false" />
+          <attribute name="scheduledstart" />
+          <attribute name="requiredattendees" />
+          <attribute name="new_briefingnotelink" />
+          <attribute name="new_briefinglead" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting Associated View" languagecode="1033" />
+      <LocalizedName description="Vue associée Rendez-vous" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

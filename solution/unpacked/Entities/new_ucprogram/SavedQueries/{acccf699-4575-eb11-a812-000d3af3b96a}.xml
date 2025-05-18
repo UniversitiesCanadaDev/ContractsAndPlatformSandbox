@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{acccf699-4575-eb11-a812-000d3af3b96a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_ucprogramid">
+          <cell name="new_programtype" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_name" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_startdate" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_enddate" width="75" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_primaryexternalcontact" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_ucprimarycontact" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_numberofawards" width="100" />
+          <cell name="new_value" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_ucprogram">
+          <attribute name="new_name" />
+          <order attribute="new_startdate" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_startdate" />
+          <attribute name="new_programtype" />
+          <attribute name="new_primaryexternalcontact" />
+          <attribute name="new_enddate" />
+          <attribute name="new_ucprimarycontact" />
+          <attribute name="new_value" />
+          <attribute name="new_numberofawards" />
+          <attribute name="new_ucprogramid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="UC Programs Org View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

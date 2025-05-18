@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7ae277b6-5d98-ed11-aad1-0022483c5336}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{21165429-d3c8-4f0f-9b08-2373b1b3573d}" IsUserDefined="1" labelid="{a578fe37-d920-454f-894a-3048449ce8c3}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{32e8c2bf-d152-49c0-a161-fa647c22734e}" labelid="{c7f0d381-e2a9-467b-8609-4fe1ac25efbe}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7e6609aa-bda7-483d-a588-92f22ee58b33}" labelid="{40abdebd-26e6-45c1-8ef6-6cb864c14293}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr4e0_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70761e45-e42e-49f2-9a60-0e0c9768875d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New User" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_newuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_newuser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{15966572-ab3d-4a60-b54e-5ef3cf333ff1}" rowspan="15" colspan="1" labelid="{a58b44e1-2e64-4f2e-864f-200c0db3c5cf}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{06199e85-76cd-4479-a11d-8496426b162f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{efb482b8-9f47-4ad0-981d-19ce73283e71}" showlabel="false" labelid="{ac04d35e-9a72-4030-b40f-7a61f41961b2}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{76a3123f-c22c-4903-867b-17aea766dc1d}" showlabel="false" labelid="{3c6e05de-174a-410d-a376-dafa760b2c0c}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7bfe63b5-2bd3-4662-84e7-810738449b88}" showlabel="false" labelid="{6d7214c6-4942-4595-bc99-e569b444bf05}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{77b4861e-81d6-4b44-9940-91ce3d81119a}" colspan="1" rowspan="1" labelid="{e84d605f-f520-464b-896a-ad1049603def}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{4c314936-36bd-4fc1-b987-7b0286bca286}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{77b63199-edc1-41d9-8e1e-80f3bfc38161}" showlabel="false" labelid="{4325aebc-1328-4022-994b-546293d9d6b7}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{876ba076-c060-404b-a880-6b521417e53e}" showlabel="false" labelid="{c3d9f021-572c-433f-8423-5d22f2961c56}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9ce8ccb3-eb21-44af-9f7e-92c243ec22fc}" showlabel="false" labelid="{33d5512b-1205-45e2-ac8b-0f34bbc6c88c}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Test For Timeline main form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

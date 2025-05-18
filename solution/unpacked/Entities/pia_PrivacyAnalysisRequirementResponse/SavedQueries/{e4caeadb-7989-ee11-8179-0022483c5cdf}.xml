@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e4caeadb-7989-ee11-8179-0022483c5cdf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="pia_name" select="1" icon="1" preview="1">
+        <row name="result" id="pia_privacyanalysisrequirementresponseid">
+          <cell name="pia_privacyrequirement" width="159" />
+          <cell name="pia_applicable" width="108" />
+          <cell name="pia_explanation" width="108" />
+          <cell name="pia_privacyimpact" width="126" />
+          <cell name="pia_actionsitems" width="119" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="pia_privacyanalysisrequirementresponse">
+          <attribute name="pia_privacyanalysisrequirementresponseid" />
+          <link-entity name="pia_privacyanalysisrequirement" alias="ac" link-type="inner" from="pia_privacyanalysisrequirementid" to="pia_privacyrequirement">
+            <filter type="and">
+              <condition attribute="pia_type" operator="eq" value="3" />
+            </filter>
+          </link-entity>
+          <attribute name="pia_privacyrequirement" />
+          <attribute name="pia_applicable" />
+          <attribute name="pia_explanation" />
+          <attribute name="pia_privacyimpact" />
+          <attribute name="pia_actionsitems" />
+          <order attribute="pia_privacyrequirement" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Disclosure" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,966 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps-1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365-1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedoffice365_8a125"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_commondataserviceforapps-2": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_119b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_e40d7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedsharepointonline_bf030"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_sharepointonline-2": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedsharepointonline_b06ee"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_commondataserviceforapps-3": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_a8d0a"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "36b2693d-00a6-4ec7-9edc-4cdaf40556ff"
+          },
+          "type": "Request",
+          "kind": "Button",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "Approver Value",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "Approve Status",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_2": {
+                  "title": "Proposal Owner",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_3": {
+                  "title": "Proposal Id",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_4": {
+                  "title": "Approve Value",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_5": {
+                  "title": "Proposal name",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_6": {
+                  "title": "Approver Type",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1",
+                "text_3",
+                "text_4",
+                "text_5",
+                "text_6"
+              ]
+            },
+            "headersSchema": {
+              "x-ms-user-name-encoded": {
+                "title": "User name",
+                "type": "string",
+                "format": "byte",
+                "x-ms-dynamically-added": false
+              },
+              "x-ms-user-email-encoded": {
+                "title": "User email",
+                "type": "string",
+                "format": "byte",
+                "x-ms-dynamically-added": false
+              },
+              "x-ms-user-timestamp": {
+                "title": "Timestamp",
+                "type": "string",
+                "x-ms-dynamically-added": false
+              }
+            }
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Respond_to_a_PowerApp_or_flow_2": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "654ce884-efc7-4ae1-87be-0e0dadc02ac8"
+              },
+              "type": "Response",
+              "kind": "PowerApp",
+              "inputs": {
+                "statusCode": 200,
+                "body": {
+                  "response": "Next Approver"
+                },
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "response": {
+                      "title": "response",
+                      "x-ms-dynamically-added": true,
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Condition_3": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Condition_2": {
+                "actions": {
+                  "Get_a_row_by_ID": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "d5592694-ace0-4b89-89c6-20209685988b"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "entityName": "systemusers",
+                        "recordId": "@triggerBody()['text']"
+                      },
+                      "host": {
+                        "connectionName": "shared_commondataserviceforapps-1",
+                        "operationId": "GetItem",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                      },
+                      "authentication": "@parameters('$authentication')"
+                    }
+                  },
+                  "Send_an_email_(V2)": {
+                    "runAfter": {
+                      "Perform_an_unbound_action": [
+                        "Succeeded"
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "47204bfb-04d1-4262-9d25-ba6d8decda6d"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "host": {
+                        "connectionName": "shared_office365-1",
+                        "operationId": "SendEmailV2",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                      },
+                      "parameters": {
+                        "emailMessage/To": "@outputs('Get_a_row_by_ID')?['body/internalemailaddress']",
+                        "emailMessage/Subject": "Action required - @{outputs('Get_a_row_by_ID_2')?['body/cr4e0_iscontract@OData.Community.Display.V1.FormattedValue']} review",
+                        "emailMessage/Body": "\n  <meta>\n  <title></title>\n  <style>\n      body {  margin: 0; }\n      .messageContainer { width: 660px; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}\n      .contentContainer { background: #F0F0F0; border: 1px solid #C8C8C8;}\n      .bannerContainer { padding: 72px 20px 12px 20px }\n      .footerContainer { padding: 32px 20px; }\n      .subject { margin-bottom: 30px; }\n      .headerContainer { text-align: center; padding: 48px 60px; background-color: #0078d4 }\n      .bodyContainer { background: white; padding: 48px 60px }\n      p { margin: 10px 0; }\n      .lge { font-size: 28px; font-family: Segoe UI; font-weight: 600; color: #201F1E }\n      .hlt { font-weight:600; }\n      .btn { font-size: 15px; background: #0078D7; color: #fff; text-decoration: none; display: inline-block; padding: 10px 16px; margin: 30px auto 0 auto; }\n      .alertInvestigationButtonPart { text-align: center; }\n      .footerContainer p { font-size: 10px; font-family: Segoe UI; color: #666666; margin: 0 0 14px 0 }\n      .FooterContainer img {margin-top: 10px}\n  .headerSpan{ color: #fff }\n    </style>\n  \n  \n  <div>\n  <div class=\"messageContainer\">\n  <div class=\"bannerContainer\"><img src=\"https://www.univcan.ca/wp-content/themes/univcan/images/univcan-logo-en.svg\">\n  </div>\n  <div class=\"contentContainer\">\n  <div class=\"headerContainer\"><span class=\"lge headerSpan\">@{outputs('Get_a_row_by_ID_2')?['body/cr4e0_name']} Review</span>\n  </div>\n  <div class=\"bodyContainer\">\n  <p class=\"subject\">Hello @{outputs('Get_a_row_by_ID')?['body/fullname']},</p>\n  <p class=\"subject\">I hope this email finds you well. I am writing to seek your approval for the  @{outputs('Get_a_row_by_ID_2')?['body/cr4e0_name']}.</p>\n<p>@{outputs('Get_a_row_by_ID_2')?['body/cr4e0_emailtemplate']}</p>\n  <p class=\"subject\"><a href=\"https://ucsandbox01.crm3.dynamics.com/main.aspx?appid=9203dcfd-0367-43eb-aaef-a59efc587735&amp;pagetype=entityrecord&amp;etn=cr4e0_proposal&amp;id=@{outputs('Get_a_row_by_ID_2')?['body/cr4e0_proposalid']}&amp;formid=f1fa8ea8-8c7d-ed11-81ad-0022483cb87c\">Click here</a> access the proposal/contract information.</p><br>\n<p class=\"subject\">Thank you.</p>\n  <div class=\"footerContainer\">\n  <p>Universities Canada</p>\n  <img src=\"https://www.univcan.ca/wp-content/themes/univcan/images/univcan-logo-en.svg\">\n  </div>\n  </div>\n  </div>\n  </div>\n  \n  </div>",
+                        "emailMessage/Attachments": "@variables('Attachments')",
+                        "emailMessage/Importance": "Normal"
+                      },
+                      "authentication": {
+                        "type": "Raw",
+                        "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                      }
+                    }
+                  },
+                  "Respond_to_a_PowerApp_or_flow_3": {
+                    "runAfter": {
+                      "Update_a_row": [
+                        "Succeeded"
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "33920b50-9d37-424f-a27e-69788a08f448"
+                    },
+                    "type": "Response",
+                    "kind": "PowerApp",
+                    "inputs": {
+                      "statusCode": 200,
+                      "body": {
+                        "response": "Hold"
+                      },
+                      "schema": {
+                        "type": "object",
+                        "properties": {
+                          "response": {
+                            "title": "response",
+                            "x-ms-dynamically-added": true,
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "Add_a_new_row": {
+                    "runAfter": {
+                      "Send_an_email_(V2)": [
+                        "Succeeded"
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "4d69dc4e-f261-45de-96ad-6d1d45d54a5e"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "entityName": "annotations",
+                        "item/subject": "Email has been sent for internal approval to @{outputs('Get_a_row_by_ID')?['body/fullname']} ",
+                        "item/isdocument": false,
+                        "item/objectid_cr4e0_proposal@odata.bind": "cr4e0_proposals/@{triggerBody()['text_3']}"
+                      },
+                      "host": {
+                        "connectionName": "shared_commondataserviceforapps-1",
+                        "operationId": "CreateRecord",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                      },
+                      "authentication": "@parameters('$authentication')"
+                    }
+                  },
+                  "Condition_5": {
+                    "actions": {
+                      "Set_variable": {
+                        "runAfter": {},
+                        "metadata": {
+                          "operationMetadataId": "5aa5f183-7842-493b-9925-0170d12ea79e"
+                        },
+                        "type": "SetVariable",
+                        "inputs": {
+                          "name": "Pending Status",
+                          "value": "Assistant Director, Financial Planning and Analysis"
+                        }
+                      }
+                    },
+                    "runAfter": {
+                      "Add_a_new_row": [
+                        "Succeeded"
+                      ]
+                    },
+                    "else": {
+                      "actions": {
+                        "Condition_6": {
+                          "actions": {
+                            "Set_variable_2": {
+                              "runAfter": {},
+                              "metadata": {
+                                "operationMetadataId": "c661c9a9-1887-4ac6-9378-62d641a7d720"
+                              },
+                              "type": "SetVariable",
+                              "inputs": {
+                                "name": "Pending Status",
+                                "value": "Assistant Director"
+                              }
+                            }
+                          },
+                          "runAfter": {},
+                          "else": {
+                            "actions": {
+                              "Condition_7": {
+                                "actions": {
+                                  "Set_variable_3": {
+                                    "runAfter": {},
+                                    "metadata": {
+                                      "operationMetadataId": "85756cfa-4eab-4525-91e7-d417bc3bbc30"
+                                    },
+                                    "type": "SetVariable",
+                                    "inputs": {
+                                      "name": "Pending Status",
+                                      "value": "Privacy Officer"
+                                    }
+                                  }
+                                },
+                                "runAfter": {},
+                                "else": {
+                                  "actions": {
+                                    "Condition_8": {
+                                      "actions": {
+                                        "Set_variable_4": {
+                                          "runAfter": {},
+                                          "metadata": {
+                                            "operationMetadataId": "ffd0d152-ab0c-461c-bdf5-90142dd7af5a"
+                                          },
+                                          "type": "SetVariable",
+                                          "inputs": {
+                                            "name": "Pending Status",
+                                            "value": "Director"
+                                          }
+                                        }
+                                      },
+                                      "runAfter": {},
+                                      "else": {
+                                        "actions": {
+                                          "Condition_1": {
+                                            "actions": {
+                                              "Set_variable_1": {
+                                                "runAfter": {},
+                                                "metadata": {
+                                                  "operationMetadataId": "b3675b08-69fd-4532-b7d0-73601f8a00e9"
+                                                },
+                                                "type": "SetVariable",
+                                                "inputs": {
+                                                  "name": "Pending Status",
+                                                  "value": "Vice President"
+                                                }
+                                              }
+                                            },
+                                            "runAfter": {},
+                                            "else": {
+                                              "actions": {
+                                                "Set_variable_5": {
+                                                  "runAfter": {},
+                                                  "metadata": {
+                                                    "operationMetadataId": "338115a5-7168-497d-a7c7-eee12142ed84"
+                                                  },
+                                                  "type": "SetVariable",
+                                                  "inputs": {
+                                                    "name": "Pending Status",
+                                                    "value": "Chief Financial Officer"
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "expression": {
+                                              "and": [
+                                                {
+                                                  "equals": [
+                                                    "@triggerBody()?['text_6']",
+                                                    "Vice President"
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            "metadata": {
+                                              "operationMetadataId": "60de8bd6-24fd-4413-9e20-3d1367fd1bbb"
+                                            },
+                                            "type": "If"
+                                          }
+                                        }
+                                      },
+                                      "expression": {
+                                        "and": [
+                                          {
+                                            "equals": [
+                                              "@triggerBody()['text_6']",
+                                              "Director"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      "metadata": {
+                                        "operationMetadataId": "4b8b74f0-fa18-47d2-a51e-698b779fccfd"
+                                      },
+                                      "type": "If"
+                                    }
+                                  }
+                                },
+                                "expression": {
+                                  "and": [
+                                    {
+                                      "equals": [
+                                        "@triggerBody()['text_6']",
+                                        "Privacy Officer"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "metadata": {
+                                  "operationMetadataId": "dcf6b206-b0eb-4114-ba9a-8f4a115bc48b"
+                                },
+                                "type": "If"
+                              }
+                            }
+                          },
+                          "expression": {
+                            "and": [
+                              {
+                                "equals": [
+                                  "@triggerBody()['text_6']",
+                                  "Assistant Director"
+                                ]
+                              }
+                            ]
+                          },
+                          "metadata": {
+                            "operationMetadataId": "f7fa4c41-1d13-4403-9cb7-782d570311cc"
+                          },
+                          "type": "If"
+                        }
+                      }
+                    },
+                    "expression": {
+                      "and": [
+                        {
+                          "equals": [
+                            "@triggerBody()['text_6']",
+                            "Assistant Director, Financial Planning and Analysis"
+                          ]
+                        }
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "dcfe8cf6-e129-4829-929d-7250d1ee4d67"
+                    },
+                    "type": "If"
+                  },
+                  "Update_a_row": {
+                    "runAfter": {
+                      "Condition_5": [
+                        "Succeeded"
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "c016a001-7581-404d-b8d5-8c09ada92334"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "entityName": "cr4e0_proposals",
+                        "recordId": "@triggerBody()['text_3']",
+                        "item/cr4e0_internalapprovalstatus": "@triggerBody()['text_6']"
+                      },
+                      "host": {
+                        "connectionName": "shared_commondataserviceforapps-2",
+                        "operationId": "UpdateRecord",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                      },
+                      "authentication": "@parameters('$authentication')"
+                    }
+                  },
+                  "Get_a_row_by_ID_2": {
+                    "runAfter": {
+                      "Get_a_row_by_ID": [
+                        "Succeeded"
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "a1ecbead-c1bf-46aa-ad52-cee93e569bd7"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "entityName": "cr4e0_proposals",
+                        "recordId": "@triggerBody()['text_3']"
+                      },
+                      "host": {
+                        "connectionName": "shared_commondataserviceforapps-1",
+                        "operationId": "GetItem",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                      },
+                      "authentication": "@parameters('$authentication')"
+                    }
+                  },
+                  "Perform_an_unbound_action": {
+                    "runAfter": {
+                      "Get_a_row_by_ID_2": [
+                        "Succeeded"
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "66dd4f2b-3eb1-4b88-9bdf-1472a86ddd9e"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "actionName": "GrantAccess",
+                        "item/Target": {
+                          "@{string('@odata.type')}": "Microsoft.Dynamics.CRM.cr4e0_proposal",
+                          "cr4e0_proposalid": "@{outputs('Get_a_row_by_ID_2')?['body/cr4e0_proposalid']}"
+                        },
+                        "item/PrincipalAccess": {
+                          "AccessMask": "ReadAccess,WriteAccess",
+                          "Principal": {
+                            "@{string('@odata.type')}": "Microsoft.Dynamics.CRM.systemuser",
+                            "systemuserid": "@{outputs('Get_a_row_by_ID')?['body/systemuserid']}"
+                          }
+                        }
+                      },
+                      "host": {
+                        "connectionName": "shared_commondataserviceforapps",
+                        "operationId": "PerformUnboundAction",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                      },
+                      "authentication": "@parameters('$authentication')"
+                    }
+                  }
+                },
+                "runAfter": {},
+                "else": {
+                  "actions": {
+                    "Respond_to_a_PowerApp_or_flow": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "20546a16-7c1f-40b1-8a0b-91152e77d131"
+                      },
+                      "type": "Response",
+                      "kind": "PowerApp",
+                      "inputs": {
+                        "statusCode": 200,
+                        "body": {
+                          "response": "Next Approver"
+                        },
+                        "schema": {
+                          "type": "object",
+                          "properties": {
+                            "response": {
+                              "title": "response",
+                              "x-ms-dynamically-added": true,
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "expression": {
+                  "or": [
+                    {
+                      "equals": [
+                        "@triggerBody()['text_1']",
+                        "Rejected"
+                      ]
+                    },
+                    {
+                      "equals": [
+                        "@triggerBody()['text_1']",
+                        "Apply Revisions"
+                      ]
+                    },
+                    {
+                      "equals": [
+                        "@triggerBody()['text_1']",
+                        "empty"
+                      ]
+                    }
+                  ]
+                },
+                "metadata": {
+                  "operationMetadataId": "5af8e750-7f93-4d9b-975f-882b2da7f963"
+                },
+                "type": "If"
+              }
+            }
+          },
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@triggerBody()?['text']",
+                  "empty"
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ada081b7-01d6-4c98-ae01-e0427cc956d3"
+          },
+          "type": "If"
+        },
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "b18da3b4-2c47-41fe-bb6a-963e93e42950"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "PoposalId",
+                "type": "string",
+                "value": "@triggerBody()['text_3']"
+              }
+            ]
+          }
+        },
+        "Compose": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "23bfa901-d9ca-4690-8b29-861beecf3a51"
+          },
+          "type": "Compose",
+          "inputs": "@replace(variables('PoposalId'),'-','')"
+        },
+        "Compose_2": {
+          "runAfter": {
+            "Compose": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f1a6b0d9-5629-49a5-8065-5d809e7b26d0"
+          },
+          "type": "Compose",
+          "inputs": "@toUpper(outputs('Compose'))"
+        },
+        "List_folder": {
+          "runAfter": {
+            "Compose_3": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "17504872-bbc5-45f1-85f1-f13a40b45cb9"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "id": "@encodeUriComponent(outputs('Compose_3'))"
+            },
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "ListFolder",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Condition_3": {
+          "actions": {
+            "Apply_to_each": {
+              "foreach": "@body('List_folder')",
+              "actions": {
+                "Get_file_content_using_path": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "30b1f76d-eea0-42ea-9157-8db7703566c8"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "path": "@item()?['Path']",
+                      "inferContentType": true
+                    },
+                    "host": {
+                      "connectionName": "shared_sharepointonline-2",
+                      "operationId": "GetFileContentByPath",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "Get_file_metadata": {
+                  "runAfter": {
+                    "Get_file_content_using_path": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "2b2b3185-73db-4a53-b854-d456494c15c1"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "id": "@item()?['Id']"
+                    },
+                    "host": {
+                      "connectionName": "shared_sharepointonline-2",
+                      "operationId": "GetFileMetadata",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "Get_file_properties": {
+                  "runAfter": {
+                    "Get_file_metadata": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "9cbc4dd1-8f11-445f-84e2-4b5995be3c6a"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "table": "24a012c6-48d3-4717-bce8-7975d60ade3b",
+                      "id": "@outputs('Get_file_metadata')?['body/ItemId']"
+                    },
+                    "host": {
+                      "connectionName": "shared_sharepointonline-2",
+                      "operationId": "GetFileItem",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "authentication": "@parameters('$authentication')"
+                  }
+                },
+                "Condition_4": {
+                  "actions": {
+                    "Append_to_array_variable": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "b20a2239-342c-4ca2-ba00-e4231adde052"
+                      },
+                      "type": "AppendToArrayVariable",
+                      "inputs": {
+                        "name": "Attachments",
+                        "value": {
+                          "Name": "@{outputs('Get_file_properties')?['body/{FilenameWithExtension}']}",
+                          "ContentBytes": "@body('Get_file_content_using_path')"
+                        }
+                      }
+                    }
+                  },
+                  "runAfter": {
+                    "Get_file_properties": [
+                      "Succeeded"
+                    ]
+                  },
+                  "expression": {
+                    "equals": [
+                      "@outputs('Get_file_properties')?['body/Send_x0020_to_x0020_Client']",
+                      true
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "8e00c27e-da92-4cc5-9d1f-fe450118a8e5"
+                  },
+                  "type": "If"
+                }
+              },
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "c7e87490-cbfe-4e81-9aad-03725867f9c1"
+              },
+              "type": "Foreach"
+            }
+          },
+          "runAfter": {
+            "List_folder": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "equals": [
+              "@empty(body('List_folder'))",
+              false
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "7d7b850d-5fb4-475d-adf0-fe19475e03e6"
+          },
+          "type": "If"
+        },
+        "Initialize_variable_2": {
+          "runAfter": {
+            "Compose_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "aa4426fe-1ed2-4382-a776-76934c5435a5"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Attachments",
+                "type": "array"
+              }
+            ]
+          }
+        },
+        "Initialize_variable_3": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f28a92ab-5dfc-4638-ac1d-1bc83369b6d2"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Pending Status",
+                "type": "string",
+                "value": "@triggerBody()['text_6']"
+              }
+            ]
+          }
+        },
+        "List_rows": {
+          "runAfter": {
+            "Initialize_variable_4": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c6272106-6938-492b-80db-0c7daa63850b"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "$filter": "_regardingobjectid_value eq @{variables('PoposalId')}"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps-3",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Initialize_variable_4": {
+          "runAfter": {
+            "Initialize_variable_3": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2050ac75-f590-4ebc-92f4-a39be2178259"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Relative URL",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Apply_to_each_2": {
+          "foreach": "@outputs('List_rows')?['body/value']",
+          "actions": {
+            "Set_variable_6": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "42245565-7b3c-46d9-84a7-c3c78d82a94f"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "Relative URL",
+                "value": "@items('Apply_to_each_2')?['relativeurl']"
+              }
+            }
+          },
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c191aa79-dd55-4960-a396-aa81fea15580"
+          },
+          "type": "Foreach"
+        },
+        "Compose_3": {
+          "runAfter": {
+            "Apply_to_each_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "7a807695-011b-425c-b945-a5cc8a6705e6"
+          },
+          "type": "Compose",
+          "inputs": "/cr4e0_proposal/@{variables('Relative URL')}"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

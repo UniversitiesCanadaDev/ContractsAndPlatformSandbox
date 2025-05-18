@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{37d34d6b-5c80-4465-8383-b0b2fecdf26f}</savedqueryid>
+    <layoutxml>
+      <grid name="" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_panelistid" name="new_panelist">
+          <cell name="new_panelnameid" width="300" />
+          <cell name="new_startdate" width="100" />
+          <cell name="new_enddate" width="100" />
+          <cell name="new_memberrole" width="100" />
+          <cell name="new_term" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="new_panelist">
+          <order descending="true" attribute="new_enddate" />
+          <order descending="false" attribute="new_memberrole" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_term" />
+          <attribute name="new_startdate" />
+          <attribute name="new_memberrole" />
+          <attribute name="new_enddate" />
+          <attribute name="new_panelnameid" />
+          <attribute name="new_panelistid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Panelist Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

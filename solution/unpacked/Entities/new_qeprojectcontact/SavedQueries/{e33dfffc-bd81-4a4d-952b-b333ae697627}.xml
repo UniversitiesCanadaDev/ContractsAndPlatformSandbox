@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e33dfffc-bd81-4a4d-952b-b333ae697627}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_qeprojectcontactid">
+          <cell name="new_name" width="300" />
+          <cell name="new_contacttype" width="100" />
+          <cell name="a_2d273311f3c0e411b4170050568d4f81.emailaddress1" width="100" disableSorting="1" />
+          <cell name="new_order" width="100" />
+          <cell name="new_cheque" width="100" />
+          <cell name="new_filenamesid" width="150" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qeprojectcontact">
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_name" />
+          <attribute name="new_order" />
+          <attribute name="new_filenamesid" />
+          <attribute name="new_contacttype" />
+          <attribute name="new_cheque" />
+          <link-entity alias="a_2d273311f3c0e411b4170050568d4f81" name="contact" from="contactid" to="new_projectcontact" link-type="outer" visible="false">
+            <attribute name="emailaddress1" />
+          </link-entity>
+          <attribute name="new_qeprojectcontactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="QES Project Contact Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{02af200e-75c8-4201-bb27-de2938c04f9c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_globalexcellenceinitiativeid">
+          <cell name="new_nomineeresearcher" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_awards" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_category" width="150" />
+          <cell name="new_institution" width="150" />
+          <cell name="new_awardamount" width="100" />
+          <cell name="new_deadline" width="150" />
+          <cell name="new_deadlineforreview" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_globalexcellenceinitiative">
+          <order attribute="new_nomineeresearcher" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_deadline" />
+          <attribute name="new_awardamount" />
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="new_category" />
+          <attribute name="new_institution" />
+          <attribute name="new_nomineeresearcher" />
+          <attribute name="new_awards" />
+          <attribute name="new_deadlineforreview" />
+          <attribute name="new_globalexcellenceinitiativeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active GEI Dossiers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

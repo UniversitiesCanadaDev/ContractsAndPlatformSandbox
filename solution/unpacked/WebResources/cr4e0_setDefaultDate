@@ -1,0 +1,30 @@
+function setTodayDate(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var today = new Date();
+    
+    // Set today's date to the 'cr4e0_todaydate' field
+    var todayDateField = formContext.getAttribute("cr4e0_todaydate"); // Replace with actual field name
+    todayDateField.setValue(today);
+    todayDateField.setSubmitMode("always"); // Ensure the value is submitted
+var oldDate = new Date("2024-05-15T23:59:59");
+var currentFormType = formContext.getAttribute("cr4e0_formtype").getValue();
+
+
+
+var entityNameValue = formContext.getAttribute("cr4e0_entityname").getValue();
+
+if(entityNameValue != null){
+
+        if(entityNameValue == 860540023 && currentFormType === 860540001 || entityNameValue == 860540022 && currentFormType === 860540001 || entityNameValue == 860540004 && currentFormType === 860540001 || entityNameValue == 860540024 && currentFormType === 860540001 || entityNameValue == 860540026 && currentFormType === 860540001 || entityNameValue == 860540000 && currentFormType === 860540001 || entityNameValue == 860540032 && currentFormType === 860540001 || entityNameValue == 100000001 && currentFormType === 860540001 || entityNameValue == 100000000 && currentFormType === 860540001){
+
+           formContext.ui.tabs.get('Internal Review New').setVisible(false);
+            formContext.ui.tabs.get('Internal Review').setVisible(false);
+            formContext.ui.tabs.get('Internal Review SPC').setVisible(true); //set to true
+        }else{
+            formContext.ui.tabs.get('Internal Review New').setVisible(false);
+            formContext.ui.tabs.get('Internal Review').setVisible(true); //set to true
+            formContext.ui.tabs.get('Internal Review SPC').setVisible(false);
+        }
+
+}
+}

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fb220df9-b03b-4147-afa2-b651947bec98}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_qeprojectcontact" id="new_qeprojectcontactid">
+          <cell name="new_name" width="150" />
+          <cell name="new_contacttype" width="150" />
+          <cell name="a_2d273311f3c0e411b4170050568d4f81.emailaddress1" width="200" disableSorting="1" />
+          <cell name="new_order" width="75" />
+          <cell name="new_cheque" width="75" />
+          <cell name="a_5cb0e031e6c1e411b4170050568d4f81.new_qesprojecttype" width="125" disableSorting="1" />
+          <cell name="a_5cb0e031e6c1e411b4170050568d4f81.new_filenamesid" width="150" disableSorting="1" />
+          <cell name="new_responsibilities" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qeprojectcontact">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_contacttype" />
+          <link-entity alias="a_2d273311f3c0e411b4170050568d4f81" name="contact" from="contactid" to="new_projectcontact" link-type="outer" visible="false">
+            <attribute name="emailaddress1" />
+          </link-entity>
+          <attribute name="new_order" />
+          <attribute name="new_cheque" />
+          <link-entity alias="a_5cb0e031e6c1e411b4170050568d4f81" name="new_project" from="new_projectid" to="new_projectcontactsid" link-type="outer" visible="false">
+            <attribute name="new_qesprojecttype" />
+            <attribute name="new_filenamesid" />
+          </link-entity>
+          <attribute name="new_responsibilities" />
+          <attribute name="new_qeprojectcontactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="QES Project Contact Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

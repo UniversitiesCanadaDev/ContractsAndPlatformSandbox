@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{741eaf93-9a4c-ec11-8f8e-000d3ae9a962}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_deskreservationsid">
+          <cell name="new_reservedby" width="100" />
+          <cell name="new_desktext" width="100" />
+          <cell name="new_checkoutfrom" width="175" />
+          <cell name="new_checkoutto" width="176" />
+          <cell name="new_reserveddesk" width="100" />
+          <cell name="new_checkoutfromtext" width="155" />
+          <cell name="new_checkouttotext" width="148" />
+          <cell name="createdby" width="100" />
+          <cell name="createdon" width="100" />
+          <cell name="ownerid" width="100" />
+          <cell name="new_checkedin" width="100" />
+          <cell name="modifiedby" width="100" />
+          <cell name="new_checkoutdateshort" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_deskreservations">
+          <attribute name="new_deskreservationsid" />
+          <attribute name="new_checkoutfrom" />
+          <attribute name="new_checkoutto" />
+          <attribute name="new_checkoutfromtext" />
+          <attribute name="new_checkouttotext" />
+          <attribute name="createdby" />
+          <attribute name="createdon" />
+          <attribute name="ownerid" />
+          <attribute name="new_checkedin" />
+          <attribute name="new_reservedby" />
+          <attribute name="new_reserveddesk" />
+          <attribute name="new_desktext" />
+          <attribute name="modifiedby" />
+          <attribute name="new_checkoutdateshort" />
+          <order attribute="createdon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Dev View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

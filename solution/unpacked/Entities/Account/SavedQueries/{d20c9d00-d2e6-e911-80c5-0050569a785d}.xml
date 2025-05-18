@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d20c9d00-d2e6-e911-80c5-0050569a785d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" preview="1" icon="1">
+        <row id="accountid" name="result">
+          <cell name="name" width="300" />
+          <cell name="new_mpfederalridingid" width="300" />
+          <cell name="a_db415c2e37dde411b4170050568d4f81.new_ridingprovince" width="125" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="account">
+          <attribute name="name" />
+          <order attribute="name" descending="false" />
+          <filter type="and">
+            <condition value="1" attribute="new_memberinstitution" operator="eq" />
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_mpfederalridingid" />
+          <link-entity name="new_mpfederalriding" alias="a_db415c2e37dde411b4170050568d4f81" from="new_mpfederalridingid" to="new_mpfederalridingid" link-type="outer" visible="false">
+            <attribute name="new_ridingprovince" />
+          </link-entity>
+          <attribute name="accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Members Riding View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

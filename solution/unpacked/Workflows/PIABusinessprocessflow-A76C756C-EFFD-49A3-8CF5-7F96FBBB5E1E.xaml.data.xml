@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{a76c756c-effd-49a3-8cf5-7f96fbbb5e1e}" Name="PIA Business process flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/PIABusinessprocessflow-A76C756C-EFFD-49A3-8CF5-7F96FBBB5E1E.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>pia_piabusinessprocessflow</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>pia_PrivacyImpactAssessment</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="PIA Business process flow" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{31a0888a-7a50-4209-90c9-05f63f220b13}">
+      <label languagecode="1033" description="Assign To Project Manager" />
+    </steplabels>
+    <steplabels id="{70a42519-3d8a-448b-9e2a-a78e68d6561d}">
+      <label languagecode="1033" description="New Step" />
+    </steplabels>
+    <steplabels id="{31b8ebab-1de4-4f78-83f6-69128c2e0e6d}">
+      <label languagecode="1033" description="Assign To Privacy Officer" />
+    </steplabels>
+    <steplabels id="{1e20ae6f-58bd-4945-8775-533f3388a158}">
+      <label languagecode="1033" description="Assign PIA to privacy manager" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers />
+</Workflow>

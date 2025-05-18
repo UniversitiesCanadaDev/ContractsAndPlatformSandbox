@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b9c8f7c9-2ef0-499d-9c67-b9a35801304d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row id="new_itdeviceinventoryid" name="result">
+          <cell name="new_assettag" width="100" />
+          <cell name="new_device" width="100" />
+          <cell name="new_model" width="150" />
+          <cell name="new_serialnumber" width="100" />
+          <cell name="new_owner" width="150" />
+          <cell name="new_previousowner" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_itdeviceinventory">
+          <order attribute="new_assettag" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_serialnumber" />
+          <attribute name="new_previousowner" />
+          <attribute name="new_owner" />
+          <attribute name="new_model" />
+          <attribute name="new_device" />
+          <attribute name="new_assettag" />
+          <attribute name="new_itdeviceinventoryid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active IT Device Inventory" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

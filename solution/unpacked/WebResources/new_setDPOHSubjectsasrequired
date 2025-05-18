@@ -1,0 +1,18 @@
+function setDPOHSubjectsasrequired(executionContext)
+{
+    // Getting formContext 
+    var formContext = executionContext.getFormContext();
+    // Get value of IsLost 
+    var isDPOH = formContext.getAttribute("new_lobbyactivity").getValue();
+    // Check condition if new_lobbyactivity field value is Yes, Reasons set field requirements as required.
+    if (isDPOH == 100000000)
+    {
+        //setting DPOH Subjects field requirement as required.
+        formContext.getAttribute("new_dpohsubjects").setRequiredLevel("required");
+    }
+	else
+    {
+	//setting DPOH Subjects field requirement as not required.
+        formContext.getAttribute("new_dpohsubjects").setRequiredLevel("none");
+    }
+}

@@ -1,0 +1,15 @@
+function filterRecordsBasedOnTeam(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var userRoles = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+
+    // Check the logged-in user's role or team
+    var teamEntityNumber = ""; // Replace with logic to retrieve entity number for the team
+
+    if (userRoles.includes("Team A")) {
+        teamEntityNumber = "000"; // Entity Number for Team A
+    } 
+
+    // Apply the filter for the entity number
+    var filter = `<filter type="and"><condition attribute="entitynumber" operator="eq" value="${teamEntityNumber}" /></filter>`;
+    formContext.data.entity.setFilterXml(filter);
+}

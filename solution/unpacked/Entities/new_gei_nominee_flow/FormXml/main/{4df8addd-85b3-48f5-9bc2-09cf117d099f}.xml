@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4df8addd-85b3-48f5-9bc2-09cf117d099f}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{899d082a-6af9-4d87-b6b1-0b7e8e1e5781}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{3e26491a-46de-49ac-adc4-4c165c3dbb3e}">
+          <labels>
+            <label description="Pending Nomination" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{5815d771-0758-2c73-c4c2-9615ddf16549}" name="StageStep3_section1" labelid="{ee7bcf55-22dc-475c-9c6c-fcb7c1de06ca}">
+                  <labels>
+                    <label description="Pending Nomination" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aba90d57-d9c9-4c97-9360-000c5b4c8197}" showlabel="true" visible="true" labelid="{8e15ce42-4750-4818-8ebe-a9fbbdbf1bfd}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                          <label description="Statut" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow:statecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statecode" relationship="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{9fe6f160-dfc0-40d3-a988-1392c96ac0c8}" name="StageStep7" locklevel="0" expanded="true" visible="false" labelid="{bdab1de4-64a5-432d-8ba2-a17a0266186e}">
+          <labels>
+            <label description="Submitted Nomination" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{431e30bf-71a2-099a-99ea-1cc7fa2eed6b}" name="StageStep7_section1" labelid="{43bf010b-c012-42df-a5cb-3d9dfdbed2b6}">
+                  <labels>
+                    <label description="Submitted Nomination" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fbfdaa5f-3b78-442b-9d68-2be5e8b5cd90}" showlabel="true" visible="true" labelid="{7b68dd9e-6c0f-48c8-9fd2-0397c3c9db9c}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                          <label description="Statut" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow:statecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statecode" relationship="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{99bc04f8-de5a-41a6-ae22-4e1dff867cfd}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{25ce9985-2a49-4696-8fb3-501080034371}">
+          <labels>
+            <label description="Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{dcff189e-e6e1-8cf9-001f-ec9bc4802a88}" name="StageStep11_section1" labelid="{7d752d7c-15e2-4938-980d-3de9f41c17e3}">
+                  <labels>
+                    <label description="Review" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8cdac2db-6bb4-496b-ab14-d8d551cf5306}" showlabel="true" visible="true" labelid="{55b6ede7-70ee-4c7c-bd59-adfc09c1abb4}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                          <label description="Statut" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow:statecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statecode" relationship="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{b4dd1c4b-a757-40c4-b18e-4ae120fa395d}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{b1aea45a-4003-4fdd-a454-87a2b22e5913}">
+          <labels>
+            <label description="Review Submitted" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{f97a2a0b-1c1e-f16b-1d2d-996a3f2d108a}" name="StageStep15_section1" labelid="{342de2e4-397d-4fd0-9351-e062dd69ef8d}">
+                  <labels>
+                    <label description="Review Submitted" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{163a4e79-4d14-4592-abc3-cbae89f61a55}" showlabel="true" visible="true" labelid="{dc12f54a-3638-45d5-8b18-f70a0a066578}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                          <label description="Statut" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow:statecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statecode" relationship="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{7f416980-42f6-44c4-94f0-caebd85756c8}" name="StageStep19" locklevel="0" expanded="true" visible="false" labelid="{b2280301-3fce-4db4-ae82-9708a2e97cbc}">
+          <labels>
+            <label description="Nomination Complete" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{84085d6e-1c6f-c65e-37fe-cab52855e5ba}" name="StageStep19_section1" labelid="{d8a2c46c-e985-4788-94a1-c83c893ef545}">
+                  <labels>
+                    <label description="Nomination Complete" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3054f906-971a-42f1-ba8b-6665a85f4dca}" showlabel="true" visible="true" labelid="{e37065ac-ea3e-49ef-af7e-6e5b7e2f34ea}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                          <label description="Statut" languagecode="1036" />
+                        </labels>
+                        <control id="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow:statecode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statecode" relationship="bpf_new_globalexcellenceinitiative_new_gei_nominee_flow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

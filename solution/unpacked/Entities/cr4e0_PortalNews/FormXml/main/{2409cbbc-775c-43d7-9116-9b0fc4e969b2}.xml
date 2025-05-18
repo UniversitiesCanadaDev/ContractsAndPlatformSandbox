@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2409cbbc-775c-43d7-9116-9b0fc4e969b2}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{46476c74-3d0c-42a2-a0d6-8edb3b8c37b4}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{8dedc66c-2961-4c69-bdbe-30079ec8262b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{ea7327d3-8001-4c6d-bde5-713cacf75a43}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="English Title" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_title" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_title" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{841a62e7-d86a-45dc-a7ef-39212bfba8b7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="French Title" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_frenchtitle" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_frenchtitle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9bf0544e-dc52-4bd6-ad80-293521545bd0}" locklevel="0" colspan="1" rowspan="3">
+                        <labels>
+                          <label description="English Text" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_description" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_description" disabled="false" uniqueid="{39fb6a76-db42-40f6-836c-d636657a7376}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{63bd68f1-3ca6-4bc8-bd65-29f73c768465}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="French Text" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_frenchdescription" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_frenchdescription" disabled="false" uniqueid="{011badc2-b982-496c-8f5e-074616f915f7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{564e9bdc-b1e6-424b-970a-41402eb58c65}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Emailed?" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_emailed" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_emailed" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{11914b4a-9adb-4486-b40b-19a60968cf90}" locklevel="0" colspan="1" rowspan="1" visible="true">
+                        <labels>
+                          <label description="Theme" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_theme" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cr4e0_theme" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{154accfd-3eed-4e64-bfdd-ca07355374a2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Recipients" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_roles" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cr4e0_roles" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4cd77111-5c69-4e7a-b729-20f21efc5446}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a244b4a-4b30-4aa8-8c0a-389a318fdc0b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Reply To" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_replyto" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_replyto" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{89c2b6ab-1560-4461-b924-44e9fb0eec0a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_status" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{7b9391a0-e148-48bb-b8bc-6ef1e1032229}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c6db2921-43c5-4861-a0eb-a0d98a120773}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cfa1444d-abc5-4549-9ef5-c89c5568ac5f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1451571d-97a9-4eef-8bf6-2118a34d3fb2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{46d521cc-1f56-4a6d-87de-577f2e6b653e}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{5467d64b-5de7-475a-a424-3c07a8a25711}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{80d474f0-6756-4b72-8757-2d2874bf68b2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b62e2ebd-dec6-4a0a-a077-3f321e077873}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{68504460-41ce-45c3-aeb7-88d144ca2552}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{39fb6a76-db42-40f6-836c-d636657a7376}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_description</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_description</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_description</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_description</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{011badc2-b982-496c-8f5e-074616f915f7}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_frenchdescription</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_frenchdescription</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_frenchdescription</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_frenchdescription</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

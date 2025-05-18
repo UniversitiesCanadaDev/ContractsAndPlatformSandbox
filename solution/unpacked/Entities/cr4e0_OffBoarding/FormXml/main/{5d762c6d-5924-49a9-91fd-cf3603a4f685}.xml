@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5d762c6d-5924-49a9-91fd-cf3603a4f685}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{a715d49e-857b-4f57-885f-79f02090016f}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c91f50ec-6464-47b6-b891-35aa8c7e4bb4}" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{e4410c88-4a39-40b6-b97d-86afa2f8f59c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{7060ddf5-35fc-4d50-8719-b118b442b160}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62e0d999-3b86-4641-92ba-5bfffb25a44c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_employeename" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_employeename" disabled="false" />
+                      </cell>
+                      <cell id="{bdb0033e-704c-4263-a876-db537f3f8594}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_enddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4e0_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ec8bcde-7322-4da2-9289-3278393a1710}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Name of Supervisor" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_nameofsupervisor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_nameofsupervisor" disabled="false" />
+                      </cell>
+                      <cell id="{1a50444b-e953-4d8f-a3a0-34c76bc7ed59}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Comments by HR" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_commentsbyhr" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_commentsbyhr" disabled="false" uniqueid="{c8087806-9a69-4b89-86cc-fbeba155ba19}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{64e8c8bb-8866-4524-ab6e-b527eb31491c}" rowspan="15" colspan="1">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false">
+                          <parameters>
+                            <UClientActivities>email,task,chat,crb6a_emailwithattachement</UClientActivities>
+                            <UClientDisplayActivityUsing>defaultfields</UClientDisplayActivityUsing>
+                            <UClientActivityCardMap>appointment:4201:,campaignactivity:4402:,campaignresponse:4401:,email:4202:,fax:4204:,incidentresolution:4206:,letter:4207:,opportunityclose:4208:,orderclose:4209:,phonecall:4210:,quoteclose:4211:,recurringappointmentmaster:4251:,serviceappointment:4214:,socialactivity:4216:,task:4212:,adx_alertsubscription:10427:,adx_inviteredemption:10430:,adx_portalcomment:10499:,chat:11581:,cr4e0_execcorrespondence:11596:,crb6a_emailwithattachement:11274:,msdyn_ocliveworkitem:11794:,msdyn_ocsession:11804:,msemr_appointmentemr:11435:,msfp_alert:10219:,msfp_surveyinvite:10228:,msfp_surveyresponse:10230:,new_meetingopportunity:11278:,univcan_execcorrespondence:11674:,</UClientActivityCardMap>
+                            <UClientActivitiesConfigurationJSON>{"univcan_execcorrespondence":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"new_meetingopportunity":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msfp_surveyresponse":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msfp_alert":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msfp_surveyinvite":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msemr_appointmentemr":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msdyn_ocsession":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msdyn_ocliveworkitem":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"cr4e0_execcorrespondence":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"adx_inviteredemption":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"adx_alertsubscription":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"adx_portalcomment":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"socialactivity":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"recurringappointmentmaster":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"quoteclose":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"phonecall":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"orderclose":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"opportunityclose":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"incidentresolution":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"campaignactivity":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"appointment":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"}}</UClientActivitiesConfigurationJSON>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{643daa68-ebbe-41a0-bce3-91907ff080b0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ba77a15c-c7b3-401b-bb4c-264d7f794e8e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{84f69ea1-3a78-4367-9256-87c59a7bfbc9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{16bcd3ad-9b1f-4b82-8a2f-ded4ff71af26}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{64633bac-2166-4477-ae17-19eb5ee03e74}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ca781667-b63a-410c-8b38-9692a6c1da23}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{a057b83e-56ff-43c8-9af4-ef21c0f7bc59}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{748d560a-52a5-4a78-9728-95743a67d2b3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{5ccc5ac1-bfb2-4ce5-8ad5-23b0a67f8211}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{d48eae78-3386-4e12-bfeb-1d5d021af73d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ea8f1ec2-27f0-42bf-81be-c8c9f32ca2a8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{00d07593-ee28-49bf-ad47-46c8323784ee}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{af62097e-f49c-4c16-b041-2421fb5f2315}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ea7ba4e3-3de3-4291-b876-b745b8195600}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{3d2b2d23-e2a3-4034-bc6e-9968d180758e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5e8e4187-a5d9-4e6d-a720-ae45679ca51e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{59ebbb1b-8b6f-4489-9f97-9af8bcfca2cd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{873a4063-5b06-4f88-a988-3a868181ffc2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{944ad46f-6a39-4d15-b5a8-ad6147094895}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{9b2e91a3-6669-4b25-81ec-12ae44aba874}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{596d58bf-5edc-4503-9d6f-fb76a90cd65b}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Request Status" languagecode="1033" />
+              </labels>
+              <control id="header_cr4e0_requeststatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_requeststatus" disabled="false" />
+            </cell>
+            <cell id="{5bb9bb8c-20e4-45d9-be7a-54d33c5b3ca0}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{6e86c4dd-74b1-4eeb-ad7f-8b5c11d87ad6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ddb2f1a9-ddf3-4c22-9551-637e57966c2c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{891283da-7545-48cf-8d2c-be21770bce2c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{39a34b87-27bf-4dda-94e2-acd377e36cdb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{c8087806-9a69-4b89-86cc-fbeba155ba19}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_commentsbyhr</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbyhr</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbyhr</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbyhr</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="HR" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{95ca4057-2b86-4f25-aff1-9f24c27d8ada}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_employeename" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_onboardingid">
+          <cell name="cr4e0_employeename" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="cr4e0_positiontitle" width="116" />
+          <cell name="cr4e0_nameofsupervisor" width="151" />
+          <cell name="cr4e0_requeststatus" width="123" />
+          <cell name="cr4e0_startdate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_onboarding">
+          <attribute name="cr4e0_employeename" />
+          <order attribute="cr4e0_employeename" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="cr4e0_positiontitle" />
+          <attribute name="cr4e0_nameofsupervisor" />
+          <attribute name="cr4e0_requeststatus" />
+          <attribute name="cr4e0_startdate" />
+          <attribute name="cr4e0_onboardingid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive On Boardings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

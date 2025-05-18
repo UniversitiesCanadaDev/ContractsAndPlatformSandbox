@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{97ef2142-07f8-ee11-a1ff-002248ade3a7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_geireviewerid">
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_nomineefirstname" width="194" />
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_nomineelastname" width="192" />
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_nomineeemail" width="220" />
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_institution" width="189" />
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_awards" width="160" />
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_deadlineforreview" width="248" />
+          <cell name="a_8ef07a8ed57941a8a48b4bae289a2783.new_reviewed" width="187" />
+          <cell name="new_globalexcellenceinitiative" width="119" />
+          <cell name="statecode" width="100" />
+          <cell name="new_dossiersent" width="112" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_geireviewer">
+          <attribute name="new_geireviewerid" />
+          <attribute name="new_globalexcellenceinitiative" />
+          <attribute name="statecode" />
+          <attribute name="new_dossiersent" />
+          <link-entity alias="a_8ef07a8ed57941a8a48b4bae289a2783" name="new_globalexcellenceinitiative" to="new_globalexcellenceinitiative" from="new_globalexcellenceinitiativeid" link-type="outer" visible="false">
+            <attribute name="new_awards" />
+            <attribute name="new_nomineefirstname" />
+            <attribute name="new_nomineeemail" />
+            <attribute name="new_nomineelastname" />
+            <attribute name="new_deadlineforreview" />
+            <attribute name="new_reviewed" />
+            <attribute name="new_institution" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Reviewers for GEI" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

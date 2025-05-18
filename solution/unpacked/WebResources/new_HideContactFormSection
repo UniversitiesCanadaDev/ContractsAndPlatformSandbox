@@ -1,0 +1,32 @@
+function HideContactFormSection()
+{
+    var ContacttypeValue = Xrm.Page.data.entity.attributes.get("new_aucccontacttype").getValue();
+
+ 
+      if   (ContacttypeValue == "100000000")
+     {
+        Xrm.Page.ui.tabs.get("Roles").setVisible(false); 
+        Xrm.Page.ui.tabs.get("Committees").setVisible(false); 
+        Xrm.Page.ui.tabs.get("Meetings").setVisible(false);
+        Xrm.Page.ui.tabs.get("Meetings").setDisplayState('collapsed'); 
+        Xrm.Page.ui.tabs.get("Correspondence").setVisible(false);
+        Xrm.Page.ui.tabs.get("UnivcanEvents").setVisible(false);
+        Xrm.Page.ui.tabs.get("Almamater").setVisible(false);
+        Xrm.Page.ui.tabs.get("Interests").setVisible(false);
+        Xrm.Page.ui.tabs.get("UniversityLinks").setVisible(false);
+        Xrm.Page.ui.tabs.get("SocialMedia").setVisible(false);
+        Xrm.Page.ui.tabs.get("Details").setVisible(false);
+        }
+
+     if   (ContacttypeValue == "100000009")
+     {
+        Xrm.Page.ui.tabs.get("Interests").setVisible(false);
+        Xrm.Page.ui.tabs.get("Roles").setDisplayState('collapsed'); 
+        Xrm.Page.ui.tabs.get("Committees").setDisplayState('collapsed'); 
+        Xrm.Page.ui.tabs.get("UniversityLinks").setVisible(false);
+        Xrm.Page.ui.tabs.get("Details").setVisible(false);
+        // Xrm.Page.ui.tabs.get("Officestaff").setVisible(true);
+    }
+
+}  
+

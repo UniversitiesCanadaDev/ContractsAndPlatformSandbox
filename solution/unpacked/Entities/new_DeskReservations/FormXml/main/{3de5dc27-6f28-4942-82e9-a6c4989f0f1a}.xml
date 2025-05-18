@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3de5dc27-6f28-4942-82e9-a6c4989f0f1a}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{7cc8842c-aa5e-483f-8de9-d1aa1c79cd46}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e7c7f953-6d0d-470c-a5f5-50539b5db49d}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c41ebb6a-1016-44f5-99ba-462a82ca3921}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ce9f937-418f-4a05-a037-5e9e4f51b4f3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Check Out From" languagecode="1033" />
+                        </labels>
+                        <control id="new_checkoutfrom" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="new_checkoutfrom" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{934fdb1e-b0ba-4d25-b085-9a70b387c018}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Check Out To" languagecode="1033" />
+                        </labels>
+                        <control id="new_checkoutto" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="new_checkoutto" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2959c4a8-28fc-45df-9a20-82e173402b6d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Reserved Desk" languagecode="1033" />
+                        </labels>
+                        <control id="new_reserveddesk" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_reserveddesk" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1174bf4f-8ab5-4522-87a3-1a0ae2692041}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="DeskText" languagecode="1033" />
+                        </labels>
+                        <control id="new_desktext" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_desktext" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05356cf4-007d-485c-87e0-c41e9f140266}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Reserved By" languagecode="1033" />
+                        </labels>
+                        <control id="new_reservedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_reservedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a7ce126e-cb5d-4fe1-bff0-62109655a9ab}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Checked In" languagecode="1033" />
+                        </labels>
+                        <control id="new_checkedin" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="new_checkedin" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b0c1e65-18db-498f-8f78-266274a5c3c5}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a948dbb-a0c4-4373-80a8-64ea6628f3f6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9e65248-aa8d-41b1-8867-0540c4eae652}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{1c5f9f01-3449-46a8-ac61-808b033cff04}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{24725b87-9024-4b7d-8853-0e8d52abe761}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d749e5ba-1f35-4a27-b05c-8dfd071f2540}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7cbe5569-80ca-4df1-a728-722584213412}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b16dc603-bf64-43bd-9e56-7873d6869016}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{5a25873b-6617-4e66-b342-af588331fe3f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{adc0497f-873c-4e77-86d0-3d7dc9b519ea}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fbba9f39-89ee-4130-9033-8d740cee44b2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

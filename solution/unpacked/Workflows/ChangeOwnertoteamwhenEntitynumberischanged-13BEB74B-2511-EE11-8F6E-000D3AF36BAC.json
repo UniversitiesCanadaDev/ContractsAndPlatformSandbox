@@ -1,0 +1,315 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_fddfc"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "722764d4-846d-4824-b8de-bd0d48dcfbfc"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "cr4e0_proposal",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "cr4e0_entityname"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "40ff9c58-9a0f-401d-b88c-489658ea2f13"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Entity Array",
+                "type": "array",
+                "value": [
+                  {
+                    "Entity Number Value": 860540001,
+                    "Entity Name": "000 - Corporate Services",
+                    "Team Id": "6e9ddb33-601b-ee11-8f6d-000d3af36bac",
+                    "Team Name": "Finance Administrator",
+                    "SharePoint Group Name": "Contract - Finance Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540002,
+                    "Entity Name": "100 - President",
+                    "Team Id": "6966aa7d-651b-ee11-8f6d-0022483d5ee0",
+                    "Team Name": "Executive Administrators",
+                    "SharePoint Group Name": "Contract - Executive Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540003,
+                    "Entity Name": "101 - Chief Operating Officer",
+                    "Team Id": "6966aa7d-651b-ee11-8f6d-0022483d5ee0",
+                    "Team Name": "Executive Administrators",
+                    "SharePoint Group Name": "Contract - Executive Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540004,
+                    "Entity Name": "110 - Global Excellence Initiatives",
+                    "Team Id": "52ad3962-8d22-ee11-9966-0022483c5336",
+                    "Team Name": "GEI Administrators",
+                    "SharePoint Group Name": "Contract - GEI Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540005,
+                    "Entity Name": "180 - Strategic Initiatives",
+                    "Team Id": "35daac2f-651b-ee11-8f6d-0022483c5336",
+                    "Team Name": "Programs Administrators",
+                    "SharePoint Group Name": "Contract - Program Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540006,
+                    "Entity Name": "200 - Member Relations",
+                    "Team Id": "c8492dd2-661b-ee11-8f6d-0022483d5ee0",
+                    "Team Name": "Member Relations Administrators",
+                    "SharePoint Group Name": "Contract - Member Relation Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540010,
+                    "Entity Name": "321 - Policy and Government Relations",
+                    "Team Id": "5ec0e912-671b-ee11-8f6d-000d3af36bac",
+                    "Team Name": "Government Relations Administrator",
+                    "SharePoint Group Name": "Contract - Government Relations Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540011,
+                    "Entity Name": "330 - Communications",
+                    "Team Id": "d48d6f7d-661b-ee11-8f6d-0022483cdce2",
+                    "Team Name": "Communications Administrators",
+                    "SharePoint Group Name": "Contract - Communications Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540012,
+                    "Entity Name": "334 - Translation",
+                    "Team Id": "89fda7ca-651b-ee11-8f6d-0022483c5336",
+                    "Team Name": "Translation Administrator",
+                    "SharePoint Group Name": "Contract - Translation Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540013,
+                    "Entity Name": "360 - International Relations",
+                    "Team Id": "5ec0e912-671b-ee11-8f6d-000d3af36bac",
+                    "Team Name": "Government Relations Administrator",
+                    "SharePoint Group Name": "Contract - Government Relations Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540014,
+                    "Entity Name": "503 - Finance",
+                    "Team Id": "6e9ddb33-601b-ee11-8f6d-000d3af36bac",
+                    "Team Name": "Finance Administrator",
+                    "SharePoint Group Name": "Contract - Finance Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540015,
+                    "Entity Name": "505 - Information Technology",
+                    "Team Id": "cdb4f248-671b-ee11-8f6d-0022483c554a",
+                    "Team Name": "Information Technology Administrator",
+                    "SharePoint Group Name": "Contract - IT Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540016,
+                    "Entity Name": "506 - Information Management",
+                    "Team Id": "cdb4f248-671b-ee11-8f6d-0022483c554a",
+                    "Team Name": "Information Technology Administrator",
+                    "SharePoint Group Name": "Contract - IT Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540017,
+                    "Entity Name": "510 - Operations",
+                    "Team Id": "bf4b2216-4114-ee11-9cbe-0022483d5ee0",
+                    "Team Name": "Operations Administrator",
+                    "SharePoint Group Name": "Contract - Operations Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540018,
+                    "Entity Name": "514 - Human Resources",
+                    "Team Id": "8f80dc7a-671b-ee11-8f6d-0022483c554a",
+                    "Team Name": "Human Resource Administrators",
+                    "SharePoint Group Name": "Contract - Human Resource Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540019,
+                    "Entity Name": "516 - Payroll",
+                    "Team Id": "8f80dc7a-671b-ee11-8f6d-0022483c554a",
+                    "Team Name": "Human Resource Administrators",
+                    "SharePoint Group Name": "Contract - Human Resource Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540020,
+                    "Entity Name": "610 - University Affairs",
+                    "Team Id": "5ff11909-661b-ee11-8f6d-0022483c5336",
+                    "Team Name": "UA Administrators",
+                    "SharePoint Group Name": "Contract - UA Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540021,
+                    "Entity Name": "613 - Directory of Canadian Universities",
+                    "Team Id": "5ff11909-661b-ee11-8f6d-0022483c5336",
+                    "Team Name": "UA Administrators",
+                    "SharePoint Group Name": "Contract - UA Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540024,
+                    "Entity Name": "710 - QES / IRDC",
+                    "Team Id": "95629101-8e22-ee11-9966-000d3af36bac",
+                    "Team Name": "QES Administrators",
+                    "SharePoint Group Name": "Contract - QES Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540026,
+                    "Entity Name": "714 - QES / RHF",
+                    "Team Id": "95629101-8e22-ee11-9966-000d3af36bac",
+                    "Team Name": "QES Administrators",
+                    "SharePoint Group Name": "Contract - QES Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540000,
+                    "Entity Name": "719 - Partnership Programs",
+                    "Team Id": "35daac2f-651b-ee11-8f6d-0022483c5336",
+                    "Team Name": "Programs Administrators",
+                    "SharePoint Group Name": "Contract - Program Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540032,
+                    "Entity Name": "740 - Outbound Student Mobility - Phase 1",
+                    "Team Id": "533a22f1-8b22-ee11-9966-0022483c554a",
+                    "Team Name": "GSO Administrators",
+                    "SharePoint Group Name": "Contract - GSO Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540033,
+                    "Entity Name": "805 - Copyright",
+                    "Team Id": "6966aa7d-651b-ee11-8f6d-0022483d5ee0",
+                    "Team Name": "Executive Administrators",
+                    "SharePoint Group Name": "Contract - Executive Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540035,
+                    "Entity Name": "806 - Climate Initiative",
+                    "Team Id": "d10bb44a-661b-ee11-8f6d-0022483cdce2",
+                    "Team Name": "Climate Administrators",
+                    "SharePoint Group Name": "Contract - Climate Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540022,
+                    "Entity Name": "708 - Scholarship Partners Canada",
+                    "Team Id": "548938d5-5f1b-ee11-8f6d-0022483c5cdf",
+                    "Team Name": "SPC Administrators",
+                    "SharePoint Group Name": "Contract - SPC Admin"
+                  },
+                  {
+                    "Entity Number Value": 860540023,
+                    "Entity Name": "709 - Veterans",
+                    "Team Id": "548938d5-5f1b-ee11-8f6d-0022483c5cdf",
+                    "Team Name": "SPC Administrators",
+                    "SharePoint Group Name": "Contract - SPC Admin"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "Filter_array": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0d46f568-b195-465a-b6bf-3ada3ccee509"
+          },
+          "type": "Query",
+          "inputs": {
+            "from": "@variables('Entity Array')",
+            "where": "@equals(item()['Entity Number Value'], triggerOutputs()?['body/cr4e0_entityname'])"
+          }
+        },
+        "Update_a_row": {
+          "runAfter": {
+            "Filter_array": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "65f4f843-c06d-4f2a-a848-a3757201c686"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerOutputs()?['body/cr4e0_proposalid']",
+              "item/ownerid@odata.bind": "/teams(@{body('Filter_array')[0]?['Team Id']})"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Run_a_Child_Flow": {
+          "runAfter": {
+            "Update_a_row": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "074488d5-58bc-4b63-8a1f-4e752eb81132"
+          },
+          "type": "Workflow",
+          "inputs": {
+            "host": {
+              "workflowReferenceName": "fd9b70d7-1114-ee11-9cbe-0022483c5cdf"
+            },
+            "body": {
+              "text": "@triggerOutputs()?['body/cr4e0_proposalid']",
+              "text_1": "@triggerOutputs()?['body/cr4e0_name']",
+              "text_2": "@body('Filter_array')[0]?['SharePoint Group Name']"
+            }
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

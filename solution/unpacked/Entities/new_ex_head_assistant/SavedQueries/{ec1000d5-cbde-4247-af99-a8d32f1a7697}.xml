@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ec1000d5-cbde-4247-af99-a8d32f1a7697}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_ex_head_assistantid" name="result">
+          <cell name="new_main_contact" width="100" />
+          <cell name="new_staffcontactlookupid" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="aa.emailaddress1" width="200" disableSorting="1" />
+          <cell name="aa.jobtitle" width="150" disableSorting="1" />
+          <cell name="aa.telephone1" width="100" disableSorting="1" />
+          <cell name="aa.new_address1_telephone1_ext" width="75" disableSorting="1" />
+          <cell name="aa.department" width="125" disableSorting="1" />
+          <cell name="aa.emailaddress2" width="150" disableSorting="1" />
+          <cell name="new_contactidid" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="new_ex_head_assistant">
+          <attribute name="new_main_contact" />
+          <order descending="true" attribute="new_main_contact" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <link-entity name="contact" visible="false" link-type="outer" to="new_staffcontactlookupid" from="contactid" alias="aa">
+            <attribute name="jobtitle" />
+            <attribute name="new_address1_telephone1_ext" />
+            <attribute name="emailaddress2" />
+            <attribute name="emailaddress1" />
+            <attribute name="department" />
+            <attribute name="telephone1" />
+          </link-entity>
+          <attribute name="new_staffcontactlookupid" />
+          <attribute name="new_contactidid" />
+          <attribute name="new_ex_head_assistantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Staff" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

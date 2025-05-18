@@ -1,0 +1,551 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedoffice365_8a125"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedsharepointonline_b06ee"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "splitOn": "@triggerBody()['rows']",
+          "metadata": {
+            "operationMetadataId": "4ed86f1a-427f-43ee-8c60-b6fd16480fd4"
+          },
+          "type": "Request",
+          "kind": "ApiConnection",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "entity": {
+                        "type": "object",
+                        "properties": {
+                          "entity": {
+                            "type": "object",
+                            "properties": {
+                              "BPFFlowStageEntityRecordId": {
+                                "title": "BPF Flow Stage Table Row Id",
+                                "type": "string"
+                              },
+                              "FlowsWorkflowLogId": {
+                                "title": "Flows Workflow Log Id",
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "required": [
+                          "entity"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "entity"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "rows"
+              ]
+            },
+            "host": {
+              "connection": {
+                "name": "@parameters('$connections')['shared_commondataserviceforapps']['connectionId']"
+              }
+            },
+            "operationId": "FlowStepRun",
+            "parameters": {}
+          }
+        }
+      },
+      "actions": {
+        "Send_an_email_(V2)": {
+          "runAfter": {
+            "Condition": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "161c93ad-ea29-4013-88ea-7824ceb7ec88"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "HCayouette@univcan.ca",
+              "emailMessage/Subject": "Universities Canada - Proposal/Contract Review",
+              "emailMessage/Body": "<!DOCTYPE html><html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n  <title></title>\n  <style type=\"text/css\">\n      body {  margin: 0; }\n      .messageContainer { width: 660px; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}\n      .contentContainer { background: #F0F0F0; border: 1px solid #C8C8C8;}\n      .bannerContainer { padding: 72px 20px 12px 20px }\n      .footerContainer { padding: 32px 20px; }\n      .subject { margin-bottom: 30px; }\n      .headerContainer { text-align: center; padding: 48px 60px; background-color: #0078d4 }\n      .bodyContainer { background: white; padding: 48px 60px }\n      p { margin: 10px 0; }\n      .lge { font-size: 28px; font-family: Segoe UI; font-weight: 600; color: #201F1E }\n      .hlt { font-weight:600; }\n      .btn { font-size: 15px; background: #0078D7; color: #fff; text-decoration: none; display: inline-block; padding: 10px 16px; margin: 30px auto 0 auto; }\n      .alertInvestigationButtonPart { text-align: center; }\n      .footerContainer p { font-size: 10px; font-family: Segoe UI; color: #666666; margin: 0 0 14px 0 }\n      .FooterContainer img {margin-top: 10px}\n  .headerSpan{ color: #fff }\n    </style>\n  </head>\n  <body>\n  <div>\n  <div class=\"messageContainer\">\n  <div class=\"bannerContainer\"><img src=\"https://www.univcan.ca/wp-content/themes/univcan/images/univcan-logo-en.svg\" border=\"0\">\n  </div>\n  <div class=\"contentContainer\">\n  <div class=\"headerContainer\"><span class=\"lge headerSpan\">@{outputs('Get_a_row_by_ID')?['body/cr4e0_name']} Review</span>\n  </div>\n  <div class=\"bodyContainer\">\n  <p class=\"subject\">Hello @{outputs('Get_a_row_by_ID_2')?['body/fullname']},</p>\n  <p class=\"subject\">@{outputs('Get_a_row_by_ID')?['body/cr4e0_emailtemplate']}</p>\n  <p class=\"subject\"><a href=\"https://univcan.crm3.dynamics.com/main.aspx?appid=082d6fd1-c74b-ed11-bba2-0022483c5540&pagetype=entityrecord&etn=cr4e0_proposal&id=@{outputs('Get_a_row_by_ID')?['body/cr4e0_proposalid']}&formid=f1fa8ea8-8c7d-ed11-81ad-0022483cb87c\" target=\"_blank\">Click here</a> to access the detail information of proposal<br></p>\n<p class=\"subject\">Thank you,<br>Contract and Proposal Team</p>\n  <div class=\"footerContainer\">\n  <p>Universities Canada</p>\n  <img src=\"https://www.univcan.ca/wp-content/themes/univcan/images/univcan-logo-en.svg\" border=\"0\">\n  </div>\n  </div>\n  </div>\n  </div>\n  </body>\n  </html>",
+              "emailMessage/Attachments": "@variables('Attachments')",
+              "emailMessage/Importance": "High"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Get_a_row_by_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "df2e5a54-f677-4b5a-910b-30c1d421f17f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Get_a_row_by_ID_2": {
+          "runAfter": {
+            "Get_a_row_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fcec6326-4aa3-439b-9113-4a552144627e"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "contacts",
+              "recordId": "@outputs('Get_a_row_by_ID')?['body/_cr4e0_client_value']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Update_a_row": {
+          "runAfter": {
+            "Update_a_row_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "55899ee1-e396-42fa-a25f-8440aac01d6d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "workflowlogs",
+              "recordId": "@triggerBody()?['entity']?['entity']?['FlowsWorkflowLogId']",
+              "item/status": 2
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Initialize_variable": {
+          "runAfter": {
+            "Get_a_row_by_ID_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "be895234-2d66-4f17-bf79-c778ee121f47"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "PoposalId",
+                "type": "string",
+                "value": "@outputs('Get_a_row_by_ID')?['body/cr4e0_proposalid']"
+              }
+            ]
+          }
+        },
+        "Compose": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f6304a6a-aad9-405f-af3b-df208aace171"
+          },
+          "type": "Compose",
+          "inputs": "@replace(variables('PoposalId'),'-','')"
+        },
+        "Compose_2": {
+          "runAfter": {
+            "Compose": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "888bd141-b77b-422c-a7dc-668983757540"
+          },
+          "type": "Compose",
+          "inputs": "@toUpper(outputs('Compose'))"
+        },
+        "Initialize_variable_2": {
+          "runAfter": {
+            "Compose_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d3505dd5-8bdd-4d68-bbad-973bb1518745"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Attachments",
+                "type": "array"
+              }
+            ]
+          }
+        },
+        "List_folder": {
+          "runAfter": {
+            "Compose_3": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c67c9360-50fd-4e67-8f4f-413692e65337"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "ListFolder",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "id": "@encodeUriComponent(outputs('Compose_3'))"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Condition": {
+          "actions": {
+            "Apply_to_each": {
+              "foreach": "@body('List_folder')",
+              "actions": {
+                "Get_file_content_using_path": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "fb3fbb26-d686-481c-8915-53c683cc99d6"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sharepointonline",
+                      "operationId": "GetFileContentByPath",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "path": "@item()?['Path']",
+                      "inferContentType": true
+                    },
+                    "authentication": {
+                      "type": "Raw",
+                      "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                    }
+                  }
+                },
+                "Get_file_metadata": {
+                  "runAfter": {
+                    "Get_file_content_using_path": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "3ca33264-a317-4521-b55c-2d54b26ac2d9"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sharepointonline",
+                      "operationId": "GetFileMetadata",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "id": "@item()?['Id']"
+                    },
+                    "authentication": {
+                      "type": "Raw",
+                      "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                    }
+                  }
+                },
+                "Get_file_properties": {
+                  "runAfter": {
+                    "Get_file_metadata": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "d2d5441b-d2e0-445d-bfcc-a15f3b9bb4e7"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sharepointonline",
+                      "operationId": "GetFileItem",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "table": "24a012c6-48d3-4717-bce8-7975d60ade3b",
+                      "id": "@outputs('Get_file_metadata')?['body/ItemId']"
+                    },
+                    "authentication": {
+                      "type": "Raw",
+                      "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                    }
+                  }
+                },
+                "Condition_2": {
+                  "actions": {
+                    "Append_to_array_variable": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "364274fc-80b3-41ef-b22d-61da709a93d2"
+                      },
+                      "type": "AppendToArrayVariable",
+                      "inputs": {
+                        "name": "Attachments",
+                        "value": {
+                          "Name": "@{outputs('Get_file_properties')?['body/{FilenameWithExtension}']}",
+                          "ContentBytes": "@body('Get_file_content_using_path')"
+                        }
+                      }
+                    }
+                  },
+                  "runAfter": {
+                    "Get_file_properties": [
+                      "Succeeded"
+                    ]
+                  },
+                  "expression": {
+                    "equals": [
+                      "@outputs('Get_file_properties')?['body/Send_x0020_to_x0020_Client']",
+                      true
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "c16bbfcc-9b8e-4773-bda1-8b9a0fe5b860"
+                  },
+                  "type": "If"
+                }
+              },
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "6ddcfdc4-9e93-48aa-9ea0-62ccce3dd5cf"
+              },
+              "type": "Foreach"
+            }
+          },
+          "runAfter": {
+            "List_folder": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "equals": [
+              "@empty(body('List_folder'))",
+              false
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d47e3496-7cb5-49f5-9848-566fb521bef5"
+          },
+          "type": "If"
+        },
+        "Update_a_row_2": {
+          "runAfter": {
+            "Send_an_email_(V2)": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "6475eca5-f5b5-4f75-a6f8-cd540e03e5d6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+              "item/cr4e0_projectstatus": 860540002
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "List_rows": {
+          "runAfter": {
+            "Initialize_variable_3": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "381a3a01-0385-442c-9884-caf5d915fc18"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "$filter": "_regardingobjectid_value eq @{outputs('Get_a_row_by_ID')?['body/cr4e0_proposalid']}"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Initialize_variable_3": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "82804a8c-3ac2-4ebc-8c9a-47e5c9fe3583"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Relative URL",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Apply_to_each_2": {
+          "foreach": "@outputs('List_rows')?['body/value']",
+          "actions": {
+            "Set_variable": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "16faea53-778b-4c69-8fc3-52441cde12eb"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "Relative URL",
+                "value": "@items('Apply_to_each_2')?['relativeurl']"
+              }
+            }
+          },
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3d69bb12-e987-41c8-9d21-7d44e27f7616"
+          },
+          "type": "Foreach"
+        },
+        "Compose_3": {
+          "runAfter": {
+            "Apply_to_each_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9f919bf7-d4bb-4056-ba84-851a75367ca8"
+          },
+          "type": "Compose",
+          "inputs": "/cr4e0_proposal/@{variables('Relative URL')}"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -1,0 +1,70 @@
+function checkUserRoleAndApplyRestrictions(executionContext) {
+    var formContext = executionContext.getFormContext();
+    var administratorRoleId = "8ca3c24a-15e8-ed11-a7c6-000d3ae9a19c"; // GUID of the Administrator role
+ // Get the program type value (or any condition that determines the BPF)
+    var programTypeValue = formContext.getAttribute("cr4e0_iscontract").getValue();
+    var bpfGuid, signOffStageId, executedStageId;
+
+    // Determine which BPF to use based on the program type
+    if (programTypeValue == 860540000 || programTypeValue == 860540001) {
+        // Use the first BPF GUIDs
+        bpfGuid = "c7333916-fb4a-ed11-bba2-0022483cb0d7";  // Replace with your actual BPF GUID
+        signOffStageId = "346965b1-97f6-4841-b616-0415de76d6e5";  // Replace with your first BPF's Sign-Off stage GUID
+        executedStageId = "9a344b06-24de-4f60-8d44-35a7bdfe6981";  // Replace with your first BPF's Executed stage GUID
+    } else {
+        // Use the second BPF GUIDs
+        bpfGuid = "ed97f333-6d8b-ed11-81ad-0022483c51f4";  // Replace with your actual second BPF GUID
+        signOffStageId = "3bcb26cf-efb5-4b38-a530-4262fc312d5e";  // Replace with your second BPF's Sign-Off stage GUID
+        executedStageId = "412eb8c7-3a53-48f5-95bf-5f665554aafb";  // Replace with your second BPF's Executed stage GUID
+    }
+
+    // Check if the user has the Administrator role
+    var userRoles = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+    var isAdmin = userRoles.includes(administratorRoleId);
+
+   // Apply restrictions based on the role
+    restrictActivateDeactivateButton(isAdmin);
+    restrictBPFStageAndButtons(formContext, isAdmin, bpfGuid, signOffStageId, executedStageId);
+}
+
+function restrictActivateDeactivateButton(isAdmin) {
+    if (!isAdmin) {
+        // Disable the Activate/Deactivate button
+        const ribbonButton = window.event && window.event.srcElement;
+        if (ribbonButton) {
+            ribbonButton.disabled = true;
+        }
+    }
+}
+
+function restrictBPFStageAndButtons(formContext, isAdmin, bpfGuid, signOffStageId, executedStageId) {
+    var process = formContext.data.process;
+
+    if (process) {
+        process.addOnStageChange(function (stageChangeContext) {
+            var activeStage = stageChangeContext.getEventArgs().getStage();
+            var activeStageId = activeStage.getId();
+
+            // Check if the current stage is "Executed" and user is not an Admin
+            if (activeStageId === executedStageId && !isAdmin) {
+                // Prevent the stage change and roll back to "Sign-Off"
+                stageChangeContext.getEventArgs().preventDefault();
+                process.setActiveStage(signOffStageId);  // Roll back to the Sign-Off stage
+
+                Xrm.Navigation.openAlertDialog({
+                    text: "You do not have the necessary permissions to access the final stage."
+                });
+            }
+        });
+    }
+}
+
+function checkIfUserIsAdmin() {
+    var userRoles = Xrm.Utility.getGlobalContext().userSettings.roles.getAll();
+    for (var i = 0; i < userRoles.length; i++) {
+        if (userRoles[i].name === "Contract and Proposal - Administrator") {  // Change this to the actual role name
+            return true;
+        }
+    }
+    return false;
+}

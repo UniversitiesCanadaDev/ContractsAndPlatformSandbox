@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{42d57ed7-eadc-4ef3-972f-84bc49fbf3d8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_5" id="{c6939619-95a5-1857-a046-49193d789521}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{871ca9b0-66eb-c971-0ca7-2113b13b74c8}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1a299e13-311a-593e-30c3-da5e2cccdeac}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Project Contacts" languagecode="1033" />
+                        </labels>
+                        <control id="new_projectcontactsid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_projectcontactsid" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EB4D9A1-56DE-4756-8207-5C5DA92D8B02}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{bd87db54-eddb-3178-7542-22824563dd19}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{a4732d60-1b63-d632-2da3-d2b8ee280719}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{045b950e-5d28-709d-6641-45e90e4a9ec7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project Contact" languagecode="1033" />
+                        </labels>
+                        <control id="new_projectcontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_projectcontact" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7cbbab86-d204-3001-4780-5bbda93ae670}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Order" languagecode="1033" />
+                        </labels>
+                        <control id="new_order" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_order" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{408aa039-8e49-5b18-dead-5126c49d0027}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{3b5d60b9-d264-3274-3cc1-0621e58477d1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{69191e9b-4e68-a3cb-1ccc-692d81d98323}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact Type" languagecode="1033" />
+                        </labels>
+                        <control id="new_contacttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_contacttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5399d182-b112-94c1-d059-bede630d2318}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Cheque" languagecode="1033" />
+                        </labels>
+                        <control id="new_cheque" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="new_cheque" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_4" id="{577e63e0-25c5-6e73-4999-e0ac7808817c}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" showlabel="false" showbar="false" locklevel="0" id="{426cd493-c096-bec1-7d02-ac045d7589ae}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Responsibilities" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{15c1119d-712b-db86-c45b-ab5683234314}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Responsibilities" languagecode="1033" />
+                        </labels>
+                        <control id="new_responsibilities" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_responsibilities" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{a7e039c2-8ed3-419d-b4b0-2f258eaa99fa}" IsUserDefined="1" name="{a7e039c2-8ed3-419d-b4b0-2f258eaa99fa}" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3a1f46d4-d9e8-4da2-b49d-20756b736ca7}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{03548e12-f81b-44be-b923-7206c6b0391c}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e22cad6f-b47d-4c06-b991-16ac441e4e47}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7255923b-5d73-5438-52d3-eae860e39aae}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{07ae95aa-d554-ee2b-8ec9-1dbe5113cdcb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{b39738d9-713c-47e5-95ba-abe3b40817df}" IsUserDefined="0" height="auto" name="{b39738d9-713c-47e5-95ba-abe3b40817df}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="5" auto="false" id="{ad54376a-9a3c-4a8f-b30e-64d03506a6fc}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_QEProjectContactFormMainJS" libraryUniqueId="{12caab4e-eae9-7ebb-92ce-d1c85d3323d0}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_projectcontact">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_QEProjectContactFormMainJS" handlerUniqueId="{578c871a-88c1-9ce0-702a-470a928800a5}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

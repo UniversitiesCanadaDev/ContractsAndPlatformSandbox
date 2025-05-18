@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1ec9e92b-ba45-ee11-be6f-000d3af36bac}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{7c0827af-b771-4c6b-ad05-d271d4ff86f2}" IsUserDefined="1" labelid="{76d8a185-108e-4879-855c-39bd46591184}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{ffe2532c-2e9e-41ce-92ad-76b9db8fc2b5}" labelid="{d06d6c53-23b2-40db-bc10-97ef826e3aeb}" name="Employee Information" columns="11" locklevel="0">
+                  <labels>
+                    <label description="Employee Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5d932cc3-c4c3-41a9-aced-d14e3d9419dc}" labelid="{2034b3e7-4080-48e9-860a-ee2cbbfb157e}">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_employeename" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr4e0_employeename" disabled="true" />
+                      </cell>
+                      <cell id="{b0c91bc3-b0f5-4deb-934f-0aa60c4ab300}" locklevel="0" colspan="1" rowspan="1" labelid="{80589574-6b7f-4ace-9f91-0c37a73536e7}">
+                        <labels>
+                          <label description="Position Title" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_positiontitle" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_positiontitle" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a97d3672-f663-4f0b-bbcb-547fe1263842}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Department" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_department" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_department" disabled="true" />
+                      </cell>
+                      <cell locklevel="0" id="{5e70495f-4556-4779-973e-624f282fb16a}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2447b8d-211a-47ed-87f9-33273d896680}" locklevel="0" colspan="1" rowspan="1" labelid="{c079dedc-9e7a-4250-bc03-2e96d0a80c3b}">
+                        <labels>
+                          <label description="Name of supervisor" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_nameofsupervisor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_nameofsupervisor" disabled="true" />
+                      </cell>
+                      <cell id="{5cc2bc5a-f0dc-44d0-98a2-5a3b97950e06}" locklevel="0" colspan="1" rowspan="1" labelid="{123a1556-86b4-48d0-a064-bd2404bf75a4}">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_startdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4e0_startdate" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dee9a0a7-b4a0-4bf5-998e-604d3820c3db}" locklevel="0" colspan="1" rowspan="1" labelid="{4545b7af-c3fe-4e39-b254-37edd5c2e2ef}">
+                        <labels>
+                          <label description="Access card permission" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_accesscardpermission" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cr4e0_accesscardpermission" disabled="true" />
+                      </cell>
+                      <cell locklevel="0" id="{3c8b641e-ed25-4d9b-be87-f84388ebc69b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="7f272ab9-21f5-44b1-9722-841a6a8e5fbf" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{da23eedc-d31b-4191-887d-79887b0901fa}">
+                  <labels>
+                    <label description="Access" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1b94a649-4e7f-4abd-aa76-520a3b58320e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Does an employee needs an assigned space?" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_doesanemployeeneedsanassignedspace" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr4e0_doesanemployeeneedsanassignedspace" disabled="true" />
+                      </cell>
+                      <cell id="{91f5317c-e312-45a9-8383-081cbba6ac90}" locklevel="0" colspan="1" rowspan="1" labelid="{82fc1226-8704-48f3-90d2-4cdf65ea283b}">
+                        <labels>
+                          <label description="Does the employe require a Cell Phone?" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_doestheemployerequireacellphone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr4e0_doestheemployerequireacellphone" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1c17a35-569a-400a-9294-52e85116ee46}" locklevel="0" colspan="1" rowspan="1" labelid="{46a0d0cc-6153-46a7-ab49-c05fd824e98d}">
+                        <labels>
+                          <label description="Provide all SharePoint team sites required" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_provideallsharepointteamsitesrequired" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_provideallsharepointteamsitesrequired" disabled="true" />
+                      </cell>
+                      <cell id="{0c90c367-33f5-4275-9b3a-80252f9252b2}" locklevel="0" colspan="1" rowspan="1" labelid="{3b2951ab-8bcc-4eba-9d73-13b07ed7257c}">
+                        <labels>
+                          <label description="Provide all email distribution lists required" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_provideallemaildistributionlistsrequired" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_provideallemaildistributionlistsrequired" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{da93c459-088a-4d56-a6cb-bd9c8bbe19a5}" locklevel="0" colspan="1" rowspan="1" labelid="{d9fecd16-2421-4636-a514-5f3e42840fa0}">
+                        <labels>
+                          <label description="Special software required (O365 is default)" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_specialsoftwarerequiredo365isdefault" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_specialsoftwarerequiredo365isdefault" disabled="true" />
+                      </cell>
+                      <cell id="{54ac913d-cf54-44e5-99df-af35783b501b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Mailbox access required" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_mailboxaccessrequired" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_mailboxaccessrequired" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04c553af-3991-4700-9a62-a6935d24477b}" locklevel="0" colspan="1" rowspan="1" labelid="{c8a9d2c7-df54-4389-b64b-2064a92748f2}">
+                        <labels>
+                          <label description="Special hardware required" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_specialhardwarerequired" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_specialhardwarerequired" disabled="true" />
+                      </cell>
+                      <cell id="{7d1e8cc8-747b-40c4-8ecb-0ae2803f28ca}" locklevel="0" colspan="1" rowspan="1" labelid="{fad9579c-66a5-4137-8748-3f5e573c1ec7}">
+                        <labels>
+                          <label description="Please enter all other pertinent information" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_pleaseenterallotherpertinentinformation" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_pleaseenterallotherpertinentinformation" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="61b2b168-31b8-4a89-8bf4-c4751deff325" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="IT Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{a5a8c07a-ff4e-40df-8278-c87968071fc7}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{e6d95e2d-c3c5-401f-b687-908eb0ada0c3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{23bf5a29-1f4d-422a-b4b6-4dac22e9f29f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New Email address" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_newemailaddress" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_newemailaddress" disabled="false" />
+                      </cell>
+                      <cell id="{bd8972dc-6f5b-489e-a559-b6c76cc4bf50}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="IT Comments" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_itcomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_itcomments" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_5" id="117e01a5-1516-4013-962e-917c53d31384" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Timeline" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{c0746075-dead-4188-9194-a60a05701c93}" rowspan="15" colspan="1">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false">
+                          <parameters>
+                            <UClientActivities>appointment,email,task,adx_portalcomment,chat,crb6a_emailwithattachement</UClientActivities>
+                            <UClientDisplayActivityUsing>defaultfields</UClientDisplayActivityUsing>
+                            <UClientActivityCardMap>appointment:4201:,campaignactivity:4402:,campaignresponse:4401:,email:4202:,fax:4204:,incidentresolution:4206:,letter:4207:,opportunityclose:4208:,orderclose:4209:,phonecall:4210:,quoteclose:4211:,recurringappointmentmaster:4251:,serviceappointment:4214:,socialactivity:4216:,task:4212:,adx_alertsubscription:10427:,adx_inviteredemption:10430:,adx_portalcomment:10499:,chat:11581:,cr4e0_execcorrespondence:11596:,crb6a_emailwithattachement:11274:,msdyn_ocliveworkitem:11794:,msdyn_ocsession:11804:,msemr_appointmentemr:11435:,msfp_alert:10219:,msfp_surveyinvite:10228:,msfp_surveyresponse:10230:,new_meetingopportunity:11278:,univcan_execcorrespondence:11674:,</UClientActivityCardMap>
+                            <UClientActivitiesConfigurationJSON>{"campaignactivity":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"incidentresolution":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"opportunityclose":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"orderclose":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"phonecall":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"quoteclose":{"showTopDate":true,"showStatus":false,"canCreate":false,"createUsing":"default","openUsing":"default"},"recurringappointmentmaster":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"socialactivity":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"adx_alertsubscription":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"adx_inviteredemption":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"cr4e0_execcorrespondence":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msdyn_ocliveworkitem":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msdyn_ocsession":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msemr_appointmentemr":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msfp_alert":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"msfp_surveyinvite":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"msfp_surveyresponse":{"showTopDate":true,"showStatus":true,"canCreate":false,"createUsing":"default","openUsing":"default"},"new_meetingopportunity":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"},"univcan_execcorrespondence":{"showTopDate":true,"showStatus":true,"canCreate":true,"createUsing":"default","openUsing":"default"}}</UClientActivitiesConfigurationJSON>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{175844c0-a431-4f95-ade6-6a0cd43850e4}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{65cb710c-a603-445e-a3ac-39c6d6cd3c74}" showlabel="false" labelid="{9edc87e0-2bb7-41bf-a251-10ac8699e39b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{302ad6eb-d986-483c-9f73-69ae907ea42c}" showlabel="false" labelid="{66636b0c-4691-4d83-9f48-33c6a640952b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3d7282da-97df-44e8-b428-37c7e9d5afe1}" showlabel="false" labelid="{3ddc221f-60f1-43f8-91e9-ad1643f26ac6}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8abba81b-8dce-4285-a203-649d5f8e5584}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Request Status" languagecode="1033" />
+              </labels>
+              <control id="header_cr4e0_requeststatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_requeststatus" disabled="false" />
+            </cell>
+            <cell id="{cf1ddd07-0bad-4dab-ae83-2def0277b9e9}" colspan="1" rowspan="1" labelid="{0d2ba060-ccfa-4dda-b334-cfa6d43fb8de}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{82655ac2-d2c7-4f5e-9dfa-70e18642548c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{db396155-555d-4912-add4-8f1295261f26}" showlabel="false" labelid="{0fdc8b1f-5622-4d14-8278-297005c2e1eb}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4e0fdb6e-20c7-4907-b81e-397b3e0cf938}" showlabel="false" labelid="{1a1056e3-d283-4a87-85a9-8c64a30cd988}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e8f8a94f-1aa9-466c-921d-68312c0f0c47}" showlabel="false" labelid="{08de04e7-a02d-4395-9abe-a4146c2e15e8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="3" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="IT" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

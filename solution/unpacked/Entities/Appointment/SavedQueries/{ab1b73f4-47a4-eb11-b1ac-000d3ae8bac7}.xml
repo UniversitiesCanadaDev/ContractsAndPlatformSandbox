@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ab1b73f4-47a4-eb11-b1ac-000d3ae8bac7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" preview="1" icon="1">
+        <row name="result" id="activityid">
+          <cell name="scheduledstart" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_meetingwith" width="100" />
+          <cell name="subject" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="requiredattendees" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="ownerid" width="100" />
+          <cell name="new_briefinglead" width="100" />
+          <cell name="new_briefingnotelink" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_lobbyactivity" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="appointment">
+          <attribute name="subject" />
+          <attribute name="new_briefinglead" />
+          <attribute name="scheduledstart" />
+          <attribute name="requiredattendees" />
+          <attribute name="new_briefingnotelink" />
+          <attribute name="ownerid" />
+          <attribute name="new_lobbyactivity" />
+          <order attribute="scheduledstart" descending="false" />
+          <filter type="and">
+            <filter type="and">
+              <filter type="or">
+                <condition attribute="scheduledstart" operator="next-x-years" value="3" />
+                <condition attribute="scheduledstart" operator="yesterday" />
+              </filter>
+              <filter type="or">
+                <condition attribute="new_meetingstatus" operator="in">
+                  <value>100000001</value>
+                  <value>100000003</value>
+                  <value>100000004</value>
+                </condition>
+                <condition attribute="new_meetingstatus" operator="null" />
+              </filter>
+            </filter>
+          </filter>
+          <attribute name="new_meetingwith" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Upcoming Meetings" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Displays previous days meetings and Upcoming Meetings for the next Year" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

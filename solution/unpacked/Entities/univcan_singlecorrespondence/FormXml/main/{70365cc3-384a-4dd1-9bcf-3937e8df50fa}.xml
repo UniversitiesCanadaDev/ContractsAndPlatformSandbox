@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{70365cc3-384a-4dd1-9bcf-3937e8df50fa}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{d39b4677-e3eb-40d1-a619-b71820b75abd}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{f7c7abfc-8100-4a34-a641-40c57fcc1276}">
+          <labels>
+            <label description="Start" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{7d87f70e-6387-98af-c6b3-1071d1996c0e}" name="StageStep3_section1" labelid="{98047ca5-107b-4bf7-b5dd-a2aa126e6dd6}">
+                  <labels>
+                    <label description="Start" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1c77c4bd-88e4-4598-afbf-198887084a0d}" showlabel="true" visible="true" labelid="{51bafd59-22b6-460b-8d39-cd46542f1494}">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence:subject" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="subject" disabled="false" relationship="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{311fe138-1168-4795-a81c-ba53cfe2a54b}" showlabel="true" visible="true" labelid="{7ba7d384-b7e5-4b18-8f4d-eb2e30c8348a}">
+                        <labels>
+                          <label description="To" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence:to" classid="{cbfb742c-14e7-4a17-96bb-1a13f7f64aa2}" datafieldname="to" disabled="false" relationship="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence" isrequired="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4d72c534-4e76-4fde-be90-07e5f3ed012d}" showlabel="true" visible="true" labelid="{d4e28d8c-ab7b-40d2-9654-c4bb568a809d}">
+                        <labels>
+                          <label description="From" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence:from" classid="{cbfb742c-14e7-4a17-96bb-1a13f7f64aa2}" datafieldname="from" disabled="false" relationship="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{3fba1270-ecdc-48f3-9fab-752071059f97}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{ccd6a52c-83a4-4900-834c-be695a5c676c}">
+          <labels>
+            <label description="Create Pdf" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{87259087-3c6f-07e9-1161-d036c678dba3}" name="StageStep11_section1" labelid="{2f6916fe-aec4-44ff-a96d-84a55d7cf190}">
+                  <labels>
+                    <label description="Create Pdf" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4960c669-f95e-4716-b844-978cbd16764d}" showlabel="true" visible="true" labelid="{f4c7f4ce-1820-48d7-8ac1-852b45cf7fcc}">
+                        <labels>
+                          <label description="Create PDF" languagecode="1033" />
+                        </labels>
+                        <control id="Step_14:5202f728-90e4-ed11-8848-0022483d5ee0_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_14" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{c9e52805-5edf-419a-a937-0021dbea3b84}" name="StageStep16" locklevel="0" expanded="true" visible="false" labelid="{2df5f89b-9a10-4219-8657-067e70b3e1e1}">
+          <labels>
+            <label description="Send" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{3254aa54-c86b-15be-7da0-fdce1d0f534f}" name="StageStep16_section1" labelid="{e7c830e3-1eec-4a62-97e2-48b04e4f2529}">
+                  <labels>
+                    <label description="Send" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a30184b0-2d9b-4650-a9e4-51bb6c0eb30e}" showlabel="true" visible="true" labelid="{0de62fea-7e07-4079-a5a8-0a2e5a550764}">
+                        <labels>
+                          <label description="Send Correspondence!" languagecode="1033" />
+                        </labels>
+                        <control id="Step_19:8b20b400-29e8-ed11-a7c6-0022483cdce2_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_19" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{9236cb5c-658c-40d2-b160-9d9307e43a52}" name="StageStep21" locklevel="0" expanded="true" visible="false" labelid="{670d9d7b-6ec0-463f-b17d-5c48e7f729d2}">
+          <labels>
+            <label description="Completed" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{04084189-b5a4-0eff-cf8d-56414fbf606a}" name="StageStep21_section1" labelid="{7d05851a-840d-4eef-a2b7-7e4fcc4e5153}">
+                  <labels>
+                    <label description="Completed" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f7a7a3bf-aa5d-40f0-9d8d-b28abe1ea503}" showlabel="true" visible="true" labelid="{ef3cae52-a2ab-4bf7-b7f8-533483b1e5c7}">
+                        <labels>
+                          <label description="Correspondence Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence:univcan_correspondencestatus" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="univcan_correspondencestatus" disabled="false" relationship="bpf_cr4e0_execcorrespondence_univcan_singlecorrespondence" isrequired="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e815049e-f43e-4d6d-8541-c529d38ba697}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_eventlookupid">
+          <cell name="new_name" width="300" />
+          <cell name="new_eventstartdate" width="125" />
+          <cell name="new_eventenddate" width="100" />
+          <cell name="new_hostinstitution" width="150" />
+          <cell name="new_hostcity" width="100" />
+          <cell name="new_venue" width="150" />
+          <cell name="new_mainevent" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_eventlookup">
+          <attribute name="new_name" />
+          <order attribute="new_eventstartdate" descending="true" />
+          <order attribute="new_name" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_venue" />
+          <attribute name="new_mainevent" />
+          <attribute name="new_hostinstitution" />
+          <attribute name="new_hostcity" />
+          <attribute name="new_eventstartdate" />
+          <attribute name="new_eventenddate" />
+          <attribute name="new_eventlookupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Event Lookup" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

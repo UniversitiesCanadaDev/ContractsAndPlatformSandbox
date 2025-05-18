@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{3681b5a4-482e-ed11-9db0-0022483c5336}</savedqueryid>
+    <layoutxml>
+      <grid name="sharepointdocument" jump="fullname" select="1" icon="0" preview="1">
+        <row name="sharepointdocument" id="sharepointdocumentid">
+          <cell name="fullname" width="300" imageproviderfunctionname="DocumentManagement.FileTypeIcon.loadSharePointFileTypeIcon" imageproviderwebresource="$webresource:SharePoint_main_system_library.js" />
+          <cell name="univcan_documenttype" width="152" />
+          <cell name="modified" width="150" />
+          <cell name="sharepointmodifiedby" width="150" />
+          <cell name="documentid" ishidden="1" />
+          <cell name="title" ishidden="1" />
+          <cell name="readurl" ishidden="1" />
+          <cell name="editurl" ishidden="1" />
+          <cell name="author" ishidden="1" />
+          <cell name="absoluteurl" ishidden="1" />
+          <cell name="sharepointdocumentid" ishidden="1" />
+          <cell name="filetype" ishidden="1" />
+          <cell name="ischeckedout" ishidden="1" />
+          <cell name="locationid" ishidden="1" />
+          <cell name="iconclassname" ishidden="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical">
+        <entity name="sharepointdocument">
+          <attribute name="documentid" />
+          <attribute name="fullname" />
+          <attribute name="absoluteurl" />
+          <attribute name="modified" />
+          <attribute name="sharepointmodifiedby" />
+          <attribute name="title" />
+          <attribute name="readurl" />
+          <attribute name="editurl" />
+          <attribute name="author" />
+          <attribute name="sharepointdocumentid" />
+          <attribute name="ischeckedout" />
+          <attribute name="locationid" />
+          <attribute name="iconclassname" />
+          <attribute name="filetype" />
+          <attribute name="univcan_documenttype" />
+          <order attribute="univcan_documenttype" descending="false" />
+          <filter type="and">
+            <filter type="or">
+              <condition attribute="univcan_documenttype" operator="eq" value="Letter-PDF" />
+              <condition attribute="univcan_documenttype" operator="eq" value="Letter-Merged" />
+              <condition attribute="univcan_documenttype" operator="eq" value="Letter" />
+            </filter>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.13</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Documents - Exec Correspondence" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="All SharePoint Document for exec Correspondence" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{d0740425-1c82-ed11-81ac-0022483cdce2}" name="UC - Proposals and Contracts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendAccount" level="Global" />
+    <RolePrivilege name="prvAppendContact" level="Global" />
+    <RolePrivilege name="prvAppendcr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvAppendcr4e0_contractbusinessflow" level="Global" />
+    <RolePrivilege name="prvAppendcr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvAppendcr4e0_proposalbusinessflow" level="Global" />
+    <RolePrivilege name="prvAppendSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvAppendSharePointSite" level="Global" />
+    <RolePrivilege name="prvAppendToAccount" level="Global" />
+    <RolePrivilege name="prvAppendToContact" level="Global" />
+    <RolePrivilege name="prvAppendTocr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvAppendTocr4e0_contractbusinessflow" level="Global" />
+    <RolePrivilege name="prvAppendTocr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvAppendTocr4e0_proposalbusinessflow" level="Global" />
+    <RolePrivilege name="prvAppendToSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvAppendToSharePointSite" level="Global" />
+    <RolePrivilege name="prvAssignAccount" level="Global" />
+    <RolePrivilege name="prvAssignContact" level="Global" />
+    <RolePrivilege name="prvAssigncr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvAssigncr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvAssignSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvAssignSharePointSite" level="Global" />
+    <RolePrivilege name="prvCreateAccount" level="Global" />
+    <RolePrivilege name="prvCreateContact" level="Global" />
+    <RolePrivilege name="prvCreatecr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvCreatecr4e0_contractbusinessflow" level="Global" />
+    <RolePrivilege name="prvCreatecr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvCreatecr4e0_proposalbusinessflow" level="Global" />
+    <RolePrivilege name="prvCreatemsdyn_productivityagentscriptstep" level="Basic" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvCreateSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvCreateSharePointSite" level="Global" />
+    <RolePrivilege name="prvDeleteAccount" level="Global" />
+    <RolePrivilege name="prvDeleteContact" level="Global" />
+    <RolePrivilege name="prvDeletecr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvDeletecr4e0_contractbusinessflow" level="Global" />
+    <RolePrivilege name="prvDeletecr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvDeletecr4e0_proposalbusinessflow" level="Global" />
+    <RolePrivilege name="prvDeleteSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvDeleteSharePointSite" level="Global" />
+    <RolePrivilege name="prvReadAccount" level="Global" />
+    <RolePrivilege name="prvReadContact" level="Global" />
+    <RolePrivilege name="prvReadcr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvReadcr4e0_contractbusinessflow" level="Global" />
+    <RolePrivilege name="prvReadcr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvReadcr4e0_proposalbusinessflow" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvReadSharePointSite" level="Global" />
+    <RolePrivilege name="prvShareAccount" level="Global" />
+    <RolePrivilege name="prvShareContact" level="Global" />
+    <RolePrivilege name="prvSharecr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvSharecr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvShareSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvShareSharePointSite" level="Global" />
+    <RolePrivilege name="prvWriteAccount" level="Global" />
+    <RolePrivilege name="prvWriteContact" level="Global" />
+    <RolePrivilege name="prvWritecr4e0_AwardsTypes" level="Global" />
+    <RolePrivilege name="prvWritecr4e0_contractbusinessflow" level="Global" />
+    <RolePrivilege name="prvWritecr4e0_Proposal" level="Global" />
+    <RolePrivilege name="prvWritecr4e0_proposalbusinessflow" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+    <RolePrivilege name="prvWriteSharePointDocumentLocation" level="Global" />
+    <RolePrivilege name="prvWriteSharePointSite" level="Global" />
+  </RolePrivileges>
+</Role>

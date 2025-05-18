@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e4c467bb-cafe-4e03-8f02-3d314761ed72}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_9" id="{eae360d6-114c-c8a0-9d08-567ea2155d32}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_9_section_1" showlabel="false" showbar="false" locklevel="0" id="{5e508418-8cbe-73ce-be21-43b291651ca5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{80dd2848-745a-c8ac-6851-448bc51c9c29}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="University" languagecode="1033" />
+                        </labels>
+                        <control id="new_university" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_university" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3e2bc8e0-8140-ae5d-1d75-54a8537d9d8d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Project" languagecode="1033" />
+                        </labels>
+                        <control id="new_project" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_project" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EB4D9A1-56DE-4756-8207-5C5DA92D8B02}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_9_section_2" showlabel="false" showbar="false" locklevel="0" id="{4eb1969e-7851-c286-a836-696eac99b527}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{65018505-2d12-2d23-8663-7e90b130e7e1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{1d2e8b38-1b7c-d679-11ac-4d1c91c85dc2}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Fiscal Year" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{7d0d41bb-6ec0-602d-6bc0-c103890b9d60}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{de8cb0ea-a652-c327-62e8-6e6849da45e9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Fiscal Year" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesreportfiscalyear" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_qesreportfiscalyear" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{de65bb64-78b4-3c07-3d7b-66ecb0c21d94}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{77999544-8db1-cdc9-61d7-ceea7124b481}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_6" id="{3e6882bb-25b6-0329-8d78-6c7bd6acd40c}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Annual Workplan" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="40%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="false" showbar="false" locklevel="0" id="{93c17983-0a22-e07d-d801-0e115ec8cb1a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3901e895-e1ba-cd0a-68e4-32a743ecc279}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualworkplanstat" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_annualworkplanstat" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="20%">
+              <sections>
+                <section name="tab_6_section_2" showlabel="false" showbar="false" locklevel="0" id="{e1762e65-ae75-0596-ea29-1ed75acb816e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{21235c68-3844-c7ea-7242-ba6819078985}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualworkplandate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_annualworkplandate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section name="tab_6_section_3" showlabel="false" showbar="false" locklevel="0" id="{a0e60b14-3788-e45b-86a4-81a1e46333ed}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ce9b84c0-daea-a2c9-4761-1875b9ec249c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Colour Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualworkplancolourstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_annualworkplancolourstatus" disabled="false" />
+                      </cell>
+                      <cell id="{836ed982-5a03-9a2b-90e5-34b30e60ca14}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualworkplanduedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_annualworkplanduedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_7" id="{cb26bc56-5371-717c-b2ae-5e4ebda8a65a}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Quarterly Financial Report" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="40%">
+              <sections>
+                <section name="tab_7_section_1" showlabel="false" showbar="false" locklevel="0" id="{ee9aea42-ee33-ea94-b273-37805cce107d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d66533e1-d956-8e13-4054-2643a1eac8d3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status 1" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreportstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a47e5b7b-e355-c53a-38d5-8c7b2b17a288}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status 2" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportstatus2" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreportstatus2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{11da0cae-626d-eb67-3eb6-9550b0bdae4a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status 3" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportstatus3" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreportstatus3" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{85625e76-c8b6-6e59-dae4-8a38b922a345}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status 4" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportstatus4" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreportstatus4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="20%">
+              <sections>
+                <section name="tab_7_section_2" showlabel="false" showbar="false" locklevel="0" id="{b6029c02-b3d1-05a0-93be-9b35209ac9e2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6b87d6d3-92e8-8292-9e72-597c51a94728}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bad20e48-b735-cbe9-737d-3dea01ad1540}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportdate2" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportdate2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d36dad9-e987-c777-0260-0a50a59db402}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportdate3" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportdate3" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21378da4-e2b2-0b95-61d5-2add335b7b17}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportdate4" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportdate4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section name="tab_7_section_3" showlabel="false" showbar="false" locklevel="0" id="{c25aee2d-b265-0d0d-b6d0-cb2106419a4a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1573702c-6c3e-9559-ae67-8608dd59acbe}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Colour Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancilreport1colourstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancilreport1colourstatus" disabled="false" />
+                      </cell>
+                      <cell id="{77a1713d-c116-0582-3182-2ca36dc86a2c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportduedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportduedate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bbcbc13a-5e7a-3d46-46bc-8cb92b852a34}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Colour Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreport2colorstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreport2colorstatus" disabled="false" />
+                      </cell>
+                      <cell id="{dd2b000c-7c24-bd3e-b669-da09ce829be3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportduedate2" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportduedate2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c435de4a-5b6e-aa47-089c-522e2116aaa9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Colour Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreport3colourstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreport3colourstatus" disabled="false" />
+                      </cell>
+                      <cell id="{b929b053-bb86-30d4-3e0b-2267c6c3dbe2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportduedate3" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportduedate3" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1ae3ae7-eddd-a081-4584-791ad0a0036e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Colour Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreport4colorstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_quarterlyfinancialreport4colorstatus" disabled="false" />
+                      </cell>
+                      <cell id="{6c75c5ce-e090-7da6-db05-ba8c46737ae0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_quarterlyfinancialreportduedate4" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_quarterlyfinancialreportduedate4" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_8" id="{74838b6a-4ab0-9c71-8d14-64de6678755b}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Annual Narrative Report" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="40%">
+              <sections>
+                <section name="tab_8_section_1" showlabel="false" showbar="false" locklevel="0" id="{3a96e651-13a1-9432-804a-02c5478265a2}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{186a2e34-79b4-6c83-6b80-d04435290d3e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualnarrativereportstat" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_annualnarrativereportstat" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="20%">
+              <sections>
+                <section name="tab_8_section_2" showlabel="false" showbar="false" locklevel="0" id="{68cdeeea-7ccc-b26d-2083-434ae4420566}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{943906e0-84e5-7935-0831-769307d1a95e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualnarrativereportdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_annualnarrativereportdate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section name="tab_8_section_3" showlabel="false" showbar="false" locklevel="0" id="{1236a474-2594-42e3-b270-31c072ea2ecc}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae61117b-5329-956a-e7a2-e5b749dc401c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Colour Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualnarrativereportcolourstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_annualnarrativereportcolourstatus" disabled="false" />
+                      </cell>
+                      <cell id="{31464235-ebeb-7dc4-b5c9-00a9e9d3e808}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Due Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_annualnarrativereportduedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_annualnarrativereportduedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{fbbd66c6-c90d-4c06-a573-a53d03ee0a54}" IsUserDefined="1" name="{fbbd66c6-c90d-4c06-a573-a53d03ee0a54}" locklevel="0" expanded="false" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{747a5d96-715d-4efb-8f45-8161e9e39e99}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{48046dd0-c50f-4b53-adcd-94b20b1e3189}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9f4c22d6-933e-4b17-b179-4bb8d746e90b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{0888dfd3-1721-441c-968d-f8c8222e279f}" columns="111">
+        <rows>
+          <row>
+            <cell id="{be2c7062-5de1-a646-907c-62748651719a}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="header_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+            </cell>
+            <cell id="{c556ec3b-2d8d-bec5-7783-bd9e62ac3712}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="header_modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+            </cell>
+            <cell id="{e63c19d4-da0c-c77c-6cc5-662b1ba00a2c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_QESReportingProjectName" libraryUniqueId="{1cda5e45-54ca-0798-80e1-152474d30e39}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_project">
+          <Handlers>
+            <Handler handlerUniqueId="{c619a4bc-93ec-b93c-b8c1-71443d8d7d15}" functionName="OnChange" libraryName="new_QESReportingProjectName" enabled="false" passExecutionContext="false" parameters="" />
+          </Handlers>
+        </event>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="new_QESReportingProjectName" handlerUniqueId="{755d0b6e-87c3-3624-0e7e-0057de05b433}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,440 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedoffice365_8a125"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "splitOn": "@triggerBody()['rows']",
+          "metadata": {
+            "operationMetadataId": "a358fdf4-9bf3-4369-a70d-faf3b15893b9"
+          },
+          "type": "Request",
+          "kind": "ApiConnection",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "entity": {
+                        "type": "object",
+                        "properties": {
+                          "entity": {
+                            "type": "object",
+                            "properties": {
+                              "BPFFlowStageEntityRecordId": {
+                                "title": "BPF Flow Stage Table Row Id",
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "required": [
+                          "entity"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "entity"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "rows"
+              ]
+            },
+            "host": {
+              "connection": {
+                "name": "@parameters('$connections')['shared_commondataserviceforapps']['connectionId']"
+              }
+            },
+            "operationId": "FlowStepRun",
+            "parameters": {}
+          }
+        }
+      },
+      "actions": {
+        "Get_a_row_by_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "876fd06a-bdef-458f-bd9c-eb735f672701"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Get_Owner_Value": {
+          "runAfter": {
+            "Get_a_row_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "680cec34-b2d9-43a0-bc1d-6e4f2d956c70"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "systemusers",
+              "recordId": "@outputs('Get_a_row_by_ID')?['body/_createdby_value']"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Run_a_Child_Flow_for_Assistant_Director,_Financial_Planning_and_Analysis": {
+          "runAfter": {
+            "Get_Owner_Value": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "4697396d-f4b4-4866-bf15-a693b61798db"
+          },
+          "type": "Workflow",
+          "inputs": {
+            "host": {
+              "workflowReferenceName": "7292d5b7-697d-ed11-81ad-0022483d5ee0"
+            },
+            "body": {
+              "text": "@if(equals(outputs('Get_a_row_by_ID')?['body/_cr4e0_programfinanceofficer_value'],null),'empty',outputs('Get_a_row_by_ID')?['body/_cr4e0_programfinanceofficer_value'])",
+              "text_1": "@if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_internalfinanceofficerapproval@OData.Community.Display.V1.FormattedValue'],null),'empty',outputs('Get_a_row_by_ID')?['body/cr4e0_internalfinanceofficerapproval@OData.Community.Display.V1.FormattedValue'])",
+              "text_3": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+              "text_4": "@string(if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_internalfinanceofficerapproval'],null),'empty',outputs('Get_a_row_by_ID')?['body/cr4e0_internalfinanceofficerapproval']))",
+              "text_5": "@outputs('Get_a_row_by_ID')?['body/cr4e0_name']",
+              "text_6": "Assistant Director, Financial Planning and Analysis",
+              "text_2": "@outputs('Get_Owner_Value')?['body/fullname']"
+            }
+          }
+        },
+        "Check_AD,_FPA_Child_Flow_Response": {
+          "actions": {
+            "Run_a_Child_Flow_for_Assistant_Director": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "ca925414-2611-4aaf-ae76-9a77967bda75"
+              },
+              "type": "Workflow",
+              "inputs": {
+                "host": {
+                  "workflowReferenceName": "7292d5b7-697d-ed11-81ad-0022483d5ee0"
+                },
+                "body": {
+                  "text": "@if(equals(outputs('Get_a_row_by_ID')?['body/_cr4e0_programassistantdirector_value'], null), 'empty', outputs('Get_a_row_by_ID')?['body/_cr4e0_programassistantdirector_value'])",
+                  "text_1": "@if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_internalassistantdirectorapproval@OData.Community.Display.V1.FormattedValue'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_internalassistantdirectorapproval@OData.Community.Display.V1.FormattedValue'])",
+                  "text_3": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+                  "text_4": "@string(if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_internalassistantdirectorapproval'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_internalassistantdirectorapproval']))",
+                  "text_5": "@outputs('Get_a_row_by_ID')?['body/cr4e0_name']",
+                  "text_6": "Assistant Director",
+                  "text_2": "@outputs('Get_Owner_Value')?['body/fullname']"
+                }
+              }
+            },
+            "Check_AD_child_flow_Response": {
+              "actions": {
+                "Run_a_Child_Flow_for_Privacy_Officer": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "f8753d22-ca46-4e89-99de-9b1a2b949a05"
+                  },
+                  "type": "Workflow",
+                  "inputs": {
+                    "host": {
+                      "workflowReferenceName": "7292d5b7-697d-ed11-81ad-0022483d5ee0"
+                    },
+                    "body": {
+                      "text": "@if(equals(outputs('Get_a_row_by_ID')?['body/_cr4e0_contractprivacyofficer_value'], null), 'empty', outputs('Get_a_row_by_ID')?['body/_cr4e0_contractprivacyofficer_value'])",
+                      "text_1": "@if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_contractprivacyofficerapproval@OData.Community.Display.V1.FormattedValue'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_contractprivacyofficerapproval@OData.Community.Display.V1.FormattedValue'])",
+                      "text_3": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+                      "text_4": "@string(if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_contractprivacyofficerapproval'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_contractprivacyofficerapproval']))",
+                      "text_5": "@outputs('Get_a_row_by_ID')?['body/cr4e0_name']",
+                      "text_6": "Privacy Officer",
+                      "text_2": "@outputs('Get_Owner_Value')?['body/fullname']"
+                    }
+                  }
+                },
+                "Check_PO_child_flow_Response": {
+                  "actions": {
+                    "Run_a_Child_Flow_for_Director_": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "dfd6d521-0a0a-446e-aeaa-73860064512e"
+                      },
+                      "type": "Workflow",
+                      "inputs": {
+                        "host": {
+                          "workflowReferenceName": "7292d5b7-697d-ed11-81ad-0022483d5ee0"
+                        },
+                        "body": {
+                          "text": "@if(equals(outputs('Get_a_row_by_ID')?['body/_cr4e0_programdirector_value'], null), 'empty', outputs('Get_a_row_by_ID')?['body/_cr4e0_programdirector_value'])",
+                          "text_1": "@if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_programdirectorapproval@OData.Community.Display.V1.FormattedValue'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_programdirectorapproval@OData.Community.Display.V1.FormattedValue'])",
+                          "text_3": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+                          "text_4": "@string(if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_programdirectorapproval'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_programdirectorapproval']))",
+                          "text_5": "@outputs('Get_a_row_by_ID')?['body/cr4e0_name']",
+                          "text_6": "Director",
+                          "text_2": "@outputs('Get_Owner_Value')?['body/fullname']"
+                        }
+                      }
+                    },
+                    "Check_D_child_flow_Response_": {
+                      "actions": {
+                        "Run_a_Child_Flow_for_Vice-President_": {
+                          "runAfter": {},
+                          "metadata": {
+                            "operationMetadataId": "f9833b1e-b02f-44c3-abb1-99779d50e54b"
+                          },
+                          "type": "Workflow",
+                          "inputs": {
+                            "host": {
+                              "workflowReferenceName": "7292d5b7-697d-ed11-81ad-0022483d5ee0"
+                            },
+                            "body": {
+                              "text": "@if(equals(outputs('Get_a_row_by_ID')?['body/_cr4e0_vicepresident_value'], null), 'empty', outputs('Get_a_row_by_ID')?['body/_cr4e0_vicepresident_value'])",
+                              "text_1": "@if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_vicepresidentapproval@OData.Community.Display.V1.FormattedValue'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_vicepresidentapproval@OData.Community.Display.V1.FormattedValue'])",
+                              "text_3": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+                              "text_4": "@string(if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_vicepresidentapproval'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_vicepresidentapproval']))",
+                              "text_5": "@outputs('Get_a_row_by_ID')?['body/cr4e0_name']",
+                              "text_6": "Vice President",
+                              "text_2": "@outputs('Get_Owner_Value')?['body/fullname']"
+                            }
+                          }
+                        },
+                        "Check_for_VP_child_flow_Response_": {
+                          "actions": {
+                            "Run_a_Child_flow_for_Chief_Financial_Officer_": {
+                              "runAfter": {},
+                              "metadata": {
+                                "operationMetadataId": "588fbe06-53b2-4d56-a396-00b91abbcd0f"
+                              },
+                              "type": "Workflow",
+                              "inputs": {
+                                "host": {
+                                  "workflowReferenceName": "7292d5b7-697d-ed11-81ad-0022483d5ee0"
+                                },
+                                "body": {
+                                  "text": "@if(equals(outputs('Get_a_row_by_ID')?['body/_cr4e0_financedirector_value'], null), 'empty',outputs('Get_a_row_by_ID')?['body/_cr4e0_financedirector_value'])",
+                                  "text_1": "@if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_financedirectorapproval@OData.Community.Display.V1.FormattedValue'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_financedirectorapproval@OData.Community.Display.V1.FormattedValue'])",
+                                  "text_3": "@triggerBody()?['entity']?['entity']?['BPFFlowStageEntityRecordId']",
+                                  "text_4": "@string(if(equals(outputs('Get_a_row_by_ID')?['body/cr4e0_financedirectorapproval'], null), 'empty', outputs('Get_a_row_by_ID')?['body/cr4e0_financedirectorapproval']))",
+                                  "text_5": "@outputs('Get_a_row_by_ID')?['body/cr4e0_name']",
+                                  "text_6": "Chief Financial Officer",
+                                  "text_2": "@outputs('Get_Owner_Value')?['body/fullname']"
+                                }
+                              }
+                            },
+                            "Check_CFO_child_flow_Response": {
+                              "actions": {
+                                "Send_an_email_(V2)": {
+                                  "runAfter": {},
+                                  "metadata": {
+                                    "operationMetadataId": "5c9f54d2-cc40-4807-943a-075ddbd2a0a2"
+                                  },
+                                  "type": "OpenApiConnection",
+                                  "inputs": {
+                                    "host": {
+                                      "connectionName": "shared_office365",
+                                      "operationId": "SendEmailV2",
+                                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                                    },
+                                    "parameters": {
+                                      "emailMessage/To": "@outputs('Get_Owner_Value')?['body/internalemailaddress']",
+                                      "emailMessage/Subject": "@{outputs('Get_a_row_by_ID')?['body/cr4e0_name']} has been approved by all the reviewers.",
+                                      "emailMessage/Body": "<p>&lt;!DOCTYPE html&gt;&lt;html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;head&gt;<br>\n&nbsp;&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"&gt;<br>\n&nbsp;&lt;title&gt;&lt;/title&gt;<br>\n&nbsp;&lt;style type=\"text/css\"&gt;<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body { &nbsp;margin: 0; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.messageContainer { width: 660px; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.contentContainer { background: #F0F0F0; border: 1px solid #C8C8C8;}<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.bannerContainer { padding: 72px 20px 12px 20px }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.footerContainer { padding: 32px 20px; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.subject { margin-bottom: 30px; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.headerContainer { text-align: center; padding: 48px 60px; background-color: #0078d4 }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.bodyContainer { background: white; padding: 48px 60px }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p { margin: 10px 0; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.lge { font-size: 28px; font-family: Segoe UI; font-weight: 600; color: #201F1E }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.hlt { font-weight:600; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.btn { font-size: 15px; background: #0078D7; color: #fff; text-decoration: none; display: inline-block; padding: 10px 16px; margin: 30px auto 0 auto; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.alertInvestigationButtonPart { text-align: center; }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.footerContainer p { font-size: 10px; font-family: Segoe UI; color: #666666; margin: 0 0 14px 0 }<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.FooterContainer img {margin-top: 10px}<br>\n&nbsp;.headerSpan{ color: #fff }<br>\n&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>\n&nbsp;&lt;/head&gt;<br>\n&nbsp;&lt;body&gt;<br>\n&nbsp;&lt;div&gt;<br>\n&nbsp;&lt;div class=\"messageContainer\"&gt;<br>\n&nbsp;&lt;div class=\"bannerContainer\"&gt;&lt;img src=\"https://www.univcan.ca/wp-content/themes/univcan/images/univcan-logo-en.svg\" border=\"0\"&gt;<br>\n&nbsp;&lt;/div&gt;<br>\n&nbsp;&lt;div class=\"contentContainer\"&gt;<br>\n&nbsp;&lt;div class=\"headerContainer\"&gt;&lt;span class=\"lge headerSpan\"&gt;@{outputs('Get_a_row_by_ID')?['body/cr4e0_name']} &lt;/span&gt;<br>\n&nbsp;&lt;/div&gt;<br>\n&nbsp;&lt;div class=\"bodyContainer\"&gt;<br>\n&nbsp;&lt;p class=\"subject\"&gt;Hello @{outputs('Get_Owner_Value')?['body/fullname']},&lt;/p&gt;<br>\n&nbsp;&lt;p class=\"subject\"@{outputs('Get_a_row_by_ID')?['body/cr4e0_scholarshipdescription']}&lt;/p&gt;<br>\n&nbsp;&lt;p class=\"subject\"&gt;&lt;a href=\"https://ucsandbox01.crm3.dynamics.com/main.aspx?appid=9203dcfd-0367-43eb-aaef-a59efc587735&amp;amp;pagetype=entityrecord&amp;amp;etn=cr4e0_proposal&amp;amp;id=@{outputs('Get_a_row_by_ID')?['body/cr4e0_proposalid']}\" target=\"_blank\"&gt;Click here&lt;/a&gt; to access the detail information of proposal&lt;br&gt;&lt;/p&gt;<br>\n&lt;p class=\"subject\"&gt;Thank you,&lt;br&gt;Contract and Proposal Team&lt;/p&gt;<br>\n&nbsp;&lt;div class=\"footerContainer\"&gt;<br>\n&nbsp;&lt;p&gt;Universities Canada&lt;/p&gt;<br>\n&nbsp;&lt;img src=\"https://www.univcan.ca/wp-content/themes/univcan/images/univcan-logo-en.svg\" border=\"0\"&gt;<br>\n&nbsp;&lt;/div&gt;<br>\n&nbsp;&lt;/div&gt;<br>\n&nbsp;&lt;/div&gt;<br>\n&nbsp;&lt;/div&gt;<br>\n&nbsp;&lt;/body&gt;<br>\n&nbsp;&lt;/html&gt;</p>",
+                                      "emailMessage/Importance": "Normal"
+                                    },
+                                    "authentication": {
+                                      "type": "Raw",
+                                      "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                                    }
+                                  }
+                                }
+                              },
+                              "runAfter": {
+                                "Run_a_Child_flow_for_Chief_Financial_Officer_": [
+                                  "Succeeded"
+                                ]
+                              },
+                              "expression": {
+                                "equals": [
+                                  "@body('Run_a_Child_flow_for_Chief_Financial_Officer_')?['response']",
+                                  "Next Approver"
+                                ]
+                              },
+                              "metadata": {
+                                "operationMetadataId": "1903c893-8d94-4d64-ad10-ae4b9fb9b042"
+                              },
+                              "type": "If"
+                            }
+                          },
+                          "runAfter": {
+                            "Run_a_Child_Flow_for_Vice-President_": [
+                              "Succeeded"
+                            ]
+                          },
+                          "expression": {
+                            "equals": [
+                              "@body('Run_a_Child_Flow_for_Vice-President_')?['response']",
+                              "Next Approver"
+                            ]
+                          },
+                          "metadata": {
+                            "operationMetadataId": "997dd045-2de2-45f7-9406-30f90b393561"
+                          },
+                          "type": "If"
+                        }
+                      },
+                      "runAfter": {
+                        "Run_a_Child_Flow_for_Director_": [
+                          "Succeeded"
+                        ]
+                      },
+                      "expression": {
+                        "equals": [
+                          "@body('Run_a_Child_Flow_for_Director_')?['response']",
+                          "Next Approver"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "9fe58354-0f0e-477b-a265-85fe3dcb77e3"
+                      },
+                      "type": "If"
+                    }
+                  },
+                  "runAfter": {
+                    "Run_a_Child_Flow_for_Privacy_Officer": [
+                      "Succeeded"
+                    ]
+                  },
+                  "expression": {
+                    "equals": [
+                      "@body('Run_a_Child_Flow_for_Privacy_Officer')?['response']",
+                      "Next Approver"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "8918e226-1d69-4f60-8809-9704591250a6"
+                  },
+                  "type": "If"
+                }
+              },
+              "runAfter": {
+                "Run_a_Child_Flow_for_Assistant_Director": [
+                  "Succeeded"
+                ]
+              },
+              "expression": {
+                "equals": [
+                  "@body('Run_a_Child_Flow_for_Assistant_Director')?['response']",
+                  "Next Approver"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "f8ae7789-dd8f-4e33-ba19-8869d375d682"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {
+            "Run_a_Child_Flow_for_Assistant_Director,_Financial_Planning_and_Analysis": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "equals": [
+              "@body('Run_a_Child_Flow_for_Assistant_Director,_Financial_Planning_and_Analysis')?['response']",
+              "Next Approver"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3084548e-ea02-4cd5-b8d1-70a468e83565"
+          },
+          "type": "If"
+        },
+        "Update_a_row": {
+          "runAfter": {
+            "Check_AD,_FPA_Child_Flow_Response": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fc95b16f-bfaf-4a71-ac29-143bda21c442"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateOnlyRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "workflowlogs",
+              "recordId": "@triggerBody()?['entity']?['entity']?['FlowsWorkflowLogId']",
+              "item/status": 2
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

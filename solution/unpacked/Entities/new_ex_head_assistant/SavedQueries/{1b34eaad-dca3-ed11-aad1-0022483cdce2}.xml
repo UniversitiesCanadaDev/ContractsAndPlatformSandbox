@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1b34eaad-dca3-ed11-aad1-0022483cdce2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_ex_head_assistantid">
+          <cell name="a_e3fd8f283edbeb11bacb0022483c549b.fullname" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_e3fd8f283edbeb11bacb0022483c549b.emailaddress1" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_e3fd8f283edbeb11bacb0022483c549b.parentcustomerid" width="200" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_ex_head_assistant">
+          <link-entity alias="a_e3fd8f283edbeb11bacb0022483c549b" name="contact" from="contactid" to="new_contactidid" link-type="outer" visible="false">
+            <attribute name="parentcustomerid" />
+            <attribute name="fullname" />
+            <attribute name="emailaddress1" />
+          </link-entity>
+          <attribute name="new_ex_head_assistantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Reports to View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d1f26a3c-c29a-e611-b5a6-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_qeprojectscholarid">
+          <cell name="new_firstname" width="125" />
+          <cell name="new_lastname" width="125" />
+          <cell name="new_startdate" width="125" />
+          <cell name="new_actualscholarshipstartdate" width="150" />
+          <cell name="new_enddate" width="125" />
+          <cell name="new_actualscholarshipenddate" width="150" />
+          <cell name="new_predeparturestatus" width="125" />
+          <cell name="new_scholarnarrativestatus" width="125" />
+          <cell name="aa.new_filenamesid" width="150" disableSorting="1" />
+          <cell name="aa.new_name" width="300" disableSorting="1" />
+          <cell name="new_component" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_qeprojectscholar">
+          <attribute name="new_startdate" />
+          <attribute name="new_scholarnarrativestatus" />
+          <attribute name="new_lastname" />
+          <attribute name="new_firstname" />
+          <attribute name="new_predeparturestatus" />
+          <attribute name="new_enddate" />
+          <attribute name="new_component" />
+          <attribute name="new_actualscholarshipstartdate" />
+          <attribute name="new_actualscholarshipenddate" />
+          <order attribute="new_firstname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="new_project" from="new_projectid" to="new_qeprojectscholarsid" alias="aa">
+            <attribute name="new_name" />
+            <attribute name="new_filenamesid" />
+            <filter type="and">
+              <condition attribute="statecode" operator="eq" value="0" />
+              <condition attribute="new_qesprojecttype" operator="eq" value="100000001" />
+            </filter>
+          </link-entity>
+          <attribute name="new_qeprojectscholarid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active QES-AS Project Scholars" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

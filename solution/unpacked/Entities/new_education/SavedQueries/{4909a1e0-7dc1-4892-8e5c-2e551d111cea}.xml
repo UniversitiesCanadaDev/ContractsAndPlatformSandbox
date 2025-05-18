@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4909a1e0-7dc1-4892-8e5c-2e551d111cea}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_educationid">
+          <cell name="new_institiutionid" width="150" />
+          <cell name="a_54615d8a49ade411bced0050568d4f81.address1_city" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_degreeid" width="75" />
+          <cell name="new_fieldofstudy" width="125" />
+          <cell name="new_degreearea" width="125" />
+          <cell name="new_particulardegreearea" width="125" />
+          <cell name="new_specificfield" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_education">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_institiutionid" descending="false" />
+          <attribute name="new_institiutionid" />
+          <attribute name="new_fieldofstudy" />
+          <attribute name="new_degreeid" />
+          <attribute name="new_particulardegreearea" />
+          <attribute name="new_specificfield" />
+          <attribute name="new_degreearea" />
+          <link-entity alias="a_54615d8a49ade411bced0050568d4f81" name="account" from="accountid" to="new_institiutionid" link-type="outer" visible="false">
+            <attribute name="address1_city" />
+          </link-entity>
+          <attribute name="new_educationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Education" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

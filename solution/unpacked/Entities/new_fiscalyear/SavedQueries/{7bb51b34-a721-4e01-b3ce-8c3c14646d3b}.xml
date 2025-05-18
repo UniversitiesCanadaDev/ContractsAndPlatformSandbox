@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7bb51b34-a721-4e01-b3ce-8c3c14646d3b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_fiscalyearid">
+          <cell name="new_name" width="125" />
+          <cell name="new_fiscalend" width="100" />
+          <cell name="new_fiscalstart" width="100" />
+          <cell name="new_ucboardstartdate" width="150" />
+          <cell name="new_ucboardenddate" width="150" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_fiscalyear">
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="new_ucboardstartdate" />
+          <attribute name="new_ucboardenddate" />
+          <attribute name="new_fiscalstart" />
+          <attribute name="new_fiscalend" />
+          <attribute name="new_fiscalyearid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Fiscal Years" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{abd9897e-6c85-4acf-8a69-51ee9be4adee}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_mp_interestsid">
+          <cell name="new_mpinterestid" width="200" />
+          <cell name="new_categoryid" width="150" />
+          <cell name="new_description" width="300" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_mp_interests">
+          <order attribute="new_mpinterestid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_categoryid" />
+          <attribute name="new_mpinterestid" />
+          <attribute name="new_description" />
+          <attribute name="new_mp_interestsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active MP_Interests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

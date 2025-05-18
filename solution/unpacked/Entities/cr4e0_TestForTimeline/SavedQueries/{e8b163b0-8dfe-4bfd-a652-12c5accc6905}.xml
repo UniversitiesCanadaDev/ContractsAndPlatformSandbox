@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e8b163b0-8dfe-4bfd-a652-12c5accc6905}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_testfortimelineid">
+          <cell name="cr4e0_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_testfortimeline">
+          <attribute name="cr4e0_testfortimelineid" />
+          <attribute name="cr4e0_name" />
+          <attribute name="createdon" />
+          <order attribute="cr4e0_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Test For Timelines" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0a2c60bc-17ff-4c55-81a4-a9e021971b43}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900" showImage="false" shownavigationbar="true">
+      <tabs>
+        <tab id="{aca34ad8-e7de-3918-c5ad-eb67c8baca4a}" name="tab_2" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Institution Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{b03ba1c4-e13b-34a3-3221-3be402c4356a}" name="tab_2_section_2" IsUserDefined="0" showlabel="false" locklevel="0" columns="1111" showbar="false" layout="varwidth" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Instution Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{82825494-0090-228c-8e96-58bc53bb0b01}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Institution" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_institution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_institution">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{F7038F93-3B36-EA11-80C6-0050569A785D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{db52c947-e752-87d6-1504-0b07ddd0325d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ee85a3e6-5488-6762-d44c-8d4235a12b57}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92cc7bd6-4401-3de3-cce3-960e295ba197}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Awards Office Email" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_awardsofficeemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="new_awardsofficeemail" />
+                      </cell>
+                      <cell id="{59126063-5dc4-d5cb-bb34-ba797b633731}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a4e33745-cc80-63c6-4b48-c6c4540d691a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b117275-38bc-406d-ca13-e49adc6d5c24}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Awards Office Phone" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_awardsofficephone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_awardsofficephone" />
+                      </cell>
+                      <cell id="{0b32c0c1-944b-37d8-1637-2037715b48c6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{1d535a95-bbd5-4b7e-c0ea-2a93003b0564}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{465c4de2-32bd-8183-3d25-ad75cb37304a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{ba43b3c9-8c92-ceca-8198-5c07d5290eba}" name="tab_3" IsUserDefined="0" showlabel="true" locklevel="0" expanded="true">
+          <labels>
+            <label description="Contact Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{95de1e46-2c89-01c2-0969-a2a1432a748c}" name="tab_3_section_1" IsUserDefined="0" showlabel="false" locklevel="0" columns="111" showbar="false" layout="varwidth" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{02853ed4-8185-983c-d787-da04a8d24256}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Student Awards Officer" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_studentawardsofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_studentawardsofficer">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{2b0c016b-39bd-11ab-420c-536d842953d8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{58d89849-6320-a52d-5044-c3026d443306}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{3b177f43-252a-4196-a1d9-da5eb50f7ee5}" name="{3b177f43-252a-4196-a1d9-da5eb50f7ee5}" IsUserDefined="1" showlabel="true" locklevel="0" expanded="false" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{504af5f0-8a97-4f73-851d-097170c34d8b}" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{52050008-bdf3-485f-87c9-04c083981b2d}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ab340b78-5695-4151-9526-7935616434b6}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section id="{8f6300a5-1797-492b-9e9c-f2639c8dde05}" height="auto" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{98d46ac8-8bf2-45cc-8728-4a942d560c3a}" showlabel="false" locklevel="0" rowspan="5" auto="false">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_CopyAwardInstituiontoNew_name" libraryUniqueId="{b27b682d-34a4-6287-cb11-5cc0bd807eb2}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" attribute="new_institution" active="false" application="false">
+          <Handlers>
+            <Handler passExecutionContext="false" parameters="" enabled="true" handlerUniqueId="{4986dab4-e996-4a35-3ba2-a313bddd72e0}" libraryName="new_CopyAwardInstituiontoNew_name" functionName="OnChange" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

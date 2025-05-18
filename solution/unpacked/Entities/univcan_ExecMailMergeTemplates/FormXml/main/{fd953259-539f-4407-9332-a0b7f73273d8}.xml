@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fd953259-539f-4407-9332-a0b7f73273d8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{8f7b5a65-24ac-4c2b-ba31-c114650562c2}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{82c3da19-bd51-40ca-9f4d-90cca81f804b}" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{912bed20-6189-4d6a-b9e5-1ed01941b1da}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{67570633-7390-45e7-9e00-03cf69561a47}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approval - Manager" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approvalmanager" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_approvalmanager" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d73ad74f-f955-4b1d-94ca-5b1cc976fa19}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="univcan_name" />
+                      </cell>
+                      <cell id="{d3e2380a-e5f9-4ec0-beae-4a8928dfec67}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approval - Director/VP" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approvaldirectorvp" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_approvaldirectorvp" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93615982-d4f0-4f23-849b-ebfd50b9c03e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Document Type" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_execcampaigndocumenttype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_execcampaigndocumenttype" disabled="false" />
+                      </cell>
+                      <cell id="{b0a7f79b-b349-435f-bd33-ba09141261f3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approval - Exec Office" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approvalexecoffice" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_approvalexecoffice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fccac8b1-fb05-4a10-9705-9fc723582c11}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_language" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_language" disabled="false" />
+                      </cell>
+                      <cell id="{3bde0d80-72fe-4613-9cd5-0ef2961277b4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Approval - Exec Head" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approvalexechead" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_approvalexechead" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b337026b-04fc-4b56-b7d6-4b5ca1e16951}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell locklevel="0" id="{f170cd91-506a-4282-93d3-d07c20e2931e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="d27421e1-83f7-489f-8a5b-f1e04bb3abec" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Template Files" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{100e04d6-4f76-4e02-bbdd-92d4b8983b42}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1656335597665" languagecode="1033" />
+                          <label description="Documents" languagecode="1036" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                            <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewIds>
+                            <RelationshipName>univcan_execmailmergetemplates_SharePointDocuments</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{3bdf9906-66b0-47ba-b0ed-3c8db98a51b8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fcc0592d-7913-40d3-a269-e2feb584a62a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{732188dc-57e1-4f1e-b9cf-c919a2058651}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5eac0c51-c807-42f2-86fb-82a1c0fee134}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{43715664-314b-4be4-973b-e08844fd66e0}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Exec Campaign" languagecode="1033" />
+              </labels>
+              <control id="header_univcan_execcampaign" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_execcampaign" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{d061ba0e-cf3f-47eb-a10d-7d6c034434ef}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{81279914-9177-49f6-9f6e-acfcd86bb75a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{8a363bbd-d78d-4a17-91a3-45380e63c4e9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{476f4c5b-7da3-4f2b-9c8d-a2c0271d02c7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5778493d-2ca4-4d91-827a-e0e4c03a5c68}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="false" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab name="tab_4" id="{a363892a-bc0a-bd45-4c54-1122bd3eeeca}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="30%">
+              <sections>
+                <section name="tab_4_section_2" showlabel="false" showbar="false" locklevel="0" id="{330b1d12-a04a-3779-942b-7683270cdce6}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9c6d99ec-0940-488a-aa93-5c6f23d8937c}" locklevel="0" showlabel="true" colspan="1">
+                        <labels>
+                          <label description="Committee Name" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" uniqueid="{96c4cdac-6dc8-87b4-16ed-450209d44994}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{60e7ada7-dc0c-6c35-a071-cbb21d3112b3}" locklevel="0" showlabel="true" rowspan="6" colspan="1">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="new_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_description" uniqueid="{b93a731a-2be1-1be2-d71e-775a08b49b7c}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{51409ebe-409c-024d-52aa-b93c96d2414a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Secretary" languagecode="1033" />
+                        </labels>
+                        <control id="new_secretary" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_secretary" disabled="false" uniqueid="{950cc01a-5a7b-ae33-8a4c-d10ae3bc5e7a}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2EBF515-8F3A-ED11-9DB0-0022483C5336}</DefaultViewId>
+                            <AvailableViewIds>{A2EBF515-8F3A-ED11-9DB0-0022483C5336},{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4781d741-771d-7ca7-e450-18d4e12a87a0}" showlabel="true" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Terms of Reference" languagecode="1033" />
+                        </labels>
+                        <control id="new_termsofreference" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="new_termsofreference" disabled="false" uniqueid="{24ead7b2-5a63-3347-aeba-ac5ac559265a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8a5177e-9e2c-8db8-0a01-d5b50a4c9dc5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="UC Themes" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucthemes" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="new_ucthemes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7dda3c86-a1bd-c0bd-93c8-9777524bba98}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="UC Standing Committee" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucstandingcommittee" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_ucstandingcommittee" disabled="false" uniqueid="{99519346-d8a9-1d54-4059-6c7846a5b2a7}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="70%">
+              <sections>
+                <section id="{a938cded-ed7c-7272-82c4-b38eb1492c2b}" name="tab_4_section_1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Current Members" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2893c797-4b2e-9987-b12c-3e0847b62d4d}" showlabel="false" rowspan="22" colspan="1" auto="false">
+                        <labels>
+                          <label description="Panelist (Panel Name)" languagecode="1033" />
+                        </labels>
+                        <control id="AGPanelists" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{c4801d95-51c4-e074-b676-c7d32b0e2ee9}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{FE058ECF-E123-E911-84BC-0050568D4F81}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_advisorygroupname_new_panelist</RelationshipName>
+                            <TargetEntityType>new_panelist</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{A0721144-3239-4D72-8205-B97A7004C690},{FE058ECF-E123-E911-84BC-0050568D4F81}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>20</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Meetings" id="{9ccd2b1a-c9cc-8472-b292-9a71e4d601b9}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Meetings &amp; Activities" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{6942a1ea-ca9c-3332-3e0b-48d240c9a79b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6ba33837-eb59-dada-0348-02aed3db9820}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Meetings" languagecode="1033" />
+                          <label description="Rendez-vous" languagecode="1036" />
+                        </labels>
+                        <control id="TESTMeetings" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{14461421-5826-58e8-c79a-3e8c4c15233c}">
+                          <parameters>
+                            <ViewId>{BC02658F-1DA1-EB11-B1AC-000D3AE8BAC7}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_advisorygroupname_appointment_UCCommittee</RelationshipName>
+                            <TargetEntityType>appointment</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{606EEA12-0C33-47D3-96E1-BA1529EE8205},{BC02658F-1DA1-EB11-B1AC-000D3AE8BAC7}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{1BC0FF08-CB08-45D6-8FD4-E49E6B49FE91}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{7cb24245-eec4-44e6-53be-81d39c51218d}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Tasks" languagecode="1033" />
+                          <label description="Tâches" languagecode="1036" />
+                        </labels>
+                        <control id="Task" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{31a6e5ea-51d4-eae9-84eb-e0196ec92795}">
+                          <parameters>
+                            <ViewId>{DE933F9F-DFA2-EB11-B1AC-000D3AE8BAC7}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_advisorygroupname_task_UCCommittee</RelationshipName>
+                            <TargetEntityType>task</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{6CF285AA-EB20-4277-925A-3E9735411FF0},{DE933F9F-DFA2-EB11-B1AC-000D3AE8BAC7}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{70170e69-eebb-4856-ea12-d7536b4318db}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Email Messages " languagecode="1033" />
+                          <label description="Messages électroniques" languagecode="1036" />
+                        </labels>
+                        <control id="Email" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{ac7e0a50-8350-305c-54ba-1388392dcd7b}">
+                          <parameters>
+                            <ViewId>{17AB97CA-87A3-EB11-B1AC-000D3AE8B98C}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_advisorygroupname_email_UCCommittee</RelationshipName>
+                            <TargetEntityType>email</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{CC98CB1F-6552-4FD8-9E2F-39A1CAD2F710},{7AFF64B0-5B8C-4AD7-89F8-976777EEE178},{17AB97CA-87A3-EB11-B1AC-000D3AE8B98C}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{1EC1872A-23DE-4294-9D7F-1B76272A5FD5}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{b7e5ee95-eced-200b-c26b-30e5debb03c7}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Past Committee Members" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_2" showlabel="false" showbar="false" locklevel="0" id="{b122ba33-ba47-b608-9125-62d70c79718e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4b74b653-77dc-c418-a690-bd4b2d565496}" showlabel="false" colspan="1" auto="false" rowspan="42">
+                        <labels>
+                          <label description="UC Committee Members (Committee Name)" languagecode="1033" />
+                        </labels>
+                        <control id="PastMembers" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{ae56b0e6-120d-488c-0ab9-b72c8b9cd65e}">
+                          <parameters>
+                            <ViewId>{8B293D7E-8875-ED11-81AC-0022483C5606}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_advisorygroupname_new_panelist</RelationshipName>
+                            <TargetEntityType>new_panelist</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{A0721144-3239-4D72-8205-B97A7004C690},{8B293D7E-8875-ED11-81AC-0022483C5606}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>40</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{c389e733-dc75-2d0c-e264-b28dc2e4372e}" name="tab_2" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Notes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{020056bb-5244-4d11-86f4-2a92c75612de}" height="auto" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5e721b79-04ee-45cc-896f-647244e0f1f7}" locklevel="0" showlabel="false" rowspan="5" auto="false">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{be796c01-8378-4fd2-8f70-43b79561e576}" name="{be796c01-8378-4fd2-8f70-43b79561e576}" IsUserDefined="1" locklevel="0" showlabel="true" expanded="false" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="{be796c01-8378-4fd2-8f70-43b79561e576}_section_2" showlabel="false" showbar="false" locklevel="0" id="{90b9a0e2-d972-de64-1c29-360ad9d55177}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1a3ee6a7-a9b9-4731-9e57-f21ac119e910}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell id="{a4e3cdea-552a-2968-306a-0c660b5ee8c7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Standing Committee Sort order for Reporting" languagecode="1033" />
+                        </labels>
+                        <control id="new_standingcommitteesortorderforreporting" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_standingcommitteesortorderforreporting" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c3621e64-0d16-a518-d692-55eccc8c2a5e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="J2K ID" languagecode="1033" />
+                        </labels>
+                        <control id="new_j2kid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_j2kid" disabled="false" />
+                      </cell>
+                      <cell id="{be38ceee-7ec1-e410-9394-088cd56a0375}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="J2K Update Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_j2kupdatedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_j2kupdatedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{7f914660-b99a-e611-b5a6-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_projectid">
+          <cell name="new_filenamesid" width="200" />
+          <cell name="new_projectcode" width="125" />
+          <cell name="new_university" width="300" />
+          <cell name="new_name" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_project">
+          <attribute name="new_university" />
+          <attribute name="new_filenamesid" />
+          <attribute name="new_projectcode" />
+          <order attribute="new_filenamesid" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="new_qesprojecttype" operator="eq" value="100000001" />
+          </filter>
+          <attribute name="new_projectid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active QES-AS Projects" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

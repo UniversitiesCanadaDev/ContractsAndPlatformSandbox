@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{74c071a9-dc7b-4e28-8ee3-2b88c114ae02}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row id="new_mediarequestid" name="result">
+          <cell name="new_journalist" width="150" />
+          <cell name="new_mediaoutlet" width="200" />
+          <cell name="new_requestdate" width="100" />
+          <cell name="new_requeststatus" width="100" />
+          <cell name="new_topic" width="300" />
+          <cell name="new_ucspokesperson" width="125" />
+          <cell name="new_activity" width="125" />
+          <cell name="new_requestresult1" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_requestresult2" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_mediarequest">
+          <order attribute="new_journalist" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_topic" />
+          <attribute name="new_requestdate" />
+          <attribute name="new_journalist" />
+          <attribute name="new_requeststatus" />
+          <attribute name="new_mediaoutlet" />
+          <attribute name="new_ucspokesperson" />
+          <attribute name="new_activity" />
+          <attribute name="new_requestresult2" />
+          <attribute name="new_requestresult1" />
+          <attribute name="new_mediarequestid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Media Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5895e983-598b-4834-80f9-68a4e9f4f744}</formid>
+    <IntroducedVersion>9.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{57f22b37-faf3-4a2b-b4a3-09e91aedc5df}" name="tab_1" showlabel="false" ordinalvalue="0">
+          <columns>
+            <column width="33%" id="0">
+              <sections>
+                <section id="{813bb7c4-c5ff-4c5a-b6ab-c01101d7bbd9}" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell showlabel="true" locklevel="1" id="{ff43f51c-5e57-4346-bf81-b820f19ddf8e}" ordinalvalue="10000">
+                        <labels>
+                          <label description="Owner" languagecode="1033" solutionaction="Added" />
+                          <label description="Propriétaire" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="1" rowspan="1" colspan="1" id="{8901DF19-82EB-4BD3-B96B-CD3D4F5710D5}" labelid="{96c0e57a-cc1c-465f-8212-1f457dd78a53}" ordinalvalue="10001">
+                        <labels>
+                          <label description="Required Attendees" languagecode="1033" solutionaction="Added" />
+                          <label description="Participants obligatoires" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{3953269C-ABD1-4B75-8DDB-23D5BC088D65}" labelid="{894cad6e-5beb-412a-9de4-687c74e227ef}" ordinalvalue="10002" solutionaction="Removed" />
+                    </row>
+                    <row>
+                      <cell id="{b30b0e78-1a14-1824-d916-c11c41b7531b}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Modified">
+                        <labels>
+                          <label description="Subject" languagecode="1033" solutionaction="Added" />
+                          <label description="Sujet" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell colspan="1" id="{E15ACF1F-BA3E-4BC5-8AE5-AA3A290E7779}" labelid="{a6afc721-530f-40f5-96f4-99d4d71b83f0}" ordinalvalue="10003" solutionaction="Modified">
+                        <labels>
+                          <label description="Location" languagecode="1033" solutionaction="Added" />
+                          <label description="Emplacement" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32a30c13-1750-b89e-a057-e02b7bc06626}" showlabel="true" locklevel="0" ordinalvalue="10004" solutionaction="Modified">
+                        <control id="isonlinemeeting" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="isonlinemeeting" disabled="false" uniqueid="{5B7DA1D6-E65E-A356-2D63-E4414175EA30}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="1">
+              <sections>
+                <section id="{813bb7c4-c5ff-4c5a-b6ab-c01101d7bbd8}" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{4ac67a81-bb43-d274-069e-d3aa48ac4002}" showlabel="true" locklevel="0" ordinalvalue="10000">
+                        <labels>
+                          <label description="Start Time" languagecode="1033" solutionaction="Added" />
+                          <label description="Date de début" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0774774d-4d35-bb09-91e8-6304220ba5bb}" showlabel="true" locklevel="0" ordinalvalue="10001">
+                        <labels>
+                          <label description="End Time" languagecode="1033" solutionaction="Added" />
+                          <label description="Date d’échéance" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{4899B6A9-00DC-46BF-B6C6-4809D6EAAA68}" labelid="{159df316-2418-45c4-90ff-6d082a6cefe7}" visible="false" ordinalvalue="10005" solutionaction="Modified">
+                        <labels>
+                          <label description="All Day Event" languagecode="1033" solutionaction="Added" />
+                          <label description="Journée entière" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                        <control id="isalldayevent" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="isalldayevent" disabled="false" uniqueid="{138e0888-0a27-3c1b-02d0-a050a653a088}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d926dea4-6519-522a-53b5-d45977e7d2a6}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10006" solutionaction="Modified">
+                        <labels>
+                          <label description="Duration" languagecode="1033" solutionaction="Added" />
+                          <label description="Durée" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                        <control id="scheduleddurationminutes" classid="{AA987274-CE4E-4271-A803-66164311A958}" datafieldname="scheduleddurationminutes" disabled="false" uniqueid="{53387c97-d600-b6e7-59e0-a9bdd56a5b6d}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b708ddd5-6d67-5689-795e-c19146c0b9de}" showlabel="true" locklevel="0" ordinalvalue="10002" solutionaction="Added">
+                        <labels>
+                          <label description="Meeting Status" languagecode="1033" />
+                        </labels>
+                        <control id="new_meetingstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_meetingstatus" disabled="false" uniqueid="{e518d607-ccac-167b-9e54-c634785178e0}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5920aac5-456b-1d3e-ac96-56a84db83a75}" showlabel="true" locklevel="0" ordinalvalue="10003" solutionaction="Added">
+                        <labels>
+                          <label description="Lobby Activity?" languagecode="1033" />
+                        </labels>
+                        <control id="new_lobbyactivity" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_lobbyactivity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ee60392-b0c8-db57-9ad5-85e8b6369d2e}" showlabel="true" locklevel="0" ordinalvalue="10004" solutionaction="Added">
+                        <labels>
+                          <label description="DPOH Subjects" languagecode="1033" />
+                        </labels>
+                        <control id="new_dpohsubjects" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="new_dpohsubjects" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%" id="2">
+              <sections>
+                <section id="{813bb7c4-c5ff-4c5a-b6ab-c01101d7bbd7}" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" ordinalvalue="0" solutionaction="Modified">
+                  <labels>
+                    <label description="Email Invitation" languagecode="1033" solutionaction="Added" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{44548c24-8e8e-41ea-13d4-81de04963459}" showlabel="false" locklevel="0" rowspan="10" ordinalvalue="10000" solutionaction="Modified">
+                        <labels>
+                          <label description="Description" languagecode="1033" solutionaction="Added" />
+                          <label description="Description" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" uniqueid="{b0d950ec-97e2-01d1-8b3a-ca650040ea06}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9a68993d-5c2b-7304-a741-c0aa97ab3738}" showlabel="true" locklevel="0" ordinalvalue="10001">
+                        <labels>
+                          <label description="Regarding" languagecode="1033" solutionaction="Added" />
+                          <label description="Concernant" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{56640e52-70ee-49ed-a093-a0ab575763e5}" showlabel="true" locklevel="0" visible="false" ordinalvalue="10002" solutionaction="Modified">
+                        <labels>
+                          <label description="Priority" languagecode="1033" solutionaction="Added" />
+                          <label description="Priorité" languagecode="1036" solutionaction="Added" />
+                        </labels>
+                        <control id="prioritycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" uniqueid="{9a22d9c5-5981-ab38-82b0-7b63b9e2d47d}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{5B7DA1D6-E65E-A356-2D63-E4414175EA30}" solutionaction="Modified">
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>isonlinemeeting</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>isonlinemeeting</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>isonlinemeeting</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Appointment quick create form." languagecode="1033" />
+      <LocalizedName description="Appointment quick create form." languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Appointment quick create form." languagecode="1033" />
+      <Description description="Appointment quick create form." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

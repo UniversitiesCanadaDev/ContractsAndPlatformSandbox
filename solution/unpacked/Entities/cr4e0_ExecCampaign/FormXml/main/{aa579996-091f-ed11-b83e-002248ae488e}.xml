@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{aa579996-091f-ed11-b83e-002248ae488e}</formid>
+    <IntroducedVersion>1.0.0.12</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighReadOnlyValues">
+      <tabs>
+        <tab name="tab_approver_general" id="7e7fe72e-5a11-4f2f-a443-d20aa80bc47c" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="null_section_3" id="e1235123-92f4-4ba6-bdb4-69b54311afc4" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{cd28bc5d-a9c0-44d5-9800-1686c720191d}">
+                  <labels>
+                    <label description="Campaign and Approvers" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8d5ff39c-e472-496b-9006-d90b49628a8c}" colspan="1" rowspan="1" labelid="{5f02e55f-1de3-4521-9183-bcf7e767bdff}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr4e0_name" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{95f51890-a2d9-46f1-b8ff-34198af0d87f}" locklevel="0" colspan="1" rowspan="3" auto="false" labelid="{b1b47406-5570-4b43-b57a-d446680870aa}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_campaigndescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="univcan_campaigndescription" disabled="true" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{2cfc206e-9026-4e86-8731-9f127e15a36f}" locklevel="0" colspan="1" rowspan="1" labelid="{e6ad0ea8-3be8-4465-830d-dc179b94cf70}" visible="false" showlabel="true">
+                        <labels>
+                          <label description="Campaign Type" languagecode="1033" />
+                        </labels>
+                        <control id="header_univcan_campaigntype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_campaigntype" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37176be7-c500-45cd-83ed-e71f184cc38b}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{e831ee06-ebc9-4eab-a534-41b67186c2b2}">
+                        <labels>
+                          <label description="Letter Template" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_lettertemplate" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="univcan_lettertemplate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_6" id="1c3c189c-f5ec-499f-a8ec-ef8b4d5bc477" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Letter and Email templates" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{11a17101-c242-40e1-802c-d9a4e58549d9}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="Letter and Email templates" languagecode="1033" />
+                          <label description="Documents" languagecode="1036" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_4" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{962F13D7-4EF7-EC11-82E5-002248AE488E}</ViewId>
+                            <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51},{962F13D7-4EF7-EC11-82E5-002248AE488E}</ViewIds>
+                            <RelationshipName>cr4e0_execcampaign_SharePointDocuments</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_general_section_6" id="c881173a-e4af-4580-8158-4aa1df7e41c2" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Approvers and Status" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d0536d11-3bac-4a28-8c33-8c36e85d8812}" locklevel="0" colspan="1" rowspan="1" labelid="{9f407fc7-6c8f-4281-8c25-6616bd1bac03}">
+                        <labels>
+                          <label description="Manager" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approvermanageruser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approvermanageruser" disabled="true" />
+                      </cell>
+                      <cell id="{7b1cca90-b22a-4231-a670-6b1e5e9bb95a}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Mail Merge -Approval Status - Manager" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_mailmergemanagerapprovalstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_mailmergemanagerapprovalstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{082d9597-a527-4cf5-b156-974e8478d050}" locklevel="0" colspan="1" rowspan="1" labelid="{a5e3d1dc-5b2f-4510-bfd2-ba26c2616f1f}">
+                        <labels>
+                          <label description="Director/VP" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approverdirectorvpuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approverdirectorvpuser" disabled="true" />
+                      </cell>
+                      <cell id="{a410714a-6bac-4b26-8a9e-1bbcfbb2357c}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Mail Merge -Approval Status - Director/VP" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_mailmergeapprovalstatusdirectorvp" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_mailmergeapprovalstatusdirectorvp" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26991988-8055-4f88-a847-dd975006a02a}" locklevel="0" colspan="1" rowspan="1" labelid="{7bf72dda-15e8-4cf1-b0ea-bc6873d1ce99}">
+                        <labels>
+                          <label description="Exec Office" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approverexecofficeuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approverexecofficeuser" disabled="true" />
+                      </cell>
+                      <cell id="{1c3f0064-357d-499c-9050-33c934631666}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Mail Merge -Approval Status - Exec Office" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_mailmergeapprovalstatusexecoffice" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_mailmergeapprovalstatusexecoffice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2809cd9e-fd06-4588-aaa5-ef77f05b00be}" locklevel="0" colspan="1" rowspan="1" labelid="{56d25c6c-f1be-4877-8d86-fa8896310a2c}">
+                        <labels>
+                          <label description="Exec Head" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approverexecheaduser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approverexecheaduser" disabled="true" />
+                      </cell>
+                      <cell id="{d5cd3e45-b6a1-484c-9df8-c1d1f68eed70}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Mail Merge -Approval Status - Exec Head" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_mailmergeapprovalstatusexechead" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_mailmergeapprovalstatusexechead" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e965e80-5127-49eb-a6ef-caa8f70fbd88}" locklevel="0" colspan="1" rowspan="1" labelid="{4f1abc59-06f2-422e-a9cf-519f17c9adc2}">
+                        <labels>
+                          <label description="CC User" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_ccuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_ccuser" disabled="true" />
+                      </cell>
+                      <cell locklevel="0" id="{4faa48f2-e7d8-4e31-bb10-3c0cb69c2bff}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_approver_general_section_7" id="8d7a00fd-a2fd-4b0a-9271-0101023d58bc" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{cd9bab44-ac3f-4485-bc67-2911b24d76fb}" rowspan="15" colspan="1">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false" uniqueid="{26464386-b024-039c-dc4c-3cb98544475b}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_approver_general_section_6" showlabel="false" showbar="false" locklevel="0" id="{ae9d71b9-1033-886e-02c5-17d5e889b695}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a0e81c85-03e2-016e-1742-96b443c46836}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_approver_general_section_5" showlabel="true" showbar="false" locklevel="0" id="{75eee673-32c3-96c5-6562-e510ccd854a9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Actions" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{32932863-d3c5-8015-ab73-4bba6d04cc11}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_name" disabled="false" uniqueid="{7cb17f89-8d03-4e65-a27f-7c023dd73ebf}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_4" id="2bb93513-5d10-4d12-8906-b70b0fe19d08" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{03e3da4a-0ae4-20bc-4b62-7ed3daab767d}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Tasks" languagecode="1033" />
+                          <label description="Tâches" languagecode="1036" />
+                        </labels>
+                        <control id="ExecCampaignApproverTask" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{2B5F5A5D-2D23-4FE7-AA58-E77995368AE7}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_cr4e0_execcampaign_task</RelationshipName>
+                            <TargetEntityType>task</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{2B5F5A5D-2D23-4FE7-AA58-E77995368AE7},{6CF285AA-EB20-4277-925A-3E9735411FF0}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="e09205e3-c363-430c-afdf-0478d4e5a406" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{a069594c-541e-4698-9df0-40b050592bc1}">
+          <labels>
+            <label description="Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" id="c760289a-9aeb-47de-b38f-af4fe190bf15" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{e07533a6-a404-4652-a61a-fc634f59ec8b}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9ad41186-6cd9-4167-916e-eb8942f61d51}" locklevel="0" colspan="1" rowspan="1" labelid="{43bb6c53-8424-4fb5-b922-d44aa9090aa4}">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{204664de-2df2-42aa-b926-e753d5835f46}" locklevel="0" colspan="1" rowspan="1" labelid="{bab3fd4f-5815-4572-9579-10e5a1f2dbe8}">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ad368b7-6a96-4016-87dc-d9c46b6af763}" locklevel="0" colspan="1" rowspan="1" labelid="{e6be9ba5-530b-4647-b35f-80e164072681}">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5f96f135-eb35-4f78-9384-5bdd815caa5d}" locklevel="0" colspan="1" rowspan="1" labelid="{61f2b023-698b-4966-a8bb-d27811930dbf}">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2663ba85-83a5-4668-93a4-daf7ecaf274c}" locklevel="0" colspan="1" rowspan="1" labelid="{1a1f736d-ad2d-43c1-850f-4b7ac8a2de8c}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{6a06cdcc-d683-3027-0344-69c4a0e53589}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b15a1096-2900-665d-2113-184c7e4d3e67}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{bcea3d38-5b01-4a0a-c6d4-5680648ab314}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c52a8737-7a9a-4a48-8786-fb2660df5db1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{380e368e-20bc-4b87-806d-49f9f021b35a}" showlabel="false" labelid="{bf0f0546-d8c7-4f7b-b0d1-545b9518ff4a}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e1a46c60-b33b-4294-8197-9d4c291e8746}" showlabel="false" labelid="{b475c30c-eba8-40b5-81d0-13477325a676}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{77e2c462-618f-4330-8373-5d683a728618}" showlabel="false" labelid="{2514f4ab-3a88-4c53-beba-a945de598cf4}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{7775db8b-4575-4fda-98f9-a321c82f801b}" labelid="{05883081-9b39-4789-a3be-cc96cb298720}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{425666b7-9767-4cf0-8b7e-6654af756e85}" labelid="{ed695df4-3fa9-4211-bdfc-ea5f6b43f076}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{b79bec6c-28f4-4e86-ad62-bddd353368dc}" labelid="{de7b778e-fc90-484e-a06a-0f7f3f1efd8a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{2bf1efa7-998f-4e79-8995-8e6233458021}" labelid="{5adf5a34-d9ce-4ea0-8c39-8f7d755ce4ba}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{f2ac060b-2400-432e-aa04-9854f96a7771}" labelid="{c05bf556-6105-43e4-b90a-5111148ca934}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{acb613a5-dea1-43f2-b7da-644a7c41c132}" locklevel="0" colspan="1" rowspan="1" labelid="{ae96b017-06e0-4064-ac40-6ceadf65cd40}">
+              <labels>
+                <label description="Active Stage" languagecode="1033" />
+              </labels>
+              <control id="header_univcan_activebpfstage" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="univcan_activebpfstage" disabled="true" />
+            </cell>
+            <cell id="{dbf4e8e2-bc22-4e20-94ba-f2b30351c261}" locklevel="0" colspan="1" rowspan="1" labelid="{be397af2-a6f2-4d73-b044-44c03ef95935}">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statuscode" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{b69f9c77-f645-4f56-89d9-ea596c2bdb03}" labelid="{539d3388-8173-4a6a-aaae-31842f78167e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a376ec7a-e9c2-4ab0-ab23-3a749a0b983b}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{25001c3c-a8f0-4c60-b3b4-178c016a0aa2}">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0d5daf7e-70d0-4890-ba23-aff8f502eb30}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{89343825-05c2-4d25-a943-3f31654c4e40}" showlabel="false" labelid="{c478e9fa-6bcb-497d-9cb6-ac284d62b3e1}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1b97a769-67d0-4563-aeb7-8e5b745b78f6}" showlabel="false" labelid="{c1df9b39-0c74-4690-82b5-67ce493531b9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c434ffab-e4de-4747-be5f-cde78906de8b}" showlabel="false" labelid="{4fa3cfa3-49c0-4c27-a9c4-8f5abe88e128}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <controlDescriptions>
+        <controlDescription forControl="{86c255d2-21e9-43bf-a2c1-a8bbb6fed39b}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>univcan_emailbodytemplate</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbodytemplate</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbodytemplate</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbodytemplate</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{7cb17f89-8d03-4e65-a27f-7c023dd73ebf}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>cr4e0_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>cr4e0_name</record>
+              <schema type="SingleLine.Text" static="true">{}</schema>
+              <entityName type="SingleLine.Text" static="true">Exec Campaign</entityName>
+              <appName type="SingleLine.Text" static="true">univcan_eccanvasappembeddedapproval_47ac3</appName>
+              <appId type="SingleLine.Text" static="true">f1877723-ee5d-4c81-9a1e-c6bf1ac7aab5</appId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>cr4e0_name</record>
+              <schema type="SingleLine.Text" static="true">{}</schema>
+              <entityName type="SingleLine.Text" static="true">Exec Campaign</entityName>
+              <appName type="SingleLine.Text" static="true">univcan_eccanvasappembeddedapproval_47ac3</appName>
+              <appId type="SingleLine.Text" static="true">f1877723-ee5d-4c81-9a1e-c6bf1ac7aab5</appId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Canvas.CanvasControl">
+            <parameters>
+              <record>cr4e0_name</record>
+              <schema type="SingleLine.Text" static="true">{}</schema>
+              <entityName type="SingleLine.Text" static="true">Exec Campaign</entityName>
+              <appName type="SingleLine.Text" static="true">univcan_eccanvasappembeddedapproval_47ac3</appName>
+              <appId type="SingleLine.Text" static="true">f1877723-ee5d-4c81-9a1e-c6bf1ac7aab5</appId>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="cr4e0_ExecCampaignForm.js" libraryUniqueId="{028e70bf-0b2f-4ed4-b131-86d358b22ff7}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="true" active="true" attribute="univcan_campaigntype">
+          <Handlers>
+            <Handler functionName="UC_EC.attributeOnChange" libraryName="cr4e0_ExecCampaignForm.js" handlerUniqueId="{73741e18-dbf9-4865-af4b-9f24c9afc630}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="UC_EC.approverFormOnLoad" libraryName="cr4e0_ExecCampaignForm.js" handlerUniqueId="{05cb8663-7f7e-4a46-a596-779f2d7916fe}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Exec Campaign Approver Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="This forms displays info for Approver" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

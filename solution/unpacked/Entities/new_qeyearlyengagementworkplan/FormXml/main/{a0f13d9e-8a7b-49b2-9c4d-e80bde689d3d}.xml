@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a0f13d9e-8a7b-49b2-9c4d-e80bde689d3d}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_7" id="{ae4b950e-4d39-c237-300b-a547307e003d}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_7_section_1" showlabel="false" showbar="false" locklevel="0" id="{e1210a67-4e3d-1bbb-7745-ebd2b6db2d10}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d8a377b3-4355-7380-89e8-d8a07322eabd}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Yearly CE Workplan" languagecode="1033" />
+                        </labels>
+                        <control id="new_yearlyceworkplanid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_yearlyceworkplanid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EB4D9A1-56DE-4756-8207-5C5DA92D8B02}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{e9be5dd6-92ad-1d3d-5a51-348a410e61c1}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Number of Scholarsip(s)" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="28%">
+              <sections>
+                <section name="tab_2_section_4" showlabel="true" showbar="true" locklevel="0" id="{c43c0292-32d4-6544-9a57-9a021c85e97d}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Budget &amp; 2015 Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5e185511-1d64-75e8-9993-4373b3d4975a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-2018 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesbudget" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesbudget" disabled="false" />
+                      </cell>
+                      <cell id="{b28e5c4b-d0c3-2bbc-de3c-0aa7d85a5674}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Feb-Mar 2015" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesfebmar2015" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesfebmar2015" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="44%">
+              <sections>
+                <section name="tab_2_section_5" showlabel="true" showbar="true" locklevel="0" id="{7ccac669-86e3-3d00-4bbb-d2481b374218}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8a800604-acce-85a4-70b9-0dd714b69775}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="1st. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qes1stquarter" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qes1stquarter" disabled="false" />
+                      </cell>
+                      <cell id="{9c71b1d5-93e8-a063-636b-739c769c8a09}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2nd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qes2ndquarter" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qes2ndquarter" disabled="false" />
+                      </cell>
+                      <cell id="{a4757629-e135-ec83-cc8c-e7c5479dbac8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="3rd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qes3rdquarter" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qes3rdquarter" disabled="false" />
+                      </cell>
+                      <cell id="{61660947-73b6-9e11-870c-9843d5156c98}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="4th. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qes4thquarter" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qes4thquarter" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="28%">
+              <sections>
+                <section name="tab_2_section_6" showlabel="true" showbar="true" locklevel="0" id="{339be4dd-aab4-ab38-55bb-67c332b90896}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7db8ced2-7d03-3401-1731-e17c74e21717}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesfy1617" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{ee056388-0937-be17-e195-640331e16bd8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesfy1718" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{0e2dba30-2a87-5c07-6699-4eca063a71de}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesaprdec2018" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="new_qesaprdec2018" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{2ae30843-eb91-490b-092c-01db9804a73d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="QES Contribution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="28%">
+              <sections>
+                <section name="tab_3_section_4" showlabel="true" showbar="true" locklevel="0" id="{4a4edd73-2bb1-1a22-90b0-e19ea19b86a5}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Budget &amp; 2015 Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{796ab220-917e-1ce1-963a-15c8eb1e846a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-2018 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_qecbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qecbudget" disabled="false" />
+                      </cell>
+                      <cell id="{d3982be9-ac4c-a391-3cc7-60c7a81430ca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Feb-Mar 2015" languagecode="1033" />
+                        </labels>
+                        <control id="new_qecfebmar2015" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qecfebmar2015" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="44%">
+              <sections>
+                <section name="tab_3_section_5" showlabel="true" showbar="true" locklevel="0" id="{a9c1c9a2-14a8-2995-57e8-752b30ec5e22}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ca7ee0c8-8ea1-1817-118a-dc52c4dd7c73}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="1st. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qec1stquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qec1stquarter" disabled="false" />
+                      </cell>
+                      <cell id="{a36d9430-c039-c417-1657-025883a982aa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2nd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qec2ndquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qec2ndquarter" disabled="false" />
+                      </cell>
+                      <cell id="{54a47c3a-6e6c-7c52-10b2-1d6aadde68b9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="3rd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qec3rdquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qec3rdquarter" disabled="false" />
+                      </cell>
+                      <cell id="{94a5ade4-6572-d405-517a-ed703969d4b2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="4th. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_qec4thquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qec4thquarter" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="28%">
+              <sections>
+                <section name="tab_3_section_6" showlabel="true" showbar="true" locklevel="0" id="{add30010-526d-b678-e2d5-eba152730a75}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4b0adb0d-cccd-2ccb-463d-727ae70800ba}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_qecfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qecfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{99556122-94cd-2dd9-26ac-18ba64ba72b1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qecfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qecfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{017c430d-78d1-037b-7b3b-578a43367847}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_qecaprdec2018" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_qecaprdec2018" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_4" id="{b9a926a8-3ed7-5d8e-a631-d3c67e3d2908}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="University Contribution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="28%">
+              <sections>
+                <section name="tab_4_section_4" showlabel="true" showbar="true" locklevel="0" id="{a5d61c90-77aa-84c0-0591-5526368e3ab0}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Budget &amp; 2015 Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{526231aa-ce6b-4dce-91bb-aec690ee3e14}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-2018 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ucbudget" disabled="false" />
+                      </cell>
+                      <cell id="{b7e15765-7308-cc61-8155-46e383502ae1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Feb-Mar 2015" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucfebmar2015" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ucfebmar2015" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="44%">
+              <sections>
+                <section name="tab_4_section_5" showlabel="true" showbar="true" locklevel="0" id="{43892ecc-ca45-72cd-4d4c-5cadba5785a0}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{10a53dc7-cacd-3757-1702-0c4b163c5566}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="1st. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_uc1stquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uc1stquarter" disabled="false" />
+                      </cell>
+                      <cell id="{cb4c9904-d61a-1bd6-edd9-30db1603b2c1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2nd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_uc2ndquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uc2ndquarter" disabled="false" />
+                      </cell>
+                      <cell id="{8c817330-20ba-40d9-70ce-4c3055d56e53}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="3rd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_uc3rdquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uc3rdquarter" disabled="false" />
+                      </cell>
+                      <cell id="{47ce9c24-077e-c9a0-de93-3c4e06472e74}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="4th. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_uc4thquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_uc4thquarter" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="28%">
+              <sections>
+                <section name="tab_4_section_6" showlabel="true" showbar="true" locklevel="0" id="{834a50e8-ca67-9c76-0591-b2943986ded2}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b004670b-9336-9ae6-3eb4-7e3c733cc1ce}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ucfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{61396d51-d740-9cbc-307d-5ab8405db068}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ucfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{e8eeae6a-e112-3561-7a95-e562c9a59130}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_ucaprdec2018" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_ucaprdec2018" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{6a5c0417-dd13-8c4c-a23a-c3d68b70e7a8}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Scholar Contribution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="28%">
+              <sections>
+                <section name="tab_5_section_4" showlabel="true" showbar="true" locklevel="0" id="{bd799bd8-db42-9671-9a3e-6e04740b256e}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Budget &amp; 2015 Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{96c4a608-6c54-d2b2-5ca1-830d8569551d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2015-2018 Budget" languagecode="1033" />
+                        </labels>
+                        <control id="new_scbudget" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_scbudget" disabled="false" />
+                      </cell>
+                      <cell id="{5eec4532-8908-0755-abc7-2c02c4d273da}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Feb-Mar 2015" languagecode="1033" />
+                        </labels>
+                        <control id="new_scfebmar2015" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_scfebmar2015" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="44%">
+              <sections>
+                <section name="tab_5_section_5" showlabel="true" showbar="true" locklevel="0" id="{ee905a13-b574-5361-054c-2d1d7932b011}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Quarterly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3d2593bb-2d64-b40a-8bae-0e07929424a7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="1st. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_sc1stquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_sc1stquarter" disabled="false" />
+                      </cell>
+                      <cell id="{d41ed640-35cb-6cae-e868-3d9d42805695}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2nd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_sc2ndquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_sc2ndquarter" disabled="false" />
+                      </cell>
+                      <cell id="{db16d314-6c47-6c4c-ded4-2420789e7d27}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="3rd. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_sc3rdquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_sc3rdquarter" disabled="false" />
+                      </cell>
+                      <cell id="{caaeb25a-9867-d5d7-e691-49d233bd216c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="4th. Quarter" languagecode="1033" />
+                        </labels>
+                        <control id="new_sc4thquarter" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_sc4thquarter" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="28%">
+              <sections>
+                <section name="tab_5_section_6" showlabel="true" showbar="true" locklevel="0" id="{bc0a1584-7306-eaea-c1a8-e00d2944556c}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="C E Yearly Forecast" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{438984ab-e2bb-e979-077c-a7308e4612d9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2016-2017" languagecode="1033" />
+                        </labels>
+                        <control id="new_scfy1617" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_scfy1617" disabled="false" />
+                      </cell>
+                      <cell id="{e94ab769-3a60-2a2e-5d8b-be698067498d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="2017-2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_scfy1718" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_scfy1718" disabled="false" />
+                      </cell>
+                      <cell id="{72d4ab65-757c-a680-91bc-a90c1e08c426}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Apr-Dec 2018" languagecode="1033" />
+                        </labels>
+                        <control id="new_scaprdec2018" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="new_scaprdec2018" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{69daf16c-9e8f-4f86-adb8-d0d320003667}" IsUserDefined="1" name="{69daf16c-9e8f-4f86-adb8-d0d320003667}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="false" showbar="false" locklevel="0" id="{66aa9444-dabc-6ac8-09da-d98e4e8929c1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{192a2092-3b4e-48d0-a2e1-6998cfd18633}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2d19e049-779f-4fac-9d42-f1b44ab51ff1}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{42eb2d15-8b58-4c5b-9590-3fec30f6f661}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{95b28a1e-57e0-498a-8fd4-3a0842006633}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{ee21db30-a441-4122-85a0-b2899c063189}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8cad5ca5-9f77-42ad-bdc2-4e0657b444ae}" columns="111">
+        <rows>
+          <row>
+            <cell id="{a1d2480b-cd46-4882-93ca-0f18a9946e18}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1763e459-e6a7-4a63-ad23-9764d1f8d5c3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3bcb1ebc-55c7-6ba3-63d9-601d239a723e}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Fiscal Year" languagecode="1033" />
+              </labels>
+              <control id="header_new_fiscalyear" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_fiscalyear" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_YearlyEngagementFormJS" libraryUniqueId="{84b5cda1-9c4b-d2b1-1102-c0b6880b93b3}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="new_YearlyEngagementFormJS" handlerUniqueId="{960d5b6b-827d-cab7-29e3-4c742321b817}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

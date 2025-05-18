@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{939d9171-7353-4dc7-804e-cbb31a2b2448}</savedqueryid>
+    <queryapi></queryapi>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" preview="1" icon="1">
+        <row name="result" id="activityid">
+          <cell name="scheduledstart" width="100" />
+          <cell name="subject" width="250" />
+          <cell name="new_meetingstatus" width="100" />
+          <cell name="requiredattendees" disableSorting="1" width="150" />
+          <cell name="new_briefinglead" width="100" />
+          <cell name="new_briefingnotelink" width="100" />
+          <cell name="instancetypecode" width="100" ishidden="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="appointment">
+          <attribute name="subject" />
+          <attribute name="scheduledstart" />
+          <attribute name="instancetypecode" />
+          <attribute name="requiredattendees" />
+          <attribute name="new_briefingnotelink" />
+          <attribute name="new_briefinglead" />
+          <attribute name="new_meetingstatus" />
+          <order attribute="scheduledstart" descending="true" />
+          <filter type="and">
+            <condition attribute="new_meetingstatus" operator="eq" value="100000000" />
+          </filter>
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Completed Meetings" languagecode="1033" />
+      <LocalizedName description="Mes rendez-vous terminés" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Displays all completed Appointments." languagecode="1033" />
+      <Description description="Affiche les rendez-vous terminés que possède l'utilisateur actuel." languagecode="1036" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

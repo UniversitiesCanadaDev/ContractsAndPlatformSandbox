@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fe7d6a04-bef5-4184-b627-4bbfe0ea2316}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_boardmember" id="new_boardmemberid">
+          <cell name="new_name" width="200" />
+          <cell name="new_startdate" width="100" />
+          <cell name="new_enddate" width="100" />
+          <cell name="new_term" width="75" />
+          <cell name="new_currentmember" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_boardmember">
+          <attribute name="new_boardmemberid" />
+          <attribute name="new_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_currentmember" />
+          <attribute name="new_startdate" />
+          <attribute name="new_enddate" />
+          <attribute name="new_term" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Board Member Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

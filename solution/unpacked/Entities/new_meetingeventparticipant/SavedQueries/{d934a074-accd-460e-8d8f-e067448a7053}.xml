@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d934a074-accd-460e-8d8f-e067448a7053}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row id="new_meetingeventparticipantid" name="result">
+          <cell name="new_participant" width="125" />
+          <cell name="new_primarymeetingcontact" width="100" />
+          <cell name="new_name" width="300" />
+          <cell name="new_typeofrecord" width="100" />
+          <cell name="new_startdate" width="150" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_meetingeventparticipant">
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition value="{0}" attribute="new_participant" operator="like" />
+            <condition value="{0}" attribute="new_name" operator="like" />
+          </filter>
+          <attribute name="new_participant" />
+          <attribute name="new_typeofrecord" />
+          <attribute name="new_startdate" />
+          <attribute name="new_primarymeetingcontact" />
+          <attribute name="new_meetingeventparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Meeting or Event Participants" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

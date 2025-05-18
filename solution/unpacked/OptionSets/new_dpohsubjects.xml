@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_dpohsubjects" localizedName="DPOH Subjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName>DPOH Subjects</ExternalTypeName>
+  <displaynames>
+    <displayname description="DPOH Subjects" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000000" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Aboriginal Affairs" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Arts and Culture" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Budget" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Climate" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000005" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Economic Development" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000006" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Education" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000008" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Employment and Training" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000010" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Environment" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000011" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Health" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000012" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Housing" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000013" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Immigration" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000014" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Industry" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000015" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Infrastructure" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000016" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Intellectual Property" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000026" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="International Development" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000018" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="International Relations" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000019" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="International Trade" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000027" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Municipalities" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000024" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="National Security/Security" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000020" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Privacy and Access to Information" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000021" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Regional Development" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000022" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Research and Development" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000023" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Science and Technology" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000028" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Telecommunications" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{eefeff8c-1edd-41e0-b7de-ab2ab52cb80b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_2" id="{c08b8230-d394-9241-1719-b2797859196a}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Contact's Event Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{a8727c9a-6316-8e7b-9b80-2026b4668ab5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bb3c8a69-ba4e-1789-9e84-cd02a64961a4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_event_lookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_event_lookup" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{8C0BEF73-4D2D-49F5-B81C-57AD2AA3DF80}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eeb25649-ab75-b2e0-bb76-c62071150727}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event Invite Response" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventinvite" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_eventinvite" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0de9398d-28d7-7846-59c8-3ab654aaa177}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event Attendance" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventattendance" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_eventattendance" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e099209-133b-1dd8-ebce-77e3e55539ce}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Participation" languagecode="1033" />
+                        </labels>
+                        <control id="new_participation" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_participation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{50bd0b8b-7ced-5dec-c932-12ce2560b756}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of invite" languagecode="1033" />
+                        </labels>
+                        <control id="new_typeofinvite" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_typeofinvite" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c6e4cc25-7906-a6cc-2b12-29268ae339d3}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d52c9858-2520-c289-b850-71a478666983}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_contact_new_eventid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_contact_new_eventid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{b94f20cf-0507-4bd8-8db8-5fffdef4fe81}_section_4" showlabel="false" showbar="false" locklevel="0" id="{b65879d9-9294-b144-8d2c-2cc11db323a9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{75b91b1c-e16a-e293-cddb-516996460e2b}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Invite Paragraph" languagecode="1033" />
+                        </labels>
+                        <control id="new_inviteparagraph" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_inviteparagraph" disabled="false" />
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section showlabel="true" showbar="true" id="{4220ef33-4866-454a-a54a-b0b604027a94}" IsUserDefined="0" height="auto" name="{4220ef33-4866-454a-a54a-b0b604027a94}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="5" auto="false" id="{1902b5ef-caab-4787-b012-786973b93b7a}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{b94f20cf-0507-4bd8-8db8-5fffdef4fe81}" IsUserDefined="1" name="{b94f20cf-0507-4bd8-8db8-5fffdef4fe81}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{01fb3da4-9729-45ee-91de-b24bfb6c1c74}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{24bb4687-ab66-782a-3c02-915c8ca76c49}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventstartdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_eventstartdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{115c59aa-2ac9-6a03-37ab-c5908608d276}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event End Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventenddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_eventenddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ea8e5624-cff2-47d9-959a-1a48e7a6b3e4}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4bf073d1-b554-4e71-8143-8456008a7d03}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Event" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d477c7ce-d3e3-d43c-c555-229562534cb3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Migrate to Event Participant" languagecode="1033" />
+                        </labels>
+                        <control id="new_migratetoeventparticipant" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="new_migratetoeventparticipant" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{b94f20cf-0507-4bd8-8db8-5fffdef4fe81}_section_2" showlabel="false" showbar="false" locklevel="0" id="{e51e1e0c-8a08-5774-10c9-193512ceb91d}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1cb45221-6a39-711d-7d16-0b457db70534}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Host Institution" languagecode="1033" />
+                        </labels>
+                        <control id="new_hostinstitution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_hostinstitution" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d53423ae-1184-1ce9-4c28-63784e1e39db}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Host Faculty" languagecode="1033" />
+                        </labels>
+                        <control id="new_hostfaculty" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_hostfaculty" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6d240ee-51a0-6554-9c97-9339495ea2bd}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Host City" languagecode="1033" />
+                        </labels>
+                        <control id="new_hostcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_hostcity" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{159da347-9d26-7615-ee11-b841a3114414}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Main Event" languagecode="1033" />
+                        </labels>
+                        <control id="new_mainevent" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_mainevent" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{8C0BEF73-4D2D-49F5-B81C-57AD2AA3DF80}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <footer id="{5749f305-673f-4fc7-8c5c-30a3404af16f}" columns="111">
+        <rows>
+          <row>
+            <cell id="{4a9c743a-1772-5758-4ada-278209407e5b}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="footer_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+            </cell>
+            <cell id="{0bd2946a-a5d4-4376-1627-4450aa1ecb0b}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control id="footer_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="true" />
+            </cell>
+            <cell id="{5282aade-bf2b-4ae5-9d01-f1a620ced8d8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+          <row>
+            <cell id="{09c98bee-82de-83b9-598e-e627e9ab43d0}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" />
+            </cell>
+            <cell id="{b9a16951-a7c9-ceb1-e44b-02ac91a91cb1}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+            <cell id="{2665dabe-7dcb-0310-ccd6-b00496a9b6b3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_EventLookupNameToNew_Name" libraryUniqueId="{d955c655-7e23-360e-ddc6-aa417e3ec33c}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_event_lookup">
+          <Handlers>
+            <Handler handlerUniqueId="{2a1813e9-8c47-7cac-7612-35417b5d6043}" functionName="OnChange" libraryName="new_EventLookupNameToNew_Name" enabled="true" passExecutionContext="false" parameters="" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

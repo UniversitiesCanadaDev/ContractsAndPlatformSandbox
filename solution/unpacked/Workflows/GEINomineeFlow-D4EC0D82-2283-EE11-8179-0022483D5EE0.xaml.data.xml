@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{d4ec0d82-2283-ee11-8179-0022483d5ee0}" Name="GEI Nominee Flow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/GEINomineeFlow-D4EC0D82-2283-EE11-8179-0022483D5EE0.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>new_gei_nominee_flow</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>new_globalexcellenceinitiative</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="GEI Nominee Flow" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{899d082a-6af9-4d87-b6b1-0b7e8e1e5781}">
+      <label languagecode="1033" description="Pending Nomination" />
+    </steplabels>
+    <steplabels id="{aba90d57-d9c9-4c97-9360-000c5b4c8197}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{9fe6f160-dfc0-40d3-a988-1392c96ac0c8}">
+      <label languagecode="1033" description="Submitted Nomination" />
+    </steplabels>
+    <steplabels id="{fbfdaa5f-3b78-442b-9d68-2be5e8b5cd90}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{99bc04f8-de5a-41a6-ae22-4e1dff867cfd}">
+      <label languagecode="1033" description="Review" />
+    </steplabels>
+    <steplabels id="{8cdac2db-6bb4-496b-ab14-d8d551cf5306}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{b4dd1c4b-a757-40c4-b18e-4ae120fa395d}">
+      <label languagecode="1033" description="Review Submitted" />
+    </steplabels>
+    <steplabels id="{163a4e79-4d14-4592-abc3-cbae89f61a55}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+    <steplabels id="{7f416980-42f6-44c4-94f0-caebd85756c8}">
+      <label languagecode="1033" description="Nomination Complete" />
+    </steplabels>
+    <steplabels id="{3054f906-971a-42f1-ba8b-6665a85f4dca}">
+      <label languagecode="1033" description="Status" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers />
+</Workflow>

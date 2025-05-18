@@ -1,0 +1,13 @@
+function RefreshStaffGrid()
+{
+//var grid = Xrm.Page.getControl("MPRoles");
+var grid = Xrm.Page.ui.controls.get("Officestaff");
+
+if(!grid)
+{
+ alert("grid not found");
+ return;
+}
+alert(grid.refresh); //should display a function
+grid.refresh();
+}

@@ -1,0 +1,49 @@
+function OnChange() 
+{
+// alert("Change");
+var value = Xrm.Page.getAttribute("new_typeofrecord").getValue();
+if(value == 100000000) //Meeting
+{
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_4_section_1").setVisible(true);
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_3_section_3").setVisible(false);
+
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_1").setVisible(true);
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_2").setVisible(true);
+
+}
+else if(value == 100000001) //Event
+{
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_3_section_3").setVisible(true);
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_4_section_1").setVisible(false);
+
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_1").setVisible(false);
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_2").setVisible(false);
+
+}
+}
+
+function OnLoad() 
+{
+// alert("Load");
+var value = Xrm.Page.getAttribute("new_typeofrecord").getValue();
+if(value == 100000000)  //Meeting
+{
+// alert("Meeting");
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_4_section_1").setVisible(true);
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_3_section_3").setVisible(false);
+
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_1").setVisible(true);
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_2").setVisible(true);
+
+}
+else if(value == 100000001) //Event
+{
+// alert("Event");
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_3_section_3").setVisible(true);
+Xrm.Page.ui.tabs.get("tab_3").sections.get("tab_4_section_1").setVisible(false);
+
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_1").setVisible(false);
+Xrm.Page.ui.tabs.get("tab_9").sections.get("tab_9_section_2").setVisible(false);
+
+}
+}

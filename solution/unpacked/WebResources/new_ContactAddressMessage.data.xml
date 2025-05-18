@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{fdc37e66-3b98-e911-80c3-0050569a785d}</WebResourceId>
+  <Name>new_ContactAddressMessage</Name>
+  <DisplayName>Contact Address from Account Message</DisplayName>
+  <Description>Tells user address will update from Account when record is Saved </Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_ContactAddressMessageFDC37E66-3B98-E911-80C3-0050569A785D</FileName>
+</WebResource>

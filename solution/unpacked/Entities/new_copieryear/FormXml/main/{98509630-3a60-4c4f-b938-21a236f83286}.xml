@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{98509630-3a60-4c4f-b938-21a236f83286}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_2" id="{7030449e-5342-875b-8706-022b32ba9a57}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Copier List" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{ed2703dc-9860-2dbb-7350-d259610088b1}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{66965235-3715-37ee-7c22-456742c24827}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Year" languagecode="1033" />
+                        </labels>
+                        <control id="new_year" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_year" disabled="false" />
+                      </cell>
+                      <cell id="{7b3030b0-a58e-b50d-41a6-5eeac5c160a8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{4db6c0ac-b4ed-6d5b-6455-13270838ac0a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{84b3d0b1-b816-60c2-3e33-bdeca110a82b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{db984c04-3c75-15dc-a28b-7cc7003721c8}" showlabel="false" colspan="4" auto="false" rowspan="12">
+                        <labels>
+                          <label description="Copier Stats (CopystatsbyYear)" languagecode="1033" />
+                        </labels>
+                        <control id="Stats" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{06569366-cc15-094b-0ebc-c6d10863b45b}">
+                          <parameters>
+                            <ViewId>{6DE22720-11C8-481C-B69E-37DAF6B5C275}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_copieryear_new_copierstats</RelationshipName>
+                            <TargetEntityType>new_copierstats</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{6DE22720-11C8-481C-B69E-37DAF6B5C275}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode />
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{cbaa35a8-5b92-4449-b959-dc13b3be10c7}" IsUserDefined="1" name="{cbaa35a8-5b92-4449-b959-dc13b3be10c7}" locklevel="0" expanded="false" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{21dea03e-8e21-44bd-a813-2b3f803673c1}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a1ca3cab-a078-4cfd-b048-82acb2759af6}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b32e6c67-e2c1-093b-44bb-41ca34074211}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="CopierbyYear" languagecode="1033" />
+                        </labels>
+                        <control id="new_copierbyyearid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_copierbyyearid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{51e428f3-9f6d-4c2c-b72f-76fbf83fbf43}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="5" auto="false" id="{61a94fa0-ba49-4f14-b1ef-74dd4ad8d03f}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_CopyYearLookuptoName" libraryUniqueId="{16d5534d-7aee-1405-dab7-250621d2a225}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_year">
+          <Handlers>
+            <Handler functionName="onchange" libraryName="new_CopyYearLookuptoName" handlerUniqueId="{23c57ca6-cade-61b6-ed56-04c3d3a165d5}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

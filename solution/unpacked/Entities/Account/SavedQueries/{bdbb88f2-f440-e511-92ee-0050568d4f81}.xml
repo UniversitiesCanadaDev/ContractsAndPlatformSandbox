@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{bdbb88f2-f440-e511-92ee-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="name">
+        <row id="accountid" name="result">
+          <cell name="name" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="websiteurl" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_linktodcu" width="300" />
+          <cell name="new_region" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="account">
+          <attribute name="new_linktodcu" />
+          <attribute name="websiteurl" />
+          <order descending="false" attribute="name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="new_membership" operator="eq" value="100000000" />
+          </filter>
+          <attribute name="new_region" />
+          <attribute name="accountid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Member Organizations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

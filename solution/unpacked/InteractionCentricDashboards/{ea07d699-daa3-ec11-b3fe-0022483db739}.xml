@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<InteractionCentricDashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="UC App Dashboard 2" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{ea07d699-daa3-ec11-b3fe-0022483db739}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="interactioncentricdashboard">
+      <form>
+        <tabs filterby="new_checkoutdateshort" timeframe="4" primaryentitylogicalname="new_deskreservations" entityview="{385AE3DC-2EEC-42EE-9F97-2C4DDA52F06E}" dashboardCategory="1_1" tilespresent="false">
+          <tab showlabel="true" verticallayout="true" collapsible="true" id="{073c4ef5-a47a-499c-a9e0-7b8921122f37}">
+            <labels>
+              <label description="Visual Filters" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section name="VisualFilters" showlabel="false" showbar="false" columns="1111" id="{9b3448f5-d376-4651-a890-ecaca742026e}">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="1" rowspan="12" showlabel="false" ispreviewcell="true" ischartcell="true" id="{61cc53f1-3c12-415d-adc9-90a338a43261}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ispreviewcell="true" ischartcell="true" id="{9b9d58bc-92b5-40f5-b07d-6b0c41147f32}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ispreviewcell="true" ischartcell="true" id="{0c4cf3cc-a24b-4304-9fef-b803a4627dc4}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" ispreviewcell="true" ischartcell="true" id="{e0477203-966f-4090-b2d2-d415b7d091af}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+          <tab name="StreamsContainer" showlabel="true" verticallayout="true" collapsible="false" id="{61220bc9-fd81-4cf1-be70-dd6c1c050657}">
+            <labels>
+              <label description="Streams" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section name="Streams" showlabel="false" showbar="false" columns="1111" id="{f001d995-a8c0-4557-abf3-c895d05bd817}">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="4" rowspan="12" showlabel="false" isstreamcell="true" id="{fcd67118-237d-4f79-b4ea-e6d0d39b18dd}">
+                          <labels>
+                            <label description="" languagecode="1033" />
+                          </labels>
+                          <control id="Component{8e327a9a-8a30-2b13-17d8-d83671ad1e9e}" classid="{EE9078C8-6946-4E2C-B8F8-35E65F4BE6A8}">
+                            <parameters>
+                              <StreamObjects>
+                                <ShowAsTiles>false</ShowAsTiles>
+                                <StreamObject id="{d43a2994-e231-1918-7569-5bd5c75876b3}" type="1">
+                                  <LogicalEntityName>new_deskreservations</LogicalEntityName>
+                                  <EntityViewId>{367372e1-d6a3-ec11-b3fe-0022483e175c}</EntityViewId>
+                                </StreamObject>
+                                <StreamObject id="{a78cc851-eb84-d89b-3b39-34c6db0b3d98}" type="1">
+                                  <LogicalEntityName>new_deskreservations</LogicalEntityName>
+                                  <EntityViewId>{51405811-D7A3-EC11-B3FE-0022483E175C}</EntityViewId>
+                                </StreamObject>
+                                <StreamObject id="{a6514a5d-c048-2297-2457-65ce996b9de6}" type="1">
+                                  <LogicalEntityName>new_deskreservations</LogicalEntityName>
+                                  <EntityViewId>{DF4EAC3B-D7A3-EC11-B3FE-0022483E175C}</EntityViewId>
+                                </StreamObject>
+                              </StreamObjects>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</InteractionCentricDashboard>

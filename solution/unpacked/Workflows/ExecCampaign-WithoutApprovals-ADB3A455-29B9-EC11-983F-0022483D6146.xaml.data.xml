@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{adb3a455-29b9-ec11-983f-0022483d6146}" Name="Exec Campaign - Without Approvals" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ExecCampaign-WithoutApprovals-ADB3A455-29B9-EC11-983F-0022483D6146.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>0</StateCode>
+  <StatusCode>1</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>univcan_execcamapi</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.8</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>cr4e0_ExecCampaign</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Exec Campaign - Without Approvals" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{ab837e72-79de-4dd2-a42e-ca1fa59242f1}">
+      <label languagecode="1033" description="Setup" />
+    </steplabels>
+    <steplabels id="{fefb4f1b-a7ec-4dfa-aa53-791cd1015034}">
+      <label languagecode="1033" description="Upload Letter " />
+    </steplabels>
+    <steplabels id="{4504dffb-24ac-4825-874e-fe48159abd2e}">
+      <label languagecode="1033" description="Enter a Campaign Name" />
+    </steplabels>
+    <steplabels id="{58916656-f6e7-4e05-b472-1c57416642ae}">
+      <label languagecode="1033" description="Enter a Campaign Name" />
+    </steplabels>
+    <steplabels id="{43872c9f-85bc-4a4d-abf6-db8f8d33575a}">
+      <label languagecode="1033" description="Segment" />
+    </steplabels>
+    <steplabels id="{c183f4cd-b282-4ba6-af8a-a38c1b3eab2d}">
+      <label languagecode="1033" description="Letter Date" />
+    </steplabels>
+    <steplabels id="{38b5124b-f7de-4bb4-8654-64533a7fa4b0}">
+      <label languagecode="1033" description="Letter Address Block" />
+    </steplabels>
+    <steplabels id="{8a8b87b8-ed4d-4ab9-bf95-a7c177e880f3}">
+      <label languagecode="1033" description="Set From Email Address" />
+    </steplabels>
+    <steplabels id="{6f737e2b-78b1-4323-af12-b203e900e472}">
+      <label languagecode="1033" description="Set Reply To Email Address" />
+    </steplabels>
+    <steplabels id="{534b3ce6-c3dc-45fe-86b6-13477802026f}">
+      <label languagecode="1033" description="Set Email Subject" />
+    </steplabels>
+    <steplabels id="{80cdc7b1-a23a-4d7f-b30f-fa4e352f8512}">
+      <label languagecode="1033" description="Email Body" />
+    </steplabels>
+    <steplabels id="{fc7c1f29-0971-4bd7-9b5b-06cf830876e0}">
+      <label languagecode="1033" description="Run Merge" />
+    </steplabels>
+    <steplabels id="{8564eb43-1449-4c8e-93e6-c7ee2f545875}">
+      <label languagecode="1033" description="Create Correspondences" />
+    </steplabels>
+    <steplabels id="{f1c9a129-b225-413f-a4de-764b94600369}">
+      <label languagecode="1033" description="Create Pdfs" />
+    </steplabels>
+    <steplabels id="{2353fa57-61bb-4683-a78c-361a1597eb02}">
+      <label languagecode="1033" description="Generate PDF Attachments" />
+    </steplabels>
+    <steplabels id="{d6dbb0c7-e541-4f17-bf55-9de01b548d98}">
+      <label languagecode="1033" description="Send !" />
+    </steplabels>
+    <steplabels id="{b5bdb678-2535-4177-a372-e57cd1e94207}">
+      <label languagecode="1033" description="Send Correspondences" />
+    </steplabels>
+    <steplabels id="{4e2b2ccd-0541-4622-b919-1a723ea8393a}">
+      <label languagecode="1033" description="Completed" />
+    </steplabels>
+    <steplabels id="{70f4651f-cc31-46cd-a264-e2c865a872ec}">
+      <label languagecode="1033" description="Campaign Status" />
+    </steplabels>
+  </labels>
+  <ProcessTriggers />
+</Workflow>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{6b92c842-8988-e511-b859-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_projectid">
+          <cell name="new_qesprojecttype" width="100" />
+          <cell name="new_projectcode" width="100" />
+          <cell name="new_university" width="150" />
+          <cell name="a_b6ac7d40b10fe511b4170050568d4f81.new_name" width="150" disableSorting="1" />
+          <cell name="a_b6ac7d40b10fe511b4170050568d4f81.new_projectname" width="150" disableSorting="1" />
+          <cell name="new_recommendedforfunding" width="100" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_project">
+          <order attribute="new_university" descending="false" />
+          <attribute name="new_university" />
+          <link-entity alias="a_b6ac7d40b10fe511b4170050568d4f81" name="new_qesfilenames" from="new_qesfilenamesid" to="new_filenamesid" link-type="outer" visible="false">
+            <attribute name="new_name" />
+            <attribute name="new_projectname" />
+          </link-entity>
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="new_recommendedforfunding" />
+          <attribute name="new_qesprojecttype" />
+          <attribute name="new_projectcode" />
+          <attribute name="new_projectid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="QES project full view" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="To display all important related data items " languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

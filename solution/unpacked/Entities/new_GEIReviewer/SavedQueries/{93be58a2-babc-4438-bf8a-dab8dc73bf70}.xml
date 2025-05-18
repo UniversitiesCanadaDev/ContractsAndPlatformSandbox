@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{93be58a2-babc-4438-bf8a-dab8dc73bf70}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_geireviewerid">
+          <cell name="new_name" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_areaofexpertise" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_c0c1f91b13a3ed11aad10022483d89ba.new_nomineeresearcher" width="100" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_c0c1f91b13a3ed11aad10022483d89ba.new_awards" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_conflictofinterestformrecvd" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_dossiersent" width="100" />
+          <cell name="new_requestsent" width="100" />
+          <cell name="a_c0c1f91b13a3ed11aad10022483d89ba.new_deadlineforreview" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_reviewreceived" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_geireviewer">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_reviewreceived" />
+          <attribute name="new_requestsent" />
+          <attribute name="new_dossiersent" />
+          <attribute name="new_conflictofinterestformrecvd" />
+          <attribute name="new_areaofexpertise" />
+          <link-entity alias="a_c0c1f91b13a3ed11aad10022483d89ba" name="new_globalexcellenceinitiative" from="new_globalexcellenceinitiativeid" to="new_globalexcellenceinitiative" link-type="outer" visible="false">
+            <attribute name="new_awards" />
+            <attribute name="new_nomineeresearcher" />
+            <attribute name="new_deadlineforreview" />
+          </link-entity>
+          <attribute name="new_geireviewerid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active GEI Reviewers" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

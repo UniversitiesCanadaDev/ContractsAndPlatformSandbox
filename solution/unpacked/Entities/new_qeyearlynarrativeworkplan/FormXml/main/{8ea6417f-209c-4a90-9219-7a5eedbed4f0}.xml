@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8ea6417f-209c-4a90-9219-7a5eedbed4f0}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_6" id="{9c2b4253-d274-4006-ada3-e60dbe1b0781}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="false" showbar="false" locklevel="0" id="{d0ee8980-7ad1-18be-9e60-041bb39dcb9c}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{629c5693-b7c4-6558-e228-a4a1dd992c7a}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Q.E. Project Workplans" languagecode="1033" />
+                        </labels>
+                        <control id="new_qeprojectworkplansid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_qeprojectworkplansid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EB4D9A1-56DE-4756-8207-5C5DA92D8B02}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d454cc9c-0831-45e9-b0a3-f046847d6fbb}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_7" id="{296cd14c-94a1-4d0a-72e7-a51e04884c0c}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_7_section_1" showlabel="false" showbar="false" locklevel="0" id="{524950bc-055a-265d-7db8-98111acd6c45}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{951cc5b3-8e76-8ca5-c36d-4b29272ca99c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Canadian University" languagecode="1033" />
+                        </labels>
+                        <control id="new_universitylookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_universitylookup" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_7_section_2" showlabel="false" showbar="false" locklevel="0" id="{3a19c639-4a56-716d-a2ac-15e57ccad9e0}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cae258bb-8566-dcae-3866-88e5aab2708c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="File Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_filenamelookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_filenamelookup" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{c96a92e9-4549-2a6b-c206-3cec76465776}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="1. A summary of the goal and objectives of the Project." languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="true" locklevel="0" id="{93e32ee9-b0ac-1b2e-9a90-36eaa2a4e918}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{950b4d38-e44d-cc41-e62b-eae37aaebac6}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Project Summary" languagecode="1033" />
+                        </labels>
+                        <control id="new_projectsummary" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_projectsummary" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{ca66aa67-6ea1-716c-6570-c61040a13208}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="2. Provide a summary of key activities and expected results per Project Component for the upcoming year" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="true" locklevel="0" id="{c657627a-8beb-42ac-c8e4-97a8a4dd8c3b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b7024029-da83-dd17-c356-45118554809e}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Activities &amp; Results" languagecode="1033" />
+                        </labels>
+                        <control id="new_activitiesandresults" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_activitiesandresults" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_4" id="{674a6dd3-dcd1-a64d-84d4-09c92014c10c}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="3. A list of all planned scholarships for the year." languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" showlabel="false" showbar="true" locklevel="0" id="{2d79ee86-66bd-6920-9931-2b6a34b8704c}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{14aa6208-b4d5-c48a-280e-48511a0a18c2}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Planned Scholarships" languagecode="1033" />
+                        </labels>
+                        <control id="new_plannedscholarships" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_plannedscholarships" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{50892789-49d2-7da4-79c4-8d2b4466dea9}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="4. Describe your gender strategy and how you will target a 50% gender balance of female and male students." languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="true" locklevel="0" id="{dec84679-bee1-2b44-37b4-7b51e251d609}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aaee4900-ade5-7ca3-b098-c842a2020ca0}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Gender Strategy" languagecode="1033" />
+                        </labels>
+                        <control id="new_genderstrategy" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_genderstrategy" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{67aec98f-af0f-4a96-9cb0-1f1bc394b22f}" IsUserDefined="1" name="{67aec98f-af0f-4a96-9cb0-1f1bc394b22f}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{a7874eb0-0244-4fc2-ae4b-7e6d8d9c6f91}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{59ed90b1-3eb5-4249-b5e0-693a65645751}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="true" id="{cce040b0-7e15-4eca-bc56-fea86bdcff17}" IsUserDefined="0" height="auto" name="{cce040b0-7e15-4eca-bc56-fea86bdcff17}" columns="1" locklevel="0" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{17bb036c-1a9f-432a-a575-eda15acb0b5d}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{fd7d9094-0d44-4b2d-b8a4-40b2b843c23d}" columns="111">
+        <rows>
+          <row>
+            <cell id="{268a3937-342b-7dce-470a-757d905d675d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d0a84347-aec6-3ca3-5edb-e73c2592b030}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d58c042e-4027-e753-cb61-8765cc079b1c}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Fiscal Year" languagecode="1033" />
+              </labels>
+              <control id="header_new_fiscalyear" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_fiscalyear" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_QEYearlyNarrativeJS" libraryUniqueId="{654ad5a7-7398-b509-5066-c5a7860e051e}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="new_QEYearlyNarrativeJS" handlerUniqueId="{7be59408-0223-ede3-9131-33b57ae4806c}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

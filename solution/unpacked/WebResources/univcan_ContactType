@@ -1,0 +1,27 @@
+function ContactType() {
+    debugger;
+    var currentrecordid = Xrm.Page.data.entity.getId();
+    currentrecordid = currentrecordid.replace('{', '').replace('}', '');
+    var record = {};
+
+    record["new_ContactNameId@odata.bind"] = "/contacts(" + currentrecordid + ")"; // Lookup
+
+    Xrm.WebApi.createRecord("new_contacttype", record).then(
+        function success(result) {
+            var newId = result.id;
+            console.log(newId);
+
+            var entityFormOptions = {};
+            entityFormOptions["entityName"] = "new_contacttype";
+            entityFormOptions["entityId"] = newId;
+            entityFormOptions["openInNewWindow"] = true;
+            entityFormOptions["height"] = 600;
+            entityFormOptions["width"] = 800;
+
+            Xrm.Navigation.openForm(entityFormOptions);
+        },
+        function (error) {
+            console.log(error.message);
+        }
+    );
+}

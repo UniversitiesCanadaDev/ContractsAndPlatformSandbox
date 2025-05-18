@@ -1,0 +1,13 @@
+function setnew_meetingstatustostatecode()
+{
+	
+	var StatusValue = Xrm.Page.data.entity.attributes.get("statecode").getValue();
+
+     if   (StatusValue == "1") // Status(statecode) = Completed
+      {
+		    Xrm.Page.getAttribute('new_meetingstatus').setValue(100000000);
+
+      }
+
+
+}

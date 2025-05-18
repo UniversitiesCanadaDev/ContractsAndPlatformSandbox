@@ -1,0 +1,155 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps-2": {
+        "impersonation": {},
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_119b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps-1": {
+        "impersonation": {},
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "cr4e0_administration",
+              "subscriptionRequest/scope": 1,
+              "subscriptionRequest/filteringattributes": "cr4e0_estimatedapplications,cr4e0_estimatedrenewals,cr4e0_estimatedpayments"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps-1"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Get_a_row_by_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "15b7a275-0f62-4685-b332-148dd802f94c"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr4e0_awardstypeses",
+              "recordId": "@triggerOutputs()?['body/_cr4e0_award_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps-2"
+            }
+          }
+        },
+        "Calculate_Estimated_Total_Applications_Fees": {
+          "runAfter": {
+            "Get_a_row_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "312b0c0b-ff22-47bb-9ce5-28ecbae1fc71"
+          },
+          "type": "Compose",
+          "inputs": "@mul(triggerOutputs()?['body/cr4e0_estimatedapplications'],outputs('Get_a_row_by_ID')?['body/cr4e0_applicationfee'])"
+        },
+        "Calculate_Estimated_Total_Renewal_Fees": {
+          "runAfter": {
+            "Calculate_Estimated_Total_Applications_Fees": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "299b28c1-6270-4c17-b558-91c38b959cde"
+          },
+          "type": "Compose",
+          "inputs": "@mul(triggerOutputs()?['body/cr4e0_estimatedrenewals'],outputs('Get_a_row_by_ID')?['body/cr4e0_renewalfee'])"
+        },
+        "Calculate_Estimated_Total_Payment_Fees": {
+          "runAfter": {
+            "Calculate_Estimated_Total_Renewal_Fees": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c604ef2f-c7ed-4f0c-ab68-5fe577a4bab0"
+          },
+          "type": "Compose",
+          "inputs": "@mul(outputs('Get_a_row_by_ID')?['body/cr4e0_paymentdisbursement'],triggerOutputs()?['body/cr4e0_estimatedpayments'])"
+        },
+        "Calculate_Estimated_Total_Calculated_Fees": {
+          "runAfter": {
+            "Calculate_Estimated_Total_Payment_Fees": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "bb824fb4-8297-4500-9b59-569144374d3a"
+          },
+          "type": "Compose",
+          "inputs": "@add(outputs('Calculate_Estimated_Total_Payment_Fees'),add(outputs('Calculate_Estimated_Total_Applications_Fees'),outputs('Calculate_Estimated_Total_Renewal_Fees')))"
+        },
+        "Update_a_row": {
+          "runAfter": {
+            "Calculate_Estimated_Total_Calculated_Fees": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "12b8b296-2c22-438d-946c-400cdb09f5a8"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr4e0_administrations",
+              "recordId": "@triggerOutputs()?['body/cr4e0_administrationid']",
+              "item/cr4e0_estimatedcalculatedfees": "@outputs('Calculate_Estimated_Total_Calculated_Fees')",
+              "item/cr4e0_estimatedpaymentfee": "@outputs('Calculate_Estimated_Total_Payment_Fees')",
+              "item/cr4e0_estimatedtotalapplicationfee": "@outputs('Calculate_Estimated_Total_Applications_Fees')",
+              "item/cr4e0_estimatedtotalrenewalfee": "@outputs('Calculate_Estimated_Total_Renewal_Fees')"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "UpdateRecord",
+              "connectionName": "shared_commondataserviceforapps-2"
+            }
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

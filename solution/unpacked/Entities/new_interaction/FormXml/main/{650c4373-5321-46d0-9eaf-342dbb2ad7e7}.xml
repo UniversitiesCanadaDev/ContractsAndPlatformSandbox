@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{650c4373-5321-46d0-9eaf-342dbb2ad7e7}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form showImage="false" shownavigationbar="true" maxWidth="1900">
+      <tabs>
+        <tab id="{e2ae9c92-1e2c-3167-b6db-14475b4497d5}" name="tab_2" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Meeting or Event" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{39c196bc-814e-742a-6ad2-9489a1ba211b}" name="tab_2_section_2" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4174e762-3e6a-c631-5cae-de5c6101e913}" locklevel="0" showlabel="true" colspan="1">
+                        <labels>
+                          <label description="Type of Record" languagecode="1033" />
+                        </labels>
+                        <control id="new_typeofrecord" datafieldname="new_typeofrecord" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                      <cell id="{663c7de7-0ab2-1866-ba51-c22b592ca0ec}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{22e660a7-5bba-b132-2811-4b7cd8c3eb34}" locklevel="0" showlabel="true" colspan="1">
+                        <labels>
+                          <label description="Main Event" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_mainevent" datafieldname="new_mainevent" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{F12163B2-2E42-481D-970D-D8DB443D4C8F}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{a325c54a-5c07-e6d7-8319-4987d006378d}" locklevel="0" showlabel="true" colspan="1">
+                        <labels>
+                          <label description="Related Panel" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_relatedpanel" datafieldname="new_relatedpanel" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2A13550C-FA54-4385-9E25-C0569681F67B}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6345d01e-5d17-40c5-a0fb-bef558a072b1}" locklevel="0" showlabel="true" colspan="4">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" datafieldname="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5eb4895a-ccd2-ace5-16e6-82bd3562623d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_startdate" datafieldname="new_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                      </cell>
+                      <cell id="{d02ecd5d-6c89-2e03-0140-25102a93d605}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_enddate" datafieldname="new_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                      </cell>
+                      <cell id="{504c1ace-b732-7716-cc5c-bb911a02e576}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Venue" languagecode="1033" />
+                        </labels>
+                        <control id="new_venue" datafieldname="new_venue" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                      <cell id="{785bd455-e356-04d0-3c7c-6985c6ae03e6}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_city" datafieldname="new_city" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{684bd81a-40d2-1d17-8066-54e0b29642d9}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3647be75-8330-002a-2066-02831728b6c1}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b2428441-c1d1-ced4-3737-31a0c54cd064}" locklevel="0" showlabel="true" colspan="2">
+                        <labels>
+                          <label description="Host Institution" languagecode="1033" />
+                        </labels>
+                        <control id="new_hostinstitution" datafieldname="new_hostinstitution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14754275-5a7b-7b09-8b14-6c8d8abaeb07}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Meeting Status" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_meetingstatus" datafieldname="new_meetingstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                      <cell id="{c0db8d17-ce48-b458-c181-dc97ed47b3b7}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Scheduling Lead" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_schedulinglead" datafieldname="new_schedulinglead" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                      <cell id="{d78c9bec-02de-26d1-b9c8-a22759d0d299}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Briefing Lead" languagecode="1033" />
+                        </labels>
+                        <control id="new_briefinglead" datafieldname="new_briefinglead" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                      <cell id="{986ed1c8-b8da-d506-da73-25644905b52d}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Which Group owns this meeting?" languagecode="1033" />
+                        </labels>
+                        <control id="new_whichgroupownsthismeeting" datafieldname="new_whichgroupownsthismeeting" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b2a54c6c-c88e-381b-6100-e608ec224e90}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Lobby Activity" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_lobbyactivity" datafieldname="new_lobbyactivity" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" />
+                      </cell>
+                      <cell id="{1ce4e9e4-b779-473c-ea6d-5b5d8576527a}" locklevel="0" showlabel="true" colspan="3">
+                        <labels>
+                          <label description="Link to Briefing Note (from Sharepoint only)" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_linktobriefingnote" datafieldname="new_linktobriefingnote" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{9232e7b6-ae74-1012-789c-12648119ca5c}" name="tab_3" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Participants" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{5b085c1a-b915-5437-529e-6467b3eb3273}" name="tab_4_section_1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Meeting Participants" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c0d4ddb7-3e68-a003-0707-a8c94282026a}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Meeting or Event Participants (Meeting or Event)" languagecode="1033" />
+                        </labels>
+                        <control id="MeetingParticipants" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{39CD34DF-63AD-E911-80C3-0050569A785D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_interaction_new_meetingeventparticipa</RelationshipName>
+                            <TargetEntityType>new_meetingeventparticipant</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{79605B46-2503-4BB5-9F45-D9F747C1AE61},{39CD34DF-63AD-E911-80C3-0050569A785D}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section id="{89e511b4-10eb-d4da-1964-2c6c0b489028}" name="tab_3_section_3" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Event Participants" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{45ac2825-8d31-1ea9-74ae-0a2756177ca8}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Meeting or Event Participants (Meeting or Event)" languagecode="1033" />
+                        </labels>
+                        <control id="EventParticipants" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{A43A212D-64AD-E911-80C3-0050569A785D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_interaction_new_meetingeventparticipa</RelationshipName>
+                            <TargetEntityType>new_meetingeventparticipant</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{A43A212D-64AD-E911-80C3-0050569A785D},{79605B46-2503-4BB5-9F45-D9F747C1AE61}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{06c661e6-838a-ec0e-9934-e166ddda2a7a}" name="tab_9" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="DPOH &amp; GR Themes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section id="{dcaca80b-5ea6-948e-a8dc-0b977571dbaa}" name="tab_9_section_1" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="DPOHSection" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a692cce5-9ae2-79c5-1752-ea810bc6e181}" showlabel="true" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="DPOH Subjects Lookup" languagecode="1033" />
+                        </labels>
+                        <control id="DPOH" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{196BABE1-F71F-4804-BFAF-11A18311D290}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_interaction_new_dpohsubjectlookup</RelationshipName>
+                            <TargetEntityType>new_dpohsubjectlookup</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{196BABE1-F71F-4804-BFAF-11A18311D290}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section id="{56693c82-7b02-4228-2b53-177c0397de6c}" name="tab_9_section_2" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="ThemeSection" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0027aeb7-b59b-4589-abd0-618bd16d3180}" showlabel="true" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="GR Meeting Theme lookup" languagecode="1033" />
+                        </labels>
+                        <control id="GRThemes" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+                          <parameters>
+                            <ViewId>{839FB418-A680-4955-BBFA-58CFAB7E710E}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_new_interaction_new_grmeetingthemelookup</RelationshipName>
+                            <TargetEntityType>new_grmeetingthemelookup</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{839FB418-A680-4955-BBFA-58CFAB7E710E}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{2025d5e7-cde2-3e2a-2698-7bae6894d8d0}" name="tab_12" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Event Notes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="95%">
+              <sections>
+                <section id="{442ac8ea-ab46-a9b5-e129-eee546d55955}" name="tab_8_section_1" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9c6187c2-40ae-605b-e5c6-5425286944c3}" locklevel="0" showlabel="true" rowspan="5">
+                        <labels>
+                          <label description="Event Notes" languagecode="1033" />
+                        </labels>
+                        <control id="new_eventnotes" datafieldname="new_eventnotes" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="5%">
+              <sections>
+                <section id="{6a8c6425-8995-9680-ec7e-1d827ad77458}" name="tab_12_section_2" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d309cc06-d749-353c-0a0c-02d0832c8314}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{843b3643-aa99-474a-6a96-89498073a09c}" name="tab_11" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Meeting Outcome\Debrief, Follow-up" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="95%">
+              <sections>
+                <section id="{b4c5a451-3025-7670-206e-7b70001d8073}" name="tab_7_section_1" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1b88007c-4329-a4b3-e859-536ca99b82e1}" locklevel="0" showlabel="true" rowspan="10">
+                        <labels>
+                          <label description="Meeting Outcome\Debrief" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_meetingoutcome" datafieldname="new_meetingoutcome" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{7458a966-b4a2-9d60-cd3e-54c69a5ed6a5}" locklevel="0" showlabel="true" rowspan="10">
+                        <labels>
+                          <label description="Meeting Follow-up" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_meetingfollowup" datafieldname="new_meetingfollowup" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="5%">
+              <sections>
+                <section id="{eacc0601-a227-bc14-b33b-382cacaa6ab1}" name="tab_11_section_2" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{98030b42-8ec8-ee1b-a048-ea926842bdd6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{40632c45-a5e7-dd5d-1e3a-94613c342423}" name="tab_10" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Attachments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="95%">
+              <sections>
+                <section id="{49ef6498-08c9-4a2e-8ec0-9395aefc9caf}" height="auto" name="{49ef6498-08c9-4a2e-8ec0-9395aefc9caf}" IsUserDefined="0" locklevel="0" showlabel="false" showbar="true" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Attachments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{444f625d-5acb-4ba7-b72e-9d4389179630}" locklevel="0" showlabel="false" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="5%">
+              <sections>
+                <section id="{d2a4e0e3-8b26-715e-072b-822b0ee4c14e}" name="tab_10_section_2" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e0744034-37a6-0799-074d-13d711295409}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{cd6c5606-a9de-48ef-8668-b7921ff53373}" name="{cd6c5606-a9de-48ef-8668-b7921ff53373}" IsUserDefined="1" locklevel="0" showlabel="true" expanded="false" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{144c6e1d-349c-48fa-9a24-20a397278fd1}" name="{144c6e1d-349c-48fa-9a24-20a397278fd1}" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4cc0b9cb-5438-50ee-027d-de979589c276}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="createdby" datafieldname="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{486bcc69-88a9-3d48-52a3-e787928d4637}" locklevel="0" showlabel="true">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="createdon" datafieldname="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section id="{40ede2ab-0c16-51ac-90c7-50e3ecb2313e}" name="{cd6c5606-a9de-48ef-8668-b7921ff53373}_section_2" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8a4b81cb-8b5d-6b39-2890-9a33c39774e5}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{725dc6d1-3eb6-e19d-8e03-3da48a9517e4}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_showhideparticipanttabs" libraryUniqueId="{6a4ca638-8dad-1093-2ace-a44e45699ac7}" />
+        <Library name="new_copyMeetingDateOnChange" libraryUniqueId="{c4e51567-b985-d984-425c-606d5cc2ecde}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler parameters="" functionName="OnLoad" libraryName="new_showhideparticipanttabs" handlerUniqueId="{8552c241-0234-12ce-88c8-851e2182d02b}" enabled="true" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_typeofrecord">
+          <Handlers>
+            <Handler parameters="" functionName="OnChange" libraryName="new_showhideparticipanttabs" handlerUniqueId="{333d4085-3882-d542-de8d-1b3cec33c167}" enabled="true" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="new_startdate">
+          <Handlers>
+            <Handler functionName="OnChange" libraryName="new_copyMeetingDateOnChange" handlerUniqueId="{813c2ccc-7416-0904-d3b8-9eb105c7ea4e}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

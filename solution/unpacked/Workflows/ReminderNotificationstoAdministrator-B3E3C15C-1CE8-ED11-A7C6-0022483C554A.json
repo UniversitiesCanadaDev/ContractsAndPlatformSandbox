@@ -1,0 +1,131 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps-1": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "runtimeSource": "embedded"
+      },
+      "shared_office365": {
+        "api": {
+          "name": "shared_office365"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedoffice365_8a125"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "Recurrence": {
+          "type": "Recurrence",
+          "recurrence": {
+            "frequency": "Day",
+            "interval": 1,
+            "startTime": "2023-05-01T10:00:00Z"
+          },
+          "metadata": {
+            "operationMetadataId": "529fb024-7455-4900-bd69-2ad4c03266c6"
+          }
+        }
+      },
+      "actions": {
+        "List_rows": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "$filter": "cr4e0_reminderdate eq '@{outputs('Compose')}'"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "connectionName": "shared_commondataserviceforapps-1"
+            }
+          },
+          "runAfter": {
+            "Compose": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2240bec9-917d-44f3-853c-331705998892"
+          }
+        },
+        "Current_time": {
+          "type": "Expression",
+          "kind": "CurrentTime",
+          "inputs": {},
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "283421f7-e74f-42bb-bdc3-da97904b5303"
+          }
+        },
+        "Compose": {
+          "type": "Compose",
+          "inputs": "@utcNow('yyyy-MM-ddT04:00:00Z')",
+          "runAfter": {
+            "Current_time": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9f761821-6f70-40cc-a420-0eca87f517d6"
+          }
+        },
+        "Apply_to_each": {
+          "type": "Foreach",
+          "foreach": "@outputs('List_rows')?['body/value']",
+          "actions": {
+            "Send_an_email_(V2)": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "emailMessage/To": "cmatheson@univcan.ca",
+                  "emailMessage/Subject": "The @{items('Apply_to_each')?['cr4e0_name']} contract end date is approaching.",
+                  "emailMessage/Body": "<p>Hello,<br>\n<br>\nThe @{items('Apply_to_each')?['cr4e0_name']} contract end date is approaching. Please notify responsible department/team to ensure they are aware of the approaching expiration.<br>\n<br>\n<a target=\"_blank\" href=\"https://univcan.crm3.dynamics.com/main.aspx?appid=082d6fd1-c74b-ed11-bba2-0022483c5540&pagetype=entityrecord&etn=cr4e0_proposal&id=@{items('Apply_to_each')?['cr4e0_proposalid']}\">Link to contract platform</a><br>\n<br>\nThank you,</p>",
+                  "emailMessage/Importance": "Normal"
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+                  "operationId": "SendEmailV2",
+                  "connectionName": "shared_office365"
+                }
+              },
+              "metadata": {
+                "operationMetadataId": "dc233134-c7c7-4f17-a4db-b79c068a45de"
+              }
+            }
+          },
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "494c45c4-57b7-49b3-8940-d8102ec8394e"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

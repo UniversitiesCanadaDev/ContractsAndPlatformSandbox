@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{469231de-52a2-e911-80c3-0050569a785d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="new_name">
+        <row id="new_meetingparticipantid" name="result">
+          <cell name="new_name" width="150" />
+          <cell name="new_meetinginteractionid" width="200" />
+          <cell name="new_meetingdate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="new_meetingparticipant">
+          <attribute name="new_name" />
+          <order descending="false" attribute="new_name" />
+          <attribute name="new_meetinginteractionid" />
+          <attribute name="new_meetingdate" />
+          <attribute name="new_meetingparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Meetings for Interactions Entity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,436 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataservice": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataservice_ce67b"
+        },
+        "api": {
+          "name": "shared_commondataservice"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedsharepointonline_b06ee"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "splitOn": "@triggerBody()['rows']",
+          "metadata": {
+            "operationMetadataId": "c8c94b48-e7c1-40cc-bca3-4edd685c77fb"
+          },
+          "type": "Request",
+          "kind": "ApiConnection",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "email": {
+                        "title": "Email",
+                        "type": "string",
+                        "format": "email",
+                        "x-ms-dynamically-added": true,
+                        "description": "Please enter an e-mail address",
+                        "x-ms-content-hint": "EMAIL"
+                      },
+                      "text": {
+                        "title": "Action",
+                        "type": "string",
+                        "x-ms-dynamically-added": true,
+                        "description": "Please enter your input",
+                        "x-ms-content-hint": "TEXT",
+                        "enum": [
+                          "Grant",
+                          "Revoke"
+                        ]
+                      },
+                      "text_1": {
+                        "title": "Access Type",
+                        "type": "string",
+                        "x-ms-dynamically-added": true,
+                        "description": "Please enter your input",
+                        "x-ms-content-hint": "TEXT",
+                        "enum": [
+                          "View",
+                          "Edit"
+                        ]
+                      },
+                      "entity": {
+                        "type": "object",
+                        "properties": {
+                          "cr4e0_proposalid": {
+                            "title": "Proposal",
+                            "type": "string",
+                            "format": "guid"
+                          }
+                        },
+                        "required": [
+                          "cr4e0_proposalid"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "email",
+                      "text",
+                      "text_1",
+                      "entity"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "rows"
+              ]
+            },
+            "host": {
+              "connection": {
+                "name": "@parameters('$connections')['shared_commondataservice']['connectionId']"
+              }
+            },
+            "operationId": "GetOnNewItems_V2",
+            "parameters": {
+              "dataset": "default.cds",
+              "table": "cr4e0_proposals"
+            }
+          }
+        }
+      },
+      "actions": {
+        "List_rows": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "aeeb57cc-beb6-4ff8-abb2-16f755e70b5d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "$filter": "_regardingobjectid_value eq @{triggerBody()?['entity']?['cr4e0_proposalid']}",
+              "$top": 1
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "e6a0ebc7-d2df-4180-92fb-1aa53a98015c"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Set Folder Path from Document Library",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Apply_to_each": {
+          "foreach": "@outputs('List_rows')?['body/value']",
+          "actions": {
+            "Set_variable": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "c8eb3b53-5563-4a80-b3d3-81faeccf5ac9"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "Set Folder Path from Document Library",
+                "value": "@items('Apply_to_each')?['relativeurl']"
+              }
+            }
+          },
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c1fb91da-7741-4798-a2aa-aae7ae29abc9"
+          },
+          "type": "Foreach"
+        },
+        "Get_folder_metadata_using_path": {
+          "runAfter": {
+            "Apply_to_each": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "823ce6de-153b-4e6e-a4f4-89f1ba7e92cf"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetFolderMetadataByPath",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "path": "/cr4e0_proposal/@{variables('Set Folder Path from Document Library')}"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Initialize_variable_2": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2558a205-ef81-4463-ad5b-69819d4fdcc2"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Access Type",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Check_if_needs_access_or_to_remove_access": {
+          "actions": {
+            "Condition": {
+              "actions": {
+                "Grant_access_to_an_item_or_a_folder": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "95c41c7c-6c45-424b-8351-b46b097045fb"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sharepointonline",
+                      "operationId": "GrantAccess",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "table": "24a012c6-48d3-4717-bce8-7975d60ade3b",
+                      "id": "@outputs('Get_folder_metadata_using_path')?['body/ItemId']",
+                      "parameter/recipients": "@triggerBody()['email']",
+                      "parameter/roleValue": "role:1073741826"
+                    },
+                    "authentication": {
+                      "type": "Raw",
+                      "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                    }
+                  }
+                }
+              },
+              "runAfter": {},
+              "else": {
+                "actions": {
+                  "Grant_access_to_an_item_or_a_folder_2": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "5f1e8d62-e31b-4ac1-860d-0256a381493d"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "host": {
+                        "connectionName": "shared_sharepointonline",
+                        "operationId": "GrantAccess",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                      },
+                      "parameters": {
+                        "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                        "table": "24a012c6-48d3-4717-bce8-7975d60ade3b",
+                        "id": "@outputs('Get_folder_metadata_using_path')?['body/ItemId']",
+                        "parameter/recipients": "@triggerBody()['email']",
+                        "parameter/roleValue": "role:1073741827"
+                      },
+                      "authentication": {
+                        "type": "Raw",
+                        "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                      }
+                    }
+                  }
+                }
+              },
+              "expression": {
+                "equals": [
+                  "@triggerBody()['text_1']",
+                  "View"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "eb17beb6-f8fa-4163-882f-1804f5cd44a1"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {
+            "Get_folder_metadata_using_path": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "List_all_users_with_permissions": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "b96b0f02-0dda-4363-ac15-3ba832e541bd"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_sharepointonline",
+                    "operationId": "HttpRequest",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                  },
+                  "parameters": {
+                    "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                    "parameters/method": "POST",
+                    "parameters/uri": "_api/web/lists/getByTitle('Proposal')/items(@{outputs('Get_folder_metadata_using_path')?['body/ItemId']})/roleassignments?$expand=Member/users"
+                  },
+                  "authentication": {
+                    "type": "Raw",
+                    "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                  }
+                }
+              },
+              "Apply_to_each_2": {
+                "foreach": "@body('List_all_users_with_permissions')['d']['results']",
+                "actions": {
+                  "Condition_3": {
+                    "actions": {
+                      "Condition_2": {
+                        "actions": {
+                          "Send_an_HTTP_request_to_SharePoint": {
+                            "runAfter": {},
+                            "metadata": {
+                              "operationMetadataId": "0fe13e95-f163-4f8d-9335-ca5ccd6814bd"
+                            },
+                            "type": "OpenApiConnection",
+                            "inputs": {
+                              "host": {
+                                "connectionName": "shared_sharepointonline",
+                                "operationId": "HttpRequest",
+                                "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                              },
+                              "parameters": {
+                                "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                                "parameters/method": "POST",
+                                "parameters/uri": "_api/web/lists/getByTitle('Proposal')/items(@{outputs('Get_folder_metadata_using_path')?['body/ItemId']})/roleassignments(@{items('Apply_to_each_2')?['PrincipalId']})",
+                                "parameters/headers": {
+                                  "X-HTTP-Method": "DELETE"
+                                }
+                              },
+                              "authentication": {
+                                "type": "Raw",
+                                "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                              }
+                            }
+                          }
+                        },
+                        "runAfter": {},
+                        "expression": {
+                          "equals": [
+                            "@items('Apply_to_each_2')['Member']['Email']",
+                            "@triggerBody()['email']"
+                          ]
+                        },
+                        "metadata": {
+                          "operationMetadataId": "767b350f-4007-416b-9560-a96ed769513b"
+                        },
+                        "type": "If"
+                      }
+                    },
+                    "runAfter": {},
+                    "expression": {
+                      "equals": [
+                        "@items('Apply_to_each_2')['Member']['PrincipalType']",
+                        1
+                      ]
+                    },
+                    "metadata": {
+                      "operationMetadataId": "eedffa37-cf8a-483c-99f4-15f9deb52c98"
+                    },
+                    "type": "If"
+                  }
+                },
+                "runAfter": {
+                  "List_all_users_with_permissions": [
+                    "Succeeded"
+                  ]
+                },
+                "metadata": {
+                  "operationMetadataId": "9c6a77fb-a278-43d0-9520-f1bb224d91c5"
+                },
+                "type": "Foreach"
+              }
+            }
+          },
+          "expression": {
+            "equals": [
+              "@triggerBody()['text']",
+              "Grant"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "1b1fadc2-e8f7-451a-ba5d-3ecc5f8327fe"
+          },
+          "type": "If"
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

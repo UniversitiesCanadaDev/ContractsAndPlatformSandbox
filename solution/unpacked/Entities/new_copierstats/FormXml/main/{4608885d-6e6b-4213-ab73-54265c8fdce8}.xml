@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4608885d-6e6b-4213-ab73-54265c8fdce8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_3" id="{a82d869e-7c0c-72d8-3572-d9022cac1ac7}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Copier Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="tab_3_section_6" showlabel="false" showbar="false" locklevel="0" id="{9da4b2d9-5da0-1546-513e-c4ea4769ccae}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{59a60897-ba3d-3481-a3ca-b159dab16672}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Copier Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_copiername" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_copiername" disabled="false" />
+                      </cell>
+                      <cell id="{a4d627c8-8ec8-1c90-c480-7bdc137d0428}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="new_location" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_location" disabled="false" />
+                      </cell>
+                      <cell id="{675bebdc-c00c-8bbc-b037-87281409e195}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Serial #" languagecode="1033" />
+                        </labels>
+                        <control id="new_serial" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_serial" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_3_section_2" showlabel="false" showbar="false" locklevel="0" id="{4a54956b-27a0-71d9-ddb5-22cc4a3193c8}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a9e7ab58-5a41-9ca5-0d66-89d753e48423}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_3_section_3" showlabel="false" showbar="false" locklevel="0" id="{50978ddb-b121-2569-17e0-bda6b5b60437}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ed712603-b70d-012e-0d4d-1744a99deb9d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{638b12a9-36d9-1bb1-5615-09c3a2d9113c}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Copier Printing Stats" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_3" showlabel="false" showbar="true" locklevel="0" id="{12e0c068-ca14-16bc-7381-e01db3ac2b9c}" IsUserDefined="0" layout="varwidth" columns="1111" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6caabe0c-859e-2893-3552-e758210ac9c0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 1" languagecode="1033" />
+                        </labels>
+                        <control id="new_period1" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_period1" disabled="false" />
+                      </cell>
+                      <cell id="{500301e5-5d1d-cc92-120b-beca04dc3e0a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 2" languagecode="1033" />
+                        </labels>
+                        <control id="new_period2" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_period2" disabled="false" />
+                      </cell>
+                      <cell id="{4b73b63a-e44b-926d-272e-d720eac9e097}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 3" languagecode="1033" />
+                        </labels>
+                        <control id="new_period3" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_period3" disabled="false" />
+                      </cell>
+                      <cell id="{77d3e077-81c3-77cb-3d79-b62258dc8599}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 4" languagecode="1033" />
+                        </labels>
+                        <control id="new_period4" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_period4" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{23d26ea1-8c0a-4405-3639-94cd05314185}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 1 Colour Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period1colourcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period1colourcopies" disabled="false" />
+                      </cell>
+                      <cell id="{3eede4e1-4eea-a409-c59a-2c9a328591d0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 2 Colour Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period2colourcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period2colourcopies" disabled="false" />
+                      </cell>
+                      <cell id="{7203c097-9d35-3779-28d9-7e497592d2c3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 3 Colour Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period3colourcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period3colourcopies" disabled="false" />
+                      </cell>
+                      <cell id="{6e1d82ea-639a-ad51-1304-9ed89421745e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 4 Colour Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period4colourcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period4colourcopies" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b64684a4-9e08-2a81-b561-aaa8995b1714}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 1 B&amp;W Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period1bwcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period1bwcopies" disabled="false" />
+                      </cell>
+                      <cell id="{b36662e5-6507-de34-9896-60e97735e1b7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 2 B&amp;W Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period2bwcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period2bwcopies" disabled="false" />
+                      </cell>
+                      <cell id="{c73acde2-1d14-79eb-803a-9a527a00a765}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 3 B&amp;W Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period3bwcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period3bwcopies" disabled="false" />
+                      </cell>
+                      <cell id="{4e11d357-41c7-a096-3156-436065dae06b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Period 4 B&amp;W Copies" languagecode="1033" />
+                        </labels>
+                        <control id="new_period4bwcopies" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_period4bwcopies" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{85f77125-c785-4c5c-8ec4-3db3842727bd}" IsUserDefined="1" name="{85f77125-c785-4c5c-8ec4-3db3842727bd}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{4645713c-c25b-491b-b4fb-e426f10628ee}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bc08b84e-e5ef-47f2-9cd7-72fe4ce0e859}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a7bbec74-bd97-e3e9-1aad-b7117c686291}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Copier Type" languagecode="1033" />
+                        </labels>
+                        <control id="new_copiertype" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_copiertype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1a38d85-ec4c-9279-38a7-6717726dc1a4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="CopystatsbyYear" languagecode="1033" />
+                        </labels>
+                        <control id="new_copystatsbyyearid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_copystatsbyyearid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{7d07c280-6a30-470c-bdf0-6c491118cde8}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="5" auto="false" id="{f4179b5b-9a5c-40ba-8d11-b9292767022f}" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_UpdateCopierStatsNamewithCopierName" libraryUniqueId="{a89ea967-1464-a813-9231-8b2422dec965}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="new_copiername">
+          <Handlers>
+            <Handler functionName="onchange" libraryName="new_UpdateCopierStatsNamewithCopierName" handlerUniqueId="{7dcc13cd-ca64-21ed-0802-98b0016a674a}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

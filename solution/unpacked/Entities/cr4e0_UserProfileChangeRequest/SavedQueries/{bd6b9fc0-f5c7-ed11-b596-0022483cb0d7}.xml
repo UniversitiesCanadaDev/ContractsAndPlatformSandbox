@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{bd6b9fc0-f5c7-ed11-b596-0022483cb0d7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_userprofilechangerequestid">
+          <cell name="cr4e0_primarycontact" width="289" />
+          <cell name="cr4e0_statusofrequest" width="100" />
+          <cell name="cr4e0_modifiedbyuser" width="142" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="cr4e0_userprofilechangerequest">
+          <attribute name="cr4e0_userprofilechangerequestid" />
+          <attribute name="cr4e0_primarycontact" />
+          <attribute name="cr4e0_statusofrequest" />
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="cr4e0_statusofrequest" operator="eq" value="1" />
+          </filter>
+          <attribute name="cr4e0_modifiedbyuser" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Completed User Profile Request View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

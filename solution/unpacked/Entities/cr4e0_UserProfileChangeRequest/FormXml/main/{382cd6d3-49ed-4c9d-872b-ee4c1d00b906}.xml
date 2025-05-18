@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{382cd6d3-49ed-4c9d-872b-ee4c1d00b906}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{4edf9348-2988-46b7-94ac-5294a46730c0}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ea818832-2130-46e9-9cdb-a9bd522c7677}" columns="11" locklevel="0" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{55850daf-9eb5-44dc-b088-bffc607e8ce5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Requested By" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_primarycontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_primarycontact" disabled="true" />
+                      </cell>
+                      <cell id="{2d62f927-aff0-4a5c-b39e-5ef0a179a026}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Requested For" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_requestedforuser" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_requestedforuser" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d43ac480-7369-47ad-b269-4fd6ec450ef5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="First Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_name" disabled="true" />
+                      </cell>
+                      <cell id="{b4374c6b-ffd3-45cc-8c88-7ea11d329652}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_lastname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_lastname" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8093cd83-cbf2-45ea-8eab-dd69c463ab42}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Prefix" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_prefix" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_prefix" disabled="true" />
+                      </cell>
+                      <cell id="{50741d81-1d71-4931-ae29-351463e84704}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Suffix" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_suffix" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_suffix" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9036ab65-7af6-4051-a1ea-5052190725f2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Phone" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_businessphone" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_businessphone" disabled="true" />
+                      </cell>
+                      <cell id="{33afa1a9-c29e-4df2-a7b6-35c7166b198b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Business Phone Extension" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_businessphoneextension" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_businessphoneextension" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1fed16b3-dc3e-4fa7-86f3-601eb68f78e5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Primary Email" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_primaryemail" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_primaryemail" disabled="true" />
+                      </cell>
+                      <cell id="{5b9b928c-e122-4b20-b0bd-c64d32b5b292}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="General Email" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_generalemail" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_generalemail" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a0d9ffe-18ea-4bf7-94e4-63a79674e03c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Organization" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_organization" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_organization" disabled="true" />
+                      </cell>
+                      <cell id="{2e46d48a-edcd-4445-8d15-ce90e513b905}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Job Title" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_jobtitle" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_jobtitle" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{904e8b5d-84f9-4357-b391-849547f1c422}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Link to Bio" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_linktobio" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="cr4e0_linktobio" disabled="true" />
+                      </cell>
+                      <cell id="{d301d1d6-da91-460c-87d6-7bd28086553e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Language Preferences" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_languagepreferences" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_languagepreferences" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4d94817e-ea33-4445-a2fe-ebf9fbfb8c1c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Mobile Phone" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_mobilephone" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_mobilephone" disabled="true" />
+                      </cell>
+                      <cell id="{142be828-38c2-4af4-aa0f-45ae42efaf18}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Profile Visibility" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_profilevisibility" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr4e0_profilevisibility" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a88ed129-3e5d-4147-aa9d-0999359ae198}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is Active?" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_isactive" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_isactive" disabled="true" />
+                      </cell>
+                      <cell id="{e6727581-d478-4c84-b48a-03ebe23def9d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New User" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_newuser" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_newuser" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c322b40e-cdfe-4b65-a517-732f45a85b48}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Replacing Member" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_replacingmember" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_replacingmember" disabled="true" />
+                      </cell>
+                      <cell id="{15b7796a-e198-49b3-8a4f-cd2650338977}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Name of replacing user" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_nameofreplacinguser" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_nameofreplacinguser" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be6938a2-900d-4c59-ba29-303b04bbd410}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Profile Picture" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_profilepicture" classid="{7E548B0D-209C-477B-9DCD-F0F44472381D}" datafieldname="cr4e0_profilepicture" disabled="true" />
+                      </cell>
+                      <cell id="{123c6e0d-3871-4bc5-a4a3-1ead0b55399c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By User" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_modifiedbyuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_modifiedbyuser" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16f9891c-f0a7-4826-b308-3b1e14f8959e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                      <cell id="{a370d21f-39e3-42c6-b04d-01e3345f598a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status of Request" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_statusofrequest" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr4e0_statusofrequest" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d0b6eb12-6deb-4d2c-bce1-d4b418386592}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{6d6e5f99-6035-4596-9eef-5f493ef02365}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4c9b5948-8a98-4151-ab21-ee1920dcf478}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a1afe4ff-dfda-4685-9308-a59a267d9fc9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{1c48b898-dafc-483a-9da2-5709ac7a1122}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c7863d7e-575b-48e3-b3e3-9df855ad8312}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{42a43ac8-176b-4471-9a20-2a4c9db87218}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f835b42e-d271-4440-80da-498a62fd354a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

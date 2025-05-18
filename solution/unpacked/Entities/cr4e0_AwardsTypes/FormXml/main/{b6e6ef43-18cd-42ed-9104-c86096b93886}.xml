@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b6e6ef43-18cd-42ed-9104-c86096b93886}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" shownavigationbar="false">
+      <tabs>
+        <tab verticallayout="true" id="{bff5932a-c729-43e8-9e10-e673d05ffd27}" IsUserDefined="1" name="Award Details">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{8364d910-cec1-430d-95c9-bf9d87c55abf}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{11bca047-19ef-40ba-a093-47ad1a9a0101}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr4e0_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c6341463-a174-45e1-b14b-f5fca7d23d35}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Proposal" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_proposal" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_proposal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d77f77a-4847-4814-8d36-5e1511ff0578}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{993b2be3-d6f9-46cb-8b56-56e1b971f479}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Number of Awards" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_numberofawards" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_numberofawards" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62091a17-e667-4024-ad19-75eb7b8dcd9b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Number of Years" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_numberofyears" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_numberofyears" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c41b501-0616-48be-81a7-ede0d8085b22}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Amount per year" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_amountperyear" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_amountperyear" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e90eab5c-f768-4eaf-ac7c-545aa950d5a2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Application Fee" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_applicationfee" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_applicationfee" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9293267a-38d1-4e95-9835-6e4c53d19ba3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Renewal Fee" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_renewalfee" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_renewalfee" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{958b974b-9cd8-4fbb-ba4a-4c196e078d41}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Payment/Disbursement" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_paymentdisbursement" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_paymentdisbursement" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{87cddf63-d14e-46e6-8ffb-eec25598ab3d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Total Amount" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_totalamount" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr4e0_totalamount" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{a580c6cc-42e3-4f34-921e-e88bf0487bfc}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a666e3c0-1e51-4537-86da-cab533156950}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2a5bf19e-5beb-4ac6-a157-0014af5dda7f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5d605ece-7bb6-4127-8e4b-c53ed73c55f7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e1de4680-1aa6-43d3-99b8-aefeab1b2c13}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{8d836ddd-4cb2-42bf-8948-af5b907cb5b3}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{57588164-924e-47a1-b40b-6b3fdf3b7dab}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{598442a6-e02e-47be-b48b-12442cf066e1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b2521bd3-1799-4f71-b176-33d279fb7ba6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

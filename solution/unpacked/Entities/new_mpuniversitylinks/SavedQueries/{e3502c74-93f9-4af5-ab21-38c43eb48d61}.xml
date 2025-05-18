@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e3502c74-93f9-4af5-ab21-38c43eb48d61}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_mpuniversitylinksid">
+          <cell name="new_universitylinksid" width="300" />
+          <cell name="new_universityid" width="300" />
+          <cell name="new_description" width="300" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_mpuniversitylinks">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_universitylinksid" descending="false" />
+          <attribute name="new_universitylinksid" />
+          <attribute name="new_universityid" />
+          <attribute name="new_description" />
+          <attribute name="new_mpuniversitylinksid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active MP University Links" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

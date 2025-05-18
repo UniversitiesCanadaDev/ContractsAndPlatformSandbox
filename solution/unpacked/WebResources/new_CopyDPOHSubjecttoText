@@ -1,0 +1,3 @@
+function CopyDPOHSubjects() {
+  Xrm.Page.getAttribute('new_fieldfordpohsubjects').setValue(Xrm.Page.getAttribute('new_dpohsubjects').getText());
+}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{50fe7d0c-7844-4bb6-84ef-af6d416b211f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_mediarequestid" name="result">
+          <cell name="new_journalist" width="150" />
+          <cell name="new_mediaoutlet" width="200" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="new_mediarequest">
+          <attribute name="createdon" />
+          <order descending="false" attribute="createdon" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition value="{0}" attribute="new_name" operator="like" />
+            <condition value="{0}" attribute="new_journalist" operator="like" />
+          </filter>
+          <attribute name="new_journalist" />
+          <attribute name="new_mediaoutlet" />
+          <attribute name="new_mediarequestid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Media Requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

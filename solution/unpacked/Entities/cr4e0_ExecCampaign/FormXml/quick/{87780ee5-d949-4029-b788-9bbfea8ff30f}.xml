@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{87780ee5-d949-4029-b788-9bbfea8ff30f}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{0f44bf12-ad32-44f6-99f7-84a8e70d7927}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2786b5f0-5de8-4f29-88a5-7d9cfc2781d9}" name="general_camp_info">
+                  <labels>
+                    <label description="GENERAL" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c38a6e33-9f5e-40e8-85d8-7132c1cf73f1}" showlabel="true" visible="true">
+                        <labels>
+                          <label description="Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr4e0_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4dd5e8b2-160f-4136-ab20-2931b3b674a1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Active Stage" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_activebpfstage" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="univcan_activebpfstage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{803ae4dc-7dec-4a7a-ab18-9780806638d7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Campaign Status" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_campaignstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_campaignstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{23fe0320-55e1-4d47-9dd2-76cb379de9e6}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Approver - Manager User" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approvermanageruser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approvermanageruser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a31399d0-ea96-4140-b874-eb96bfc07d4e}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Approver - Director/VP User" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approverdirectorvpuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approverdirectorvpuser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae90b984-d9b7-41b3-987a-e2fd0663e34e}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Approver - Exec Office User" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approverexecofficeuser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approverexecofficeuser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{585de02e-3bd2-4ccc-92c5-18c57e5b319b}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Approver - Exec Head User" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_approverexecheaduser" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_approverexecheaduser" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d85d6534-3f61-4d72-90ce-8f55d50dee66}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="CC" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_cc" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_cc" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{15be46d0-05af-4cce-a683-09f2622fc1bb}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

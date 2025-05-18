@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{30f0c1f5-df03-4228-bb4e-ad0099303a78}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_ex_head_assistant" id="new_ex_head_assistantid">
+          <cell name="new_main_contact" width="100" />
+          <cell name="new_name" width="150" />
+          <cell name="a_97af60452ec9e611aa170050568d4f81.jobtitle" width="300" disableSorting="1" />
+          <cell name="a_97af60452ec9e611aa170050568d4f81.emailaddress1" width="300" disableSorting="1" />
+          <cell name="a_97af60452ec9e611aa170050568d4f81.telephone1" width="125" disableSorting="1" />
+          <cell name="a_97af60452ec9e611aa170050568d4f81.new_address1_telephone1_ext" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_ex_head_assistant">
+          <attribute name="new_name" />
+          <order attribute="new_main_contact" descending="true" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_main_contact" />
+          <link-entity alias="a_97af60452ec9e611aa170050568d4f81" name="contact" from="contactid" to="new_staffcontactlookupid" link-type="outer" visible="false">
+            <attribute name="new_address1_telephone1_ext" />
+            <attribute name="emailaddress1" />
+            <attribute name="telephone1" />
+            <attribute name="jobtitle" />
+          </link-entity>
+          <attribute name="new_ex_head_assistantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Staff Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

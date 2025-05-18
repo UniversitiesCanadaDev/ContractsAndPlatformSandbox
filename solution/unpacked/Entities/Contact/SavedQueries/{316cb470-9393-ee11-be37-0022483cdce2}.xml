@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{316cb470-9393-ee11-be37-0022483cdce2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fullname" select="1" preview="1" icon="1">
+        <row name="result" id="contactid">
+          <cell name="new_prefixlist" width="100" />
+          <cell name="fullname" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="parentcustomerid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="jobtitle" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_jobtitlefrancais" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="emailaddress1" width="200" />
+          <cell name="new_languagepreference" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="contact">
+          <attribute name="new_prefixlist" />
+          <attribute name="emailaddress1" />
+          <attribute name="new_languagepreference" />
+          <attribute name="new_jobtitlefrancais" />
+          <attribute name="jobtitle" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="new_contacttype" from="new_contactnameid" to="contactid" link-type="inner" alias="aa">
+            <filter type="and">
+              <filter type="and">
+                <condition attribute="new_contacttype" operator="eq" value="100000009" />
+                <filter type="or">
+                  <condition attribute="new_appointmentenddate" operator="null" />
+                  <condition attribute="new_appointmentenddate" operator="next-x-years" value="10" />
+                </filter>
+              </filter>
+            </filter>
+          </link-entity>
+          <attribute name="fullname" />
+          <attribute name="parentcustomerid" />
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Climate Leads" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

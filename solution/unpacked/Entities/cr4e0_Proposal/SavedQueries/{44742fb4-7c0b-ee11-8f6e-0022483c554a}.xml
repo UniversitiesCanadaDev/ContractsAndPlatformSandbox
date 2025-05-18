@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{44742fb4-7c0b-ee11-8f6e-0022483c554a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_proposalid">
+          <cell name="cr4e0_name" width="200" />
+          <cell name="cr4e0_entityname" width="124" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="cr4e0_proposal">
+          <attribute name="cr4e0_name" />
+          <attribute name="cr4e0_proposalid" />
+          <attribute name="cr4e0_entityname" />
+          <filter type="and">
+            <condition attribute="cr4e0_entityname" operator="in">
+              <value>860540014</value>
+              <value>860540015</value>
+              <value>860540016</value>
+              <value>860540017</value>
+              <value>860540018</value>
+              <value>860540019</value>
+            </condition>
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Finance Entity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bd490043-c9f8-4a80-8b94-c04ea7a09f27}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_climatescopeid">
+          <cell name="new_organization" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_scope" width="100" />
+          <cell name="new_region" width="100" />
+          <cell name="new_size" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_climatescope">
+          <order attribute="new_organization" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_scope" />
+          <attribute name="new_organization" />
+          <attribute name="new_size" />
+          <attribute name="new_region" />
+          <attribute name="new_climatescopeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Climate Scope" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,82 @@
+function SignOff() {
+
+    let hasRole = false;
+    var roleID = "fd8f8a89-eff4-ee11-a1ff-6045bd60d1fe";
+    let roles = Xrm.Utility.getGlobalContext().userSettings.securityRoles;
+    debugger;
+    roles.forEach(x => {
+        x = x.replace("['", "");
+        x = x.replace("']", "");
+        if (x == roleID) {
+            hasRole = true;
+        }
+    });
+
+    if (hasRole) {
+        Xrm.Page.getAttribute("statecode").setValue(1);
+        Xrm.Page.getAttribute("statuscode").setValue(892080001);
+        Xrm.Page.getAttribute("statuscode").fireOnChange();
+        Xrm.Page.data.save();
+    }
+}
+function generatePdfReportAndAttach() {
+    debugger;
+    // Get the current record
+    var currentRecord = Xrm.Page.data.entity;
+        // Generate the PDF report
+        var pdfBytes = generatePdfReport(currentRecord.getId());
+
+        // Attach the PDF report to the notes section
+        attachPdfToNotes(currentRecord.getId(), pdfBytes);
+    
+}
+
+function generatePdfReport(recordId) {
+    // Use the RetrieveReportDefinitionRequest to get the report definition
+    var reportRequest = new Xrm.WebApi.RetrieveReportDefinitionRequest();
+    reportRequest.reportId = "8CE3B1D5-3ADB-EE11-904D-6045BD60D1FE";
+
+    Xrm.WebApi.online.execute(reportRequest).then(
+        function success(reportResponse) {
+            // Use the ExecuteReportRequest to generate the PDF report
+            var executeRequest = new Xrm.WebApi.ExecuteReportRequest();
+            executeRequest.reportDefinition = reportResponse.reportDefinition;
+            executeRequest.target = { entityType: "pia_privacyimpactassessment", id: recordId };
+
+            Xrm.WebApi.online.execute(executeRequest).then(
+                function success(executeResponse) {
+                    return executeResponse.result;
+                },
+                function error(error) {
+                    console.log("Error generating PDF report: " + error.message);
+                    return null;
+                }
+            );
+        },
+        function error(error) {
+            console.log("Error retrieving report definition: " + error.message);
+            return null;
+        }
+    );
+}
+
+function attachPdfToNotes(recordId, pdfBytes) {
+    // Create a new note entity
+    var note = {
+        "objectid": { entityType: "pia_privacyimpactassessment", id: recordId },
+        "filename": "Report.pdf",
+        "subject": "PDF Report",
+        "notetext": "This is the PDF report generated for the record.",
+        "documentbody": pdfBytes
+    };
+
+    // Create the note
+    Xrm.WebApi.online.createRecord("annotation", note).then(
+        function success(result) {
+            console.log("PDF report attached to notes successfully.");
+        },
+        function error(error) {
+            console.log("Error attaching PDF report to notes: " + error.message);
+        }
+    );
+}

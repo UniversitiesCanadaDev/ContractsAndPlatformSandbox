@@ -1,0 +1,122 @@
+function onload(executionContext) {
+
+    var formContext = executionContext.getFormContext();
+
+ 
+ var contactTypeAttr = formContext.getAttribute("cr4e0_iscontract");
+    var contactType = contactTypeAttr ? contactTypeAttr.getValue() : null;
+
+    if (contactType === 860540002 || contactType === 860540003) {
+        var processId = "ED97F333-6D8B-ED11-81AD-0022483C51F4";
+        formContext.data.process.setActiveProcess(processId);
+    } else {
+        var processId = "C7333916-FB4A-ED11-BBA2-0022483CB0D7";
+        formContext.data.process.setActiveProcess(processId);
+    }
+
+// Check programTypeValue and toggle control visibility
+    var programTypeValue = formContext.getAttribute("cr4e0_iscontract").getValue();
+    if (programTypeValue === 860540000 || programTypeValue === 860540001) {
+        formContext.getControl("cr4e0_typeofprogram").setVisible(true);
+        formContext.getControl("cr4e0_programvalue").setVisible(true);
+        formContext.getControl("cr4e0_partner").setVisible(true);
+        formContext.getControl("cr4e0_programcomplexity").setVisible(true);
+        formContext.getControl("cr4e0_partnershipsupports").setVisible(false);
+        formContext.getControl("cr4e0_adminfees").setVisible(true);
+        formContext.getControl("cr4e0_programsobjective").setVisible(true);
+        formContext.getControl("cr4e0_contractvalue").setVisible(false);
+        // Uncomment if needed
+        // formContext.ui.tabs.get("Info").sections.get("Selection Section").setVisible(true);
+    } else {
+        formContext.getControl("cr4e0_typeofprogram").setVisible(false);
+        formContext.getControl("cr4e0_programvalue").setVisible(false);
+        formContext.getControl("cr4e0_partner").setVisible(false);
+        formContext.getControl("cr4e0_programcomplexity").setVisible(false);
+        formContext.getControl("cr4e0_partnershipsupports").setVisible(false);
+        formContext.getControl("cr4e0_adminfees").setVisible(false);
+        formContext.getControl("cr4e0_programsobjective").setVisible(false);
+        formContext.getControl("cr4e0_contractvalue").setVisible(true);
+        // Uncomment if needed
+        // formContext.ui.tabs.get("Info").sections.get("Selection Section").setVisible(true);
+    }
+
+
+    // Get the created date and determine formType based on it
+    var createdOn = formContext.data.entity.attributes.get("createdon").getValue();
+    if (createdOn === null) {
+        console.error("Created date is null.");
+        return;
+    }
+
+    var oldDate = new Date("2024-05-15T23:59:59");
+    var formTypeValue = (createdOn && createdOn <= oldDate) ? 860540001 : 860540000;
+
+    // Log createdOn and formTypeValue for debugging
+    console.log("Created On: " + createdOn);
+    console.log("Form Type Value: " + formTypeValue);
+
+    // Set the formType if it's different from the current value
+    var currentFormType = formContext.getAttribute("cr4e0_formtype").getValue();
+    if (currentFormType === null || currentFormType !== formTypeValue) {
+        formContext.getAttribute("cr4e0_formtype").setValue(formTypeValue);
+        formContext.getAttribute("cr4e0_formtype").setSubmitMode("always");
+    }
+ 
+
+
+    // Control tab visibility based on formType
+    var internalReviewTab = formContext.ui.tabs.get("Internal Review");
+    var internalReviewSPCTab = formContext.ui.tabs.get("Internal Review SPC");
+    var internalReviewNewTab = formContext.ui.tabs.get("Internal Review New");
+
+    // Check if tabs are found
+    if (internalReviewTab && internalReviewSPCTab && internalReviewNewTab) {
+        // If formType is new (860540000), show "Internal Review New" and hide the other two
+        if (formTypeValue === 860540000) {
+            console.log("Form Type is new (860540000). Showing 'Internal Review New' tab.");
+            internalReviewNewTab.setVisible(true);  // Show "Internal Review New"
+            internalReviewTab.setVisible(false);   // Hide "Internal Review"
+            internalReviewSPCTab.setVisible(false); // Hide "Internal Review SPC"
+        }
+        // If formType is old (860540001), show "Internal Review" and "Internal Review SPC"
+        else {
+            console.log("Form Type is old (860540001). Showing 'Internal Review' and 'Internal Review SPC' tabs.");
+            internalReviewNewTab.setVisible(false); // Hide "Internal Review New"
+// Show "Internal Review"
+           internalReviewTab.setVisible(true);   
+// Show "Internal Review SPC"  
+             internalReviewSPCTab.setVisible(true); 
+var entityNameValue = formContext.getAttribute("cr4e0_entityname").getValue();
+if(entityNameValue != null){
+
+        if(entityNameValue == 860540023 && currentFormType === 860540001 || entityNameValue == 860540022 && currentFormType === 860540001 || entityNameValue == 860540004 && currentFormType === 860540001 || entityNameValue == 860540024 && currentFormType === 860540001 || entityNameValue == 860540026 && currentFormType === 860540001 || entityNameValue == 860540000 && currentFormType === 860540001 || entityNameValue == 860540032 && currentFormType === 860540001 || entityNameValue == 100000001 && currentFormType === 860540001 || entityNameValue == 100000000 && currentFormType === 860540001){
+
+           formContext.ui.tabs.get('Internal Review New').setVisible(false);
+            formContext.ui.tabs.get('Internal Review').setVisible(false);
+            formContext.ui.tabs.get('Internal Review SPC').setVisible(true); //set to true
+        }else{
+            formContext.ui.tabs.get('Internal Review New').setVisible(false);
+            formContext.ui.tabs.get('Internal Review').setVisible(true); //set to true
+            formContext.ui.tabs.get('Internal Review SPC').setVisible(false);
+        }
+
+}
+}
+}
+ 
+// Handle program type visibility logic
+    var programTypeValue = formContext.getAttribute("cr4e0_iscontract")?.getValue();
+  
+    // Privacy tab visibility based on program type
+    var privacyTab = formContext.ui.tabs.get("Privacy");
+    if (privacyTab) {
+        if (programTypeValue === 860540003 || programTypeValue === 860540001) {
+            privacyTab.setVisible(true);
+        } else {
+            privacyTab.setVisible(false);
+        }
+    } else {
+        console.error("Privacy tab not found.");
+    }
+
+}

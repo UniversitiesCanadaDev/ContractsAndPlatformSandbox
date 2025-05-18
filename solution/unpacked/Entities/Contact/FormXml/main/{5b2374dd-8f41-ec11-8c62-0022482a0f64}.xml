@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5b2374dd-8f41-ec11-8c62-0022482a0f64}</formid>
+    <IntroducedVersion>1.0.2110.4</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <footer id="{fc061bc5-d88f-4b1d-806b-2337578dd3da}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b1465951-d832-46c1-804a-c5ba28c10793}" showlabel="false" labelid="{e5c55ffe-0f62-40f3-8e5c-167dd72a36ea}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{1f8af088-e438-4f3e-8635-adc31ae57c01}" showlabel="false" labelid="{9eea87b5-afc3-4047-a114-7d274debdba6}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{523f4a64-c15c-4725-8774-812220d96c5f}" showlabel="false" labelid="{23071fcf-004c-491c-84dd-0fdc600bf114}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="BAM C1 Specialties Subgrid" languagecode="1033" />
+      <LocalizedName description="BAM C1 Specialties Subgrid" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+      <Description description="Formulaire de contact par défaut mis à jour." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

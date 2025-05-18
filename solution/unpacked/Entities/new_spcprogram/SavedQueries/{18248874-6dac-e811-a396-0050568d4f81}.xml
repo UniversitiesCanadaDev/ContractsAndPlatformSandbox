@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{18248874-6dac-e811-a396-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_spcprogramid">
+          <cell name="new_name" width="300" />
+          <cell name="new_programtype" width="125" />
+          <cell name="new_expectedcompletiondate" width="200" />
+          <cell name="new_champion" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_spcprogram">
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_programtype" />
+          <attribute name="new_expectedcompletiondate" />
+          <attribute name="new_champion" />
+          <attribute name="new_spcprogramid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="SPC Programs Account View" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Used in the SPC Programs Grid View on the Account entity." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

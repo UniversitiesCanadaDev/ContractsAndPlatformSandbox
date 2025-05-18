@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7b3585dd-285b-4749-b7bc-44759854e68d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_contacttypeid" name="result">
+          <cell name="new_contacttype" width="150" />
+          <cell name="new_contactnameid" width="125" />
+          <cell name="new_appointmentstartdate" width="100" />
+          <cell name="new_appointmentenddate" width="100" />
+          <cell name="new_jobtitle" width="200" />
+          <cell name="new_employer" width="200" />
+          <cell name="cr4e0_isrelatedtomemberconnect" width="219" />
+          <cell name="createdon" width="125" />
+          <cell name="new_name" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="new_contacttype">
+          <attribute name="createdon" />
+          <order descending="true" attribute="new_contactnameid" />
+          <order descending="true" attribute="new_contacttype" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_employer" />
+          <attribute name="new_appointmentstartdate" />
+          <attribute name="new_appointmentenddate" />
+          <attribute name="new_contacttype" />
+          <attribute name="new_jobtitle" />
+          <attribute name="new_contactnameid" />
+          <attribute name="new_name" />
+          <attribute name="new_contacttypeid" />
+          <attribute name="cr4e0_isrelatedtomemberconnect" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Contact Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

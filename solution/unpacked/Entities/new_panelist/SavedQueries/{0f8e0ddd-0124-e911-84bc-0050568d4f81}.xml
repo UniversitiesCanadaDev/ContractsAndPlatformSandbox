@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0f8e0ddd-0124-e911-84bc-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row id="new_panelistid" name="result">
+          <cell name="new_panelnameid" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_memberrole" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_startdate" width="125" />
+          <cell name="new_enddate" width="125" />
+          <cell name="new_term" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="new_panelist">
+          <order attribute="new_enddate" descending="true" />
+          <attribute name="new_startdate" />
+          <attribute name="new_memberrole" />
+          <attribute name="new_enddate" />
+          <attribute name="new_term" />
+          <attribute name="new_panelnameid" />
+          <attribute name="new_panelistid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Panelist for Contact View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

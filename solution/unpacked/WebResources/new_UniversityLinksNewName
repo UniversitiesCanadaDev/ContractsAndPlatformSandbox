@@ -1,0 +1,3 @@
+function OnLoad() {
+Xrm.Page.getAttribute('new_name').setValue('University Links');
+}

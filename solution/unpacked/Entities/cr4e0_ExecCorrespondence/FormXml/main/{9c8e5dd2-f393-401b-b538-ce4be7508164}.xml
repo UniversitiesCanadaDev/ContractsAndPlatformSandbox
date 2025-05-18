@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9c8e5dd2-f393-401b-b538-ce4be7508164}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab name="tab_documents" id="39ac7b16-b53f-4f97-931d-cace44166110" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Correspondence" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_documents_section_3" id="8a3f8041-baec-403f-978b-0d77a121538f" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Campaign info and Documents" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{fa396bbb-5679-4127-a92b-c2a26981df84}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e41a6f9c-8d8d-4f33-80bd-ca7233d2a0fd}" locklevel="0" colspan="1" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Documents" languagecode="1033" />
+                          <label description="Documents" languagecode="1036" />
+                        </labels>
+                        <control id="DocumentSubGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{9cd66b5c-8b7a-6433-c5a5-46a7245dd534}">
+                          <parameters>
+                            <ViewId>{3681B5A4-482E-ED11-9DB0-0022483C5336}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>cr4e0_execcorrespondence_SharePointDocuments</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51},{3681B5A4-482E-ED11-9DB0-0022483C5336},{962F13D7-4EF7-EC11-82E5-002248AE488E}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ecb635bf-2d0e-4ea9-aaff-a67f229e9f9a}" colspan="1" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Campaign: Information" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1649617332737" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="cr4e0_execcampaign" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>true</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="cr4e0_execcampaign"&gt;87780ee5-d949-4029-b788-9bbfea8ff30f&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <HideQuickFormBorder>false</HideQuickFormBorder>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{35162ee0-60e8-422b-8c90-0f4e2cb430d7}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_documents_section_4" id="464d0d3e-601b-4332-92a1-f77f577e05c3" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Email" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{aa946a67-4120-47de-af38-0332ca6ea176}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="To" languagecode="1033" />
+                        </labels>
+                        <control id="to" classid="{CBFB742C-14E7-4A17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="true" />
+                      </cell>
+                      <cell id="{a41fbf6f-3309-4c23-bfdb-56be67507239}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="CC" languagecode="1033" />
+                        </labels>
+                        <control id="cc" classid="{CBFB742C-14E7-4A17-96BB-1A13F7F64AA2}" datafieldname="cc" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8b665c1a-4c10-42ad-9d06-e7b6f86347ac}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="From" languagecode="1033" />
+                        </labels>
+                        <control id="from" classid="{CBFB742C-14E7-4A17-96BB-1A13F7F64AA2}" datafieldname="from" disabled="false" />
+                      </cell>
+                      <cell id="{06b41352-f23e-4f77-aabf-152c0fc147f4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="BCC" languagecode="1033" />
+                        </labels>
+                        <control id="bcc" classid="{CBFB742C-14E7-4A17-96BB-1A13F7F64AA2}" datafieldname="bcc" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f7cb7b73-0a9e-4ebd-a96e-7d4ae568cd4a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Reply to" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_replytoemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="univcan_replytoemail" disabled="false" />
+                      </cell>
+                      <cell id="{577e9b34-5a3a-94b0-2a24-a9b4720528b5}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{502335a7-675f-425b-8ea9-b69c7cf1fe53}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" uniqueid="{672a2e55-ccac-6159-864b-35c04b012699}" />
+                      </cell>
+                      <cell id="{bcdad977-833d-c375-6c93-4d549785309b}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a82bf2ba-202a-4178-9197-f44a457f36cf}" locklevel="0" colspan="1" rowspan="19" auto="false">
+                        <labels>
+                          <label description="Email Body" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_emailbody" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="univcan_emailbody" disabled="false" uniqueid="{13e7c5b2-f693-464a-9e13-fcfd7506420f}" />
+                      </cell>
+                      <cell id="{d7671de8-7463-926c-b8c0-a7775542069d}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Tasks" languagecode="1033" />
+                          <label description="Tâches" languagecode="1036" />
+                        </labels>
+                        <control id="ExecCorrespondenceTasks" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{0c607716-63c2-4045-d0bb-baa4dd17c177}">
+                          <parameters>
+                            <ViewId>{2B5F5A5D-2D23-4FE7-AA58-E77995368AE7}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_cr4e0_execcorrespondence_task</RelationshipName>
+                            <TargetEntityType>task</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{2B5F5A5D-2D23-4FE7-AA58-E77995368AE7},{6CF285AA-EB20-4277-925A-3E9735411FF0}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row>
+                      <cell id="{66909c52-e03e-99a3-990d-a362aec96048}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e162d03e-13b0-4252-e8bc-3e59894c84b2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7535b3d1-be74-a2c3-6ac1-2a85278622d5}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8db3950d-35c9-bc1a-c418-c0c493023d8b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a468a5ec-6eb7-9860-7a21-d6800e85ec45}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{db1ac9b1-8442-a191-b92a-8554b5015d20}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a7794a9-73c9-e1d3-4cb6-48582ce55199}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d23134c0-8554-5d8e-4ae4-07cb6d1ce3ae}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ab224ea-0d1e-d8dd-5b6d-a3e8403a8dd1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10923dac-5cc3-5948-e684-9d3dec02cbbc}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1313a68-0d0e-8607-4190-2c4d3c6a2a59}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d169a8e-a547-0179-0175-d5eaed507b30}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{2a212952-ebb6-4d28-a21e-6c24208aadeb}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell locklevel="0" id="{92547f82-b6bd-49b5-ba13-4c2c97f7366a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{376069ce-8bfd-4ac2-9251-d4d291cbd756}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a0e04a03-2bbb-4873-a3c5-0cf1f1d31819}" colspan="1" rowspan="1" locklevel="1">
+              <labels>
+                <label description="Regarding" languagecode="1033" />
+              </labels>
+              <control id="header_regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" disabled="true" />
+            </cell>
+            <cell id="{e7143cc3-c860-403b-bcf2-654044dcc6bc}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Correspondence Status" languagecode="1033" />
+              </labels>
+              <control id="header_univcan_correspondencestatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_correspondencestatus" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{9f42a732-e444-4dfe-8ad4-02fefc675db6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{91061e4f-b48a-4f5e-b74f-60d9cc8dc4f0}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fa0f3b36-f962-4e86-ae66-ab4e316e164d}" visible="false">
+              <labels>
+                <label description="Activity Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{b4cf7aa5-4c0e-467a-96ea-04565e5df65a}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a8dbf9b1-c6ec-4e05-a198-aae11786f3e1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b1da1af0-a055-4b2a-b655-d37193884c1c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9f75f475-64d6-439c-9090-4a383779e5d5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0557fac9-4fe2-4e17-880f-693826f01c01}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <controlDescriptions>
+        <controlDescription forControl="{13e7c5b2-f693-464a-9e13-fcfd7506420f}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>univcan_emailbody</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbody</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbody</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbody</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Campaign - Exec Correspondance" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Form for Correspondence linked to campaign" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{7b95ad8d-3756-4cb2-92a5-a78c1b7914ef}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_advisorygroupid">
+          <cell name="new_name" width="300" />
+          <cell name="new_memberrole" width="125" />
+          <cell name="new_startdate" width="125" />
+          <cell name="new_enddate" width="125" />
+          <cell name="createdon" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_advisorygroup">
+          <attribute name="new_name" />
+          <attribute name="createdon" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_startdate" />
+          <attribute name="new_enddate" />
+          <attribute name="new_memberrole" />
+          <attribute name="new_advisorygroupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Advisory Groups" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

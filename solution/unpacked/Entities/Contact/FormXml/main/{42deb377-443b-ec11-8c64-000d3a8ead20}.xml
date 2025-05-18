@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{42deb377-443b-ec11-8c64-000d3a8ead20}</formid>
+    <IntroducedVersion>1.0.2110.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <footer id="{697b1e77-a3f9-4313-b83c-8b3d5da6b437}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b1f4b986-33ef-43ab-975e-3396e1304f17}" showlabel="false" labelid="{4e1dd984-f5a3-45d1-a2c0-accebf9572ad}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{9364e744-eee2-4446-b8d8-4a671ac92740}" showlabel="false" labelid="{0fe134da-3dea-445f-b01a-87b3ab34c99d}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{47ebb28c-c901-472f-b339-19029223829a}" showlabel="false" labelid="{8ab51ec1-12b6-4224-8ead-f14e861cf7a1}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="BAM C1 Image Upload" languagecode="1033" />
+      <LocalizedName description="BAM C1 Image Upload" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+      <Description description="Formulaire de contact par défaut mis à jour." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

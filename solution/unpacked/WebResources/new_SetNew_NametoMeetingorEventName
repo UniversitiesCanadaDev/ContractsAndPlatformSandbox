@@ -1,0 +1,3 @@
+function OnChange() {
+Xrm.Page.getAttribute('new_name').setValue(Xrm.Page.getAttribute('new_meetingoreventid').getValue()[0].name);
+}

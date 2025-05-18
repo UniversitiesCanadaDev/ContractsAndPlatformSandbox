@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{a2f457c0-1de0-e711-b873-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_meetinglookupid">
+          <cell name="new_name" width="300" />
+          <cell name="new_meetingstatus" width="125" />
+          <cell name="new_meetingdate" width="150" />
+          <cell name="new_briefinglead" width="100" />
+          <cell name="new_schedulinglead" width="125" />
+          <cell name="new_lobbyactivity" width="100" />
+          <cell name="new_whichgroupownsthismeeting" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="new_meetinglookup">
+          <attribute name="new_whichgroupownsthismeeting" />
+          <attribute name="new_schedulinglead" />
+          <attribute name="new_meetingstatus" />
+          <attribute name="new_meetingdate" />
+          <attribute name="new_briefinglead" />
+          <attribute name="new_lobbyactivity" />
+          <order attribute="new_meetingdate" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="new_meetingparticipant" from="new_meetingparticipantsid" to="new_meetinglookupid" alias="aa">
+            <filter type="and">
+              <condition attribute="new_meetingcontact" operator="eq" uiname="Philip Landon" uitype="contact" value="{633DCCE7-29B7-E611-AA17-0050568D4F81}" />
+            </filter>
+          </link-entity>
+          <attribute name="new_meetinglookupid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Philips Meetings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

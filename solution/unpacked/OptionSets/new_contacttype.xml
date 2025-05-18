@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_contacttype" localizedName="Contact Type" description="Global contact type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Contact Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Global contact type" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000027" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Publications" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Associate Member" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000000" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Chancellor" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000009" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Climate Lead" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000025" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Communication Stakeholder" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000028" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Dean" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000008" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Diplomat" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000006" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="DOC" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000031" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="EDI Lead" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000013" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Executive Head" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000047" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Financial Aid Contact" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000034" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="GEI" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000017" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Government Official" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="GRO" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000005" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="ILO" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="Formerly INTERNATIONAL - ILO" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000044" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Indigenous Lead" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000038" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="International Stakeholder" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000016" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Journalist" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000007" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="MP" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000015" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="MP Candidate" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000019" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Office Staff" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000022" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Political Staff" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000033" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="President's Partner" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000023" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Programs" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000026" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Project Administrator" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000024" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="SDG Lead" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000011" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Senator" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000014" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Social Impact Lead" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000035" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Social Media Lead" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000010" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="Stakeholder" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000030" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="UA Freelancer" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000018" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="UC Staff" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000001" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="University Board Chair" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="University Board Secretary" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000012" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Vendor" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000020" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="VPA" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000021" ExternalValue="" Color="" IsHidden="0">
+      <labels>
+        <label description="VPR" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

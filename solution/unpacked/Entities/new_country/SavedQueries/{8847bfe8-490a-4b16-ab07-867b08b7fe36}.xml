@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8847bfe8-490a-4b16-ab07-867b08b7fe36}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_countryid">
+          <cell name="new_name" width="200" />
+          <cell name="new_frenchcountryname" width="200" />
+          <cell name="new_continent" width="200" />
+          <cell name="new_countrystatus" width="125" />
+          <cell name="new_commonwealthcountry" width="100" />
+          <cell name="new_qesas" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_country">
+          <attribute name="new_name" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_frenchcountryname" />
+          <attribute name="new_countrystatus" />
+          <attribute name="new_continent" />
+          <attribute name="new_commonwealthcountry" />
+          <attribute name="new_qesas" />
+          <attribute name="new_countryid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Countries" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

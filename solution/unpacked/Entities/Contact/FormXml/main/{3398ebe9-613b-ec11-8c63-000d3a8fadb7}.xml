@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3398ebe9-613b-ec11-8c63-000d3a8fadb7}</formid>
+    <IntroducedVersion>1.0.2110.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <footer id="{5fa03766-a63a-428f-84ee-54c2655fef42}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{bd61b9f8-25df-4b80-90a8-eeef77ad76e3}" showlabel="false" labelid="{f0a13648-9b31-419b-9ee3-14f699adba93}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{c831f99c-e579-4d59-8319-ffefa3eb3d2d}" showlabel="false" labelid="{75663c02-410d-486a-aba6-3b96cade03bf}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{79c9ea04-6556-4933-befb-81c0a188f1d0}" showlabel="false" labelid="{660cf97d-32f7-498a-9c08-157aa7150a38}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="C1 New Specialties" languagecode="1033" />
+      <LocalizedName description="C1 New Specialties" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+      <Description description="Formulaire de contact par défaut mis à jour." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

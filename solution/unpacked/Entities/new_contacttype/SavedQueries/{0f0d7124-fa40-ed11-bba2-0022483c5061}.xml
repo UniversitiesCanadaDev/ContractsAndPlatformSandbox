@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{0f0d7124-fa40-ed11-bba2-0022483c5061}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_contacttypeid">
+          <cell name="a_970ba414a54345e2bc5db93ee8baaa14.salutation" width="100" />
+          <cell name="a_970ba414a54345e2bc5db93ee8baaa14.firstname" width="100" />
+          <cell name="a_970ba414a54345e2bc5db93ee8baaa14.lastname" width="100" />
+          <cell name="new_appointmentstartdate" width="100" />
+          <cell name="new_appointmentenddate" width="100" />
+          <cell name="a_970ba414a54345e2bc5db93ee8baaa14.new_languagepreference" width="100" />
+          <cell name="new_name" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="new_contacttype">
+          <attribute name="new_name" />
+          <attribute name="new_contacttypeid" />
+          <filter type="and">
+            <condition attribute="new_contacttype" operator="eq" value="100000011" />
+            <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="new_appointmentenddate" operator="null" />
+              <condition attribute="new_appointmentenddate" operator="next-x-years" value="100" />
+            </filter>
+          </filter>
+          <link-entity alias="a_970ba414a54345e2bc5db93ee8baaa14" name="contact" to="new_contactnameid" from="contactid" link-type="inner">
+            <attribute name="firstname" />
+            <attribute name="lastname" />
+            <attribute name="salutation" />
+            <attribute name="new_languagepreference" />
+            <filter type="and">
+              <condition attribute="statecode" operator="eq" value="0" />
+            </filter>
+          </link-entity>
+          <attribute name="new_appointmentenddate" />
+          <attribute name="new_appointmentstartdate" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Senators" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

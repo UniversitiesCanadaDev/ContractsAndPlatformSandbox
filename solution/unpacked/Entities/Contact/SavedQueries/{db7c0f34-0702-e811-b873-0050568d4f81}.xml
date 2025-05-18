@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{db7c0f34-0702-e811-b873-0050568d4f81}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="fullname" select="1" preview="1" icon="1">
+        <row name="result" id="contactid">
+          <cell name="fullname" width="150" />
+          <cell name="gendercode" width="75" />
+          <cell name="jobtitle" width="200" />
+          <cell name="parentcustomerid" width="200" />
+          <cell name="telephone1" width="125" />
+          <cell name="new_address1_telephone1_ext" width="75" />
+          <cell name="emailaddress1" width="200" />
+          <cell name="new_twitterhandle" width="150" />
+          <cell name="new_languagepreference" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="contact">
+          <attribute name="jobtitle" />
+          <attribute name="parentcustomerid" />
+          <attribute name="emailaddress1" />
+          <attribute name="telephone1" />
+          <attribute name="new_twitterhandle" />
+          <attribute name="new_languagepreference" />
+          <attribute name="gendercode" />
+          <attribute name="new_address1_telephone1_ext" />
+          <order attribute="fullname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="new_contacttype" from="new_contactnameid" to="contactid" alias="aa">
+            <filter type="and">
+              <condition attribute="new_contacttype" operator="eq" value="100000025" />
+            </filter>
+          </link-entity>
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Communication Stakeholder" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="For Communications" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,35 @@
+function ShowHideTabsPIA() {
+    debugger;
+    var status = Xrm.Page.getAttribute("statuscode").getValue();
+    if (status == 1 || status == 892080000) {
+        Xrm.Page.ui.tabs.get("tab_projectanalysis").setVisible(false);
+        Xrm.Page.ui.tabs.get("tab_2").setVisible(false);
+        Xrm.Page.ui.tabs.get("tab_reporting").setVisible(false);
+
+        var ownerId = Xrm.Page.getAttribute("ownerid").getValue()[0].id;
+        var currentUserId = Xrm.Page.context.getUserId();
+
+        var FullPiaNeeded = Xrm.Page.getAttribute("pia_privacyofficerrecommendation").getValue();
+        if (FullPiaNeeded != null) {
+            if (FullPiaNeeded == 892080000) {
+                Xrm.Page.ui.tabs.get("tab_projectanalysis").setVisible(true);
+
+//IAN 2829bdb7-8754-eb11-a812-000d3aff0c1a
+//Heather C04DCAB4-CC5A-EB11-A812-000D3A84A858
+                if (ownerId == "{2829BDB7-8754-EB11-A812-000D3AFF0C1A}") {
+                    Xrm.Page.ui.tabs.get("tab_2").setVisible(true);
+                    Xrm.Page.ui.tabs.get("tab_reporting").setVisible(true);
+                }
+                else {
+                    Xrm.Page.ui.tabs.get("tab_2").setVisible(false);
+                    Xrm.Page.ui.tabs.get("tab_reporting").setVisible(false);
+                }
+            }
+        }
+    }
+    else{
+        Xrm.Page.ui.tabs.get("tab_projectanalysis").setVisible(true);
+        Xrm.Page.ui.tabs.get("tab_2").setVisible(true);
+        Xrm.Page.ui.tabs.get("tab_reporting").setVisible(true);
+    }
+}

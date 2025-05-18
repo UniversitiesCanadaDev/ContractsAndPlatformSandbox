@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5dcfc5ef-38c4-4d58-b053-d37d68ab8dfd}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{31a0888a-7a50-4209-90c9-05f63f220b13}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{8915c644-d9e1-4c36-885e-95a6562cdddd}">
+          <labels>
+            <label description="Assign To Project Manager" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{54f48df1-22e7-7629-0be0-bd36fc6a9da6}" name="StageStep3_section1" labelid="{0eaad739-cc74-4360-9583-17b855add2be}">
+                  <labels>
+                    <label description="Assign To Project Manager" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{70a42519-3d8a-448b-9e2a-a78e68d6561d}" showlabel="true" visible="true" labelid="{aafa0935-ae61-45f5-93ce-3a54a494c74a}">
+                        <labels>
+                          <label description="New Step" languagecode="1033" />
+                        </labels>
+                        <control id="Step_6:519f0e66-cdc6-ee11-9079-6045bd60d227_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_6" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{31b8ebab-1de4-4f78-83f6-69128c2e0e6d}" name="StageStep8" locklevel="0" expanded="true" visible="false" labelid="{afbe63bb-651a-4a9b-a084-d2bdf85eb71e}">
+          <labels>
+            <label description="Assign To Privacy Officer" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{e2098674-c866-4dda-8d86-29a3068e0de2}" name="StageStep8_section1" labelid="{5b61bb71-e32c-489a-b78a-556e2cd20683}">
+                  <labels>
+                    <label description="Assign To Privacy Officer" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1e20ae6f-58bd-4945-8775-533f3388a158}" showlabel="true" visible="true" labelid="{1fbca99e-0414-4271-879f-69d2033e2d1e}">
+                        <labels>
+                          <label description="Assign PIA to privacy manager" languagecode="1033" />
+                        </labels>
+                        <control id="Step_11:74efdbca-ccc6-ee11-9079-002248aee184_flowstep" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" datafieldname="Step_11" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

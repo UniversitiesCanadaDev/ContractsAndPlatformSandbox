@@ -1,0 +1,417 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sharepointonline": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedsharepointonline_de6b4"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_fddfc"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "f74d06a9-54c1-41b7-b096-88b161fdd808"
+          },
+          "type": "Request",
+          "kind": "Button",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "Record ID",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter record ID",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "Proposal Name",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter proposal name",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_2": {
+                  "title": "SharePoint Group Name",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text",
+                "text_1",
+                "text_2"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "2442308d-d1c2-4ba5-9130-36ead2db6605"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Set Folder Path",
+                "type": "string",
+                "value": "@{triggerBody()['text_1']}_@{toUpper(replace(triggerBody()['text'],'-',''))}"
+              }
+            ]
+          }
+        },
+        "List_all_users_with_permissions": {
+          "runAfter": {
+            "Break_Inheritance_of_Folder_from_Parent_Library": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b1bce2ad-1ccf-4fd4-8a9f-e0adbc1908b6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getByTitle('Proposal')/items(@{outputs('Get_folder_metadata_using_path')?['body/ItemId']})/roleassignments?$expand=Member/users"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Apply_to_each": {
+          "foreach": "@outputs('List_all_users_with_permissions')?['body']['d']['results']",
+          "actions": {
+            "Condition": {
+              "actions": {
+                "Send_an_HTTP_request_to_SharePoint": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "2c522752-50e9-4f95-bb5b-9d8ebcd8687a"
+                  },
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "host": {
+                      "connectionName": "shared_sharepointonline",
+                      "operationId": "HttpRequest",
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                    },
+                    "parameters": {
+                      "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+                      "parameters/method": "POST",
+                      "parameters/uri": "_api/web/lists/getByTitle('Proposal')/items(@{outputs('Get_folder_metadata_using_path')?['body/ItemId']})/roleassignments(@{item()?['PrincipalId']})",
+                      "parameters/headers": {
+                        "X-HTTP-Method": "DELETE"
+                      }
+                    },
+                    "authentication": {
+                      "type": "Raw",
+                      "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                    }
+                  }
+                }
+              },
+              "runAfter": {},
+              "expression": {
+                "not": {
+                  "equals": [
+                    "@item()?['Member']['Title']",
+                    "Dynamics Documents Owners"
+                  ]
+                }
+              },
+              "metadata": {
+                "operationMetadataId": "559e3cbb-4901-44f6-9874-ff8a3cbafa3c"
+              },
+              "type": "If"
+            }
+          },
+          "runAfter": {
+            "List_all_users_with_permissions": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "598092ad-ebdb-4003-9baf-c4e59e48299c"
+          },
+          "type": "Foreach"
+        },
+        "Get_group_Id_to_add_permission": {
+          "runAfter": {
+            "Apply_to_each": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2668aed8-62f8-4a6c-8406-d34d5218c9d6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "parameters/method": "GET",
+              "parameters/uri": "_api/web/siteGroups/getByName('@{triggerBody()['text_2']}')"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Get_Role_Id_to_Set_for_Group": {
+          "runAfter": {
+            "Get_group_Id_to_add_permission": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "269b9756-3b6c-4fe9-9e90-6a967ec34b6d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "parameters/method": "GET",
+              "parameters/uri": "_api/web/roleDefinitions/getByName('Contribute')"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Assign_Contribute_permission_to_Group_for_Folder": {
+          "runAfter": {
+            "Get_Role_Id_to_Set_for_Group": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2dcb3582-db8d-41fd-97a4-c96725df7ec0"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/lists/getByTitle('Proposal')/items(@{outputs('Get_folder_metadata_using_path')?['body/ItemId']})/roleAssignments/addRoleAssignment(PrincipalId=@{body('Get_group_Id_to_add_permission')?['d']?['Id']},roleDefId=@{body('Get_Role_Id_to_Set_for_Group')?['d']?['Id']})"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Respond_to_a_PowerApp_or_flow": {
+          "runAfter": {
+            "Assign_Contribute_permission_to_Group_for_Folder": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b2f7ec29-ac17-4a69-b468-87c7e057bca3"
+          },
+          "type": "Response",
+          "kind": "PowerApp",
+          "inputs": {
+            "statusCode": 200,
+            "body": {
+              "result": "success"
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "title": "result",
+                  "x-ms-dynamically-added": true,
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "List_rows": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "0d2b4252-3e62-4c06-b4eb-bd245ccbf52f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "sharepointdocumentlocations",
+              "$filter": "_regardingobjectid_value eq @{triggerBody()['text']}",
+              "$top": 1
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Apply_to_each_2": {
+          "foreach": "@outputs('List_rows')?['body/value']",
+          "actions": {
+            "Set_variable": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "c80e2029-1abe-4142-aef8-d17349a25379"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "Set Folder Path from Document Library",
+                "value": "@items('Apply_to_each_2')?['relativeurl']"
+              }
+            }
+          },
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ed2170ec-8e32-4abd-a087-62dace5b8440"
+          },
+          "type": "Foreach"
+        },
+        "Break_Inheritance_of_Folder_from_Parent_Library": {
+          "runAfter": {
+            "Get_folder_metadata_using_path": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "50ae9313-51c1-44ea-b32b-efc76b279361"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "HttpRequest",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "parameters/method": "POST",
+              "parameters/uri": "_api/web/lists/getByTitle('Proposal')/items(@{outputs('Get_folder_metadata_using_path')?['body/ItemId']})/breakroleinheritance(true)"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Get_folder_metadata_using_path": {
+          "runAfter": {
+            "Apply_to_each_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "ab8c23d1-8e9b-406b-811b-a84ef3ca2e60"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetFolderMetadataByPath",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://univcan.sharepoint.com/sites/DynamicsDocuments",
+              "path": "/cr4e0_proposal/@{variables('Set Folder Path from Document Library')}"
+            },
+            "authentication": {
+              "type": "Raw",
+              "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+            }
+          }
+        },
+        "Initialize_variable_2": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "24a11821-2cf1-4c88-8992-31438d95e094"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Set Folder Path from Document Library",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

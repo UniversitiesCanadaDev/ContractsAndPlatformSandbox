@@ -1,0 +1,4 @@
+function OnChange() {
+var formContext = executionContext.getFormContext();
+formContext.getAttribute('new_name').setValue(formContext.getAttribute('new_meetingattendeeucid').getText());
+}

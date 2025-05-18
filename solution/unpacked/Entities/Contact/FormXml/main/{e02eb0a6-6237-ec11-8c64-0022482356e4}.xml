@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e02eb0a6-6237-ec11-8c64-0022482356e4}</formid>
+    <IntroducedVersion>1.0.2110.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <footer id="{893a7a82-f988-4ac3-9f55-e0c2d7c15082}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1afd7db5-15ab-46a3-9ccb-e1aebf78652b}" showlabel="false" labelid="{d129136b-3b57-43da-8e40-aaaad4deeb24}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{7e11c8df-ce1b-4db4-94db-7327d6550a46}" showlabel="false" labelid="{de80fc34-cd97-4346-95a9-fd0235cda485}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{5a1e6c08-aa98-44a9-8174-3b8e9b699b53}" showlabel="false" labelid="{c4464fca-7b0b-4dc0-b2f8-053d8de1cec2}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="BAM C2 Contact Details" languagecode="1033" />
+      <LocalizedName description="BAM C2 Contact Details" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Book a Meeting Template. Form captures C2 User's first, last, email, phone, and phone type" languagecode="1033" />
+      <Description description="Réservez un modèle de réunion. Le formulaire capture le prénom, le nom, l’adresse e-mail, le numéro téléphone et le type de téléphone de l’utilisateur C2" languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

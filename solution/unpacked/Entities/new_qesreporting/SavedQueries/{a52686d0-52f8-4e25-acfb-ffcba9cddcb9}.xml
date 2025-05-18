@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a52686d0-52f8-4e25-acfb-ffcba9cddcb9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_qesreportingid">
+          <cell name="a_d8b0d0a5a20fe511b4170050568d4f81.new_filename" width="100" disableSorting="1" />
+          <cell name="new_qesreportfiscalyear" width="100" />
+          <cell name="new_annualworkplanduedate" width="200" />
+          <cell name="new_annualworkplandate" width="150" />
+          <cell name="new_annualworkplanstat" width="150" />
+          <cell name="new_annualworkplancolourstatus" width="150" />
+          <cell name="new_quarterlyfinancialreportduedate" width="200" />
+          <cell name="new_quarterlyfinancialreportstatus" width="200" />
+          <cell name="new_quarterlyfinancialreportdate" width="200" />
+          <cell name="new_quarterlyfinancilreport1colourstatus" width="200" />
+          <cell name="new_quarterlyfinancialreportduedate2" width="200" />
+          <cell name="new_quarterlyfinancialreportstatus2" width="200" />
+          <cell name="new_quarterlyfinancialreportdate2" width="200" />
+          <cell name="new_quarterlyfinancialreport2colorstatus" width="200" />
+          <cell name="new_quarterlyfinancialreportduedate3" width="200" />
+          <cell name="new_quarterlyfinancialreportstatus3" width="200" />
+          <cell name="new_quarterlyfinancialreportdate3" width="200" />
+          <cell name="new_quarterlyfinancialreport3colourstatus" width="200" />
+          <cell name="new_quarterlyfinancialreportduedate4" width="200" />
+          <cell name="new_quarterlyfinancialreportstatus4" width="200" />
+          <cell name="new_quarterlyfinancialreportdate4" width="200" />
+          <cell name="new_quarterlyfinancialreport4colorstatus" width="200" />
+          <cell name="new_annualnarrativereportduedate" width="200" />
+          <cell name="new_annualnarrativereportstat" width="200" />
+          <cell name="new_annualnarrativereportdate" width="200" />
+          <cell name="new_annualnarrativereportcolourstatus" width="200" />
+          <cell name="emailaddress" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qesreporting">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_qesreportfiscalyear" descending="false" />
+          <attribute name="new_qesreportfiscalyear" />
+          <attribute name="new_annualworkplandate" />
+          <attribute name="new_annualnarrativereportdate" />
+          <attribute name="new_quarterlyfinancilreport1colourstatus" />
+          <attribute name="new_quarterlyfinancialreport4colorstatus" />
+          <attribute name="new_quarterlyfinancialreport3colourstatus" />
+          <attribute name="new_quarterlyfinancialreport2colorstatus" />
+          <attribute name="new_quarterlyfinancialreportdate4" />
+          <attribute name="new_quarterlyfinancialreportdate3" />
+          <attribute name="new_quarterlyfinancialreportdate2" />
+          <attribute name="new_quarterlyfinancialreportdate" />
+          <attribute name="new_annualworkplancolourstatus" />
+          <attribute name="new_annualnarrativereportcolourstatus" />
+          <attribute name="emailaddress" />
+          <attribute name="new_quarterlyfinancialreportstatus4" />
+          <attribute name="new_quarterlyfinancialreportstatus3" />
+          <attribute name="new_quarterlyfinancialreportstatus2" />
+          <attribute name="new_quarterlyfinancialreportstatus" />
+          <attribute name="new_annualworkplanstat" />
+          <attribute name="new_annualnarrativereportstat" />
+          <attribute name="new_quarterlyfinancialreportduedate4" />
+          <attribute name="new_quarterlyfinancialreportduedate3" />
+          <attribute name="new_quarterlyfinancialreportduedate2" />
+          <attribute name="new_quarterlyfinancialreportduedate" />
+          <attribute name="new_annualnarrativereportduedate" />
+          <attribute name="new_annualworkplanduedate" />
+          <link-entity alias="a_d8b0d0a5a20fe511b4170050568d4f81" name="new_project" from="new_projectid" to="new_project" link-type="outer" visible="false">
+            <attribute name="new_filename" />
+          </link-entity>
+          <attribute name="new_qesreportingid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active QES Reporting" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="To display  active QES projects with email" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

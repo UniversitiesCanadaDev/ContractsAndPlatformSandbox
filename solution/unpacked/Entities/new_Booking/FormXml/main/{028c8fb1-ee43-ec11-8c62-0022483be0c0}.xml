@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{028c8fb1-ee43-ec11-8c62-0022483be0c0}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{1010066c-272c-43e4-898c-71ea41c6f210}" IsUserDefined="1" labelid="{f20b202c-eb0f-4802-9b5f-c7fe186f00a6}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{9957b70f-6dbd-49c1-83a7-0f240b25889d}" labelid="{70833a59-b871-4e71-a1b3-1f88a0860d5e}" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e57ba1af-4322-4158-9738-aa935a9ea34c}" locklevel="0" colspan="1" rowspan="1" labelid="{2b7e310e-4b0f-4bd6-8abb-7499ade85ba7}">
+                        <labels>
+                          <label description="Start date &amp; time" languagecode="1033" />
+                        </labels>
+                        <control id="new_startdatetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="new_startdatetime" disabled="false" />
+                      </cell>
+                      <cell id="{2996a976-d358-496a-93a4-cd66aa4f11ea}" visible="true" labelid="{e9354660-5109-4921-8d72-cba3c0d2027d}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4db436e1-2b8d-4691-91de-7f2d408dd75c}" locklevel="0" colspan="1" rowspan="1" labelid="{e5aaec7a-67e9-487b-82ac-eb214acc5040}">
+                        <labels>
+                          <label description="End date &amp; time" languagecode="1033" />
+                        </labels>
+                        <control id="new_enddatetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="new_enddatetime" disabled="false" />
+                      </cell>
+                      <cell id="{ca11383d-8b18-47ef-8f04-77c27e4333ea}" locklevel="0" colspan="1" rowspan="1" labelid="{2ed84d2e-55f4-479d-9b46-ba107cc0dc3f}">
+                        <labels>
+                          <label description="Need desk" languagecode="1033" />
+                        </labels>
+                        <control id="new_needdesk" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="new_needdesk" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{315abe78-8868-42ff-8425-1786a0cf9e42}" locklevel="0" colspan="1" rowspan="1" labelid="{2b922a78-1ca9-4338-b7aa-5e54b0933f0c}">
+                        <labels>
+                          <label description="Selected Desk" languagecode="1033" />
+                        </labels>
+                        <control id="new_desk_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_desk_id" disabled="false">
+                          <parameters>
+                            <AvailableViewIds>{2DC2009E-1409-4097-B0FD-F280ABD3E5AA}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{9140e639-1fa5-473f-8718-2a89ea36a390}" colspan="1" rowspan="1" labelid="{6f6d0001-2f00-4917-9f09-f6a8c90da02e}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{427ae104-ab08-428d-a88d-dfb18507cda2}" userspacer="true" showlabel="false" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell showlabel="false" locklevel="0" id="{c6339f63-f956-4fd3-949f-e80550c65d25}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{92dcef49-2b9c-42cc-b99d-111f7acb6be8}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Selected Desk Information" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1637079319497" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="new_desk_id" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="new_desk"&gt;eb2ca951-2e3d-4a7e-b140-e44a844b8762&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell showlabel="false" locklevel="0" id="{92ac48c5-c65f-4bf2-adf6-fda194bfa4ff}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{27615684-bbf5-48e6-b549-a00d533cac8d}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{76148e24-dd2b-4161-84a1-a7af6c56eee4}" showlabel="false" labelid="{25305543-ff1b-4e45-9226-c5a85e8e96b6}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c4b739a0-0741-4650-b0f8-398b620229dc}" showlabel="false" labelid="{685ce063-d887-4963-9a33-2cf17351776c}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c6efed5f-0df2-42cd-868b-eb47a47cc236}" showlabel="false" labelid="{0e2cf602-247e-4430-8c4c-3094a7fde180}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{58d4da16-c280-4d77-8c5b-34c1f9b694fa}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{24642df8-cc8a-4d84-a0dd-fe5156fa81f3}" showlabel="false" labelid="{83a65c6a-a01c-4fca-9041-d87bc24cb374}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5f5d93b6-9f51-42ca-84f2-f01907119198}" showlabel="false" labelid="{3d0f6fda-daa0-4f43-b9f6-5f599de81e5d}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6a16d9a6-2b89-44e0-8e72-3f84b7a73f33}" showlabel="false" labelid="{bcd08dfc-1db3-4af3-83ea-53ca552b47be}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Booking Main for App" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

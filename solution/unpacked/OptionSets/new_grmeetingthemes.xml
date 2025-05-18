@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_grmeetingthemes" localizedName="GR Meeting Themes" description="Global GR Meeting Themes list to replace GR Meeting Themes entity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="GR Meeting Themes" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Global GR Meeting Themes list to replace GR Meeting Themes entity" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000000" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Anti-Black Racism" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000001" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Budget advocacy" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Elections" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Campus visit" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Canada Learning Bond" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000005" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Canada-UK relations" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000006" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Caucus Briefings" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000007" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Student Financial Aid" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000008" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Charities" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000009" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Copyright" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000010" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="COVID-19" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000011" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Research Security" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000012" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Digital Research Infrastructure (DRI)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000013" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Diversification" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000014" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="DM Champions" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000015" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="DM Roundtable" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000016" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="EDI" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000017" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Freedom of Expression" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000018" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="G7/G20" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000019" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Gender-based violence" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000020" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="General introduction" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000021" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Geopolitics" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000022" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Immigration" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000023" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Indigenous" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000024" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Infrastructure" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000025" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Intellectual Property" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000026" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="International" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000027" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="International Education Strategy (IES)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000028" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Knowledge mobilization" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000029" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Mental health" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000030" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Mexico" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000031" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Mobility" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000032" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Naylor" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000033" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Opioids" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000034" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Research &amp; Innovation" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000035" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Saudi Recall" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000036" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Skills and training" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000037" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Sustainable Development" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000038" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Youth" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

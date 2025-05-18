@@ -1,0 +1,60 @@
+function onLoad()
+{
+	debugger;
+	if (Xrm.Page.ui.getFormType() != 1){
+		if (Xrm.Page.data.entity.getId() != null){
+		var contactID = Xrm.Page.data.entity.getId();
+        contactID = contactID.replace("{", "").replace("}", "");
+		var hideMPCC = false;
+		var hidePP = false;
+		
+		Xrm.WebApi.online.retrieveMultipleRecords("new_contacttype", "?$select=new_appointmentenddate,new_contacttype&$filter=statecode eq 0 and  _new_contactnameid_value eq(" + contactID + ")").then(
+			function success(results) {
+				if(results.entities.length > 0){
+					for (var i = 0; i < results.entities.length; i++) {
+					var endDate = results.entities[i]["new_appointmentenddate"];
+					if(endDate != null)
+					{
+						endDate = new Date(endDate);
+					}
+					var today = new Date();
+					var contactType = results.entities[i]["new_contacttype"];
+					if(contactType == 100000013 &&(endDate == null || Date.parse(endDate) > Date.parse(today)))
+					{
+						hideMPCC = true;
+					}
+					else if(contactType == 100000007 &&(endDate == null || Date.parse(endDate) > Date.parse(today)))
+					{
+						hidePP = true;
+					}
+				}
+				  if(hideMPCC == true && hidePP == false)
+				  {
+					  Xrm.Page.ui.tabs.get("MPCC").setVisible(false);
+					  Xrm.Page.ui.tabs.get("PartnerProgram").setVisible(true);
+				  }
+				  if(hidePP == true && hideMPCC == false)
+				  {
+					  Xrm.Page.ui.tabs.get("PartnerProgram").setVisible(false);
+					  Xrm.Page.ui.tabs.get("MPCC").setVisible(true);
+				  }
+				  if(hidePP == true && hideMPCC == true)
+				  {
+					  Xrm.Page.ui.tabs.get("PartnerProgram").setVisible(false);
+					  Xrm.Page.ui.tabs.get("MPCC").setVisible(false);
+				  }
+				}
+				else
+				{
+					Xrm.Page.ui.tabs.get("MPCC").setVisible(false);
+					Xrm.Page.ui.tabs.get("PartnerProgram").setVisible(false);
+				}
+			},
+			function(error) {
+				Xrm.Utility.alertDialog(error.message);
+			}
+		);
+		}
+	}
+}
+

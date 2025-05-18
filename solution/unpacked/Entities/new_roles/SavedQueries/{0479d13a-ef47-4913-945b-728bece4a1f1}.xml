@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0479d13a-ef47-4913-945b-728bece4a1f1}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_rolesid">
+          <cell name="new_nameid" width="100" />
+          <cell name="new_name" width="200" />
+          <cell name="new_rolefederalparty" width="125" />
+          <cell name="new_roleenddate" width="100" />
+          <cell name="new_federalridingid" width="150" />
+          <cell name="new_roleridingprovince" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_roles">
+          <attribute name="new_name" />
+          <attribute name="new_roleridingprovince" />
+          <attribute name="new_rolefederalparty" />
+          <attribute name="new_nameid" />
+          <attribute name="new_federalridingid" />
+          <order attribute="new_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="new_role" operator="ne" value="100000000" />
+          </filter>
+          <attribute name="new_roleenddate" />
+          <attribute name="new_rolesid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Roles" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

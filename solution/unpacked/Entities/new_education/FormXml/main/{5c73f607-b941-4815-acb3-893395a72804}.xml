@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5c73f607-b941-4815-acb3-893395a72804}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900" showImage="false" shownavigationbar="true">
+      <tabs>
+        <tab id="{9d81795a-47da-4a6d-a447-b1d5109fec42}" name="{9d81795a-47da-4a6d-a447-b1d5109fec42}" showlabel="true" expanded="true" locklevel="0" IsUserDefined="1" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{98c53ba4-656e-4423-aa8a-1ff54b64e583}" name="{98c53ba4-656e-4423-aa8a-1ff54b64e583}" showlabel="false" locklevel="0" IsUserDefined="0" celllabelposition="Top" celllabelalignment="Left" labelwidth="150" columns="111" showbar="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9302a40e-0a82-4c86-61ac-3ccb720e3ad1}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="Institiution" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_institiutionid" datafieldname="new_institiutionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{02cd3025-2ba9-062a-53aa-4b9039b2e72a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{525d1381-e213-4c22-567a-35cc84928ce3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Degree" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_degreeid" datafieldname="new_degreeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                      <cell id="{42dac318-88bc-6be4-1377-9a5a3e45c35e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ac788e12-6579-c557-0b22-06a2d9b5eb45}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96b44694-832c-6483-3840-8d116855e403}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Field of Study" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_fieldofstudy" datafieldname="new_fieldofstudy" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                      <cell id="{4b0460d2-9c8b-5d55-203e-6dc49182a18a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{2b305886-de1e-d36d-65e6-13c040e5e7cd}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{81d4e6c7-02dc-d311-ed8b-a39b6ce87e38}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="General Degree Area" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_degreearea" datafieldname="new_degreearea" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                      <cell id="{d9b6e8a3-d799-80cb-c0dd-0da09479a110}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{9bd1c664-cb48-dc17-44ea-75a407ab6d46}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{adc8339b-d950-50b3-66d1-3a363aab4b2d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Particular Degree Area" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_particulardegreearea" datafieldname="new_particulardegreearea" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                      <cell id="{bc12edc3-8139-87dd-79bb-580127958805}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{137d0231-77d0-8105-e85a-87885c727ce8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{97358026-b3b8-5e39-0a85-7aad41baeb42}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Specific Field" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_specificfield" datafieldname="new_specificfield" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                      <cell id="{1ba2d985-2add-832c-d504-a799d5b19b0e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{9e796915-7951-3a93-4e92-03ecac074219}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04b84324-de47-b0a7-1e08-7ed6399121b7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact Name" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_contact_new_educationid" datafieldname="new_contact_new_educationid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" uniqueid="{5886da66-2d34-9a93-9504-5a27a9106669}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{5288bd25-064c-5de6-6475-6100ca30be4d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3c22b20c-655c-de8e-8e22-c89b142153ea}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section id="{7ce67ee4-c103-2cd1-2e8d-e9477eec7a4e}" name="{9d81795a-47da-4a6d-a447-b1d5109fec42}_section_3" showlabel="false" locklevel="0" IsUserDefined="0" celllabelposition="Left" celllabelalignment="Left" labelwidth="115" columns="1" showbar="false" layout="varwidth" visible="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c974545d-0934-4b16-8ead-f6917bdf8d71}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" datafieldname="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{03eef0ab-2ff6-4d96-ab6a-2b72455e7c92}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <footer id="{6b569c39-6498-4b19-923b-72e9a7048f7b}" columns="111">
+        <rows>
+          <row>
+            <cell id="{e17ccd7d-05a1-38e5-3221-ac3a83bb4606}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control disabled="true" id="footer_createdby" datafieldname="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+            </cell>
+            <cell id="{a7271db4-ae46-5e8e-19ba-cee6a30cc2ce}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control disabled="true" id="footer_createdon" datafieldname="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+            </cell>
+            <cell id="{ab324c38-d917-4648-bf07-be8fe35fb7da}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+          <row>
+            <cell id="{db64bb66-5e82-4bd0-77cb-a5de099c9405}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control disabled="true" id="footer_modifiedby" datafieldname="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+            </cell>
+            <cell id="{151c2123-1614-5121-a37b-b3a208c087dd}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control disabled="true" id="footer_modifiedon" datafieldname="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" />
+            </cell>
+            <cell id="{15d9baab-3ead-cd44-7248-38cd5b66248b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="new_EducationFormMainJS" libraryUniqueId="{9002c59a-627c-4616-531a-e7c2224e31e5}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" attribute="new_institiutionid" active="false" application="false">
+          <Handlers>
+            <Handler passExecutionContext="false" parameters="" enabled="true" handlerUniqueId="{83b7757e-49aa-dcbc-dee0-928329481a0c}" libraryName="new_EducationFormMainJS" functionName="OnChange" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

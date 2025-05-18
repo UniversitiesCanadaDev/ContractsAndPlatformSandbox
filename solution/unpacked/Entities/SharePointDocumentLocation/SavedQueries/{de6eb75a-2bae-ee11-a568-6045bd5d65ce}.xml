@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{de6eb75a-2bae-ee11-a568-6045bd5d65ce}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="name" select="1" icon="1" preview="1">
+        <row name="result" id="sharepointdocumentlocationid">
+          <cell name="name" width="200" />
+          <cell name="regardingobjectid" width="100" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="sharepointdocumentlocation">
+          <attribute name="name" />
+          <attribute name="regardingobjectid" />
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="regardingobjectid" operator="eq" uiname="Campus Safety - Fr" uitype="cr4e0_portalresourcesdocuments" value="{72E1DEE0-29AE-EE11-A568-6045BD5D63D7}" />
+          </filter>
+          <attribute name="sharepointdocumentlocationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Portal - Campus Safety Fr Resources" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

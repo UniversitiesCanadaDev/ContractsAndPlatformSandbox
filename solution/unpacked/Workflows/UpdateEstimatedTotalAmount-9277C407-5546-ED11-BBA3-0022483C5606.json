@@ -1,0 +1,208 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "impersonation": {
+          "source": "invoker"
+        },
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_1967d"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "e82d8640-977e-4a39-a40c-cac96c394fab"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 7,
+              "subscriptionRequest/entityname": "cr4e0_awardstypes",
+              "subscriptionRequest/scope": 4
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Get_a_row_by_ID": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "6abdac73-610b-4ff6-848b-354183ad18a6"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerOutputs()?['body/_cr4e0_proposal_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Condition": {
+          "actions": {
+            "List_rows": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "dfed79e5-e848-4421-8221-482680231e6a"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "ListRecords",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "cr4e0_awardstypeses",
+                  "$filter": "_cr4e0_proposal_value eq @{triggerOutputs()?['body/_cr4e0_proposal_value']}"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Apply_to_each": {
+              "foreach": "@outputs('List_rows')?['body/value']",
+              "actions": {
+                "Compose": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "704e0499-7d9b-405a-b24c-11b13eec3b68"
+                  },
+                  "type": "Compose",
+                  "inputs": "@items('Apply_to_each')?['cr4e0_totalamount']"
+                },
+                "Set_variable": {
+                  "runAfter": {
+                    "Compose_2": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "4979215b-7b74-47a5-88cd-a920a690fc1f"
+                  },
+                  "type": "SetVariable",
+                  "inputs": {
+                    "name": "Estimated Total Amount",
+                    "value": "@float(add(outputs('Compose'),outputs('Compose_2')))"
+                  }
+                },
+                "Compose_2": {
+                  "runAfter": {
+                    "Compose": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "f12fe56c-9bb1-48f8-bd61-181a37c8d10d"
+                  },
+                  "type": "Compose",
+                  "inputs": "@int(variables('Estimated Total Amount'))"
+                }
+              },
+              "runAfter": {
+                "List_rows": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "e60bd263-d395-49cc-b382-0acfbf3f47b3"
+              },
+              "type": "Foreach"
+            },
+            "Update_a_row": {
+              "runAfter": {
+                "Apply_to_each": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "0da90457-be9a-4760-9065-b55772f1530d"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "UpdateRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "cr4e0_proposals",
+                  "recordId": "@triggerOutputs()?['body/_cr4e0_proposal_value']",
+                  "item/cr4e0_estimatedprogramfunds": "@variables('Estimated Total Amount')"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "equals": [
+              "@outputs('Get_a_row_by_ID')?['body/cr4e0_calculatefunds']",
+              true
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "14d0a049-120c-476a-ba84-15600b9fef24"
+          },
+          "type": "If"
+        },
+        "Initialize_variable": {
+          "runAfter": {
+            "Get_a_row_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "1a9679a9-d3f9-4c60-ada9-af48fbab7ebd"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Estimated Total Amount",
+                "type": "float",
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

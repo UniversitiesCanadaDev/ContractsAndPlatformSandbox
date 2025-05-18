@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{840cdb74-381c-ec11-b6e6-000d3a1b2099}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <tabs>
+        <tab name="General" id="f5185577-4771-444a-8e8b-e65c44944899" IsUserDefined="0" locklevel="0" showlabel="false" labelid="{98594c3a-e655-42bb-9f80-7230c9878fa8}" expanded="true" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="general_section_1" id="8b0d7d0a-febf-4a45-8a20-00c7b1fc1033" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{1d4afc1d-b897-4ed2-b928-0342034f6bec}" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{a9ea2b35-7774-1913-e74c-08a7aa6a5904}" showlabel="false" locklevel="0" colspan="2" visible="true" ordinalvalue="10000">
+                        <control id="childrensnames" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="childrensnames" disabled="false" uniqueid="{C3EF07B2-ECB6-4EFC-A158-2D1FBE06C646}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{cf7f4edd-4360-455d-8cdc-1bc229890da6}" ordinalvalue="10004" solutionaction="Removed" />
+                      <cell locklevel="0" id="{801df31a-6ecb-45bf-b708-667e8fbc3bd8}" showlabel="false" ordinalvalue="20005" solutionaction="Removed" />
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{C3EF07B2-ECB6-4EFC-A158-2D1FBE06C646}" solutionaction="Modified">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>childrensnames</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="msdynce_PowerPortals.FileDragDrop">
+            <parameters>
+              <Property>childrensnames</Property>
+              <ControlLabelText type="SingleLine.Text" static="true">Photo</ControlLabelText>
+              <ControlDescriptionText type="SingleLine.Text" static="true">Upload a jpg, png, or other compatible media file.</ControlDescriptionText>
+              <DnDTextBold type="SingleLine.Text" static="true">JPG, PNG smaller than 10MB</DnDTextBold>
+              <DnDText type="SingleLine.Text" static="true">Drag &amp; drop your image here or</DnDText>
+              <UploadButtonText type="SingleLine.Text" static="true">Choose file</UploadButtonText>
+              <ClearButtonText type="SingleLine.Text" static="true">Clear</ClearButtonText>
+              <FileTypes type="SingleLine.Text" static="true">image/png,image/jpg,image/jpeg</FileTypes>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="msdynce_PowerPortals.FileDragDrop">
+            <parameters>
+              <Property>childrensnames</Property>
+              <ControlLabelText type="SingleLine.Text" static="true">Photo</ControlLabelText>
+              <ControlDescriptionText type="SingleLine.Text" static="true">Upload a jpg, png, or other compatible media file.</ControlDescriptionText>
+              <DnDTextBold type="SingleLine.Text" static="true">JPG, PNG smaller than 10MB</DnDTextBold>
+              <DnDText type="SingleLine.Text" static="true">Drag &amp; drop your image here or</DnDText>
+              <UploadButtonText type="SingleLine.Text" static="true">Choose file</UploadButtonText>
+              <ClearButtonText type="SingleLine.Text" static="true">Clear</ClearButtonText>
+              <FileTypes type="SingleLine.Text" static="true">image/png,image/jpg,image/jpeg</FileTypes>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="msdynce_PowerPortals.FileDragDrop">
+            <parameters>
+              <Property>childrensnames</Property>
+              <ControlLabelText type="SingleLine.Text" static="true">Photo</ControlLabelText>
+              <ControlDescriptionText type="SingleLine.Text" static="true">Upload a jpg, png, or other compatible media file.</ControlDescriptionText>
+              <DnDTextBold type="SingleLine.Text" static="true">JPG, PNG smaller than 10MB</DnDTextBold>
+              <DnDText type="SingleLine.Text" static="true">Drag &amp; drop your image here or</DnDText>
+              <UploadButtonText type="SingleLine.Text" static="true">Choose file</UploadButtonText>
+              <ClearButtonText type="SingleLine.Text" static="true">Clear</ClearButtonText>
+              <FileTypes type="SingleLine.Text" static="true">image/png,image/jpg,image/jpeg</FileTypes>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <footer id="{d3f29d06-9d00-4ec2-baaa-9921cb755e0e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{9e3f4692-4a17-4b26-be7b-cfd4ef289736}" showlabel="false" labelid="{644375b5-8e8b-48f0-abdf-d04e6fa239f2}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{6a61e57d-bde6-44eb-a190-d0f12822b42e}" showlabel="false" labelid="{5d29361a-f683-43b3-a9e6-3f25152f3123}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{ad5a1457-3023-4c35-8d1c-ec083ce44f3b}" showlabel="false" labelid="{5b6a5ea5-55d1-4fdd-8347-8d57da496ef6}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Add child profile" languagecode="1033" />
+      <LocalizedName description="Add child profile" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+      <Description description="Formulaire de contact par défaut mis à jour." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{e31969f5-58f4-46ae-9ff5-55ef014f880e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_eventid">
+          <cell name="new_contact_new_eventid" width="150" />
+          <cell name="new_event_lookup" width="300" />
+          <cell name="new_eventstartdate" width="100" />
+          <cell name="new_eventenddate" width="100" />
+          <cell name="new_eventinvite" width="150" />
+          <cell name="new_eventattendance" width="125" />
+          <cell name="new_participation" width="100" />
+          <cell name="new_mainevent" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_event">
+          <order attribute="new_contact_new_eventid" descending="false" />
+          <attribute name="new_participation" />
+          <attribute name="new_eventstartdate" />
+          <attribute name="new_eventenddate" />
+          <attribute name="new_eventinvite" />
+          <attribute name="new_eventattendance" />
+          <attribute name="new_contact_new_eventid" />
+          <attribute name="new_event_lookup" />
+          <attribute name="new_mainevent" />
+          <attribute name="new_eventid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Event Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

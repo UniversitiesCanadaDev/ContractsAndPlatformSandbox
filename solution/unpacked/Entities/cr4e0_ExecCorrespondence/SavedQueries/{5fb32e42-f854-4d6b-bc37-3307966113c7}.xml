@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{5fb32e42-f854-4d6b-bc37-3307966113c7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="subject" select="1" icon="1" preview="1">
+        <row name="result" id="activityid">
+          <cell name="subject" width="300" />
+          <cell name="to" width="204" />
+          <cell name="from" width="125" />
+          <cell name="univcan_replytoemail" width="136" />
+          <cell name="cr4e0_execcampaign" width="250" />
+          <cell name="univcan_correspondencestatus" width="270" />
+          <cell name="createdon" width="132" />
+          <cell name="statecode" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_execcorrespondence">
+          <attribute name="subject" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="not-null" />
+          </filter>
+          <attribute name="to" />
+          <attribute name="statecode" />
+          <attribute name="univcan_replytoemail" />
+          <attribute name="cr4e0_execcampaign" />
+          <attribute name="from" />
+          <attribute name="univcan_correspondencestatus" />
+          <attribute name="activityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Correspondence" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formerly All Exec Correspondences" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

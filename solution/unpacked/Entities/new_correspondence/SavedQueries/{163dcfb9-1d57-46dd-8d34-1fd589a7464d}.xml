@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{163dcfb9-1d57-46dd-8d34-1fd589a7464d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" preview="1" icon="1" select="1" jump="new_name">
+        <row id="new_correspondenceid" name="result">
+          <cell name="new_contact_new_correspondenceid" width="200" />
+          <cell name="new_name" width="300" />
+          <cell name="new_correspondencedate" width="150" />
+          <cell name="new_source" width="125" />
+          <cell name="new_corresponcedirection" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" version="1.0">
+        <entity name="new_correspondence">
+          <attribute name="new_name" />
+          <order descending="true" attribute="new_correspondencedate" />
+          <order descending="true" attribute="new_name" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <attribute name="new_correspondencedate" />
+          <attribute name="new_corresponcedirection" />
+          <attribute name="new_source" />
+          <attribute name="new_contact_new_correspondenceid" />
+          <attribute name="new_correspondenceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Correspondence" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5ca79c64-813c-4d88-9f77-ab98059ef699}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab name="tab_3" id="{5ee60c04-41d8-6781-8894-7b2b7ce3776a}" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{8e505e80-5d5c-7d29-48a2-63b83da54c11}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b8460de0-aaa9-014e-342d-c6285dd82b45}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Canadian University" languagecode="1033" />
+                        </labels>
+                        <control id="new_canadianuniversities" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_canadianuniversities" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_2" showlabel="false" showbar="false" locklevel="0" id="{d7ee3808-a82c-acd7-9661-6407cb5ad63d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cb3a91b7-181e-2e96-a874-7ba19bbd968d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Filename" languagecode="1033" />
+                        </labels>
+                        <control id="new_filenameid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_filenameid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{872be0a3-2ce0-81ac-9589-66decd4d21ac}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Partner Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_7" showlabel="false" showbar="false" locklevel="0" id="{8d7cd7a5-9d16-4846-44dc-8a92ba8c34e1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5b5391de-eee2-1750-6cc4-a530c746b657}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="QES Project Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_partnerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_partnerid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{2EB4D9A1-56DE-4756-8207-5C5DA92D8B02}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c90134bc-614c-110b-3236-09bb6a353717}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="QES Project type" languagecode="1033" />
+                        </labels>
+                        <control id="new_qesprojecttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_qesprojecttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70310755-6507-4f05-b98b-237bb6bba132}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Partner Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6299c163-e905-3ecd-6419-b10db94abb23}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="new_city" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2c90624-e9ce-ade1-a935-32881b590d0b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="new_country" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_country" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b2cac52-da1d-3ccc-8686-21cc8a587eb9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_contactname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_contactname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{140b587b-250e-73e8-ae63-95ba38439a21}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="new_email" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_email" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4623844-14b4-2bd7-ee4e-27611861e7ee}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Telephone" languagecode="1033" />
+                        </labels>
+                        <control id="new_telephone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_telephone" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_3" showlabel="true" showbar="true" locklevel="0" id="{ca7c5288-7cc8-c0e1-28d6-dae97897182a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Type of LMIC Partner Institution" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae4b2ade-0bbc-a676-92e4-a3b2104728c7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of LMIC Partner Institution" languagecode="1033" />
+                        </labels>
+                        <control id="new_typeoflmicpartnerinstitution" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_typeoflmicpartnerinstitution" disabled="false" />
+                      </cell>
+                      <cell id="{80eb2c3e-020e-cbbe-c653-6993a14911d4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Research Partner Type" languagecode="1033" />
+                        </labels>
+                        <control id="new_researchpartnertype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="new_researchpartnertype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5bc1b124-79c5-a6ae-72e8-259d773dd76e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Other LMIC Project Type" languagecode="1033" />
+                        </labels>
+                        <control id="new_otherlmicprojecttype" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_otherlmicprojecttype" disabled="false" />
+                      </cell>
+                      <cell id="{1b2ca496-8e93-4d2b-7d03-ad209da20449}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{87a97e82-2d48-437b-b914-99e4b3ca4f8d}" IsUserDefined="1" name="{87a97e82-2d48-437b-b914-99e4b3ca4f8d}" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{22cd7cba-bcef-4898-9c8d-29721c818982}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c77b9395-4790-4e16-affa-1f2194deb14e}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{32c10a88-fd85-4c41-944a-a6259a5f2ec9}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{f4a02307-6a04-47da-afa9-9a000987b323}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

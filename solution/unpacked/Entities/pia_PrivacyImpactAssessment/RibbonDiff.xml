@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.pia_privacyimpactassessment.Assign.Hide" Location="Mscrm.Form.pia_privacyimpactassessment.Assign" />
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.pia_privacyimpactassessment.Deactivate.Hide" Location="Mscrm.Form.pia_privacyimpactassessment.Deactivate" />
+    <HideCustomAction HideActionId="univcan.Mscrm.Form.pia_privacyimpactassessment.Delete.Hide" Location="Mscrm.Form.pia_privacyimpactassessment.Delete" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

@@ -1,0 +1,547 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps-1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps-2": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_119b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "fa143f78-ce1e-499c-a64d-414be31fc3bb"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "title": "Input",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "0d51c5e7-e21e-47eb-a3db-97d31e4478b4"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "App Input Data",
+                "type": "string",
+                "value": "@triggerBody()['text']"
+              }
+            ]
+          }
+        },
+        "Parse_JSON": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9082ff65-4c86-447b-bc13-cc84162ebc48"
+          },
+          "type": "ParseJson",
+          "inputs": {
+            "content": "@variables('App Input Data')",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ApprovalStatus": {
+                  "type": "string"
+                },
+                "ProposalId": {
+                  "type": "string"
+                },
+                "Comments": {
+                  "type": "string"
+                },
+                "User": {
+                  "type": "string"
+                },
+                "Email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "Get_Proposal": {
+          "runAfter": {
+            "Parse_JSON": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5b4b64a5-a551-4b48-bcdc-139a82439920"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@body('Parse_JSON')?['ProposalId']"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps-1",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Add_a_new_item_to_timeline": {
+          "runAfter": {
+            "Get_Proposal": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "15a5f973-84cb-4662-b679-cae3785dbf11"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "annotations",
+              "item/subject": "@{body('Parse_JSON')?['ApprovalStatus']} by @{body('Parse_JSON')?['User']}",
+              "item/notetext": "Comments - @{body('Parse_JSON')?['Comments']}",
+              "item/isdocument": false,
+              "item/objectid_cr4e0_proposal@odata.bind": "cr4e0_proposals/@{body('Parse_JSON')?['ProposalId']}"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps-2",
+              "operationId": "CreateRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Respond_to_a_PowerApp_or_flow": {
+          "runAfter": {
+            "Condition_1": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "afb9d20e-9ec4-4cd6-8732-b7b56931b3a1"
+          },
+          "type": "Response",
+          "kind": "PowerApp",
+          "inputs": {
+            "statusCode": 200,
+            "body": {
+              "result": "success"
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "title": "result",
+                  "x-ms-dynamically-added": true,
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "Initialize_variable_2": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "4f062eca-c954-4e28-95e5-62de8c881c52"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Approval Status Int Value",
+                "type": "integer"
+              }
+            ]
+          }
+        },
+        "Condition": {
+          "actions": {
+            "Set_variable": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "b28f0c67-b836-4bbe-854a-bbf7d54d298a"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "Approval Status Int Value",
+                "value": 860540000
+              }
+            }
+          },
+          "runAfter": {
+            "Add_a_new_item_to_timeline": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Condition_2": {
+                "actions": {
+                  "Set_variable_2": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "54099ee6-8773-45bf-870d-dfa3417f020b"
+                    },
+                    "type": "SetVariable",
+                    "inputs": {
+                      "name": "Approval Status Int Value",
+                      "value": 860540001
+                    }
+                  }
+                },
+                "runAfter": {},
+                "else": {
+                  "actions": {
+                    "Set_variable_3": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "6bd84f00-a395-48ab-b47f-34775e0c81e1"
+                      },
+                      "type": "SetVariable",
+                      "inputs": {
+                        "name": "Approval Status Int Value",
+                        "value": 860540002
+                      }
+                    }
+                  }
+                },
+                "expression": {
+                  "equals": [
+                    "@body('Parse_JSON')?['ApprovalStatus']",
+                    "Rejected"
+                  ]
+                },
+                "metadata": {
+                  "operationMetadataId": "ec086fc2-07cb-40ef-8dfb-d78852d51f92"
+                },
+                "type": "If"
+              }
+            }
+          },
+          "expression": {
+            "equals": [
+              "@body('Parse_JSON')?['ApprovalStatus']",
+              "Approved"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "6353e94a-c39e-4ff0-81fa-05429afff31c"
+          },
+          "type": "If"
+        },
+        "Condition_1": {
+          "actions": {
+            "Update_a_row_1": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "e1a5b8f1-accf-4867-a21c-42226c31032e"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "entityName": "cr4e0_proposals",
+                  "recordId": "@outputs('Get_Proposal')?['body/cr4e0_proposalid']",
+                  "item/cr4e0_internalfinanceofficerapproval": "@variables('Approval Status Int Value')"
+                },
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps-1",
+                  "operationId": "UpdateOnlyRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            }
+          },
+          "runAfter": {
+            "Condition": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Condition_": {
+                "actions": {
+                  "Update_a_row_2": {
+                    "runAfter": {},
+                    "metadata": {
+                      "operationMetadataId": "f8fbea9b-10c0-4b40-90f9-d0ba1fbb6abc"
+                    },
+                    "type": "OpenApiConnection",
+                    "inputs": {
+                      "parameters": {
+                        "entityName": "cr4e0_proposals",
+                        "recordId": "@outputs('Get_Proposal')?['body/cr4e0_proposalid']",
+                        "item/cr4e0_internalassistantdirectorapproval": "@variables('Approval Status Int Value')"
+                      },
+                      "host": {
+                        "connectionName": "shared_commondataserviceforapps-1",
+                        "operationId": "UpdateOnlyRecord",
+                        "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                      },
+                      "authentication": "@parameters('$authentication')"
+                    }
+                  }
+                },
+                "runAfter": {},
+                "else": {
+                  "actions": {
+                    "Condition_3": {
+                      "actions": {
+                        "Update_a_row": {
+                          "runAfter": {},
+                          "metadata": {
+                            "operationMetadataId": "985cc1e2-2066-4d50-a14d-4aa33d6dae2c"
+                          },
+                          "type": "OpenApiConnection",
+                          "inputs": {
+                            "parameters": {
+                              "entityName": "cr4e0_proposals",
+                              "recordId": "@outputs('Get_Proposal')?['body/cr4e0_proposalid']",
+                              "item/cr4e0_contractprivacyofficerapproval": "@variables('Approval Status Int Value')"
+                            },
+                            "host": {
+                              "connectionName": "shared_commondataserviceforapps-1",
+                              "operationId": "UpdateOnlyRecord",
+                              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                            },
+                            "authentication": "@parameters('$authentication')"
+                          }
+                        }
+                      },
+                      "runAfter": {},
+                      "else": {
+                        "actions": {
+                          "Condition_4": {
+                            "actions": {
+                              "Update_a_row_3": {
+                                "runAfter": {},
+                                "metadata": {
+                                  "operationMetadataId": "33ea625c-b9ec-48dc-a165-7e628a7e241e"
+                                },
+                                "type": "OpenApiConnection",
+                                "inputs": {
+                                  "parameters": {
+                                    "entityName": "cr4e0_proposals",
+                                    "recordId": "@outputs('Get_Proposal')?['body/cr4e0_proposalid']",
+                                    "item/cr4e0_programdirectorapproval": "@variables('Approval Status Int Value')"
+                                  },
+                                  "host": {
+                                    "connectionName": "shared_commondataserviceforapps-1",
+                                    "operationId": "UpdateOnlyRecord",
+                                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                                  },
+                                  "authentication": "@parameters('$authentication')"
+                                }
+                              }
+                            },
+                            "runAfter": {},
+                            "else": {
+                              "actions": {
+                                "Condition_5": {
+                                  "actions": {
+                                    "Update_a_row_4": {
+                                      "runAfter": {},
+                                      "metadata": {
+                                        "operationMetadataId": "720350d1-7642-45d8-9629-e7085e22e230"
+                                      },
+                                      "type": "OpenApiConnection",
+                                      "inputs": {
+                                        "parameters": {
+                                          "entityName": "cr4e0_proposals",
+                                          "recordId": "@outputs('Get_Proposal')?['body/cr4e0_proposalid']",
+                                          "item/cr4e0_vicepresidentapproval": "@variables('Approval Status Int Value')"
+                                        },
+                                        "host": {
+                                          "connectionName": "shared_commondataserviceforapps-1",
+                                          "operationId": "UpdateOnlyRecord",
+                                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                                        },
+                                        "authentication": "@parameters('$authentication')"
+                                      }
+                                    }
+                                  },
+                                  "runAfter": {},
+                                  "else": {
+                                    "actions": {
+                                      "Condition_6": {
+                                        "actions": {
+                                          "Update_a_row_5": {
+                                            "runAfter": {},
+                                            "metadata": {
+                                              "operationMetadataId": "f509c528-eb42-46e2-bf2f-d7749e632dff"
+                                            },
+                                            "type": "OpenApiConnection",
+                                            "inputs": {
+                                              "parameters": {
+                                                "entityName": "cr4e0_proposals",
+                                                "recordId": "@outputs('Get_Proposal')?['body/cr4e0_proposalid']",
+                                                "item/cr4e0_financedirectorapproval": "@variables('Approval Status Int Value')"
+                                              },
+                                              "host": {
+                                                "connectionName": "shared_commondataserviceforapps-1",
+                                                "operationId": "UpdateOnlyRecord",
+                                                "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                                              },
+                                              "authentication": "@parameters('$authentication')"
+                                            }
+                                          }
+                                        },
+                                        "runAfter": {},
+                                        "expression": {
+                                          "and": [
+                                            {
+                                              "equals": [
+                                                "@outputs('Get_Proposal')?['body/cr4e0_internalapprovalstatus']",
+                                                "Chief Financial Officer"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        "metadata": {
+                                          "operationMetadataId": "4641e905-2dff-4ebc-beae-67e8829b6c4f"
+                                        },
+                                        "type": "If"
+                                      }
+                                    }
+                                  },
+                                  "expression": {
+                                    "and": [
+                                      {
+                                        "equals": [
+                                          "@outputs('Get_Proposal')?['body/cr4e0_internalapprovalstatus']",
+                                          "Vice President"
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  "metadata": {
+                                    "operationMetadataId": "7515c28e-d3ea-45c9-b973-15360606443d"
+                                  },
+                                  "type": "If"
+                                }
+                              }
+                            },
+                            "expression": {
+                              "and": [
+                                {
+                                  "equals": [
+                                    "@outputs('Get_Proposal')?['body/cr4e0_internalapprovalstatus']",
+                                    "Director"
+                                  ]
+                                }
+                              ]
+                            },
+                            "metadata": {
+                              "operationMetadataId": "41627456-4ab0-45a7-a91e-17018b7e8b05"
+                            },
+                            "type": "If"
+                          }
+                        }
+                      },
+                      "expression": {
+                        "and": [
+                          {
+                            "equals": [
+                              "@outputs('Get_Proposal')?['body/cr4e0_internalapprovalstatus']",
+                              "Privacy Officer"
+                            ]
+                          }
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "1dda3d3c-e8fa-4de1-bf4e-b66ba28b6abc"
+                      },
+                      "type": "If"
+                    }
+                  }
+                },
+                "expression": {
+                  "and": [
+                    {
+                      "equals": [
+                        "@outputs('Get_Proposal')?['body/cr4e0_internalapprovalstatus']",
+                        "Assistant Director"
+                      ]
+                    }
+                  ]
+                },
+                "metadata": {
+                  "operationMetadataId": "46d5cc81-fc38-4095-bd92-d8caf6606ae1"
+                },
+                "type": "If"
+              }
+            }
+          },
+          "expression": {
+            "and": [
+              {
+                "equals": [
+                  "@outputs('Get_Proposal')?['body/cr4e0_internalapprovalstatus']",
+                  "Assistant Director, Financial Planning and Analysis"
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "a477bb04-6d9d-4b09-8527-d8a9eccf9da1"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

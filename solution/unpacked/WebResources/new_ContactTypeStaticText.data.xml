@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{41708059-c892-e911-80c3-0050569a785d}</WebResourceId>
+  <Name>new_ContactTypeStaticText</Name>
+  <DisplayName>Contact Type Static Text</DisplayName>
+  <Description>Tells user that Job Title and Employer will update from the Contact if both fields are empty in the Contact Type Record</Description>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_ContactTypeStaticText41708059-C892-E911-80C3-0050569A785D</FileName>
+</WebResource>

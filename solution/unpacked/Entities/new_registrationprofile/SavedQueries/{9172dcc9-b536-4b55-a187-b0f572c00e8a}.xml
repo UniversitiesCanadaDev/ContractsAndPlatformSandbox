@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9172dcc9-b536-4b55-a187-b0f572c00e8a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_registrationprofileid">
+          <cell name="new_firstname" width="100" />
+          <cell name="new_lastname" width="100" />
+          <cell name="new_email" width="100" />
+          <cell name="new_password" width="100" />
+          <cell name="new_registrationtype" width="100" />
+          <cell name="new_code" width="100" />
+          <cell name="a_673fc291da72e51192ee0050568d4f81.new_projectcode" width="150" disableSorting="1" />
+          <cell name="new_university" width="100" />
+          <cell name="new_name" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_registrationprofile">
+          <order attribute="new_email" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_university" />
+          <attribute name="new_password" />
+          <attribute name="new_lastname" />
+          <attribute name="new_firstname" />
+          <attribute name="new_email" />
+          <attribute name="new_code" />
+          <attribute name="new_registrationtype" />
+          <attribute name="new_name" />
+          <link-entity alias="a_673fc291da72e51192ee0050568d4f81" name="new_project" from="new_projectid" to="new_project" link-type="outer" visible="false">
+            <attribute name="new_projectcode" />
+          </link-entity>
+          <attribute name="new_registrationprofileid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Registration Profiles" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

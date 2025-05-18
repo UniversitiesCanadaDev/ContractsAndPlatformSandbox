@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{352ff281-eccf-e911-80c5-0050569a785d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="new_name">
+        <row id="new_meetingeventparticipantid" name="result">
+          <cell name="new_name" width="300" />
+          <cell name="new_startdate" width="200" />
+          <cell name="new_primarymeetingcontact" width="150" />
+          <cell name="new_meetingparticipation" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch distinct="false" mapping="logical" output-format="xml-platform" version="1.0">
+        <entity name="new_meetingeventparticipant">
+          <attribute name="new_name" />
+          <attribute name="new_startdate" />
+          <attribute name="new_primarymeetingcontact" />
+          <order descending="true" attribute="new_startdate" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+            <condition value="100000000" attribute="new_typeofrecord" operator="eq" />
+          </filter>
+          <attribute name="new_meetingparticipation" />
+          <attribute name="new_meetingeventparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting View for Contact Entity" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

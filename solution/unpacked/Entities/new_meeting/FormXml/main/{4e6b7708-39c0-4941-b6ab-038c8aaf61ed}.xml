@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4e6b7708-39c0-4941-b6ab-038c8aaf61ed}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{5ccae415-8065-4d66-a31f-6b10dd3a0703}" IsUserDefined="1" name="{5ccae415-8065-4d66-a31f-6b10dd3a0703}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Meeting Detail" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="60%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{fd3d5dbd-6626-439f-880a-9f7147b628ee}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{54d794e3-94dc-2a6e-aa32-b4b19ee6ab90}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Meetings Lookup" languagecode="1033" />
+                        </labels>
+                        <control id="new_meetingslookup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_meetingslookup" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{90DBA2E2-6AB0-4B96-AC8B-4F00B2A8C372}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc657c49-0210-47e4-b668-446cef88aa68}">
+                        <labels>
+                          <label description="Topic" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9e37170-5d22-8808-52d6-443adc83ed06}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Meeting Date" languagecode="1033" />
+                        </labels>
+                        <control id="new_meetingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_meetingdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79a72d6b-89db-2888-66b5-e009008a8326}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End date" languagecode="1033" />
+                        </labels>
+                        <control id="new_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="new_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{34c45c30-e756-2c56-db2d-615be485554a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="new_location" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_location" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ab23c47-208b-ec14-c0ae-15c97ee45ae4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Outcome" languagecode="1033" />
+                        </labels>
+                        <control id="new_outcome" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_outcome" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e975c9aa-13a7-28b0-be61-c63097e43644}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Follow-up" languagecode="1033" />
+                        </labels>
+                        <control id="new_followup" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_followup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9dbdb928-a4c3-0d91-a272-ba2a561bb426}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Attendance" languagecode="1033" />
+                        </labels>
+                        <control id="new_attendance" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_attendance" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd6745a8-769e-a943-5bda-021e044b656b}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{275b20a4-2e5d-6c69-7be2-8b4398eb6774}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_contact_new_meetingid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="new_contact_new_meetingid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a15ba0d6-b742-47d5-b3c9-7e5ed2b40d7e}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5b68ac2e-56c0-0818-c464-70318796e9d2}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7f85b68a-2797-49e0-ad64-85447aa21207}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{e2010c92-4198-48f3-b605-7d75dd9809bf}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{e0056f16-afa9-4ed8-91e3-2604f8c169fd}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{86c5a999-1889-48dc-ed5b-8dc06e707533}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{50a73dbd-bda3-3213-b00b-d22da6d9ab9a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1b16c962-702e-b290-9e93-106472912dbd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Copied to new Meeting Entity" languagecode="1033" />
+                        </labels>
+                        <control id="new_copiedtonewmeetingentity" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="new_copiedtonewmeetingentity" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{3ca43c28-3a57-bb80-664b-53c2140c07e4}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e088613e-4c32-5670-029a-636db349185b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <footer id="{22c39311-ec26-457b-93a2-4d0487bbf2cc}" columns="111">
+        <rows>
+          <row>
+            <cell id="{409dbba9-7b67-6386-ad27-b68727d78209}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="footer_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+            </cell>
+            <cell id="{8db765bc-6928-6807-4e98-4a36d61c794a}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control id="footer_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="true" />
+            </cell>
+            <cell id="{76d6dd33-b001-46a3-92e1-c985531bcf54}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+          <row>
+            <cell id="{59aad36a-259e-b2be-cc3b-6058a2214c7a}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" />
+            </cell>
+            <cell id="{3cb38788-e283-dda0-e688-4875c89b5728}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+            <cell id="{d9ca65cd-0139-4147-509e-6e96b46583b9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

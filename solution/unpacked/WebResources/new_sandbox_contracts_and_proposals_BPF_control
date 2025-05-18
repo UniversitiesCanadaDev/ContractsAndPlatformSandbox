@@ -1,0 +1,31 @@
+function validateApprovalFields(executionContext) {
+    var formContext = executionContext.getFormContext();
+    
+    // Get values of the approval fields
+    var approvalField1 = formContext.getAttribute("cr4e0_assistantdirectorfpaapproval").getValue();
+    var approvalField2 = formContext.getAttribute("cr4e0_internalassistantdirectorapproval").getValue();
+    var approvalField3 = formContext.getAttribute("cr4e0_contractprivacyofficerapproval").getValue();
+    var approvalField4 = formContext.getAttribute("cr4e0_directorapproval").getValue();
+    var approvalField5 = formContext.getAttribute("cr4e0_vicepresidentapproval").getValue();
+    var approvalField6 = formContext.getAttribute("cr4e0_chieffinancialofficerapproval").getValue();
+    
+    // Check if any of the approval fields are neither "Approved" nor "Apply Revisions"
+    if (
+        (approvalField1 !== "Approved" && approvalField1 !== "Apply Revisions") ||
+        (approvalField2 !== "Approved" && approvalField2 !== "Apply Revisions") ||
+        (approvalField3 !== "Approved" && approvalField3 !== "Apply Revisions") ||
+        (approvalField4 !== "Approved" && approvalField4 !== "Apply Revisions") ||
+        (approvalField5 !== "Approved" && approvalField5 !== "Apply Revisions") ||
+        (approvalField6 !== "Approved" && approvalField6 !== "Apply Revisions")
+    ) {
+        // Show an error message
+        formContext.ui.setFormNotification("All approval fields must be filled before proceeding to the next stage.", "ERROR", "approvalError");
+        
+        // Prevent progression to the next stage (if this is a BPF context)
+        if (executionContext.getEventArgs()) {
+            executionContext.getEventArgs().preventDefault(); // Prevent stage progression
+        }
+    } else {
+        formContext.ui.clearFormNotification("approvalError");  // Clear any previous error messages
+    }
+}

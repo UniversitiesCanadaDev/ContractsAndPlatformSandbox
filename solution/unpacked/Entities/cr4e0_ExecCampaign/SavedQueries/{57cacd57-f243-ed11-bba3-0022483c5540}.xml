@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{57cacd57-f243-ed11-bba3-0022483c5540}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr4e0_execcampaignid">
+          <cell name="cr4e0_name" width="300" />
+          <cell name="univcan_activebpfstage" width="202" />
+          <cell name="univcan_language" width="100" />
+          <cell name="univcan_campaignstatus" width="142" />
+          <cell name="univcan_campaigntype" width="128" />
+          <cell name="cr4e0_segment" width="166" />
+          <cell name="a_26dc42a47bdc4a1ab22a0a8b4adc5687.msdyncrm_segmentsize" width="150" />
+          <cell name="modifiedon" width="173" />
+          <cell name="createdon" width="100" />
+        </row>
+        <controlDescriptions />
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="cr4e0_execcampaign">
+          <attribute name="cr4e0_name" />
+          <attribute name="modifiedon" />
+          <attribute name="cr4e0_segment" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="univcan_campaignstatus" operator="ne" value="2" />
+          </filter>
+          <link-entity alias="a_26dc42a47bdc4a1ab22a0a8b4adc5687" name="msdyncrm_segment" to="cr4e0_segment" from="msdyncrm_segmentid" link-type="outer" visible="false">
+            <attribute name="msdyncrm_segmentsize" />
+          </link-entity>
+          <attribute name="univcan_campaigntype" />
+          <attribute name="univcan_activebpfstage" />
+          <attribute name="univcan_language" />
+          <attribute name="univcan_campaignstatus" />
+          <attribute name="createdon" />
+          <order attribute="modifiedon" descending="true" />
+          <attribute name="cr4e0_execcampaignid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.13</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Current Campaigns (In progress)" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formerly Current Executive Campaigns (In progress)" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7ed2b278-1882-ed11-81ad-0022483c5cdf}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{db9c1e9c-48de-41c8-bbd1-33d03080a195}" IsUserDefined="1" name="Info" visible="true" contenttype="cardSections" labelid="{a255055b-48e3-46e4-9b66-b0918148a590}">
+          <labels>
+            <label description="Project Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{efd3a5b9-69d4-4dc6-ba74-ecd13a21a02a}" columns="11" labelid="{40084d70-59ba-4ff6-a65d-a799d5de66f9}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9b16809e-4b42-4af7-bedb-0386ec747861}" labelid="{804d0af2-790e-40ea-bbd3-287f01792324}">
+                        <labels>
+                          <label description="Project Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr4e0_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ff57266c-51d4-43ad-9a70-3884021e7adc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract/Proposal Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_iscontract" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_iscontract" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{54761417-a773-4f76-9c07-5a2a63e49372}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37d7f92f-d842-44bf-a37f-63b7b0c9043b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Entity Number" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_entityname" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_entityname" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{591f24e7-7a63-49c4-8004-6df68a726910}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed8e814c-8494-4104-9623-5170e0597695}" locklevel="0" colspan="1" rowspan="7" labelid="{2bbce2fc-1968-4503-a4ec-06e89f7c40bd}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_scholarshipdescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_scholarshipdescription" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{0d33eb40-eee2-4912-8aeb-5fa6de3ac8f9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{4968863f-5933-4bdb-b427-057f812e6724}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26102b90-bc04-4647-8fca-f15e47fae9c8}" locklevel="0" colspan="1" rowspan="1" labelid="{7e592bb9-d4fe-4676-9b16-1f3ac2600e5c}">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_startdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4e0_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0e1b860-9149-41dd-9018-952cc0762779}" locklevel="0" colspan="1" rowspan="1" labelid="{2caa79a9-f86c-4a93-9b1e-60053707f529}">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_enddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4e0_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{b42e1f08-1d03-4dbe-8eab-a755f8161ff4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{019eca25-6da9-4c33-8887-4d180e497b5d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Company (Vendor or Client)" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contactingparty" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contactingparty" disabled="false">
+                          <parameters>
+                            <DefaultViewId>{00000000-0000-0000-00AA-000010001002}</DefaultViewId>
+                            <AvailableViewIds>{199A7FEA-93B3-47C8-B950-4B6D60B2C955},{61273827-328E-E011-95AE-00155D9CFA03},{00000000-0000-0000-00AA-000010001002},{BDBB88F2-F440-E511-92EE-0050568D4F81},{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB},{61273827-328E-E011-95AE-00155D9CFA02},{863892BD-C772-EB11-A812-000D3AF38FEF}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{80d09161-7970-4887-8745-6e42fe238fd1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Version" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractversion" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractversion" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{89d25825-223e-4ae4-a470-adb947f91461}" locklevel="0" colspan="1" rowspan="1" labelid="{dde802f5-74f9-49e0-a295-c39cde04f9f8}">
+                        <labels>
+                          <label description="Contact" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_client" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_client" disabled="false">
+                          <parameters>
+                            <DependentAttributeName>cr4e0_proposal.cr4e0_contactingparty</DependentAttributeName>
+                            <DependentAttributeType>account</DependentAttributeType>
+                            <FilterRelationshipName>contact_customer_accounts</FilterRelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{a384e79e-dbd0-4b27-8ddb-44659e0cf208}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Value" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractvalue" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_contractvalue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{150348ab-306c-46e2-aa92-34ad7a898fa1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Industry" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_industry" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_industry" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{53a0a549-8410-49cf-a242-23d24102155c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{4cbc91cf-dab3-4607-af61-688016bde134}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c7347fba-dc08-43e2-b382-52de38a9e153}" locklevel="0" colspan="1" rowspan="5" labelid="{e46ef8ed-8f17-47f8-b7cf-2a3b8a5d742a}">
+                        <labels>
+                          <label description="Notes" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_specifications" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_specifications" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{90616adb-d8d8-4e1f-9bed-6df44c015f9c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{4fb64367-c40b-48ae-a16f-54c79da44da2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9a9e1e3-f275-47bf-8d9b-4bfae8fc8839}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Revenue/Expense" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_typeofinstrument" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_typeofinstrument" disabled="false" />
+                      </cell>
+                      <cell id="{5e367384-9756-45ca-8fbb-22b595d4c12f}" locklevel="0" colspan="1" rowspan="1" labelid="{53a0ab2c-56f2-42ee-a95c-89e64b17c14d}">
+                        <labels>
+                          <label description="Type of Program" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_typeofprogram" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_typeofprogram" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{78b1ebeb-e45a-4558-9967-d2b37968272c}" locklevel="0" colspan="1" rowspan="1" visible="true">
+                        <labels>
+                          <label description="Partnership Supports" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_partnershipsupports" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cr4e0_partnershipsupports" disabled="false" />
+                      </cell>
+                      <cell id="{62c15b7a-9033-45a1-a48c-c40a1d1fcc7e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program Value" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programvalue" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_programvalue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2e28019-038e-4634-8e18-02c0143d2e56}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Privacy Officer Comments" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_privacyofficercomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_privacyofficercomments" disabled="false" />
+                      </cell>
+                      <cell id="{81ca4993-f38d-4305-9cd9-d766e187089a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program Complexity" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programcomplexity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_programcomplexity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{65987f7d-7c88-4fc5-98ee-08c119efd045}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{8416d9b9-b10f-4df9-b8be-60a2140d24f9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Programs Focus" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programsobjective" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="cr4e0_programsobjective" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{0629bb08-a1c6-489a-aeb3-514e3d800f78}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{279b1910-4c38-460e-925b-e09524074e53}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Admin Fees" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_adminfees" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_adminfees" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{bae2efff-8160-470b-8f10-d7c826fdd55d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{22d3e629-c3e7-4277-ba05-fad5c250675d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Partner" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_partner" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_partner" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{40172313-40cc-4114-b159-1e8cfd2b5532}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b6f15f65-bed3-4682-a4cf-a25f78a4f0b0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Number of Amendment" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_numberofamendment" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr4e0_numberofamendment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{3995695f-d42b-4554-9de7-a033ed403931}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{187db9bf-c952-4253-b05c-af3c565619c6}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Reminder Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_reminderdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4e0_reminderdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{885c2611-82ad-4bb0-b36b-663f50041604}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ae4f7c8a-5288-491d-9b16-1d71493547d6}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{c1c62402-4729-4827-88b9-dcc1ddc48393}">
+                        <labels>
+                          <label description="Owning Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="owningbusinessunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="owningbusinessunit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ce49e065-412a-4aa6-bb43-c38d3be773e6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3187709b-2e70-4808-8863-22b6b53bd1b6}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Form Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_formtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_formtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{f8318eea-6067-40de-b883-6206283d721b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{70ecfb49-cab9-480e-815e-ed71c5077fbc}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Info_section_5" id="f2c67a21-bb81-4450-91dc-2c52f7821a3e" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{b6d2ffb8-c150-40d4-8a52-f1b4822ad0a8}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{0e4a2717-08cd-4d17-978e-72f3d981bc46}" rowspan="4" colspan="1" auto="false" labelid="{3af9b8e3-646d-4524-afa7-60e3a73b18ed}">
+                        <labels>
+                          <label description="Documents" languagecode="1033" />
+                          <label description="Documents" languagecode="1036" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                            <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51},{3681B5A4-482E-ED11-9DB0-0022483C5336},{1CA4D41A-7625-EE11-9965-0022483D5EE0}</ViewIds>
+                            <RelationshipName>cr4e0_proposal_SharePointDocuments</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell locklevel="0" id="{6f7a9933-6a2c-4b39-b50e-66b622304f01}" rowspan="15" colspan="1" labelid="{1a567bd6-dabd-41d5-bd63-bce7bead0b30}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false">
+                          <parameters>
+                            <UClientRecordPerPage>50</UClientRecordPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{e27304bc-e31a-4103-887c-fbca0406c0ec}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{ba1639cd-c184-4241-9199-aefac887d955}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{950953a5-37e4-4753-b39b-69ff43a8455d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{5d8e738b-665a-41a6-8e1d-dcf63c2811ab}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{066f3f30-17ca-4c2e-bf4e-6b95e9d258d1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{2adb663c-f761-4d9a-beea-2a822ef849ff}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Internal Review SPC" id="3031afc7-1add-47a3-bb4f-643e36ca4b95" IsUserDefined="0" locklevel="0" showlabel="true" visible="false">
+          <labels>
+            <label description="Internal Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Internal Review SPC" id="94c86212-fabb-402c-be75-76839a116f82" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{933b1867-b0f4-4f77-b795-fd12d8bf0bb3}">
+                  <labels>
+                    <label description="Internal Proposal/SPC Approvers" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{770e6d3f-d391-4aa7-ae09-6e69fb16f0aa}" locklevel="0" colspan="1" rowspan="1" showlabel="true" visible="false">
+                        <labels>
+                          <label description="Form Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_formtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_formtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{527caae1-e90a-4cde-bbc2-a7c11e84c425}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{6ac846c9-97cb-4f3c-af51-0af45dde2924}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{12838c55-d677-4f5f-abd2-520e098e65c2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="BDM Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_internalbdmapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_internalbdmapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{16991513-9a36-49d6-8e48-00910cf6c397}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a7a0bae9-869c-41ac-a693-1451c72730e9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Privacy Officer Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprivacyofficerapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractprivacyofficerapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2551ebdf-a4d3-4299-890b-77a38a6eaefb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="BDM" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_bdm" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_bdm" disabled="false" />
+                      </cell>
+                      <cell id="{fee6a195-d157-418f-a6dd-b4c59ad40fac}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Finance Manager Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_internalfinanceofficerapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_internalfinanceofficerapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd882c29-a11c-4704-a71d-4da4c704a28b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Privacy Officer" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprivacyofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractprivacyofficer" disabled="false" />
+                      </cell>
+                      <cell id="{45302dd9-3d89-400d-8d78-2992b8a23488}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program's Reviewer Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_internalassistantdirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_internalassistantdirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{de2018e5-6bb0-4d6f-b34c-34627acbdb64}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program Finance Manager" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programfinanceofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_programfinanceofficer" disabled="false" />
+                      </cell>
+                      <cell id="{41f805a6-ef07-464e-be66-b73d493012aa}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program Director Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programdirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_programdirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{558eee38-91a8-4af0-90e1-e7712829fce1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program's Reviewer" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programassistantdirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_programassistantdirector" disabled="false" />
+                      </cell>
+                      <cell id="{b0980643-e8af-49c8-95d8-4c0487b2f8ec}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Finance Director Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_financedirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_financedirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7c9d8a6e-01bf-49a9-8b2c-15164105b9df}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Program Director" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programdirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_programdirector" disabled="false" />
+                      </cell>
+                      <cell id="{43c69087-1be7-4e6a-9a95-d7486fa8ee2e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="CEO/COO Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractceoapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractceoapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3e6c621a-8129-44d2-b6e1-dd8956ae5a1e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Finance Director" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_financedirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_financedirector" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ab1c9f74-322b-4b33-bc00-b5e47f8498e7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="CEO/COO" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractceo" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractceo" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{37b2be2b-9819-4acc-9897-da66bf27a7b6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Internal Review" id="5e420c13-71af-42b8-876e-8dfebd5dbc5c" IsUserDefined="0" locklevel="0" showlabel="true" visible="false">
+          <labels>
+            <label description="Internal Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="3904edf4-32c3-4a64-ae9b-efe4549b571e" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Internal Approvers" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{7ead10da-22c2-4bd0-87f5-bdc4966bb11c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7631d49b-9b1b-4089-8233-ecbf76c6afa9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Level 1" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprogramdirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractprogramdirector" disabled="false" />
+                      </cell>
+                      <cell id="{2507641b-7c73-403e-916e-360484629512}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Level 1 Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprogramdirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractprogramdirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{55a28196-b7f7-4e7d-bd94-56d553395857}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Privacy Officer" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprivacyofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractprivacyofficer" disabled="false" />
+                      </cell>
+                      <cell id="{7fafbe2c-27ca-415c-be4b-178d3d62bac1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Privacy Officer Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprivacyofficerapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractprivacyofficerapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17fc0945-7fca-48b9-9590-870e147f6e4f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Finance Director" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractfinancedirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractfinancedirector" disabled="false" />
+                      </cell>
+                      <cell id="{ff44b945-1971-4e2d-a106-3aab2be4ca89}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract Finance Director Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractfinancedirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractfinancedirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92dfc07a-edb2-4e0c-9dca-ff308fc58669}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Executive" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractceo" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractceo" disabled="false" />
+                      </cell>
+                      <cell id="{f6c7bf2a-249d-446a-90ef-3e3ae0c65065}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Executive Approval" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractceoapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractceoapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{1629aa75-0d4d-46d5-b31e-cd5144a4b38d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e5e5134e-4704-4d19-a68e-6db5a1a2312e}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Form Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_formtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_formtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{0e0cac0d-4fbe-476d-9f64-3d9eb1859da0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a8641c2e-ed48-4c63-b697-679ceda06f0b}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Internal Review New" id="ee361682-b3fc-4022-954b-04d81247b53d" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Internal Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_6_section_1" id="1d21b8bf-1912-4169-93c7-44be59c7971f" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Internal Approval (new)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{fae537f9-dcd7-4ad3-9be8-790915c06ad9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c5f0eb33-e802-4283-a286-c5d175fd9a89}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="All Contracts &amp; Proposals" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_internalfinanceofficerapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_internalfinanceofficerapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{c5c871b4-a1b6-423d-82af-4ae23d17908f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{73661605-1d27-40ee-82e5-a0be2dd8aff0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="All Contracts &amp; Proposals" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprivacyofficerapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_contractprivacyofficerapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42b05e4b-03e5-442d-ba00-c48709f10ac8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Assistant Director, FP&amp;A" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programfinanceofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_programfinanceofficer" disabled="false" />
+                      </cell>
+                      <cell id="{97940d65-9dc7-42c3-a492-70ac9ad0a0bf}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Up to $10,000" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_internalassistantdirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_internalassistantdirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cfeeccc1-9a05-4c0d-a8dd-415f803e66ff}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Privacy Officer" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_contractprivacyofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_contractprivacyofficer" disabled="false" />
+                      </cell>
+                      <cell id="{09e399da-650c-41f3-b3e5-8fa8dc856988}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Up to $25,000" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programdirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_programdirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9cb04fb3-43db-4df6-84b6-523c9dba701f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Assistant Director" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programassistantdirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_programassistantdirector" disabled="false" />
+                      </cell>
+                      <cell id="{f93954cc-91a7-4ff3-b22d-8391421d8ae1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Up to $100,000 (w/ CFO)" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_vicepresidentapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_vicepresidentapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f67d7675-3218-4413-8caf-6bb7fa8a86e4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Director" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_programdirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_programdirector" disabled="false" />
+                      </cell>
+                      <cell id="{30615588-b75f-4bb7-988c-2d6613dfee4b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Up to $100,000" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_financedirectorapproval" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_financedirectorapproval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21fb4737-2974-4708-9361-7c76065eb236}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Vice-President" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_vicepresident" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_vicepresident" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b283671-49b4-48e9-9098-7e15b9b0917d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Chief Financial Officer" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_financedirector" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_financedirector" disabled="false" />
+                      </cell>
+                      <cell id="{0657fa52-b2db-44c3-b77d-f3c5a44b2898}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Form Type" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_formtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_formtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{fe949d12-57fa-4be6-990c-db9a3ea36d20}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{55590678-4b44-475c-bd56-25cf59eefdfd}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="09ca3d2e-3021-4905-bdc3-17fea02074b2" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Email" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" id="701c1480-6787-4f0f-acfa-fb8a620c50be" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{070f2b7e-3fbf-4135-907d-e072e32a2553}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email Template" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_emailtemplate" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr4e0_emailtemplate" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{194133e5-5775-409a-b5d5-cb6a550fa730}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5bf179f6-1b7c-4998-9ce4-c51a21175a68}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{039251ed-ed45-48d0-aca3-7334ea868bde}" showlabel="false" labelid="{b9412956-ac18-4aae-96a7-eaec11ba44be}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6a3452ca-6516-4e53-8e2e-c321a4f18a69}" showlabel="false" labelid="{13585654-8225-41c4-b3ed-1a58e1296b8b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{dc251118-1687-4563-8f97-874071c5d98d}" showlabel="false" labelid="{f47ecfd6-fbe5-4476-abea-403c789a9468}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2bb6e219-68b0-4211-bcef-d4beef49f886}" locklevel="0" colspan="1" rowspan="1" labelid="{d5002da9-078e-405a-b6b4-f6cef1d28670}" visible="false">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{5a5f43b6-6d8a-4be8-b316-899ec02a60bf}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Project Results" languagecode="1033" />
+              </labels>
+              <control id="header_cr4e0_projectstatustype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_projectstatustype" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{8d2d6fc1-ae7d-469d-8c9f-1a782bb0581d}" labelid="{8746384e-cad4-4199-9bb2-39ed9190da44}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{ee2126b8-9d69-44bb-bfa2-71c7823b4bda}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{c1bada8d-f183-47a8-a6e7-312fc04a4d7e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e716ec26-0293-42b5-a17a-ae38854b2616}" colspan="1" rowspan="1" labelid="{e50388cd-6d14-419e-8969-3df73691e4ea}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0e58587d-5b55-47bf-98eb-60b8fbdb7b8e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a4c78add-4caf-4580-b163-c08b8cb67b7e}" showlabel="false" labelid="{a8c0b5f9-da8c-4ba9-8bca-e5fcddfeea93}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1355f47a-c50a-4e17-bccc-8f2e9f8fefc2}" showlabel="false" labelid="{f3b0f1d7-d992-4604-b249-7cd93ee430a5}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{423be364-0713-4427-8fbd-a11bdfc42e1d}" showlabel="false" labelid="{87bf6356-b814-4dd6-8fa8-26fc7c79f060}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="cr4e0_proposalAndContractShowHideFields" libraryUniqueId="{3832ca8b-b87f-4f59-bb6e-96bbfc854379}" />
+        <Library name="new_sandbox_contracts_and_proposals_BPF_control" libraryUniqueId="{61e7ced4-b14e-4789-9cda-a5ee3953af1e}" />
+        <Library name="cr4e0_ShowProcessForProposalAndContract" libraryUniqueId="{31b994b4-9ace-4670-b8ea-b4fe536c6b1e}" />
+        <Library name="cr4e0_checkUserRoleAndApplyRestrictions" libraryUniqueId="{1c8ba73d-832b-4da0-835d-e6eabd8f4ec2}" />
+        <Library name="cr4e0_setDefaultDate" libraryUniqueId="{52d83545-44a1-443c-81f8-c550e58ccb2c}" />
+        <Library name="cr4e0_setTeamBasedOnEntityNumber" libraryUniqueId="{8c9d1da0-980d-4bd5-9f48-a4fd6fe9b232}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="cr4e0_iscontract">
+          <Handlers>
+            <Handler functionName="showHide" libraryName="cr4e0_proposalAndContractShowHideFields" handlerUniqueId="{4064c961-f627-487a-8ced-0a26db1d61de}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="onload" libraryName="cr4e0_ShowProcessForProposalAndContract" handlerUniqueId="{48c6ad83-357e-48ca-91cb-ee45bbb2852a}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="checkUserRoleAndApplyRestrictions" libraryName="cr4e0_checkUserRoleAndApplyRestrictions" handlerUniqueId="{7934dcbe-7863-4b90-ba02-1e4465e41966}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="cr4e0_entityname">
+          <Handlers>
+            <Handler functionName="showHideTabs" libraryName="cr4e0_proposalAndContractShowHideFields" handlerUniqueId="{e29a9090-ffd5-4166-8086-a98c26cf1c72}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="setTeamBasedOnEntityNumber" libraryName="cr4e0_setTeamBasedOnEntityNumber" handlerUniqueId="{ec0fb115-1202-48e7-8554-fd8c927d0239}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{8CA3C24A-15E8-ED11-A7C6-000D3AE9A19C}" />
+        <Role Id="{70204B1C-16E8-ED11-A7C6-0022483C5263}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Originator" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

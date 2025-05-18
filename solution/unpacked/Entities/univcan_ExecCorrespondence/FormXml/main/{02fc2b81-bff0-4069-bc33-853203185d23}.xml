@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{02fc2b81-bff0-4069-bc33-853203185d23}</formid>
+    <IntroducedVersion>1.0.0.5</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{ba9eb9b2-35f9-4bf2-bd79-75c0a1eb2eac}" IsUserDefined="1" contenttype="cardSections" name="general_tab" visible="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{04b54d3c-246a-486e-8fb2-ff2f138296cf}" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{e4d3bf63-3ce0-48c9-a6c5-e1cfae94f6ed}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{ae5797d1-18b9-4e77-907b-bab457223ec0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="To" languagecode="1033" />
+                        </labels>
+                        <control id="to" classid="{CBFB742C-14E7-4A17-96BB-1A13F7F64AA2}" datafieldname="to" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb32d983-6c7e-4242-8516-8e0ee5f4b8df}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_campaign" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="univcan_campaign" disabled="false" />
+                      </cell>
+                      <cell id="{bbcbb6f8-4051-47a7-bf59-a6ac9de35811}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Subject" languagecode="1033" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{d0143ac3-f7a4-4e99-ae83-38a005a49f88}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1649426311273" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1649426311273" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="univcan_campaign" disabled="false">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="cr4e0_execcampaign"&gt;87780ee5-d949-4029-b788-9bbfea8ff30f&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{e6216a2a-5ed7-4443-a5f2-193ce408a723}" locklevel="0" colspan="1" rowspan="1" showlabel="false">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="univcan_emailbody" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="univcan_emailbody" disabled="false" uniqueid="{9fd5646e-d560-4604-bf84-6dec0748e3cb}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{178c6a2f-6343-443c-91c3-c0ca6c5e129e}" visible="false">
+                        <labels>
+                          <label description="Regarding" languagecode="1033" />
+                        </labels>
+                        <control id="regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" />
+                      </cell>
+                      <cell locklevel="0" id="{31035b0a-c53a-4e63-a580-ad190ed31db8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38052c9a-f0f5-4218-ac31-fa0c3b041ce0}" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                      <cell locklevel="0" id="{ef836bd0-b701-42e8-af5a-6ec406c343b9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="d57463a0-8ac2-4baa-8862-55f8c390d155" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2fa2d84c-9bd2-4785-8820-8993c96db315}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Replace" languagecode="1033" />
+                          <label description="Documents" languagecode="1036" />
+                        </labels>
+                        <control id="DocumentSubGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{3504d4c1-70fa-4ade-8d34-59173d5e8511}">
+                          <parameters>
+                            <ViewId>{0016F9F3-41CC-4276-9D11-04308D15858D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>univcan_execcorrespondence_SharePointDocuments</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b404f3c3-a091-4e64-8f5c-26847f5289c0}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{45b0af9c-9e13-4f6d-a8b6-a42fe8b8fdf1}" visible="false">
+              <labels>
+                <label description="Priority" languagecode="1033" />
+              </labels>
+              <control id="header_prioritycode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="prioritycode" disabled="false" />
+            </cell>
+            <cell id="{81351b6f-7407-4cc9-aad9-3351446b4495}" visible="false">
+              <labels>
+                <label description="Due Date" languagecode="1033" />
+              </labels>
+              <control id="header_scheduledend" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="scheduledend" disabled="false" />
+            </cell>
+            <cell id="{99b13966-b380-4fba-867d-d19504ac7853}" visible="false">
+              <labels>
+                <label description="Activity Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+          </row>
+          <row>
+            <cell id="{204d9923-a26e-4e5d-b25b-38112d6a6ff8}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Correspondence Status" languagecode="1033" />
+              </labels>
+              <control id="univcan_correspondencestatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="univcan_correspondencestatus" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{52d1649f-deb1-4ac7-98f2-56a92fda415a}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{33246165-3fb7-4171-b027-b3dfa0bcb6d8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{c2dbe4be-4dc4-4a85-95fc-5c6017dd3d62}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a0aee4f0-3631-4a34-83f7-58944b52a4ad}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{65448384-e7d6-4ed5-a296-3afc04d35c0c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{6ebe55e3-866d-47ea-9202-6545d8cc7952}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b0e1bd60-a6e7-4011-91af-caf7008777d2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{638b69f2-4cb0-44d6-a85c-e835d3954b56}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{9fd5646e-d560-4604-bf84-6dec0748e3cb}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>univcan_emailbody</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbody</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbody</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">univcan_emailbody</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

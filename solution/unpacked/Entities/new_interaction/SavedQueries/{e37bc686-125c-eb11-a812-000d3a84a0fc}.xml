@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e37bc686-125c-eb11-a812-000d3a84a0fc}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" preview="1" icon="1">
+        <row name="result" id="new_interactionid">
+          <cell name="new_name" width="300" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="new_startdate" width="100" />
+          <cell name="new_meetingstatus" width="100" />
+          <cell name="new_schedulinglead" width="100" />
+          <cell name="new_briefinglead" width="100" />
+          <cell name="new_lobbyactivity" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="new_interaction">
+          <attribute name="new_name" />
+          <attribute name="new_startdate" />
+          <attribute name="new_schedulinglead" />
+          <attribute name="new_meetingstatus" />
+          <attribute name="new_lobbyactivity" />
+          <attribute name="new_briefinglead" />
+          <order attribute="new_startdate" descending="false" />
+          <filter type="and">
+            <filter type="and">
+              <condition attribute="statecode" operator="eq" value="0" />
+              <condition attribute="new_startdate" operator="next-x-days" value="60" />
+              <condition attribute="new_typeofrecord" operator="eq" value="100000000" />
+            </filter>
+          </filter>
+          <attribute name="new_interactionid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Future Meetings - Next 60 Days" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

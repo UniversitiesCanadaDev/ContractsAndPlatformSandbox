@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{b62248d4-5607-4b65-bb92-66d890ccc0b6}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_4" id="{6dbd58b5-260e-d41b-ea05-a672c7bd7e23}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="40%">
+              <sections>
+                <section name="tab_4_section_1" showlabel="false" showbar="false" locklevel="0" id="{183b888b-c5a0-a548-b4ee-538ee0c20661}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9dfc2995-0e8a-4234-9ef5-a641424aee67}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d3db4ba-299d-dbc6-dca4-c5abd48ee352}" locklevel="0" showlabel="true" rowspan="3">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="new_description" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="60%">
+              <sections>
+                <section id="{4c2e7a4a-4b17-7971-50cc-978260c79c14}" name="tab_3_section_1" locklevel="0" showlabel="true" IsUserDefined="0" labelwidth="115" layout="varwidth" showbar="false" columns="1" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Members" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3131d3a6-3bd5-2e74-a9cd-60c9c03c148c}" showlabel="false" rowspan="17" colspan="1" auto="false">
+                        <labels>
+                          <label description="MP Committee Members (MP Committee)" languagecode="1033" />
+                        </labels>
+                        <control id="MPMembers" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{ad323d07-ca92-60bd-09c1-7619c0a2b196}">
+                          <parameters>
+                            <ViewId>{F1937A64-C70B-EA11-80C6-0050569A785D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>new_mpcommittee_new_mpcommitteemember</RelationshipName>
+                            <TargetEntityType>new_mpcommitteemember</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{B068437D-DB63-4199-9079-3F7144F7DC0C},{F1937A64-C70B-EA11-80C6-0050569A785D}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>15</RecordsPerPage>
+                            <HeaderColorCode />
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{b4268fc3-8559-4c43-b585-18883823d25b}" IsUserDefined="1" verticallayout="true" name="{b4268fc3-8559-4c43-b585-18883823d25b}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Notes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="60%">
+              <sections>
+                <section id="{e1167c56-d0f3-4d8a-a358-708c7131ef1b}" height="auto" showlabel="false" IsUserDefined="0" showbar="false">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{328ca8fe-2bf0-4309-a9c9-74b247d65ada}" locklevel="0" showlabel="false" rowspan="10" auto="false">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="40%">
+              <sections>
+                <section id="{1488af9a-00fe-4140-a045-39a84e60613d}" showlabel="false" IsUserDefined="0" showbar="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4adb181f-f4ca-48ff-8dfb-9d810d6e3483}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

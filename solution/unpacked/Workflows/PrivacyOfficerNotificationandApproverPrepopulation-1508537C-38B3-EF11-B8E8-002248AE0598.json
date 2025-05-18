@@ -1,0 +1,235 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_office365-1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_98e5e"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "cr4e0_sharedcommondataserviceforapps_77f02"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps-2": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_a8d0a"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps-1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_a186d"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added": {
+          "metadata": {
+            "operationMetadataId": "1d1ccde5-6fa8-4aa8-8f4e-90f8e12fb55f"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 1,
+              "subscriptionRequest/entityname": "cr4e0_proposal",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/name": "1508537c-38b3-ef11-b8e8-002248ae0598"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps-1",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Send_an_email_(V2)": {
+          "runAfter": {
+            "Terminate": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "13324fc2-6aa6-4b5d-8b0f-3e70c156a683"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365-1",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "ATawakol@univcan.ca",
+              "emailMessage/Subject": "a new record has been added to contracts and proposals sandbox app",
+              "emailMessage/Body": "<p class=\"editor-paragraph\">Good Morning Ahmed,</p><br><p class=\"editor-paragraph\">I hope this email finds you well. I am writing to notify you that a new record has been added to contracts and proposals sandbox.</p><br><p class=\"editor-paragraph\">Please click the link below to access the proposal/contract information:</p><p class=\"editor-paragraph\"><a href=\"https://ucsandbox01.crm3.dynamics.com/main.aspx?appid=9203dcfd-0367-43eb-aaef-a59efc587735&amp;pagetype=entityrecord&amp;etn=cr4e0_proposal&amp;id=@{triggerOutputs()?['body/cr4e0_proposalid']}\" class=\"editor-link\">Access Proposal/Contract Information</a></p><br><p class=\"editor-paragraph\">Thank you,</p><p class=\"editor-paragraph\">Universities Canada</p><br>",
+              "emailMessage/Importance": "High"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "List_rows_for_privacy_officer_pre_fill": {
+          "runAfter": {
+            "Send_an_email_(V2)": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "bc72883f-bdff-469a-9d98-b647e086e58f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "systemusers",
+              "$filter": "fullname eq 'Ahmed Tawakol'"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "List_rows_for_Assistant_Director_FPA_pre_fill": {
+          "runAfter": {
+            "List_rows_for_privacy_officer_pre_fill": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "04b10c31-626b-4662-bca0-349a9ada11d2"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "systemusers",
+              "$filter": "fullname eq 'Lebogang Mundeta'"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Update_a_row": {
+          "runAfter": {
+            "List_rows_for_Assistant_Director_FPA_pre_fill": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "22416b75-1960-4324-906e-9c3a844df034"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerOutputs()?['body/cr4e0_proposalid']",
+              "item/cr4e0_ContractPrivacyOfficer@odata.bind": "/systemusers(44f78e54-e424-ef11-840a-6045bd60585f)",
+              "item/cr4e0_ProgramFinanceOfficer@odata.bind": "/systemusers(aaa0424b-de26-ec11-b6e6-0022483cb5cd)"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateOnlyRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Terminate": {
+          "runAfter": {
+            "Update_Owner_to_Team_Name": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "86465cc2-ef5e-4190-b062-fc4e592dfee0"
+          },
+          "type": "Terminate",
+          "inputs": {
+            "runStatus": "Succeeded"
+          }
+        },
+        "Update_Owner_to_Team_Name": {
+          "runAfter": {
+            "Compose_1": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "994e1936-3efd-4345-b784-6be25362d536"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr4e0_proposals",
+              "recordId": "@triggerOutputs()?['body/cr4e0_proposalid']"
+            },
+            "host": {
+              "connectionName": "shared_commondataserviceforapps-2",
+              "operationId": "UpdateOnlyRecord",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Entity_Number": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "91f5e347-0715-4391-9685-bbddaa562f06"
+          },
+          "type": "Compose",
+          "inputs": "@triggerOutputs()?['body/cr4e0_entityname']"
+        },
+        "Compose_1": {
+          "runAfter": {
+            "Entity_Number": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b86e91e4-269b-48c6-b3d6-d0b6ec587ffb"
+          },
+          "type": "Compose",
+          "inputs": "@triggerOutputs()?['body/_ownerid_value']"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

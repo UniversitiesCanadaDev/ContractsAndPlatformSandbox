@@ -1,0 +1,79 @@
+function displayaccountformsection()
+{
+    var MemberValue = Xrm.Page.data.entity.attributes.get("new_membership").getValue();
+    var OrgTypeValue = Xrm.Page.data.entity.attributes.get("new_typeoforganization").getValue();
+
+   // var MemberName = Xrm.Page.data.entity.attributes.get("name").getValue();
+
+     if   (MemberValue == "100000000") // Membership = yes
+      {
+        //Xrm.Page.ui.tabs.get("CampusEvents").setVisible(true);
+	//Xrm.Page.ui.tabs.get("tab_9").setVisible(true);  // Member Engagement
+	Xrm.Page.ui.tabs.get("tab_6").setVisible(true);  //UC Programs(University)
+	Xrm.Page.ui.tabs.get("tab_9").setVisible(true);  //Membership Engagement Tab
+	//Xrm.Page.ui.tabs.get("tab_7").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("exec_head").setVisible(true);  //Summary Tab
+        Xrm.Page.ui.tabs.get("tab_10").sections.get("PreviousExecHeads").setVisible(true);  //Summary Tab
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(true);
+	// Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(true);
+
+
+      }
+
+     if   (MemberValue == "100000002") // Membership = former
+      {
+        //Xrm.Page.ui.tabs.get("CampusEvents").setVisible(true);
+	//Xrm.Page.ui.tabs.get("tab_9").setVisible(true);
+	Xrm.Page.ui.tabs.get("tab_6").setVisible(true);
+	Xrm.Page.ui.tabs.get("tab_9").setVisible(true);  //Membership Engagement Tab
+	Xrm.Page.ui.tabs.get("tab_7").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("exec_head").setVisible(true);
+        Xrm.Page.ui.tabs.get("tab_10").sections.get("PreviousExecHeads").setVisible(true);  //Summary Tab
+	// Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(true);
+	// Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(true);
+      }
+
+     if   (MemberValue == "100000001") //Membership = No
+      {
+        //Xrm.Page.ui.tabs.get("CampusEvents").setVisible(true);
+	//Xrm.Page.ui.tabs.get("tab_9").setVisible(true);
+	Xrm.Page.ui.tabs.get("tab_6").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_9").setVisible(false);  //Membership Engagement Tab
+	// Xrm.Page.ui.tabs.get("tab_7").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("exec_head").setVisible(false);
+        Xrm.Page.ui.tabs.get("tab_10").sections.get("PreviousExecHeads").setVisible(false);  //Summary Tab
+	// Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(false);
+	// Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_12").setVisible(true);  // UC Program Funder tab
+        Xrm.Page.ui.headerSection.setBodyVisible(false);  // Hide Header Body
+      }
+
+     if (OrgTypeValue == "100000001")	//University
+	{
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(true);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(true);
+	}
+      else
+	{
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(false);
+	}
+
+}  
+
+function displaystudentawards()
+{
+    var OrgTypeValue = Xrm.Page.data.entity.attributes.get("new_typeoforganization").getValue();
+
+     if (OrgTypeValue == "100000001")	//University
+	{
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(true);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(true);
+	}
+      else
+	{
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("studentawards").setVisible(false);
+	Xrm.Page.ui.tabs.get("tab_10").sections.get("ChildAccounts").setVisible(false);
+	}
+
+} 

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b427d178-404a-4bf7-8f1b-ac826052d9e8}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_qeprojectscholar" id="new_qeprojectscholarid">
+          <cell name="new_firstname" width="125" />
+          <cell name="new_lastname" width="125" />
+          <cell name="new_startdate" width="100" />
+          <cell name="new_enddate" width="100" />
+          <cell name="new_predeparturestatus" width="125" />
+          <cell name="new_scholarnarrativestatus" width="125" />
+          <cell name="new_component" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_qeprojectscholar">
+          <order attribute="new_startdate" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_startdate" />
+          <attribute name="new_enddate" />
+          <attribute name="new_lastname" />
+          <attribute name="new_firstname" />
+          <attribute name="new_component" />
+          <attribute name="new_scholarnarrativestatus" />
+          <attribute name="new_predeparturestatus" />
+          <attribute name="new_qeprojectscholarid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Q.E. Project Scholar Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

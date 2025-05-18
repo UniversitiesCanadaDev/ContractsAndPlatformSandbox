@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{93718406-c978-4e71-9e00-5edb55534f1a}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{4c61a613-4412-0408-0e9b-a0c736101b97}" name="tab_2" expanded="true" showlabel="false" locklevel="0" IsUserDefined="0">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{b777a2ab-8b29-50e3-d9c7-324961d5e077}" name="tab_2_section_3" showlabel="false" locklevel="0" IsUserDefined="0" celllabelposition="Top" celllabelalignment="Left" labelwidth="115" columns="1111" layout="varwidth" showbar="false">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e6911cbe-bb17-5863-2980-1328b997ebe9}" showlabel="true" locklevel="0" colspan="2">
+                        <labels>
+                          <label description="GR Theme" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_grthemelookupid" datafieldname="new_grthemelookupid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{4F78A014-A9DA-43DB-832D-6547A519ADC0}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{34249c48-ab74-3e33-a80d-025ee0e5beb8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{38595c48-4b84-ae5a-910b-574b87a03b48}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab id="{ea54b8c5-cf1a-48f0-b278-c2454015e340}" name="{ea54b8c5-cf1a-48f0-b278-c2454015e340}" expanded="false" showlabel="true" locklevel="0" IsUserDefined="1" verticallayout="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{b845d5bb-2e6d-4645-858d-7c74c298645e}" name="{b845d5bb-2e6d-4645-858d-7c74c298645e}" showlabel="false" locklevel="0" IsUserDefined="0" celllabelposition="Top" celllabelalignment="Left" labelwidth="115" columns="1" showbar="false">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6ce30c98-deb5-45f1-a99c-0f6f68e25783}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" datafieldname="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1220345-e7fa-45de-a605-008891c07fbd}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b5588d0-7d98-38a7-d716-6bdb554227d3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="GR Meeting Theme Interactive" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_grmeetingthemeinteractionid" datafieldname="new_grmeetingthemeinteractionid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{373b08e2-14a6-a4a5-50d4-c9370031ed9b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="GR Meeting Theme Meeting" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="new_grmeetingthemeid" datafieldname="new_grmeetingthemeid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section id="{e6b338a7-e072-4b03-89e6-c13c6d15e108}" height="auto" showlabel="false" IsUserDefined="0" showbar="false">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ef3af99c-38da-4dbe-88e3-884c607523c3}" showlabel="false" locklevel="0" auto="false" rowspan="3">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control disabled="false" id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title Text="Common" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title Text="Sales" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title Text="Service" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title Text="Marketing" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title Text="Process Sessions" LCID="1033" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

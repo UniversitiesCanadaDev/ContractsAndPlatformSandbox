@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c3fcba09-5546-ec11-8c62-000d3ae89b87}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_deskid">
+          <cell name="new_name" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="new_desk">
+          <attribute name="new_name" />
+          <attribute name="new_deskid" />
+          <filter type="and">
+            <condition attribute="new_type" operator="eq" value="100000000" />
+          </filter>
+          <link-entity name="new_booking" alias="aa" link-type="inner" from="new_desk_id" to="new_deskid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Available Desks" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,17 @@
+function displayAddressSection(executionContext)
+{
+	var formContext = executionContext.getFormContext();	// gets form context
+		
+	var vlangPref = formContext.getAttribute("new_languagepreference").getValue(); //gets language pref
+	
+	if (vlangPref == "100000000")	//English
+	{
+		formContext.ui.tabs.get("tab_31").sections.get("english_address").setVisible(true);		
+		formContext.ui.tabs.get("tab_31").sections.get("french_address").setVisible(false);		
+	}
+       	else if (vlangPref == "100000001")	//French
+        {
+		formContext.ui.tabs.get("tab_31").sections.get("english_address").setVisible(false);		
+		formContext.ui.tabs.get("tab_31").sections.get("french_address").setVisible(true);			
+	}
+} 

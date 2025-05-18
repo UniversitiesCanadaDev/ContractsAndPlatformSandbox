@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ed16dcf6-5dfe-455e-8928-e86d648f13b2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="new_name" select="1" icon="1" preview="1">
+        <row name="result" id="new_meetingattendeeid">
+          <cell name="new_attendees" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_0b248628f1eaeb11bacb0022483c43a0.jobtitle" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_0b248628f1eaeb11bacb0022483c43a0.parentcustomerid" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_meetingattendee">
+          <attribute name="createdon" />
+          <order attribute="new_attendees" descending="false" />
+          <attribute name="new_attendees" />
+          <link-entity alias="a_0b248628f1eaeb11bacb0022483c43a0" name="contact" from="contactid" to="new_attendees" link-type="outer" visible="false">
+            <attribute name="parentcustomerid" />
+            <attribute name="jobtitle" />
+          </link-entity>
+          <attribute name="new_meetingattendeeid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting Attendee Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

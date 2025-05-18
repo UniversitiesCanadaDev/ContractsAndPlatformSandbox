@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{58fb20ff-d5be-406f-908e-c777e9dedf5f}</savedqueryid>
+    <queryapi>ListMember.RetrieveByObject</queryapi>
+    <layoutxml>
+      <grid name="contacts" jump="lastname" select="1" icon="1" preview="1">
+        <row name="contact" id="contactid">
+          <cell name="fullname" width="150" />
+          <cell name="parentcustomerid" width="200" />
+          <cell name="emailaddress1" width="200" />
+        </row>
+      </grid>
+    </layoutxml>
+    <columnsetxml>
+      <columnset version="3.0">
+        <column>fullname</column>
+        <column>emailaddress1</column>
+        <column>parentcustomerid</column>
+        <column>contactid</column>
+        <ascend>fullname</ascend>
+      </columnset>
+    </columnsetxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="contact">
+          <order attribute="fullname" descending="false" />
+          <attribute name="emailaddress1" />
+          <attribute name="parentcustomerid" />
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>6.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Contact List Members View" languagecode="1033" />
+      <LocalizedName description="Vue Membre de la liste des contacts" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Displays contact information in the Members subgrid of Marketing Lists." languagecode="1033" />
+      <Description description="Affiche les informations de contact dans la sous-grille des membres des listes marketing." languagecode="1036" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

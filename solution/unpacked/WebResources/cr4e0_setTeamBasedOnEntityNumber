@@ -1,0 +1,40 @@
+function setTeamBasedOnEntityNumber(executionContext) {
+    // Get the form context
+    var formContext = executionContext.getFormContext();
+
+    // Mapping of entity numbers to corresponding team GUIDs
+    var teamMapping = {
+        "860540023": "f6d67890-a9d7-ef11-8eea-002248ae0598", // Replace with actual Team GUID
+        "860540024": "f6d67890-a9d7-ef11-8eea-002248ae0598", // Replace with actual Team GUID
+        "860540025": "f6d67890-a9d7-ef11-8eea-002248ae0598", // Replace with actual Team GUID
+"100000000": "f6d67890-a9d7-ef11-8eea-002248ae0598",  
+"860540032": "f6d67890-a9d7-ef11-8eea-002248ae0598", 
+        "860540026": "f6d67890-a9d7-ef11-8eea-002248ae0598", 
+"860540000": "f6d67890-a9d7-ef11-8eea-002248ae0598",  // Add more mappings here
+ 
+"860540022": "ec84480d-36d2-ef11-8ee9-0022483e2bef",
+    };
+
+    // Get the entity number from the form
+    var entityNumberField = "cr4e0_entityname"; // Replace with your actual field name
+    var entityNumber = formContext.getAttribute(entityNumberField).getValue();
+
+    if (entityNumber) {
+        // Check if the entity number exists in the mapping
+        if (teamMapping.hasOwnProperty(entityNumber)) {
+            var teamGUID = teamMapping[entityNumber];
+
+            // Set the owner field to the team GUID
+            formContext.getAttribute("ownerid").setValue([{
+                id: teamGUID,
+                entityType: "team"
+            }]);
+
+            console.log("Owner set to team with GUID: " + teamGUID);
+        } else {
+            console.warn("No team found for the given entity number: " + entityNumber);
+        }
+    } else {
+        console.warn("Entity number is empty or null.");
+    }
+}

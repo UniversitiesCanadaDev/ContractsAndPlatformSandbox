@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{26e22440-ad00-ea11-80c6-0050569a785d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" icon="1" preview="1" select="1" jump="fullname">
+        <row id="contactid" name="result">
+          <cell name="fullname" width="150" />
+          <cell name="jobtitle" width="300" />
+          <cell name="parentcustomerid" width="300" />
+          <cell name="emailaddress1" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch mapping="logical" output-format="xml-platform" version="1.0" distinct="true">
+        <entity name="contact">
+          <attribute name="fullname" />
+          <order descending="false" attribute="fullname" />
+          <filter type="and">
+            <condition value="0" attribute="statecode" operator="eq" />
+          </filter>
+          <link-entity name="new_contacttype" alias="aa" to="contactid" from="new_contactnameid">
+            <filter type="and">
+              <filter type="and">
+                <condition value="100000031" attribute="new_contacttype" operator="eq" />
+                <filter type="or">
+                  <condition attribute="new_appointmentenddate" operator="today" />
+                  <condition value="20" attribute="new_appointmentenddate" operator="next-x-years" />
+                  <condition attribute="new_appointmentenddate" operator="null" />
+                </filter>
+              </filter>
+            </filter>
+          </link-entity>
+          <attribute name="jobtitle" />
+          <attribute name="emailaddress1" />
+          <attribute name="parentcustomerid" />
+          <attribute name="contactid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="EDI Lead" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

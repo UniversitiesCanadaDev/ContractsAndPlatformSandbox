@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_ucthemes" localizedName="UC Themes" description="Global Themes list to replace Themes entity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="UC Themes" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Global Themes list to replace Themes entity" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="100000005" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Campus Issues" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000006" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Copyright" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000003" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Equity Diversity and Inclusion" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000007" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Governance (Institutional autonomy, freedom of expression &amp; academic freedon)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000002" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Indigenous" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000001" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="International" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000011" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Programs" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000000" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Research &amp; Innovation" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000009" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Scholarships" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000010" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Skills &amp; Talent" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000004" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Social Impact" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="100000008" ExternalValue="" Color="#0000ff" IsHidden="0">
+      <labels>
+        <label description="Teaching &amp; Learning" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

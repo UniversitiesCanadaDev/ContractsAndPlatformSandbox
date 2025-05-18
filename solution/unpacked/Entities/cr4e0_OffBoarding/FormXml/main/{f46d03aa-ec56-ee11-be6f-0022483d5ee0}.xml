@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{f46d03aa-ec56-ee11-be6f-0022483d5ee0}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{a715d49e-857b-4f57-885f-79f02090016f}" IsUserDefined="1" labelid="{1a15f2c1-0d65-4c17-9fec-6f4ceeb51b44}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c91f50ec-6464-47b6-b891-35aa8c7e4bb4}" columns="11" labelid="{45baeb9c-0157-4b75-8b1c-7e462b7deae7}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{2dd26c47-f880-490c-a082-1880e2de8922}" labelid="{d8e87bf7-d991-44f1-9287-1c1ed36387ef}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{1e89c069-5807-4c87-8cc6-763ea7975fa9}" labelid="{961ded50-f491-4c00-9d93-89d7964248a5}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62e0d999-3b86-4641-92ba-5bfffb25a44c}" locklevel="0" colspan="1" rowspan="1" labelid="{aa5f6840-252b-44fd-afd1-61f5ee8db3a5}">
+                        <labels>
+                          <label description="Employee Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_employeename" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_employeename" disabled="true" />
+                      </cell>
+                      <cell id="{bdb0033e-704c-4263-a876-db537f3f8594}" locklevel="0" colspan="1" rowspan="1" labelid="{f5a8b516-4664-45ba-99df-d2f904903641}">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_enddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr4e0_enddate" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ec8bcde-7322-4da2-9289-3278393a1710}" locklevel="0" colspan="1" rowspan="1" labelid="{731b6573-0a0d-44c7-85ce-cc8c5cb98b75}">
+                        <labels>
+                          <label description="Name of Supervisor" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_nameofsupervisor" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr4e0_nameofsupervisor" disabled="true" />
+                      </cell>
+                      <cell id="{1a50444b-e953-4d8f-a3a0-34c76bc7ed59}" locklevel="0" colspan="1" rowspan="1" labelid="{551745eb-fe3b-4348-bef7-04095fd5b250}">
+                        <labels>
+                          <label description="Comments by HR" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_commentsbyhr" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_commentsbyhr" disabled="true" uniqueid="{c8087806-9a69-4b89-86cc-fbeba155ba19}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="a728b329-4367-4e8b-abc0-0132117d2bfe" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="1" labelwidth="115" labelid="{6c578d54-eb3f-4a56-aeb9-b6180a237e3c}">
+                  <labels>
+                    <label description="Supervisor Comments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" locklevel="0" id="{bf25a671-0ca8-429e-881a-33755bdce2f7}" labelid="{67fcf718-cdb8-4b64-b74a-3f6944324970}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9aac008a-fb43-4fd5-876c-19b733531a78}" locklevel="0" colspan="1" rowspan="1" labelid="{59461154-4e9d-429a-b865-5bf24a8498f6}">
+                        <labels>
+                          <label description="What do you want IT to do with the existing Outlook email?" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_necessaryactionforexistingoutlookemail" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_necessaryactionforexistingoutlookemail" disabled="false" uniqueid="{c0552c77-3d4a-471f-954e-865b66cc6766}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a558ba0-e8ef-45aa-9923-d830ff6fbbf2}" locklevel="0" colspan="1" rowspan="1" labelid="{589447eb-3d70-4b3f-bcc1-de3fc1b46ede}">
+                        <labels>
+                          <label description="Staff member the email will be forwarded or given access (if applicable)" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_staffmembertheemailwillbeforwardedorgiven" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_staffmembertheemailwillbeforwardedorgiven" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1dd17414-8965-45b8-80d8-dc8788ca753d}" locklevel="0" colspan="1" rowspan="1" labelid="{bff55591-9e0d-46da-a28d-5646114971d5}">
+                        <labels>
+                          <label description="What do you want IT to do with the staff members OneDrive?" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_whatdoyouwantittodowiththeonedrive" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_whatdoyouwantittodowiththeonedrive" disabled="false" uniqueid="{77b4eff6-a0b3-4d3f-a725-8feaf50bbfcc}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4105db7-33c2-46fa-ae6f-d54a06262dcd}" locklevel="0" colspan="1" rowspan="1" labelid="{519a8b77-bfed-458b-b350-af5c5e0994f2}">
+                        <labels>
+                          <label description="Who will be given access to the departing employee's files (if applicable)" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_accesstothedepartingemployeefiles" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr4e0_accesstothedepartingemployeefiles" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{59fbb498-ca4f-413d-a59b-4261c11b7944}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Comments by Supervisor" languagecode="1033" />
+                        </labels>
+                        <control id="cr4e0_commentsbysupervisor" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cr4e0_commentsbysupervisor" disabled="false" uniqueid="{e2b1d91e-3755-4c82-89cd-a3131cd9da95}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5e8e4187-a5d9-4e6d-a720-ae45679ca51e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{59ebbb1b-8b6f-4489-9f97-9af8bcfca2cd}" showlabel="false" labelid="{8a2a70a3-26a4-4cd7-a726-38531a998346}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{873a4063-5b06-4f88-a988-3a868181ffc2}" showlabel="false" labelid="{893454fe-e717-4114-8263-fff1e7a4d7a4}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{944ad46f-6a39-4d15-b5a8-ad6147094895}" showlabel="false" labelid="{f7d8e047-5950-4834-9c5e-84d63b23a41f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{9b2e91a3-6669-4b25-81ec-12ae44aba874}" labelid="{e2fa7c56-e6f0-443a-a3c0-3c38b752974e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{596d58bf-5edc-4503-9d6f-fb76a90cd65b}" locklevel="0" colspan="1" rowspan="1" labelid="{b7854e9f-f069-4f9c-80c3-e1fc65888664}">
+              <labels>
+                <label description="Request Status" languagecode="1033" />
+              </labels>
+              <control id="header_cr4e0_requeststatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr4e0_requeststatus" disabled="false" />
+            </cell>
+            <cell id="{5bb9bb8c-20e4-45d9-be7a-54d33c5b3ca0}" colspan="1" rowspan="1" labelid="{cfcebf3f-c2f0-48ae-a929-9f63dc87d292}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{6e86c4dd-74b1-4eeb-ad7f-8b5c11d87ad6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ddb2f1a9-ddf3-4c22-9551-637e57966c2c}" showlabel="false" labelid="{650dfa79-dc91-4a7f-bf8d-dc9a0ac295a9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{891283da-7545-48cf-8d2c-be21770bce2c}" showlabel="false" labelid="{00c06331-7f3c-4212-b61e-9a2d18d4d9f6}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{39a34b87-27bf-4dda-94e2-acd377e36cdb}" showlabel="false" labelid="{7994148e-1f4c-42be-8714-0ec65230dd54}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{c8087806-9a69-4b89-86cc-fbeba155ba19}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_commentsbyhr</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbyhr</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbyhr</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbyhr</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{c0552c77-3d4a-471f-954e-865b66cc6766}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_necessaryactionforexistingoutlookemail</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_necessaryactionforexistingoutlookemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_necessaryactionforexistingoutlookemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_necessaryactionforexistingoutlookemail</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{e2b1d91e-3755-4c82-89cd-a3131cd9da95}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_commentsbysupervisor</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbysupervisor</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbysupervisor</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_commentsbysupervisor</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{77b4eff6-a0b3-4d3f-a725-8feaf50bbfcc}">
+          <customControl id="{E0DECE4B-6FC8-4A8F-A065-082708572369}">
+            <parameters>
+              <datafieldname>cr4e0_whatdoyouwantittodowiththeonedrive</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_whatdoyouwantittodowiththeonedrive</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_whatdoyouwantittodowiththeonedrive</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.RichTextEditor.RichTextEditorControl">
+            <parameters>
+              <value type="Multiple">cr4e0_whatdoyouwantittodowiththeonedrive</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Supervisor" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

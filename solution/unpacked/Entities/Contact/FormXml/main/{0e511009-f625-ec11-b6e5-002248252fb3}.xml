@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0e511009-f625-ec11-b6e5-002248252fb3}</formid>
+    <IntroducedVersion>1.0.2109.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>0</FormActivationState>
+    <form showImage="true" headerdensity="HighWithControls">
+      <tabs>
+        <tab name="General" id="d4bbe032-fa2a-4823-8d4a-37518fb34d73" IsUserDefined="0" locklevel="0" showlabel="false" labelid="{13f8322b-59a1-42fe-8620-8fe5d433c2cf}" expanded="true" ordinalvalue="0">
+          <columns>
+            <column width="100%" id="0">
+              <sections>
+                <section name="general_section_1" id="759acbe0-4c04-4d0b-a229-e3d605f77652" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{56f2bda6-a801-4597-84f2-eafcf0a0120e}" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{58cd6690-2dcc-480b-9a4e-149c60ea042b}" locklevel="0" colspan="2" rowspan="1" showlabel="false" ordinalvalue="10000">
+                        <control id="childrensnames" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="childrensnames" disabled="false" uniqueid="{45BF2A8D-0287-48B8-8643-82C3348D43AA}" solutionaction="Modified" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{45BF2A8D-0287-48B8-8643-82C3348D43AA}" solutionaction="Modified">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>childrensnames</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="msdynce_PowerPortals.FileDragDrop">
+            <parameters>
+              <Property>childrensnames</Property>
+              <ControlLabelText type="SingleLine.Text" static="true">Photo</ControlLabelText>
+              <ControlDescriptionText type="SingleLine.Text" static="true">Upload a jpg, png, or other compatible media file.</ControlDescriptionText>
+              <DnDTextBold type="SingleLine.Text" static="true">JPG, PNG smaller than 10MB</DnDTextBold>
+              <DnDText type="SingleLine.Text" static="true">Drag &amp; drop your image here or</DnDText>
+              <UploadButtonText type="SingleLine.Text" static="true">Choose file</UploadButtonText>
+              <ClearButtonText type="SingleLine.Text" static="true">Clear</ClearButtonText>
+              <FileTypes type="SingleLine.Text" static="true">image/png,image/jpg,image/jpeg</FileTypes>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="msdynce_PowerPortals.FileDragDrop">
+            <parameters>
+              <Property>childrensnames</Property>
+              <ControlLabelText type="SingleLine.Text" static="true">Photo</ControlLabelText>
+              <ControlDescriptionText type="SingleLine.Text" static="true">Upload a jpg, png, or other compatible media file.</ControlDescriptionText>
+              <DnDTextBold type="SingleLine.Text" static="true">JPG, PNG smaller than 10MB</DnDTextBold>
+              <DnDText type="SingleLine.Text" static="true">Drag &amp; drop your image here or</DnDText>
+              <UploadButtonText type="SingleLine.Text" static="true">Choose file</UploadButtonText>
+              <ClearButtonText type="SingleLine.Text" static="true">Clear</ClearButtonText>
+              <FileTypes type="SingleLine.Text" static="true">image/png,image/jpg,image/jpeg</FileTypes>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="msdynce_PowerPortals.FileDragDrop">
+            <parameters>
+              <Property>childrensnames</Property>
+              <ControlLabelText type="SingleLine.Text" static="true">Photo</ControlLabelText>
+              <ControlDescriptionText type="SingleLine.Text" static="true">Upload a jpg, png, or other compatible media file.</ControlDescriptionText>
+              <DnDTextBold type="SingleLine.Text" static="true">JPG, PNG smaller than 10MB</DnDTextBold>
+              <DnDText type="SingleLine.Text" static="true">Drag &amp; drop your image here or</DnDText>
+              <UploadButtonText type="SingleLine.Text" static="true">Choose file</UploadButtonText>
+              <ClearButtonText type="SingleLine.Text" static="true">Clear</ClearButtonText>
+              <FileTypes type="SingleLine.Text" static="true">image/png,image/jpg,image/jpeg</FileTypes>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <footer id="{b69705fc-44ec-4df9-8e1d-2bd7fcca2337}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{57e117c2-02d1-4ec0-bb2d-52dc73035925}" showlabel="false" labelid="{bceff707-5c22-4ee5-8fe9-c151bf56c4c0}" ordinalvalue="10000" solutionaction="Removed" />
+            <cell id="{f5974bb1-4b85-414b-b047-ff5b065a1ed2}" showlabel="false" labelid="{a705300e-9d9b-47a3-af52-975db45aaaae}" ordinalvalue="20001" solutionaction="Removed" />
+            <cell id="{5778ab3f-91ab-40c0-87d4-bb7ba1806edf}" showlabel="false" labelid="{c284f44f-4da2-4684-9123-ab67e1cbbdd4}" ordinalvalue="30002" solutionaction="Removed" />
+          </row>
+        </rows>
+      </footer>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Edit child profile" languagecode="1033" />
+      <LocalizedName description="Edit child profile" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Contact form." languagecode="1033" />
+      <Description description="Formulaire de contact par défaut mis à jour." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

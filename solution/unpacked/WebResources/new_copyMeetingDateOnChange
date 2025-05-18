@@ -1,0 +1,3 @@
+function OnChange() {
+Xrm.Page.getAttribute('new_enddate').setValue(Xrm.Page.getAttribute('new_startdate').getValue());
+}

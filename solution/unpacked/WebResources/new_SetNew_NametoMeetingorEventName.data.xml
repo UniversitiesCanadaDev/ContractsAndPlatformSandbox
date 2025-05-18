@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{5361b2c8-78ad-e911-80c3-0050569a785d}</WebResourceId>
+  <Name>new_SetNew_NametoMeetingorEventName</Name>
+  <DisplayName>Set New_Name to Meeting or Event Name</DisplayName>
+  <Description>For Meeting event Participant Entity</Description>
+  <LanguageCode>1033</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/new_SetNew_NametoMeetingorEventName5361B2C8-78AD-E911-80C3-0050569A785D</FileName>
+</WebResource>

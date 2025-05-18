@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{84b6f82b-bb84-4bf2-9be1-da44d865f224}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="1">
+        <row name="new_meetingparticipant" id="new_meetingparticipantid">
+          <cell name="new_meetingparticipantsid" width="300" />
+          <cell name="new_meetingcontact" width="150" />
+          <cell name="new_meetingdate" width="150" />
+          <cell name="new_primarymeetingcontact" width="150" />
+          <cell name="a_12fb7230f7f3e811bab30050568d4f81.new_meetingstatus" width="100" disableSorting="1" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_meetingparticipant">
+          <attribute name="createdon" />
+          <order attribute="new_meetingcontact" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="new_primarymeetingcontact" />
+          <attribute name="new_meetingdate" />
+          <attribute name="new_meetingcontact" />
+          <attribute name="new_meetingparticipantsid" />
+          <link-entity alias="a_12fb7230f7f3e811bab30050568d4f81" name="new_meetinglookup" from="new_meetinglookupid" to="new_meetingparticipantsid" link-type="outer" visible="false">
+            <attribute name="new_meetingstatus" />
+          </link-entity>
+          <attribute name="new_meetingparticipantid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Meeting Participant Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

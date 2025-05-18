@@ -1,0 +1,55 @@
+function setFormVersion(executionContext) {
+    var formContext = executionContext.getFormContext();  // Get the form context
+    
+    // Retrieve the value of the 'Form Type' field (Choice field)
+    var formType = formContext.getAttribute("formtype").getValue(); // Choice column (Old or New)
+    
+    // Form IDs for the four forms (replace these with your actual Form IDs)
+    var originatorOldFormId = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"; // Old form for originator
+    var originatorNewFormId = "yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy"; // New form for originator
+    var reviewerOldFormId = "zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz";   // Old form for reviewer
+    var reviewerNewFormId = "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa";   // New form for reviewer
+    
+    // Based on the 'Form Type' (Old/New), decide which forms to load
+    if (formType === 100000000) {  // 100000000 is the numeric value for 'Old'
+        // Show Originator (Old) and Reviewer (Old) forms
+        loadOldForms(formContext, originatorOldFormId, reviewerOldFormId);
+    } else {  // 'New' form type
+        // Show Originator (New) and Reviewer (New) forms
+        loadNewForms(formContext, originatorNewFormId, reviewerNewFormId);
+    }
+}
+
+// Function to load the old forms (Originator Old, Reviewer Old)
+function loadOldForms(formContext, originatorOldFormId, reviewerOldFormId) {
+    // Switch to the Originator Old Form
+    formContext.data.entity.formSelector.items.get().forEach(function (form) {
+        if (form.getId() === originatorOldFormId) {
+            form.navigate();  // Navigate to the originator old form
+        }
+    });
+
+    // Switch to the Reviewer Old Form
+    formContext.data.entity.formSelector.items.get().forEach(function (form) {
+        if (form.getId() === reviewerOldFormId) {
+            form.navigate();  // Navigate to the reviewer old form
+        }
+    });
+}
+
+// Function to load the new forms (Originator New, Reviewer New)
+function loadNewForms(formContext, originatorNewFormId, reviewerNewFormId) {
+    // Switch to the Originator New Form
+    formContext.data.entity.formSelector.items.get().forEach(function (form) {
+        if (form.getId() === originatorNewFormId) {
+            form.navigate();  // Navigate to the originator new form
+        }
+    });
+
+    // Switch to the Reviewer New Form
+    formContext.data.entity.formSelector.items.get().forEach(function (form) {
+        if (form.getId() === reviewerNewFormId) {
+            form.navigate();  // Navigate to the reviewer new form
+        }
+    });
+}

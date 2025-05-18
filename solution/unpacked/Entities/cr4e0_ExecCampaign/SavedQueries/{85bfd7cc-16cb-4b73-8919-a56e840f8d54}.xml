@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{85bfd7cc-16cb-4b73-8919-a56e840f8d54}</savedqueryid>
+    <layoutxml>
+      <grid name="cr4e0_execcampaigns" jump="cr4e0_name" select="1" icon="1" preview="1">
+        <row name="cr4e0_execcampaign" id="cr4e0_execcampaignid">
+          <cell name="cr4e0_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr4e0_execcampaign">
+          <attribute name="cr4e0_name" />
+          <attribute name="createdon" />
+          <order attribute="cr4e0_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr4e0_execcampaignid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Campaign Associated View" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Formerly Exec Campaign Associated View" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

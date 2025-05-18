@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{227a1a90-68db-4704-a8ca-bf017bde48b2}</savedqueryid>
+    <layoutxml>
+      <grid name="" jump="new_name" select="1" icon="1" preview="0">
+        <row name="new_committee" id="new_committeeid">
+          <cell name="new_name" width="300" />
+          <cell name="new_committeerole" width="300" />
+          <cell name="new_committeeenddate" width="150" />
+          <cell name="new_committeestartdate" width="150" />
+          <cell name="new_term" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="new_committee">
+          <attribute name="new_committeeid" />
+          <attribute name="new_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <order attribute="new_name" descending="false" />
+          <attribute name="new_committeestartdate" />
+          <attribute name="new_committeerole" />
+          <attribute name="new_committeeenddate" />
+          <attribute name="new_term" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Committee Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

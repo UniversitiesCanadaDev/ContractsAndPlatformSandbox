@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{d34f80de-1ef6-ee11-a1fe-0022483cc08f}</WebResourceId>
+  <Name>pia_NeedAssessmentText</Name>
+  <DisplayName>Need Assessment text</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0.0.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/pia_NeedAssessmentTextD34F80DE-1EF6-EE11-A1FE-0022483CC08F</FileName>
+</WebResource>
